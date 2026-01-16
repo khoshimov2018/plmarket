@@ -12,13 +12,19 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 class PolymarketConfig(BaseSettings):
     """Polymarket API configuration."""
     
-    private_key: str = Field(..., alias="POLYMARKET_PRIVATE_KEY")
+    # Private key is optional for paper trading mode
+    # For live trading, you MUST provide a valid private key
+    private_key: str = Field("", alias="POLYMARKET_PRIVATE_KEY")
     api_key: str = Field("", alias="POLYMARKET_API_KEY")
     api_secret: str = Field("", alias="POLYMARKET_API_SECRET")
     api_passphrase: str = Field("", alias="POLYMARKET_API_PASSPHRASE")
     chain_id: int = Field(137, alias="CHAIN_ID")
     
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
+    
+    def is_configured(self) -> bool:
+        """Check if Polymarket credentials are configured for live trading."""
+        return bool(self.private_key and self.api_key and self.api_secret)
 
 
 class EsportsDataConfig(BaseSettings):

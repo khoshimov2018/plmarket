@@ -58,14 +58,25 @@ class PolymarketClient:
         self._api_passphrase = config.polymarket.api_passphrase
         self._chain_id = config.polymarket.chain_id
         
-        self._account = Account.from_key(self._private_key)
-        self._address = self._account.address
+        # For paper trading, we can use a dummy account if no private key provided
+        self._paper_trading = config.development.paper_trading
+        
+        if self._private_key:
+            self._account = Account.from_key(self._private_key)
+            self._address = self._account.address
+        else:
+            # Use a dummy address for paper trading when no key is provided
+            if self._paper_trading:
+                self._account = None
+                self._address = "0x0000000000000000000000000000000000000000"
+                logger.warning("No private key provided - running in paper trading mode with dummy address")
+            else:
+                raise ValueError("POLYMARKET_PRIVATE_KEY is required for live trading!")
         
         self._clob_client: Optional[httpx.AsyncClient] = None
         self._gamma_client: Optional[httpx.AsyncClient] = None
         
         self._is_connected = False
-        self._paper_trading = config.development.paper_trading
         
         # Cache for market data
         self._market_cache: dict[str, MarketInfo] = {}
