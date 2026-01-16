@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  arbitrage-bot:
+    build: .
+    container_name: polymarket-esports-bot
+    restart: always
+    environment:
+      # Polymarket credentials
+      - POLYMARKET_PRIVATE_KEY=${POLYMARKET_PRIVATE_KEY}
+      - POLYMARKET_API_KEY=${POLYMARKET_API_KEY}
+      - POLYMARKET_API_SECRET=${POLYMARKET_API_SECRET}
+      - POLYMARKET_API_PASSPHRASE=${POLYMARKET_API_PASSPHRASE}
+      
+      # Data providers
+      - PANDASCORE_API_KEY=${PANDASCORE_API_KEY}
+      
+      # Trading config
+      - PAPER_MODE=${PAPER_MODE:-true}
+      - INITIAL_CAPITAL=${INITIAL_CAPITAL:-25}
+      - MIN_EDGE_PERCENT=${MIN_EDGE_PERCENT:-2.0}
+      - MAX_POSITION_PERCENT=${MAX_POSITION_PERCENT:-10}
+      
+      # Risk management
+      - MAX_DAILY_LOSS=${MAX_DAILY_LOSS:-10}
+      - MAX_DRAWDOWN_PERCENT=${MAX_DRAWDOWN_PERCENT:-20}
+      
+    volumes:
+      - ./data:/app/data
+    
+    # Auto-restart on failure
+    deploy:
+      restart_policy:
+        condition: any
+        delay: 5s
+        max_attempts: 3
+        window: 120s
+    
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
