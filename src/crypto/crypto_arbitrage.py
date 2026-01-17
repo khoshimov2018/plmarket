@@ -12,7 +12,7 @@ Strategy:
 """
 
 import asyncio
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 from typing import Dict, List, Optional, Tuple
 from dataclasses import dataclass, field
 
@@ -50,7 +50,7 @@ class CryptoOpportunity:
     edge: float  # model_probability - market_probability
     direction: str  # "buy_yes" or "buy_no"
     confidence: float  # 0-1 confidence in the signal
-    timestamp: datetime = field(default_factory=datetime.utcnow)
+    timestamp: datetime = field(default_factory=lambda: datetime.now(timezone.utc))
 
 
 class CryptoArbitrageDetector:
@@ -125,7 +125,7 @@ class CryptoArbitrageDetector:
                     continue
                 
                 opportunities.append(opportunity)
-                self._recent_opportunities[market_id] = datetime.utcnow()
+                self._recent_opportunities[market_id] = datetime.now(timezone.utc)
                 
                 logger.info(
                     f"🎯 CRYPTO OPPORTUNITY: {market.question}\n"
@@ -152,8 +152,15 @@ class CryptoArbitrageDetector:
         # Calculate distance to threshold
         distance_pct = (market.threshold - current_price) / current_price * 100
         
-        # Calculate time remaining
-        time_remaining = market.deadline - datetime.utcnow()
+        # Calculate time remaining (handle both timezone-aware and naive datetimes)
+        now = datetime.now(timezone.utc)
+        deadline = market.deadline
+        
+        # Make deadline timezone-aware if it's naive
+        if deadline.tzinfo is None:
+            deadline = deadline.replace(tzinfo=timezone.utc)
+        
+        time_remaining = deadline - now
         if time_remaining.total_seconds() <= 0:
             return None  # Market expired
         
@@ -300,7 +307,7 @@ class CryptoArbitrageDetector:
             return False
         
         last_opportunity = self._recent_opportunities[market_id]
-        return datetime.utcnow() - last_opportunity < self._opportunity_cooldown
+        return datetime.now(timezone.utc) - last_opportunity < self._opportunity_cooldown
     
     async def on_threshold_crossing(
         self,
