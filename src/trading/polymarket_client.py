@@ -353,9 +353,21 @@ class PolymarketClient:
                 no_token = tokens[1] if len(tokens) > 1 else None
             
             if not yes_token:
-                # Market might be structured differently
-                yes_token = {"token_id": data.get("clobTokenIds", [""])[0], "price": 0.5}
-                no_token = {"token_id": data.get("clobTokenIds", ["", ""])[1] if len(data.get("clobTokenIds", [])) > 1 else "", "price": 0.5}
+                # Market might be structured differently - try clobTokenIds
+                clob_ids = data.get("clobTokenIds", [])
+                if isinstance(clob_ids, str):
+                    # Sometimes it's a JSON string
+                    try:
+                        import json
+                        clob_ids = json.loads(clob_ids)
+                    except:
+                        clob_ids = []
+                
+                yes_token_id = clob_ids[0] if len(clob_ids) > 0 else ""
+                no_token_id = clob_ids[1] if len(clob_ids) > 1 else ""
+                
+                yes_token = {"token_id": yes_token_id, "price": 0.5}
+                no_token = {"token_id": no_token_id, "price": 0.5}
             
             # Try to extract team names from title/question
             # Format: "LoL: Team A vs Team B (BO3)"
@@ -398,12 +410,34 @@ class PolymarketClient:
                 except (ValueError, TypeError):
                     pass
             
+            # Extract token IDs properly
+            yes_token_id = ""
+            no_token_id = ""
+            
+            if isinstance(yes_token, dict):
+                yes_token_id = str(yes_token.get("token_id", ""))
+            elif isinstance(yes_token, str):
+                yes_token_id = yes_token
+            
+            if isinstance(no_token, dict):
+                no_token_id = str(no_token.get("token_id", ""))
+            elif isinstance(no_token, str):
+                no_token_id = no_token
+            
+            # Validate token IDs - they should be long numeric strings
+            if not yes_token_id or len(yes_token_id) < 10 or not yes_token_id.isdigit():
+                logger.debug(f"Invalid yes_token_id: {yes_token_id[:50] if yes_token_id else 'empty'}")
+                yes_token_id = ""
+            if not no_token_id or len(no_token_id) < 10 or not no_token_id.isdigit():
+                logger.debug(f"Invalid no_token_id: {no_token_id[:50] if no_token_id else 'empty'}")
+                no_token_id = ""
+            
             return MarketInfo(
                 market_id=str(data.get("id", data.get("conditionId", ""))),
                 condition_id=data.get("conditionId", data.get("condition_id", "")),
                 question=data.get("question", (event or {}).get("title", "")),
-                token_id_yes=str(yes_token.get("token_id", "") if isinstance(yes_token, dict) else yes_token),
-                token_id_no=str(no_token.get("token_id", "") if isinstance(no_token, dict) else no_token),
+                token_id_yes=yes_token_id,
+                token_id_no=no_token_id,
                 match_id=data.get("gameId", data.get("game_id", data.get("id", ""))),
                 game=game,
                 team1_name=team1_name.title(),
@@ -426,6 +460,11 @@ class PolymarketClient:
         Returns:
             Current order book snapshot
         """
+        # Validate token_id before making request
+        if not token_id or len(token_id) < 10 or not token_id.isdigit():
+            logger.debug(f"Skipping invalid token_id: {token_id[:20] if token_id else 'empty'}...")
+            return None
+        
         try:
             response = await self._clob_client.get(
                 "/book",

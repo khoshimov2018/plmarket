@@ -98,6 +98,7 @@ class GridProvider:
         try:
             # GraphQL query for recent esports series
             # Based on GRID docs - get series from last 24 hours
+            # Note: GRID uses String type for dates, not DateTime
             from datetime import datetime, timedelta
             
             now = datetime.utcnow()
@@ -105,7 +106,7 @@ class GridProvider:
             end_time = (now + timedelta(hours=12)).strftime("%Y-%m-%dT%H:%M:%SZ")
             
             query = """
-            query GetRecentSeries($startTime: DateTime, $endTime: DateTime) {
+            query GetRecentSeries($startTime: String, $endTime: String) {
                 allSeries(
                     first: 50
                     filter: {

@@ -46,6 +46,8 @@ class StratzProvider(BaseEsportsProvider):
         self._session: Optional[aiohttp.ClientSession] = None
         self._tracked_matches: Dict[str, dict] = {}
         self._last_states: Dict[str, GameState] = {}
+        self._disabled = False  # Set to True if we get blocked by Cloudflare
+        self._error_count = 0
     
     @property
     def supported_games(self) -> List[Game]:
@@ -86,9 +88,17 @@ class StratzProvider(BaseEsportsProvider):
             payload["variables"] = variables
         
         async with self._session.post(self.GRAPHQL_URL, json=payload) as response:
+            if response.status == 403:
+                # Cloudflare is blocking us - disable provider
+                self._error_count += 1
+                if self._error_count >= 3:
+                    logger.warning("Stratz API blocked by Cloudflare - disabling provider")
+                    self._disabled = True
+                return {}
+            
             if response.status != 200:
                 text = await response.text()
-                logger.error(f"Stratz API error: {response.status} - {text}")
+                logger.error(f"Stratz API error: {response.status} - {text[:200]}")
                 response.raise_for_status()
             
             data = await response.json()
@@ -103,6 +113,10 @@ class StratzProvider(BaseEsportsProvider):
         
         Uses Stratz's live match query to find ongoing pro games.
         """
+        # Skip if we've been blocked by Cloudflare
+        if self._disabled:
+            return []
+        
         try:
             # GraphQL query for live matches
             query = """
@@ -332,7 +346,7 @@ class StratzProvider(BaseEsportsProvider):
                 team2_gold=dire_gold,
                 team1_towers=11 - radiant_towers,  # Towers destroyed
                 team2_towers=11 - dire_towers,
-                team1_win_probability=win_probability,
+                team1_win_prob=win_probability,
             )
             
             logger.debug(
@@ -488,8 +502,8 @@ class StratzProvider(BaseEsportsProvider):
             ))
         
         # Detect win probability changes (>5% change)
-        old_prob = old.team1_win_probability or 0.5
-        new_prob = new.team1_win_probability or 0.5
+        old_prob = old.team1_win_prob or 0.5
+        new_prob = new.team1_win_prob or 0.5
         prob_change = new_prob - old_prob
         
         if abs(prob_change) > 0.05:

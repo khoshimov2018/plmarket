@@ -539,7 +539,7 @@ class ExecutionEngine:
                     market.last_price_update = datetime.utcnow()
                     
                     # Log current state for debugging
-                    win_prob = game_state.team1_win_probability or 0.5
+                    win_prob = game_state.team1_win_prob or 0.5
                     logger.debug(
                         f"📊 Arbitrage check: match={match_id} "
                         f"our_prob={win_prob:.1%} market_yes={yes_price:.1%} "
