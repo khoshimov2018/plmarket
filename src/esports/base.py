@@ -3,7 +3,7 @@ Base class for esports data providers.
 """
 
 from abc import ABC, abstractmethod
-from typing import AsyncIterator, Optional
+from typing import AsyncIterator, Optional, List, Dict
 from datetime import datetime
 
 from src.models import Game, GameState, GameEvent, Team, MatchStatus
@@ -18,7 +18,7 @@ class BaseEsportsProvider(ABC):
     
     @property
     @abstractmethod
-    def supported_games(self) -> list[Game]:
+    def supported_games(self) -> List[Game]:
         """Return list of games this provider supports."""
         pass
     
@@ -33,7 +33,7 @@ class BaseEsportsProvider(ABC):
         pass
     
     @abstractmethod
-    async def get_live_matches(self, game: Optional[Game] = None) -> list[dict]:
+    async def get_live_matches(self, game: Optional[Game] = None) -> List[Dict]:
         """
         Get all currently live matches.
         
@@ -76,7 +76,7 @@ class BaseEsportsProvider(ABC):
         self, 
         game: Optional[Game] = None,
         hours_ahead: int = 24
-    ) -> list[dict]:
+    ) -> List[Dict]:
         """
         Get upcoming scheduled matches.
         

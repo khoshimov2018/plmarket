@@ -6,7 +6,7 @@ Uses structlog for rich, structured logging output.
 import sys
 import logging
 from datetime import datetime
-from typing import Any
+from typing import Any, Dict, List, Optional
 
 import structlog
 from rich.console import Console
@@ -20,16 +20,16 @@ console = Console()
 
 
 def add_timestamp(
-    logger: Any, method_name: str, event_dict: dict[str, Any]
-) -> dict[str, Any]:
+    logger: Any, method_name: str, event_dict: Dict[str, Any]
+) -> Dict[str, Any]:
     """Add ISO timestamp to log events."""
     event_dict["timestamp"] = datetime.utcnow().isoformat()
     return event_dict
 
 
 def add_component(
-    logger: Any, method_name: str, event_dict: dict[str, Any]
-) -> dict[str, Any]:
+    logger: Any, method_name: str, event_dict: Dict[str, Any]
+) -> Dict[str, Any]:
     """Ensure component is present in log events."""
     if "component" not in event_dict:
         event_dict["component"] = "main"
@@ -110,7 +110,7 @@ class TradeLogger:
         edge: float,
         model_prob: float,
         market_prob: float,
-        event_type: str | None = None,
+        event_type: Optional[str] = None,
     ) -> None:
         """Log detection of a trading opportunity."""
         self.logger.info(

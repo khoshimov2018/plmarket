@@ -8,7 +8,7 @@ because it's the official source that broadcasts use.
 
 import asyncio
 from datetime import datetime
-from typing import AsyncIterator, Optional
+from typing import AsyncIterator, Optional, List, Dict
 import aiohttp
 
 from src.models import Game, GameState, GameEvent, Team
@@ -44,7 +44,7 @@ class LoLEsportsProvider(BaseEsportsProvider):
         self._last_states: dict[str, GameState] = {}
     
     @property
-    def supported_games(self) -> list[Game]:
+    def supported_games(self) -> List[Game]:
         return [Game.LOL]
     
     async def connect(self) -> None:
@@ -81,7 +81,7 @@ class LoLEsportsProvider(BaseEsportsProvider):
             response.raise_for_status()
             return await response.json()
     
-    async def get_live_matches(self, game: Optional[Game] = None) -> list[dict]:
+    async def get_live_matches(self, game: Optional[Game] = None) -> List[Dict]:
         """
         Get currently live LoL esports matches.
         
@@ -312,7 +312,7 @@ class LoLEsportsProvider(BaseEsportsProvider):
         except asyncio.CancelledError:
             logger.debug(f"Match subscription cancelled: {match_id}")
     
-    def _detect_events(self, old: GameState, new: GameState) -> list[GameEvent]:
+    def _detect_events(self, old: GameState, new: GameState) -> List[GameEvent]:
         """Detect game events by comparing states."""
         events = []
         now = datetime.utcnow()
@@ -451,7 +451,7 @@ class LoLEsportsProvider(BaseEsportsProvider):
         self,
         game: Optional[Game] = None,
         hours_ahead: int = 24
-    ) -> list[dict]:
+    ) -> List[Dict]:
         """Get upcoming LoL esports matches."""
         try:
             url = f"{self.BASE_URL}/getSchedule"

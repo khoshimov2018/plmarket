@@ -9,7 +9,7 @@ to detect events BEFORE the market prices them in.
 
 import asyncio
 from datetime import datetime, timedelta
-from typing import AsyncIterator, Optional
+from typing import AsyncIterator, Optional, List, Dict, Union
 import aiohttp
 
 from src.models import Game, GameState, GameEvent, Team, MatchStatus
@@ -45,7 +45,7 @@ class OpenDotaProvider(BaseEsportsProvider):
         self._last_states: dict[str, GameState] = {}
     
     @property
-    def supported_games(self) -> list[Game]:
+    def supported_games(self) -> List[Game]:
         return [Game.DOTA2]
     
     async def connect(self) -> None:
@@ -64,7 +64,7 @@ class OpenDotaProvider(BaseEsportsProvider):
         self._is_connected = False
         logger.info("Disconnected from OpenDota API")
     
-    async def _request(self, endpoint: str, params: Optional[dict] = None) -> dict | list:
+    async def _request(self, endpoint: str, params: Optional[dict] = None) -> Union[Dict, List]:
         """Make API request."""
         if not self._session:
             raise RuntimeError("Not connected to OpenDota API")
@@ -75,7 +75,7 @@ class OpenDotaProvider(BaseEsportsProvider):
             response.raise_for_status()
             return await response.json()
     
-    async def get_live_matches(self, game: Optional[Game] = None) -> list[dict]:
+    async def get_live_matches(self, game: Optional[Game] = None) -> List[Dict]:
         """
         Get currently live professional Dota 2 matches.
         
@@ -307,7 +307,7 @@ class OpenDotaProvider(BaseEsportsProvider):
         except asyncio.CancelledError:
             logger.debug(f"Match subscription cancelled: {match_id}")
     
-    def _detect_events(self, old: GameState, new: GameState) -> list[GameEvent]:
+    def _detect_events(self, old: GameState, new: GameState) -> List[GameEvent]:
         """
         Detect game events by comparing states.
         
@@ -449,7 +449,7 @@ class OpenDotaProvider(BaseEsportsProvider):
         self,
         game: Optional[Game] = None,
         hours_ahead: int = 24
-    ) -> list[dict]:
+    ) -> List[Dict]:
         """Get upcoming pro matches."""
         try:
             # OpenDota doesn't have upcoming matches endpoint

@@ -9,7 +9,7 @@ import hmac
 import time
 from datetime import datetime
 from decimal import Decimal
-from typing import Optional
+from typing import Optional, List, Dict, Tuple, Any
 import base64
 import json
 
@@ -79,8 +79,8 @@ class PolymarketClient:
         self._is_connected = False
         
         # Cache for market data
-        self._market_cache: dict[str, MarketInfo] = {}
-        self._esports_markets: dict[str, MarketInfo] = {}
+        self._market_cache: Dict[str, MarketInfo] = {}
+        self._esports_markets: Dict[str, MarketInfo] = {}
     
     @property
     def address(self) -> str:
@@ -152,7 +152,7 @@ class PolymarketClient:
             "Content-Type": "application/json",
         }
     
-    async def get_esports_markets(self, game: Optional[Game] = None) -> list[MarketInfo]:
+    async def get_esports_markets(self, game: Optional[Game] = None) -> List[MarketInfo]:
         """
         Fetch active esports markets from Polymarket.
         
@@ -200,6 +200,7 @@ class PolymarketClient:
                     if response.status_code == 200:
                         data = response.json()
                         events = data if isinstance(data, list) else data.get("data", [])
+                        # logger.debug(f"Tag {tag_slug}: Found {len(events)} raw events")
                         
                         for event in events:
                             event_markets = event.get("markets", [])
@@ -238,6 +239,12 @@ class PolymarketClient:
                                     markets.append(market)
                                     self._market_cache[market.market_id] = market
                                     self._esports_markets[market.market_id] = market
+                    else:
+                        logger.warning(
+                            f"API request failed for tag {tag_slug}",
+                            status_code=response.status_code,
+                            response=response.text[:200]
+                        )
                                     
                 except Exception as e:
                     logger.debug(f"Tag search '{tag_slug}' failed: {e}")
@@ -448,7 +455,7 @@ class PolymarketClient:
             logger.error(f"Error fetching order book for {token_id}", error=str(e))
             return None
     
-    async def get_market_price(self, market_id: str) -> tuple[float, float]:
+    async def get_market_price(self, market_id: str) -> Tuple[float, float]:
         """
         Get current market prices for a market.
         
@@ -603,7 +610,7 @@ class PolymarketClient:
             logger.error(f"Error cancelling order {order_id}", error=str(e))
             return False
     
-    async def get_balance(self) -> dict[str, Decimal]:
+    async def get_balance(self) -> Dict[str, Decimal]:
         """Get account balances."""
         if self._paper_trading:
             config = get_config()
@@ -631,7 +638,7 @@ class PolymarketClient:
             logger.error("Error fetching balance", error=str(e))
             return {"USDC": Decimal("0"), "available": Decimal("0")}
     
-    async def get_positions(self) -> list[dict]:
+    async def get_positions(self) -> List[Dict[str, Any]]:
         """Get current open positions."""
         if self._paper_trading:
             return []

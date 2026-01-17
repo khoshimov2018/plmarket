@@ -6,7 +6,7 @@ Handles order lifecycle, fills, and execution tracking.
 import asyncio
 from datetime import datetime
 from decimal import Decimal
-from typing import Optional, Callable, Awaitable
+from typing import Optional, Callable, Awaitable, List, Dict, Any
 import uuid
 
 from src.models import Order, Side, OrderStatus, TradingOpportunity
@@ -34,8 +34,8 @@ class OrderManager:
         self.config = get_config()
         
         # Active orders
-        self._pending_orders: dict[str, Order] = {}
-        self._filled_orders: dict[str, Order] = {}
+        self._pending_orders: Dict[str, Order] = {}
+        self._filled_orders: Dict[str, Order] = {}
         
         # Callbacks
         self._on_fill: Optional[Callable[[Order], Awaitable[None]]] = None
@@ -240,7 +240,7 @@ class OrderManager:
         
         return cancelled
     
-    def get_pending_orders(self) -> list[Order]:
+    def get_pending_orders(self) -> List[Order]:
         """Get all pending orders."""
         return list(self._pending_orders.values())
     
@@ -252,7 +252,7 @@ class OrderManager:
         )
     
     @property
-    def metrics(self) -> dict:
+    def metrics(self) -> Dict[str, Any]:
         """Get execution metrics."""
         avg_latency = (
             self._total_latency_ms / self._total_orders 

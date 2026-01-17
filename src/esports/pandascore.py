@@ -5,7 +5,7 @@ https://pandascore.co - One of the most comprehensive esports data APIs.
 
 import asyncio
 from datetime import datetime, timedelta
-from typing import AsyncIterator, Optional
+from typing import AsyncIterator, Optional, List, Dict, Union
 
 import httpx
 from aiolimiter import AsyncLimiter
@@ -39,7 +39,7 @@ class PandaScoreProvider(BaseEsportsProvider):
         self._polling_tasks: dict[str, asyncio.Task] = {}
     
     @property
-    def supported_games(self) -> list[Game]:
+    def supported_games(self) -> List[Game]:
         return [Game.LOL, Game.DOTA2]
     
     async def connect(self) -> None:
@@ -74,7 +74,7 @@ class PandaScoreProvider(BaseEsportsProvider):
         method: str, 
         endpoint: str, 
         params: Optional[dict] = None
-    ) -> dict | list:
+    ) -> Union[Dict, List]:
         """Make rate-limited API request."""
         if not self._client:
             raise RuntimeError("Not connected to PandaScore API")
@@ -84,7 +84,7 @@ class PandaScoreProvider(BaseEsportsProvider):
             response.raise_for_status()
             return response.json()
     
-    async def get_live_matches(self, game: Optional[Game] = None) -> list[dict]:
+    async def get_live_matches(self, game: Optional[Game] = None) -> List[Dict]:
         """Get currently live matches."""
         matches = []
         
@@ -290,7 +290,7 @@ class PandaScoreProvider(BaseEsportsProvider):
         self, 
         old: GameState, 
         new: GameState
-    ) -> list[GameEvent]:
+    ) -> List[GameEvent]:
         """Detect significant changes between game states."""
         events = []
         now = datetime.utcnow()
@@ -391,7 +391,7 @@ class PandaScoreProvider(BaseEsportsProvider):
         self, 
         game: Optional[Game] = None,
         hours_ahead: int = 24
-    ) -> list[dict]:
+    ) -> List[Dict]:
         """Get upcoming scheduled matches."""
         matches = []
         games_to_check = [game] if game else self.supported_games

@@ -6,7 +6,7 @@ Defines all core data structures used throughout the system.
 from dataclasses import dataclass, field
 from datetime import datetime
 from enum import Enum
-from typing import Optional
+from typing import Optional, List
 from decimal import Decimal
 
 
@@ -93,7 +93,7 @@ class GameState:
     series_format: int = 1  # Best of 1, 3, 5
     
     # Recent events
-    recent_events: list[GameEvent] = field(default_factory=list)
+    recent_events: List[GameEvent] = field(default_factory=list)
     
     # Computed probabilities (our estimate)
     team1_win_prob: float = 0.5

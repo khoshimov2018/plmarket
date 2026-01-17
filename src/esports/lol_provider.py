@@ -4,7 +4,7 @@ Extends PandaScore with LoL-specific game state analysis.
 """
 
 from datetime import datetime
-from typing import Optional
+from typing import Optional, List, Dict, Tuple
 
 from src.models import Game, GameState, GameEvent
 from src.esports.pandascore import PandaScoreProvider
@@ -51,10 +51,10 @@ class LoLDataProvider(PandaScoreProvider):
     """
     
     @property
-    def supported_games(self) -> list[Game]:
+    def supported_games(self) -> List[Game]:
         return [Game.LOL]
     
-    async def get_live_matches(self, game: Optional[Game] = None) -> list[dict]:
+    async def get_live_matches(self, game: Optional[Game] = None) -> List[Dict]:
         """Get currently live LoL matches."""
         return await super().get_live_matches(Game.LOL)
     
@@ -68,7 +68,7 @@ class LoLDataProvider(PandaScoreProvider):
         
         return state
     
-    def _calculate_win_probability(self, state: GameState) -> tuple[float, float]:
+    def _calculate_win_probability(self, state: GameState) -> Tuple[float, float]:
         """
         Calculate win probability based on current game state.
         Uses gold lead, kill lead, objective control, and game time.

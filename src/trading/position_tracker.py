@@ -4,7 +4,7 @@ Position tracking and P&L management.
 
 from datetime import datetime
 from decimal import Decimal
-from typing import Optional
+from typing import Optional, List, Dict, Any
 import uuid
 
 from src.models import (
@@ -34,10 +34,10 @@ class PositionTracker:
         self.config = get_config()
         
         # Open positions
-        self._positions: dict[str, Position] = {}
+        self._positions: Dict[str, Position] = {}
         
         # Closed trades
-        self._trade_history: list[TradeRecord] = []
+        self._trade_history: List[TradeRecord] = []
         
         # P&L tracking
         self._realized_pnl = Decimal("0")
@@ -133,7 +133,7 @@ class PositionTracker:
                     (position.entry_price - current_price) * position.size
                 )
     
-    def check_exit_conditions(self) -> list[Position]:
+    def check_exit_conditions(self) -> List[Position]:
         """
         Check which positions should be closed based on stop loss/take profit.
         
@@ -258,7 +258,7 @@ class PositionTracker:
         
         return trade
     
-    def get_open_positions(self) -> list[Position]:
+    def get_open_positions(self) -> List[Position]:
         """Get all open positions."""
         return [p for p in self._positions.values() if p.status == PositionStatus.OPEN]
     
@@ -282,7 +282,7 @@ class PositionTracker:
         """Total P&L (realized + unrealized)."""
         return self._realized_pnl + self.unrealized_pnl
     
-    def get_metrics(self) -> dict:
+    def get_metrics(self) -> Dict[str, Any]:
         """Get position tracking metrics."""
         trades = self._trade_history
         
