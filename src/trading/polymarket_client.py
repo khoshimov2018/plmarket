@@ -101,10 +101,31 @@ class PolymarketClient:
         
         self._is_connected = True
         
+        # Check for geoblocking
+        await self._check_geoblock()
+        
         if self._paper_trading:
             logger.info("Connected to Polymarket (PAPER TRADING MODE)", address=self._address)
         else:
             logger.info("Connected to Polymarket (LIVE)", address=self._address)
+    
+    async def _check_geoblock(self) -> None:
+        """Check if we're geoblocked by Polymarket."""
+        try:
+            async with httpx.AsyncClient(timeout=10.0) as client:
+                response = await client.get("https://polymarket.com/api/geoblock")
+                if response.status_code == 200:
+                    data = response.json()
+                    if data.get("blocked", False):
+                        logger.error("⛔ GEOBLOCKED! Polymarket is blocking this IP address. Order placement will fail.")
+                        logger.error("   This is likely because Railway's servers are in a blocked region (e.g., US).")
+                        logger.error("   Consider deploying to a server in Europe or Asia.")
+                    else:
+                        logger.info("✅ Geoblock check passed - IP is not blocked")
+                else:
+                    logger.warning(f"Geoblock check returned status {response.status_code}")
+        except Exception as e:
+            logger.warning(f"Could not check geoblock status: {e}")
     
     async def disconnect(self) -> None:
         """Close API clients."""

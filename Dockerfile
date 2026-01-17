@@ -21,11 +21,11 @@ RUN mkdir -p /app/data
 
 # Environment variables (override in deployment)
 ENV PYTHONUNBUFFERED=1
-ENV PAPER_MODE=true
 
 # Health check
 HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
     CMD python -c "print('healthy')" || exit 1
 
-# Run the bot
-CMD ["python", "main.py", "run"]
+# Run the bot - use --live flag when PAPER_TRADING=false
+# The entrypoint script will check PAPER_TRADING env var
+CMD ["sh", "-c", "if [ \"$PAPER_TRADING\" = \"false\" ]; then python main.py run --live; else python main.py run --paper; fi"]
