@@ -88,58 +88,57 @@ class GridProvider:
     
     async def get_live_matches(self) -> List[Dict]:
         """
-        Fetch currently live matches from GRID using GraphQL.
+        GRID Open Access doesn't support listing matches (allSeries query).
         
-        Returns matches with actual team names (not generic like OpenDota).
+        We return empty list here - GRID is used for detailed match state
+        via get_match_state() when we have a series ID from other sources.
+        """
+        # GRID Open Access API doesn't have permission for allSeries query
+        # We use other providers (LoL Esports, PandaScore) to discover matches
+        # Then use GRID's seriesState for detailed live data if we have a GRID series ID
+        return []
+    
+    async def get_series_state(self, series_id: str) -> Optional[Dict]:
+        """
+        Get detailed live state for a series using GRID's seriesState query.
+        
+        This IS supported by Open Access API and provides:
+        - Live game data (kills, deaths, netWorth, positions)
+        - Team scores
+        - Game progress
+        
+        Args:
+            series_id: GRID series ID (e.g., "2589176")
+            
+        Returns:
+            Dict with detailed series state or None
         """
         if not self._enabled or not self._http_client:
-            return []
+            return None
         
         try:
-            # GraphQL query for recent esports series
-            # Based on GRID docs - get series from last 24 hours
-            # Note: GRID uses String type for dates, not DateTime
-            from datetime import datetime, timedelta
-            
-            now = datetime.utcnow()
-            start_time = (now - timedelta(hours=12)).strftime("%Y-%m-%dT%H:%M:%SZ")
-            end_time = (now + timedelta(hours=12)).strftime("%Y-%m-%dT%H:%M:%SZ")
-            
             query = """
-            query GetRecentSeries($startTime: String, $endTime: String) {
-                allSeries(
-                    first: 50
-                    filter: {
-                        startTimeScheduled: {
-                            gte: $startTime
-                            lte: $endTime
-                        }
+            query GetSeriesState($seriesId: ID!) {
+                seriesState(id: $seriesId) {
+                    valid
+                    updatedAt
+                    format
+                    started
+                    finished
+                    teams {
+                        name
+                        won
                     }
-                    orderBy: StartTimeScheduled
-                    orderDirection: DESC
-                ) {
-                    totalCount
-                    edges {
-                        node {
-                            id
-                            startTimeScheduled
-                            format {
+                    games(filter: { started: true, finished: false }) {
+                        sequenceNumber
+                        teams {
+                            name
+                            players {
                                 name
-                                nameShortened
-                            }
-                            tournament {
-                                name
-                                nameShortened
-                            }
-                            teams {
-                                baseInfo {
-                                    name
-                                }
-                                scoreAdvantage
-                            }
-                            title {
-                                name
-                                nameShortened
+                                kills
+                                deaths
+                                netWorth
+                                money
                             }
                         }
                     }
@@ -151,107 +150,31 @@ class GridProvider:
                 self.GRAPHQL_URL,
                 json={
                     "query": query,
-                    "variables": {
-                        "startTime": start_time,
-                        "endTime": end_time
-                    }
+                    "variables": {"seriesId": series_id}
                 }
             )
             
             if response.status_code != 200:
-                logger.warning(f"GRID GraphQL returned {response.status_code}: {response.text[:200]}")
-                return []
+                logger.warning(f"GRID seriesState returned {response.status_code}")
+                return None
             
             data = response.json()
             
             if "errors" in data:
-                errors = data['errors']
-                logger.error(f"GRID GraphQL errors: {errors}")
-                
-                # Check if it's a permission error - disable provider
-                for err in errors:
-                    if err.get("extensions", {}).get("errorType") == "PERMISSION_DENIED":
-                        logger.warning("GRID Open Access API doesn't support this query - disabling provider")
-                        self._enabled = False
-                        break
-                
-                return []
+                logger.debug(f"GRID seriesState errors: {data['errors']}")
+                return None
             
-            edges = data.get("data", {}).get("allSeries", {}).get("edges", [])
-            total_count = data.get("data", {}).get("allSeries", {}).get("totalCount", 0)
+            series_state = data.get("data", {}).get("seriesState")
+            if series_state and series_state.get("valid"):
+                logger.debug(f"Got GRID series state for {series_id}: started={series_state.get('started')}, finished={series_state.get('finished')}")
+                return series_state
             
-            logger.debug(f"GRID returned {total_count} series in time window")
-            
-            matches = []
-            for edge in edges:
-                series = edge.get("node", {})
-                teams = series.get("teams", [])
-                
-                if len(teams) < 2:
-                    continue
-                
-                # Get team names from baseInfo (per GRID schema)
-                team1_info = teams[0].get("baseInfo", {}) or {}
-                team2_info = teams[1].get("baseInfo", {}) or {}
-                team1_name = team1_info.get("name", "")
-                team2_name = team2_info.get("name", "")
-                
-                # Skip if no team names
-                if not team1_name or not team2_name:
-                    continue
-                
-                # Get game title
-                title = series.get("title", {}) or {}
-                game_name = (title.get("name", "") or title.get("nameShortened", "") or "").lower()
-                
-                # Determine game type
-                if "league" in game_name or "lol" in game_name:
-                    game = Game.LOL
-                elif "dota" in game_name:
-                    game = Game.DOTA2
-                elif "cs" in game_name or "counter" in game_name:
-                    continue  # Skip CS2 for now
-                else:
-                    continue  # Skip other games
-                
-                tournament = series.get("tournament", {}) or {}
-                tournament_name = tournament.get("name", "") or tournament.get("nameShortened", "")
-                
-                match_data = {
-                    "match_id": series.get("id"),
-                    "id": series.get("id"),
-                    "game": game,
-                    "source": "grid",
-                    "tournament": tournament_name,
-                    "team1": {
-                        "id": str(series.get("id", "")),
-                        "name": team1_name,
-                    },
-                    "team2": {
-                        "id": str(series.get("id", "")),
-                        "name": team2_name,
-                    },
-                    "team1_name": team1_name,
-                    "team2_name": team2_name,
-                    "start_time": series.get("startTimeScheduled"),
-                }
-                
-                # Log the match with actual team names
-                logger.info(
-                    f"🚀 GRID: {team1_name} vs {team2_name} ({tournament_name}) - {game_name}"
-                )
-                
-                matches.append(match_data)
-                self._live_matches[series.get("id")] = match_data
-            
-            if matches:
-                logger.info(f"🎮 Found {len(matches)} matches from GRID (FASTEST source!)")
-            
-            return matches
+            return None
             
         except Exception as e:
-            logger.error(f"Error fetching GRID live matches: {e}")
-            return []
+            logger.debug(f"Error fetching GRID series state: {e}")
+            return None
+    
     
     async def get_match_state(self, match_id: str) -> Optional[GameState]:
         """
