@@ -28,4 +28,5 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=5s --retries=3 \
 
 # Run the bot - use --live flag when PAPER_TRADING=false
 # The entrypoint script will check PAPER_TRADING env var
-CMD ["sh", "-c", "if [ \"$PAPER_TRADING\" = \"false\" ]; then python main.py run --live; else python main.py run --paper; fi"]
+# --yes skips the confirmation prompt for automated deployments
+CMD ["sh", "-c", "if [ \"$PAPER_TRADING\" = \"false\" ]; then python main.py run --live --yes; else python main.py run --paper; fi"]

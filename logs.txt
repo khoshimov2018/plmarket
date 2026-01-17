@@ -1,711 +1,172 @@
-2026-01-17T19:54:52.000000000Z [inf]  Starting Container
-2026-01-17T19:54:54.904994856Z [inf]  2026-01-17 19:54:54 [info     ] ✅ Stratz provider enabled - FREE Dota 2 with win probability! component=engine
-2026-01-17T19:54:54.904995767Z [inf]  2026-01-17 19:54:54 [info     ] CryptoArbitrageDetector initialized (min_edge=2.0%) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:54.905006504Z [inf]  2026-01-17 19:54:54 [info     ] 💰 Crypto arbitrage detector initialized component=engine
-2026-01-17T19:54:54.905010362Z [inf]  2026-01-17 19:54:54 [info     ] Connected to PandaScore API    component=pandascore
-2026-01-17T19:54:54.905015675Z [inf]  2026-01-17 19:54:54 [info     ] 🎮 Bot started in LIVE TRADING mode component=engine initial_capital=$25.00 max_position=10% min_edge=2.0%
-2026-01-17T19:54:54.905024355Z [inf]  2026-01-17 19:54:54 [info     ] Connected to PandaScore API    component=pandascore
-2026-01-17T19:54:54.905025144Z [inf]  2026-01-17 19:54:54 [info     ] 💰 Crypto monitoring tasks started component=engine
-2026-01-17T19:54:54.905034235Z [inf]  2026-01-17 19:54:54 [info     ] 📊 Status Update                avg_latency=0.0ms component=engine open_positions=0 opportunities=0 runtime=0.0h total_pnl=$0.00 trades=0 win_rate=0.0%
-2026-01-17T19:54:54.905221917Z [inf]  ╭─────────── Configuration ───────────╮
-2026-01-17T19:54:54.905239069Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
-2026-01-17T19:54:54.905246354Z [inf]  │                                     │
-2026-01-17T19:54:54.905254600Z [inf]  │ Mode: Paper Trading                 │
-2026-01-17T19:54:54.905271942Z [inf]  │ Initial Capital: $25.00             │
-2026-01-17T19:54:54.905285597Z [inf]  │ Min Edge: 2.0%                      │
-2026-01-17T19:54:54.905293730Z [inf]  │ Max Position: 10%                   │
-2026-01-17T19:54:54.905301012Z [inf]  ╰─────────────────────────────────────╯
-2026-01-17T19:54:54.905306200Z [inf]  2026-01-17 19:54:53 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
-2026-01-17T19:54:54.905313667Z [inf]  2026-01-17 19:54:53 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
-2026-01-17T19:54:54.905320711Z [inf]  2026-01-17 19:54:53 [info     ] BinanceProvider initialized for symbols: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT'] component=src.crypto.binance_provider
-2026-01-17T19:54:54.905327933Z [inf]  2026-01-17 19:54:53 [info     ] 💰 Binance provider initialized for: ['BTCUSDT', 'ETHUSDT', 'SOLUSDT'] component=engine
-2026-01-17T19:54:54.905336667Z [inf]  2026-01-17 19:54:53 [info     ] ✅ GRID Open Access HTTP client connected component=grid
-2026-01-17T19:54:54.905344323Z [inf]  2026-01-17 19:54:53 [info     ] Connected to LoL Esports API   component=lolesports
-2026-01-17T19:54:54.905351945Z [inf]  2026-01-17 19:54:53 [info     ] Connected to OpenDota API      component=opendota
-2026-01-17T19:54:54.905357765Z [inf]  2026-01-17 19:54:53 [info     ] Connected to Stratz API        component=stratz
-2026-01-17T19:54:54.905364714Z [inf]  2026-01-17 19:54:53 [info     ] Connected to Polymarket (LIVE) address=0x58C8665BCc2b6e2DaAA1b340BF1975A65bbFC72E component=polymarket
-2026-01-17T19:54:54.905555376Z [inf]  2026-01-17 19:54:54 [warning  ] Binance REST blocked (451) at https://api.binance.com/api/v3, trying fallback... component=src.crypto.binance_provider
-2026-01-17T19:54:54.905560456Z [inf]  2026-01-17 19:54:54 [info     ] 📊 BTCUSDT: $95,291.38          component=src.crypto.binance_provider
-2026-01-17T19:54:54.905565510Z [inf]  2026-01-17 19:54:54 [info     ] 📊 ETHUSDT: $3,315.92           component=src.crypto.binance_provider
-2026-01-17T19:54:54.905570479Z [inf]  2026-01-17 19:54:54 [info     ] 📊 SOLUSDT: $144.24             component=src.crypto.binance_provider
-2026-01-17T19:54:54.905575038Z [inf]  2026-01-17 19:54:54 [info     ] ✅ BinanceProvider connected    component=src.crypto.binance_provider
-2026-01-17T19:54:54.905579583Z [inf]  2026-01-17 19:54:54 [info     ] ✅ GRID.gg provider enabled - FASTEST data source active! component=engine
-2026-01-17T19:54:54.912720278Z [inf]  2026-01-17 19:54:54 [info     ] 💰 Starting crypto monitoring loop... component=engine
-2026-01-17T19:54:54.912725174Z [inf]  2026-01-17 19:54:54 [info     ] 🔍 Discovering crypto markets on Polymarket... component=engine
-2026-01-17T19:54:54.912730226Z [inf]  2026-01-17 19:54:54 [info     ] 🔌 Connecting to Binance WebSocket... component=src.crypto.binance_provider
-2026-01-17T19:54:54.928241003Z [inf]  2026-01-17 19:54:54 [debug    ] Found LoL match: LOS vs Vivo Keyd Stars (CBLOL) game_id=115565525419283360 component=lolesports
-2026-01-17T19:54:54.928247091Z [inf]  2026-01-17 19:54:54 [debug    ] Found LoL match: Karmine Corp Blue vs Karmine Corp (LEC) game_id=115548424308414207 component=lolesports
-2026-01-17T19:54:54.928251531Z [inf]  2026-01-17 19:54:54 [debug    ] Found 2 live LoL matches       component=lolesports
-2026-01-17T19:54:54.928255718Z [inf]  2026-01-17 19:54:54 [debug    ] Got 2 LoL matches from official API component=engine
-2026-01-17T19:54:55.007727845Z [inf]  2026-01-17 19:54:54 [debug    ] Found 0 live Dota 2 matches from Stratz component=stratz
-2026-01-17T19:54:55.249856489Z [inf]  2026-01-17 19:54:55 [debug    ] Found 0 live Dota 2 matches    component=opendota
-2026-01-17T19:54:55.262222406Z [inf]  2026-01-17 19:54:55 [warning  ] Binance WebSocket blocked (451), trying fallback... component=src.crypto.binance_provider
-2026-01-17T19:54:55.669023543Z [inf]  2026-01-17 19:54:55 [info     ] ✅ Binance WebSocket connected  component=src.crypto.binance_provider
-2026-01-17T19:54:55.916078928Z [inf]  2026-01-17 19:54:55 [debug    ] Processing match               component=engine game=league_of_legends match_id=115565525419283359 source=lolesports team1=LOS team2='Vivo Keyd Stars'
-2026-01-17T19:54:55.916093707Z [inf]  2026-01-17 19:54:55 [debug    ] Using provider LoLEsportsProvider for match 115565525419283359 component=engine
-2026-01-17T19:54:55.916103561Z [inf]  2026-01-17 19:54:55 [info     ] 📊 LIVE STATS for 115565525419283360: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
-2026-01-17T19:54:55.916112689Z [inf]  2026-01-17 19:54:55 [info     ] 🔍 Trying to match live game to market available_markets=0 component=engine match_id=115565525419283359 team1=LOS team2='Vivo Keyd Stars'
-2026-01-17T19:54:55.916121905Z [inf]  2026-01-17 19:54:55 [debug    ] ❌ No market match found        component=engine match_id=115565525419283359 team1=LOS team2='Vivo Keyd Stars'
-2026-01-17T19:54:55.916131279Z [inf]  2026-01-17 19:54:55 [debug    ] Processing match               component=engine game=league_of_legends match_id=115548424308414206 source=lolesports team1='Karmine Corp Blue' team2='Karmine Corp'
-2026-01-17T19:54:55.916140460Z [inf]  2026-01-17 19:54:55 [debug    ] Using provider LoLEsportsProvider for match 115548424308414206 component=engine
-2026-01-17T19:54:55.916176820Z [inf]  2026-01-17 19:54:55 [debug    ] Found 1 live matches           component=pandascore
-2026-01-17T19:54:55.929029980Z [inf]  2026-01-17 19:54:55 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:54:55.929037511Z [inf]  2026-01-17 19:54:55 [info     ] 🔍 Trying to match live game to market available_markets=530 component=engine match_id=115548424308414206 team1='Karmine Corp Blue' team2='Karmine Corp'
-2026-01-17T19:54:56.030515856Z [inf]  2026-01-17 19:54:56 [debug    ] Market matched                 component=market_matcher market_id=1098802 match_id=115548424308414206 score=1.00
-2026-01-17T19:54:56.030529351Z [inf]  2026-01-17 19:54:56 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1098802 market_question='LoL: Karmine Corp Blue vs Karmine Corp (BO1)' match_id=115548424308414206
-2026-01-17T19:54:56.030538793Z [inf]  2026-01-17 19:54:56 [info     ] 🎮 match_started                component=games game=league_of_legends match_id=115548424308414206 team1='Karmine Corp Blue' team2='Karmine Corp'
-2026-01-17T19:54:56.030547656Z [inf]  2026-01-17 19:54:56 [info     ] 📡 Subscribed to match          component=engine market='LoL: Karmine Corp Blue vs Karmine Corp (' match_id=115548424308414206 teams='Karmine Corp Blue vs Karmine Corp'
-2026-01-17T19:54:56.030557908Z [inf]  2026-01-17 19:54:56 [debug    ] Processing match               component=engine game=dota2 match_id=1317964 source=pandascore team1=GamerLegion team2='Rottweilas Latam'
-2026-01-17T19:54:56.030566524Z [inf]  2026-01-17 19:54:56 [debug    ] Using provider DotaDataProvider for match 1317964 component=engine
-2026-01-17T19:54:56.030574425Z [inf]  2026-01-17 19:54:56 [info     ] Subscribing to LoL match 115548424308414206 component=lolesports
-2026-01-17T19:54:56.030583002Z [inf]  2026-01-17 19:54:56 [info     ] 🔄 Starting arbitrage polling for match 115548424308414206 component=engine
-2026-01-17T19:54:56.043010578Z [inf]  2026-01-17 19:54:56 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:54:56.067871190Z [inf]  2026-01-17 19:54:56 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:54:56.249349850Z [inf]  2026-01-17 19:54:56 [debug    ] Found 65 markets matching 'bitcoin' component=polymarket
-2026-01-17T19:54:56.255395816Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $150,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.255396115Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $120,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.255406229Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $150,000 in January? (threshold=$150,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.255406709Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $120,000 in January? (threshold=$120,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.255414108Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $50,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.255415289Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $115,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.255422107Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $50,000 in January? (threshold=$50,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.255422932Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $115,000 in January? (threshold=$115,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.255429356Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $130,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.255435744Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $130,000 in January? (threshold=$130,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.255442906Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $125,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.255450409Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $125,000 in January? (threshold=$125,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.256419711Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $95,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.256421845Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $105,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.256431821Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $105,000 in January? (threshold=$105,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.256432288Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $95,000 in January? (threshold=$95,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.256439349Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $100,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.256454393Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $40,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.256455531Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $100,000 in January? (threshold=$100,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.256467301Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $110,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.256469785Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $40,000 in January? (threshold=$40,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.256475799Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $110,000 in January? (threshold=$110,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.256481725Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $55,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.256493451Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $55,000 in January? (threshold=$55,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.257496437Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $75,000 in January? (threshold=$75,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.257507596Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $70,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.257517324Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $70,000 in January? (threshold=$70,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.257523544Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $90,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.257534311Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $90,000 in January? (threshold=$90,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.257542662Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $85,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.257549076Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $85,000 in January? (threshold=$85,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.257555599Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $80,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.257563787Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $80,000 in January? (threshold=$80,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.257570147Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $65,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.257576852Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $65,000 in January? (threshold=$65,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.257583418Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $75,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.258645159Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $60,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.258655149Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $60,000 in January? (threshold=$60,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.258663369Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $45,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.258671179Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $45,000 in January? (threshold=$45,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.258683587Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $1 component=src.crypto.binance_provider
-2026-01-17T19:54:56.258691924Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will bitcoin hit $1m before GTA VI? (threshold=$1) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.258700024Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $200,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.258709319Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $200,000 by December 31, 2026? (threshold=$200,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.258717107Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $180,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.258724934Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $180,000 by December 31, 2026? (threshold=$180,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.258732459Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $160,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.258740449Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $160,000 by December 31, 2026? (threshold=$160,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.259675634Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $140,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.259682587Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $140,000 by December 31, 2026? (threshold=$140,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.259687280Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $120,000 by December 31, 2026? (threshold=$120,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.259691989Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $100,000 by December 31, 2026? (threshold=$100,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.259696873Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $85,000 by December 31, 2026? (threshold=$85,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.259701816Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $65,000 by December 31, 2026? (threshold=$65,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.259708855Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $45,000 by December 31, 2026? (threshold=$45,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.259713565Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $25,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.259719732Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $25,000 by December 31, 2026? (threshold=$25,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.259724172Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $190,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.259728319Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $190,000 by December 31, 2026? (threshold=$190,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.260838929Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $170,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.260847695Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $170,000 by December 31, 2026? (threshold=$170,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.260853386Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $150,000 by December 31, 2026? (threshold=$150,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.260858411Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $130,000 by December 31, 2026? (threshold=$130,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.260862884Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $110,000 by December 31, 2026? (threshold=$110,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.260867892Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $90,000 by December 31, 2026? (threshold=$90,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.260872186Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $75,000 by December 31, 2026? (threshold=$75,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.260877015Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $55,000 by December 31, 2026? (threshold=$55,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.260881366Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $35,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.260885892Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $35,000 by December 31, 2026? (threshold=$35,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.260890378Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $250,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.262001356Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $250,000 by December 31, 2026? (threshold=$250,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.262014039Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $15,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.262024782Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $15,000 by December 31, 2026? (threshold=$15,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.262030257Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $102,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.262037224Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $106,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.262045132Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $102,000 January 12-18? (threshold=$102,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.262049690Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $106,000 January 12-18? (threshold=$106,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.262055789Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $100,000 January 12-18? (threshold=$100,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.262061850Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $104,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.262071782Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $104,000 January 12-18? (threshold=$104,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.263415925Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $98,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.263432020Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $98,000 January 12-18? (threshold=$98,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.263441790Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $96,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.263450701Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $96,000 January 12-18? (threshold=$96,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.263459116Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $94,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.263468178Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin reach $94,000 January 12-18? (threshold=$94,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.263477087Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $90,000 January 12-18? (threshold=$90,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.263487049Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $88,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.263495218Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $88,000 January 12-18? (threshold=$88,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.263504044Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $86,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.263518546Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $86,000 January 12-18? (threshold=$86,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.263527673Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $84,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.264314298Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $84,000 January 12-18? (threshold=$84,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.264320686Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $78,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.264327094Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $78,000 January 12-18? (threshold=$78,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.264335741Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $82,000 component=src.crypto.binance_provider
-2026-01-17T19:54:56.264342504Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $82,000 January 12-18? (threshold=$82,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.264349815Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin dip to $80,000 January 12-18? (threshold=$80,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.264357712Z [inf]  2026-01-17 19:54:56 [info     ] 📍 Monitoring BTCUSDT threshold: $150 component=src.crypto.binance_provider
-2026-01-17T19:54:56.264364646Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin hit $150k by September 30? (threshold=$150) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.264369111Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin hit $150k by December 31? (threshold=$150) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.264373318Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin hit $150k by March 31, 2026? (threshold=$150) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.264377841Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin hit $150k by June 30, 2026? (threshold=$150) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.265428242Z [inf]  2026-01-17 19:54:56 [info     ] 📊 Monitoring crypto market: Will Bitcoin hit $150k by December 31, 2026? (threshold=$150) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:56.265436543Z [inf]  2026-01-17 19:54:56 [debug    ] Checking 1 running dota2 matches for ID 1317964 component=pandascore
-2026-01-17T19:54:56.265444782Z [inf]  2026-01-17 19:54:56 [debug    ] Found match 1317964 in running matches! component=pandascore
-2026-01-17T19:54:56.265452091Z [inf]  2026-01-17 19:54:56 [debug    ] Got match state from running: GamerLegion vs Rottweilas Latam component=pandascore
-2026-01-17T19:54:56.265460255Z [inf]  2026-01-17 19:54:56 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1317964 phase=laning team1_prob=50.00%
-2026-01-17T19:54:56.265466462Z [inf]  2026-01-17 19:54:56 [info     ] 🔍 Trying to match live game to market available_markets=530 component=engine match_id=1317964 team1=GamerLegion team2='Rottweilas Latam'
-2026-01-17T19:54:56.265472399Z [inf]  2026-01-17 19:54:56 [debug    ] ❌ No market match found        component=engine match_id=1317964 team1=GamerLegion team2='Rottweilas Latam'
-2026-01-17T19:54:56.348760084Z [inf]  2026-01-17 19:54:56 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:54:56.450613592Z [inf]  2026-01-17 19:54:56 [debug    ] 📊 Arbitrage check: match=115548424308414206 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
-2026-01-17T19:54:56.665203646Z [inf]  2026-01-17 19:54:56 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:54:56.978464834Z [inf]  2026-01-17 19:54:56 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:54:57.206805598Z [inf]  2026-01-17 19:54:57 [debug    ] Found 0 markets matching 'btc' component=polymarket
-2026-01-17T19:54:57.312260243Z [inf]  2026-01-17 19:54:57 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:54:57.611494152Z [inf]  2026-01-17 19:54:57 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:54:58.027998710Z [inf]  2026-01-17 19:54:58 [debug    ] Found 19 markets matching 'ethereum' component=polymarket
-2026-01-17T19:54:58.034845007Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $6,000 component=src.crypto.binance_provider
-2026-01-17T19:54:58.034859774Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $6,000 in January? (threshold=$6,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.034869409Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $1,000 component=src.crypto.binance_provider
-2026-01-17T19:54:58.034877486Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $1,000 in January? (threshold=$1,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.034885383Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $4,600 component=src.crypto.binance_provider
-2026-01-17T19:54:58.034893647Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $4,600 in January? (threshold=$4,600) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.034902889Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $4,400 component=src.crypto.binance_provider
-2026-01-17T19:54:58.034910574Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $4,400 in January? (threshold=$4,400) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.034919837Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $4,200 component=src.crypto.binance_provider
-2026-01-17T19:54:58.034928211Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $4,200 in January? (threshold=$4,200) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.034936325Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $4,000 component=src.crypto.binance_provider
-2026-01-17T19:54:58.034944001Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $4,000 in January? (threshold=$4,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.036285040Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $3,800 component=src.crypto.binance_provider
-2026-01-17T19:54:58.036295532Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $3,800 in January? (threshold=$3,800) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.036303529Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $3,600 component=src.crypto.binance_provider
-2026-01-17T19:54:58.036310822Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $3,600 in January? (threshold=$3,600) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.036318542Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $3,400 component=src.crypto.binance_provider
-2026-01-17T19:54:58.036328037Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $3,400 in January? (threshold=$3,400) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.036335714Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $2,000 component=src.crypto.binance_provider
-2026-01-17T19:54:58.036343077Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $2,000 in January? (threshold=$2,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.036351235Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $3,200 component=src.crypto.binance_provider
-2026-01-17T19:54:58.036359403Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $3,200 in January? (threshold=$3,200) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.036366577Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $2,200 component=src.crypto.binance_provider
-2026-01-17T19:54:58.036373890Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $2,200 in January? (threshold=$2,200) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.037393007Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $2,800 component=src.crypto.binance_provider
-2026-01-17T19:54:58.037404483Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $2,800 in January? (threshold=$2,800) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.037413180Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $2,600 component=src.crypto.binance_provider
-2026-01-17T19:54:58.037421253Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $2,600 in January? (threshold=$2,600) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.037428867Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $2,400 component=src.crypto.binance_provider
-2026-01-17T19:54:58.037437127Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $2,400 in January? (threshold=$2,400) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.037444743Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $1,400 component=src.crypto.binance_provider
-2026-01-17T19:54:58.037452157Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $1,400 in January? (threshold=$1,400) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.037459289Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $1,800 component=src.crypto.binance_provider
-2026-01-17T19:54:58.037468043Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $1,800 in January? (threshold=$1,800) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.037475277Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $1,600 component=src.crypto.binance_provider
-2026-01-17T19:54:58.037481704Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $1,600 in January? (threshold=$1,600) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.038690397Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $1,200 component=src.crypto.binance_provider
-2026-01-17T19:54:58.038697367Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $1,200 in January? (threshold=$1,200) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.045388100Z [inf]  2026-01-17 19:54:58 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:54:58.361422552Z [inf]  2026-01-17 19:54:58 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:54:58.620353836Z [inf]  2026-01-17 19:54:58 [debug    ] Found 60 markets matching 'eth' component=polymarket
-2026-01-17T19:54:58.620365070Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $6,000 in January? (threshold=$6,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.620373708Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $1,000 in January? (threshold=$1,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.620383132Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $4,600 in January? (threshold=$4,600) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.620391164Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $4,400 in January? (threshold=$4,400) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.620400084Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $4,200 in January? (threshold=$4,200) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.620408521Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $4,000 in January? (threshold=$4,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.620416314Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $3,800 in January? (threshold=$3,800) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.620424594Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $3,600 in January? (threshold=$3,600) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.620432230Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $3,400 in January? (threshold=$3,400) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.620439696Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $2,000 in January? (threshold=$2,000) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.621711583Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum reach $3,200 in January? (threshold=$3,200) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.621720489Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $2,200 in January? (threshold=$2,200) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.621726656Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $2,800 in January? (threshold=$2,800) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.621732541Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $2,600 in January? (threshold=$2,600) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.621737610Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $2,400 in January? (threshold=$2,400) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.621742887Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $1,400 in January? (threshold=$1,400) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.621748516Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $1,800 in January? (threshold=$1,800) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.621753397Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $1,600 in January? (threshold=$1,600) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.621758683Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: Will Ethereum dip to $1,200 in January? (threshold=$1,200) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.621763993Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $6 component=src.crypto.binance_provider
-2026-01-17T19:54:58.621768829Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: MegaETH market cap (FDV) >$6B one day after launch? (threshold=$6) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.623082621Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $2 component=src.crypto.binance_provider
-2026-01-17T19:54:58.623091905Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: MegaETH market cap (FDV) >$2B one day after launch? (threshold=$2) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.623099177Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $4 component=src.crypto.binance_provider
-2026-01-17T19:54:58.623104739Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: MegaETH market cap (FDV) >$4B one day after launch? (threshold=$4) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.623111257Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $3 component=src.crypto.binance_provider
-2026-01-17T19:54:58.623117034Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: MegaETH market cap (FDV) >$3B one day after launch? (threshold=$3) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.623122272Z [inf]  2026-01-17 19:54:58 [info     ] 📍 Monitoring ETHUSDT threshold: $1 component=src.crypto.binance_provider
-2026-01-17T19:54:58.623127298Z [inf]  2026-01-17 19:54:58 [info     ] 📊 Monitoring crypto market: MegaETH market cap (FDV) >$1B one day after launch? (threshold=$1) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:58.665477869Z [inf]  2026-01-17 19:54:58 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:54:58.975697068Z [inf]  2026-01-17 19:54:58 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:54:59.293262326Z [inf]  2026-01-17 19:54:59 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:54:59.614996661Z [inf]  2026-01-17 19:54:59 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:54:59.963941421Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $190 component=src.crypto.binance_provider
-2026-01-17T19:54:59.963955210Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana reach $190 in January? (threshold=$190) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.963963601Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $170 component=src.crypto.binance_provider
-2026-01-17T19:54:59.963972594Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana reach $170 in January? (threshold=$170) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.964035461Z [inf]  2026-01-17 19:54:59 [debug    ] Found 19 markets matching 'solana' component=polymarket
-2026-01-17T19:54:59.964043140Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $210 component=src.crypto.binance_provider
-2026-01-17T19:54:59.964049951Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana reach $210 in January? (threshold=$210) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.964058057Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $180 component=src.crypto.binance_provider
-2026-01-17T19:54:59.964065855Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana reach $180 in January? (threshold=$180) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.964074687Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $200 component=src.crypto.binance_provider
-2026-01-17T19:54:59.964081797Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana reach $200 in January? (threshold=$200) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.964088955Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $100 component=src.crypto.binance_provider
-2026-01-17T19:54:59.964097314Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana dip to $100 in January? (threshold=$100) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.964922930Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $160 component=src.crypto.binance_provider
-2026-01-17T19:54:59.964929515Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana reach $160 in January? (threshold=$160) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.964934996Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $150 component=src.crypto.binance_provider
-2026-01-17T19:54:59.964941128Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana reach $150 in January? (threshold=$150) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.964946652Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $140 component=src.crypto.binance_provider
-2026-01-17T19:54:59.964951634Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana reach $140 in January? (threshold=$140) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.964956972Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $130 component=src.crypto.binance_provider
-2026-01-17T19:54:59.964962638Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana reach $130 in January? (threshold=$130) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.964969790Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $120 component=src.crypto.binance_provider
-2026-01-17T19:54:59.964978113Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana dip to $120 in January? (threshold=$120) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.964984482Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $70 component=src.crypto.binance_provider
-2026-01-17T19:54:59.964992073Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana dip to $70 in January? (threshold=$70) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.967022540Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana dip to $50 in January? (threshold=$50) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.967027718Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $110 component=src.crypto.binance_provider
-2026-01-17T19:54:59.967035605Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $40 component=src.crypto.binance_provider
-2026-01-17T19:54:59.967043469Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana dip to $110 in January? (threshold=$110) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.967047040Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana dip to $40 in January? (threshold=$40) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.967054503Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $90 component=src.crypto.binance_provider
-2026-01-17T19:54:59.967063121Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana dip to $90 in January? (threshold=$90) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.967072495Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $80 component=src.crypto.binance_provider
-2026-01-17T19:54:59.967080903Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana dip to $80 in January? (threshold=$80) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.967090105Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $60 component=src.crypto.binance_provider
-2026-01-17T19:54:59.967098434Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana dip to $60 in January? (threshold=$60) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.967109190Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $50 component=src.crypto.binance_provider
-2026-01-17T19:54:59.968098554Z [inf]  2026-01-17 19:54:59 [info     ] 📍 Monitoring SOLUSDT threshold: $30 component=src.crypto.binance_provider
-2026-01-17T19:54:59.968109102Z [inf]  2026-01-17 19:54:59 [info     ] 📊 Monitoring crypto market: Will Solana dip to $30 in January? (threshold=$30) component=src.crypto.crypto_arbitrage
-2026-01-17T19:54:59.968118081Z [inf]  2026-01-17 19:54:59 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:55:00.263630365Z [inf]  2026-01-17 19:55:00 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:55:00.590948583Z [inf]  2026-01-17 19:55:00 [debug    ] Found 19 markets matching 'sol' component=polymarket
-2026-01-17T19:55:00.590960050Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana reach $210 in January? (threshold=$210) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.590969642Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana reach $180 in January? (threshold=$180) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.590976020Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana reach $200 in January? (threshold=$200) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.590982517Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana dip to $100 in January? (threshold=$100) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.590988582Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana reach $190 in January? (threshold=$190) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.590994234Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana reach $170 in January? (threshold=$170) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.590999364Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana reach $160 in January? (threshold=$160) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.591004595Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana reach $150 in January? (threshold=$150) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.591009850Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana reach $140 in January? (threshold=$140) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.593201505Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana reach $130 in January? (threshold=$130) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.593211486Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana dip to $120 in January? (threshold=$120) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.593217197Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana dip to $70 in January? (threshold=$70) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.593222436Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana dip to $110 in January? (threshold=$110) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.593227261Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana dip to $90 in January? (threshold=$90) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.593234647Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana dip to $80 in January? (threshold=$80) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.593242025Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana dip to $60 in January? (threshold=$60) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.593249423Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana dip to $50 in January? (threshold=$50) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.593256581Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana dip to $40 in January? (threshold=$40) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.593263947Z [inf]  2026-01-17 19:55:00 [info     ] 📊 Monitoring crypto market: Will Solana dip to $30 in January? (threshold=$30) component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:00.618290219Z [inf]  2026-01-17 19:55:00 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:55:01.048726408Z [inf]  2026-01-17 19:55:01 [info     ] Found 1329 esports markets     component=polymarket
-2026-01-17T19:55:01.048734481Z [inf]  2026-01-17 19:55:01 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:55:01.180078187Z [inf]  2026-01-17 19:55:01 [debug    ] Found 0 markets matching 'crypto' component=polymarket
-2026-01-17T19:55:01.182550890Z [inf]  2026-01-17 19:55:01 [info     ] 💰 Found 104 crypto markets to monitor component=engine
-2026-01-17T19:55:01.182558142Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $50,000 in January?
-2026-01-17T19:55:01.182566520Z [inf]     Price: $95,291.38 | Threshold: $50,000
-2026-01-17T19:55:01.182573885Z [inf]     Distance: -47.53%
-2026-01-17T19:55:01.182582310Z [inf]     Our prob: 95.0% | Market: 0.3%
-2026-01-17T19:55:01.182599655Z [inf]     EDGE: 94.7% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.182607493Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $105,000 in January?
-2026-01-17T19:55:01.182614836Z [inf]     Price: $95,291.38 | Threshold: $105,000
-2026-01-17T19:55:01.182623215Z [inf]     Distance: +10.19%
-2026-01-17T19:55:01.182631244Z [inf]     Our prob: 11.8% | Market: 16.0%
-2026-01-17T19:55:01.182638606Z [inf]     EDGE: 4.2% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.182645270Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $100,000 in January?
-2026-01-17T19:55:01.182652684Z [inf]     Price: $95,291.38 | Threshold: $100,000
-2026-01-17T19:55:01.182660095Z [inf]     Distance: +4.94%
-2026-01-17T19:55:01.182668056Z [inf]     Our prob: 27.3% | Market: 45.5%
-2026-01-17T19:55:01.182675530Z [inf]     EDGE: 18.2% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.182683048Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $55,000 in January?
-2026-01-17T19:55:01.182692025Z [inf]     Price: $95,291.38 | Threshold: $55,000
-2026-01-17T19:55:01.182698832Z [inf]     Distance: -42.28%
-2026-01-17T19:55:01.182705558Z [inf]     Our prob: 95.0% | Market: 0.2%
-2026-01-17T19:55:01.182712820Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.184265503Z [inf]     Distance: -5.55%
-2026-01-17T19:55:01.184272852Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $95,000 in January?
-2026-01-17T19:55:01.184276185Z [inf]     Our prob: 95.0% | Market: 100.0%
-2026-01-17T19:55:01.184283453Z [inf]     EDGE: 5.0% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.184287000Z [inf]     Price: $95,291.38 | Threshold: $95,000
-2026-01-17T19:55:01.184290055Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $85,000 in January?
-2026-01-17T19:55:01.184296195Z [inf]     Price: $95,291.38 | Threshold: $85,000
-2026-01-17T19:55:01.184299339Z [inf]     Distance: -0.31%
-2026-01-17T19:55:01.184304023Z [inf]     Distance: -10.80%
-2026-01-17T19:55:01.184310176Z [inf]     Our prob: 95.0% | Market: 14.0%
-2026-01-17T19:55:01.184311836Z [inf]     Our prob: 95.0% | Market: 100.0%
-2026-01-17T19:55:01.184316422Z [inf]     EDGE: 81.0% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.184322202Z [inf]     EDGE: 5.0% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.184323449Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $80,000 in January?
-2026-01-17T19:55:01.184331879Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $40,000 in January?
-2026-01-17T19:55:01.184338498Z [inf]     Price: $95,291.38 | Threshold: $40,000
-2026-01-17T19:55:01.184344746Z [inf]     Distance: -58.02%
-2026-01-17T19:55:01.184352848Z [inf]     Our prob: 95.0% | Market: 0.1%
-2026-01-17T19:55:01.184360066Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.184368156Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $90,000 in January?
-2026-01-17T19:55:01.184376011Z [inf]     Price: $95,291.38 | Threshold: $90,000
-2026-01-17T19:55:01.185497126Z [inf]     Price: $95,291.38 | Threshold: $80,000
-2026-01-17T19:55:01.185508876Z [inf]     Distance: -16.05%
-2026-01-17T19:55:01.185518552Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $70,000 in January?
-2026-01-17T19:55:01.185518662Z [inf]     Our prob: 95.0% | Market: 4.5%
-2026-01-17T19:55:01.185527321Z [inf]     EDGE: 90.5% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.185533758Z [inf]     Price: $95,291.38 | Threshold: $70,000
-2026-01-17T19:55:01.185538779Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $65,000 in January?
-2026-01-17T19:55:01.185544664Z [inf]     Distance: -26.54%
-2026-01-17T19:55:01.185552191Z [inf]     Price: $95,291.38 | Threshold: $65,000
-2026-01-17T19:55:01.185555099Z [inf]     Our prob: 95.0% | Market: 0.7%
-2026-01-17T19:55:01.185562266Z [inf]     Distance: -31.79%
-2026-01-17T19:55:01.185565735Z [inf]     EDGE: 94.3% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.185572490Z [inf]     Our prob: 95.0% | Market: 0.5%
-2026-01-17T19:55:01.185576167Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $60,000 in January?
-2026-01-17T19:55:01.185583541Z [inf]     EDGE: 94.5% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.185586168Z [inf]     Price: $95,291.38 | Threshold: $60,000
-2026-01-17T19:55:01.185593530Z [inf]     Distance: -37.04%
-2026-01-17T19:55:01.185594114Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $75,000 in January?
-2026-01-17T19:55:01.185602457Z [inf]     Price: $95,291.38 | Threshold: $75,000
-2026-01-17T19:55:01.185611274Z [inf]     Distance: -21.29%
-2026-01-17T19:55:01.185618622Z [inf]     Our prob: 95.0% | Market: 1.1%
-2026-01-17T19:55:01.185625336Z [inf]     EDGE: 93.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.187395556Z [inf]     Distance: +0.74%
-2026-01-17T19:55:01.187400438Z [inf]     Our prob: 95.0% | Market: 0.4%
-2026-01-17T19:55:01.187408150Z [inf]     Our prob: 38.3% | Market: 100.0%
-2026-01-17T19:55:01.187414873Z [inf]     EDGE: 94.5% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.187423296Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $45,000 in January?
-2026-01-17T19:55:01.187433140Z [inf]     Price: $95,291.38 | Threshold: $45,000
-2026-01-17T19:55:01.187441288Z [inf]     Distance: -52.78%
-2026-01-17T19:55:01.187448875Z [inf]     Our prob: 95.0% | Market: 0.1%
-2026-01-17T19:55:01.187456244Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.187466682Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $100,000 January 12-18?
-2026-01-17T19:55:01.187475538Z [inf]     Price: $95,291.38 | Threshold: $100,000
-2026-01-17T19:55:01.187484044Z [inf]     Distance: +4.94%
-2026-01-17T19:55:01.187492015Z [inf]     Our prob: 4.1% | Market: 0.8%
-2026-01-17T19:55:01.187499729Z [inf]     EDGE: 3.3% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.187507645Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $98,000 January 12-18?
-2026-01-17T19:55:01.187514889Z [inf]     Price: $95,291.38 | Threshold: $98,000
-2026-01-17T19:55:01.187528466Z [inf]     Distance: +2.84%
-2026-01-17T19:55:01.187542789Z [inf]     Our prob: 14.0% | Market: 5.1%
-2026-01-17T19:55:01.187551512Z [inf]     EDGE: 8.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.187559132Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $96,000 January 12-18?
-2026-01-17T19:55:01.187566422Z [inf]     Price: $95,291.38 | Threshold: $96,000
-2026-01-17T19:55:01.189301190Z [inf]     EDGE: 61.7% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.189301465Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $86,000 January 12-18?
-2026-01-17T19:55:01.189315516Z [inf]     Price: $95,291.38 | Threshold: $86,000
-2026-01-17T19:55:01.189316309Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $94,000 January 12-18?
-2026-01-17T19:55:01.189326099Z [inf]     Distance: -9.75%
-2026-01-17T19:55:01.189328236Z [inf]     Price: $95,291.38 | Threshold: $94,000
-2026-01-17T19:55:01.189335736Z [inf]     Our prob: 95.0% | Market: 0.2%
-2026-01-17T19:55:01.189339563Z [inf]     Distance: -1.36%
-2026-01-17T19:55:01.189346823Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.189350500Z [inf]     Our prob: 95.0% | Market: 100.0%
-2026-01-17T19:55:01.189358611Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $84,000 January 12-18?
-2026-01-17T19:55:01.189360108Z [inf]     EDGE: 5.0% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.189367057Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $90,000 January 12-18?
-2026-01-17T19:55:01.189372546Z [inf]     Price: $95,291.38 | Threshold: $90,000
-2026-01-17T19:55:01.189390031Z [inf]     Distance: -5.55%
-2026-01-17T19:55:01.189395036Z [inf]     Our prob: 95.0% | Market: 0.4%
-2026-01-17T19:55:01.189399693Z [inf]     EDGE: 94.6% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.189404675Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $88,000 January 12-18?
-2026-01-17T19:55:01.189409883Z [inf]     Price: $95,291.38 | Threshold: $88,000
-2026-01-17T19:55:01.189414326Z [inf]     Distance: -7.65%
-2026-01-17T19:55:01.189419191Z [inf]     Our prob: 95.0% | Market: 0.3%
-2026-01-17T19:55:01.189423702Z [inf]     EDGE: 94.7% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.190981837Z [inf]     Price: $3,315.93 | Threshold: $1,000
-2026-01-17T19:55:01.190989062Z [inf]     Distance: -13.95%
-2026-01-17T19:55:01.190992225Z [inf]     Distance: -69.84%
-2026-01-17T19:55:01.191003862Z [inf]     Our prob: 95.0% | Market: 0.1%
-2026-01-17T19:55:01.191005692Z [inf]     Price: $95,291.38 | Threshold: $84,000
-2026-01-17T19:55:01.191014559Z [inf]     EDGE: 95.0% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.191022207Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $80,000 January 12-18?
-2026-01-17T19:55:01.191029844Z [inf]     Price: $95,291.38 | Threshold: $80,000
-2026-01-17T19:55:01.191037377Z [inf]     Distance: -16.05%
-2026-01-17T19:55:01.191052613Z [inf]     Our prob: 95.0% | Market: 0.1%
-2026-01-17T19:55:01.191060542Z [inf]     EDGE: 95.0% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.191070622Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $1,000 in January?
-2026-01-17T19:55:01.191125248Z [inf]     Distance: -11.85%
-2026-01-17T19:55:01.191134943Z [inf]     Our prob: 95.0% | Market: 0.1%
-2026-01-17T19:55:01.191142722Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.191149679Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $78,000 January 12-18?
-2026-01-17T19:55:01.191158149Z [inf]     Price: $95,291.38 | Threshold: $78,000
-2026-01-17T19:55:01.191168172Z [inf]     Distance: -18.15%
-2026-01-17T19:55:01.191175939Z [inf]     Our prob: 95.0% | Market: 0.1%
-2026-01-17T19:55:01.191184134Z [inf]     EDGE: 95.0% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.191192527Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $82,000 January 12-18?
-2026-01-17T19:55:01.191200633Z [inf]     Price: $95,291.38 | Threshold: $82,000
-2026-01-17T19:55:01.192289922Z [inf]     Our prob: 95.0% | Market: 0.1%
-2026-01-17T19:55:01.192296968Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.192301953Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum reach $4,000 in January?
-2026-01-17T19:55:01.192307503Z [inf]     Price: $3,315.93 | Threshold: $4,000
-2026-01-17T19:55:01.192309540Z [inf]     Distance: +8.57%
-2026-01-17T19:55:01.192314158Z [inf]     Distance: +20.63%
-2026-01-17T19:55:01.192323482Z [inf]     Our prob: 1.7% | Market: 4.5%
-2026-01-17T19:55:01.192325079Z [inf]     Our prob: 15.5% | Market: 35.5%
-2026-01-17T19:55:01.192332553Z [inf]     EDGE: 2.8% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.192336706Z [inf]     EDGE: 20.0% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.192342809Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum reach $3,800 in January?
-2026-01-17T19:55:01.192348130Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum reach $3,400 in January?
-2026-01-17T19:55:01.192353468Z [inf]     Price: $3,315.93 | Threshold: $3,800
-2026-01-17T19:55:01.192358847Z [inf]     Price: $3,315.93 | Threshold: $3,400
-2026-01-17T19:55:01.192365355Z [inf]     Distance: +14.60%
-2026-01-17T19:55:01.192370100Z [inf]     Distance: +2.54%
-2026-01-17T19:55:01.192378575Z [inf]     Our prob: 5.3% | Market: 13.5%
-2026-01-17T19:55:01.192380336Z [inf]     Our prob: 37.7% | Market: 100.0%
-2026-01-17T19:55:01.192388210Z [inf]     EDGE: 8.2% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.192390630Z [inf]     EDGE: 62.3% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.192396880Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum reach $3,600 in January?
-2026-01-17T19:55:01.192401620Z [inf]     Price: $3,315.93 | Threshold: $3,600
-2026-01-17T19:55:01.193995915Z [inf]     EDGE: 94.2% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.194006156Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $2,800 in January?
-2026-01-17T19:55:01.194014564Z [inf]     Price: $3,315.93 | Threshold: $2,800
-2026-01-17T19:55:01.194022469Z [inf]     Distance: -15.56%
-2026-01-17T19:55:01.194034935Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $2,000 in January?
-2026-01-17T19:55:01.194043200Z [inf]     Price: $3,315.93 | Threshold: $2,000
-2026-01-17T19:55:01.194049506Z [inf]     Distance: -39.69%
-2026-01-17T19:55:01.194054726Z [inf]     Our prob: 95.0% | Market: 0.5%
-2026-01-17T19:55:01.194060046Z [inf]     EDGE: 94.5% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.194065726Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum reach $3,200 in January?
-2026-01-17T19:55:01.194071077Z [inf]     Price: $3,315.93 | Threshold: $3,200
-2026-01-17T19:55:01.194076296Z [inf]     Distance: -3.50%
-2026-01-17T19:55:01.194082184Z [inf]     Our prob: 95.0% | Market: 100.0%
-2026-01-17T19:55:01.194087940Z [inf]     EDGE: 5.0% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.194095185Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $2,200 in January?
-2026-01-17T19:55:01.194095233Z [inf]     Our prob: 95.0% | Market: 9.5%
-2026-01-17T19:55:01.194101779Z [inf]     Price: $3,315.93 | Threshold: $2,200
-2026-01-17T19:55:01.194106392Z [inf]     EDGE: 85.5% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.194109166Z [inf]     Distance: -33.65%
-2026-01-17T19:55:01.194114236Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $2,600 in January?
-2026-01-17T19:55:01.194116771Z [inf]     Our prob: 95.0% | Market: 0.8%
-2026-01-17T19:55:01.195318764Z [inf]     Price: $3,315.93 | Threshold: $2,600
-2026-01-17T19:55:01.195334606Z [inf]     EDGE: 94.5% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.195336592Z [inf]     Distance: -21.59%
-2026-01-17T19:55:01.195346127Z [inf]     Our prob: 95.0% | Market: 4.5%
-2026-01-17T19:55:01.195350277Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $1,600 in January?
-2026-01-17T19:55:01.195355590Z [inf]     EDGE: 90.5% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.195362970Z [inf]     Price: $3,315.93 | Threshold: $1,600
-2026-01-17T19:55:01.195365929Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $2,400 in January?
-2026-01-17T19:55:01.195375480Z [inf]     Distance: -51.75%
-2026-01-17T19:55:01.195375894Z [inf]     Price: $3,315.93 | Threshold: $2,400
-2026-01-17T19:55:01.195384206Z [inf]     Distance: -27.62%
-2026-01-17T19:55:01.195391103Z [inf]     Our prob: 95.0% | Market: 2.1%
-2026-01-17T19:55:01.195396300Z [inf]     EDGE: 92.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.195400874Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $1,400 in January?
-2026-01-17T19:55:01.195407414Z [inf]     Price: $3,315.93 | Threshold: $1,400
-2026-01-17T19:55:01.195414681Z [inf]     Distance: -57.78%
-2026-01-17T19:55:01.195422569Z [inf]     Our prob: 95.0% | Market: 0.2%
-2026-01-17T19:55:01.195429902Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.195437096Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $1,800 in January?
-2026-01-17T19:55:01.195447573Z [inf]     Price: $3,315.93 | Threshold: $1,800
-2026-01-17T19:55:01.195455542Z [inf]     Distance: -45.72%
-2026-01-17T19:55:01.195463089Z [inf]     Our prob: 95.0% | Market: 0.5%
-2026-01-17T19:55:01.196830397Z [inf]     Our prob: 95.0% | Market: 1.2%
-2026-01-17T19:55:01.196835394Z [inf]     Our prob: 95.0% | Market: 0.4%
-2026-01-17T19:55:01.196840531Z [inf]     EDGE: 93.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.196844713Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana reach $180 in January?
-2026-01-17T19:55:01.196846469Z [inf]     EDGE: 94.7% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.196854153Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $1,200 in January?
-2026-01-17T19:55:01.196858263Z [inf]     Price: $144.24 | Threshold: $180
-2026-01-17T19:55:01.196865844Z [inf]     Price: $3,315.93 | Threshold: $1,200
-2026-01-17T19:55:01.196868760Z [inf]     Distance: +24.79%
-2026-01-17T19:55:01.196873506Z [inf]     Distance: -63.81%
-2026-01-17T19:55:01.196880029Z [inf]     Our prob: 1.0% | Market: 5.9%
-2026-01-17T19:55:01.196882417Z [inf]     Our prob: 95.0% | Market: 0.2%
-2026-01-17T19:55:01.196889249Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.196890853Z [inf]     EDGE: 4.9% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.196895475Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: MegaETH market cap (FDV) >$4B one day after launch?
-2026-01-17T19:55:01.196901724Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $100 in January?
-2026-01-17T19:55:01.196903750Z [inf]     Price: $3,315.93 | Threshold: $4
-2026-01-17T19:55:01.196910517Z [inf]     Distance: -99.88%
-2026-01-17T19:55:01.196913147Z [inf]     Price: $144.24 | Threshold: $100
-2026-01-17T19:55:01.196917396Z [inf]     Our prob: 95.0% | Market: 7.5%
-2026-01-17T19:55:01.196923916Z [inf]     Distance: -30.67%
-2026-01-17T19:55:01.196925153Z [inf]     EDGE: 87.5% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.198335316Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana reach $170 in January?
-2026-01-17T19:55:01.198336322Z [inf]     EDGE: 40.3% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.198346834Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana reach $140 in January?
-2026-01-17T19:55:01.198349073Z [inf]     Price: $144.24 | Threshold: $170
-2026-01-17T19:55:01.198358764Z [inf]     Price: $144.24 | Threshold: $140
-2026-01-17T19:55:01.198360520Z [inf]     Distance: +17.86%
-2026-01-17T19:55:01.198365599Z [inf]     Distance: -2.94%
-2026-01-17T19:55:01.198371956Z [inf]     Our prob: 2.8% | Market: 12.5%
-2026-01-17T19:55:01.198373263Z [inf]     Our prob: 95.0% | Market: 100.0%
-2026-01-17T19:55:01.198380750Z [inf]     EDGE: 5.0% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.198383340Z [inf]     EDGE: 9.7% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.198388450Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana reach $130 in January?
-2026-01-17T19:55:01.198395028Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana reach $160 in January?
-2026-01-17T19:55:01.198396785Z [inf]     Price: $144.24 | Threshold: $130
-2026-01-17T19:55:01.198403594Z [inf]     Price: $144.24 | Threshold: $160
-2026-01-17T19:55:01.198410762Z [inf]     Distance: +10.93%
-2026-01-17T19:55:01.198417603Z [inf]     Our prob: 10.3% | Market: 30.5%
-2026-01-17T19:55:01.198424608Z [inf]     EDGE: 20.2% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.198431191Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana reach $150 in January?
-2026-01-17T19:55:01.198438624Z [inf]     Price: $144.24 | Threshold: $150
-2026-01-17T19:55:01.198445549Z [inf]     Distance: +3.99%
-2026-01-17T19:55:01.198452631Z [inf]     Our prob: 31.2% | Market: 71.5%
-2026-01-17T19:55:01.199704750Z [inf]     EDGE: 92.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.199711773Z [inf]     Distance: -9.87%
-2026-01-17T19:55:01.199717548Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $90 in January?
-2026-01-17T19:55:01.199725212Z [inf]     Our prob: 95.0% | Market: 100.0%
-2026-01-17T19:55:01.199728350Z [inf]     Price: $144.24 | Threshold: $90
-2026-01-17T19:55:01.199732971Z [inf]     EDGE: 5.0% | Action: BUY_NO component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.199737379Z [inf]     Distance: -37.60%
-2026-01-17T19:55:01.199745303Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $120 in January?
-2026-01-17T19:55:01.199747693Z [inf]     Our prob: 95.0% | Market: 1.1%
-2026-01-17T19:55:01.199751679Z [inf]     Price: $144.24 | Threshold: $120
-2026-01-17T19:55:01.199758184Z [inf]     EDGE: 93.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.199758209Z [inf]     Distance: -16.81%
-2026-01-17T19:55:01.199763615Z [inf]     Our prob: 95.0% | Market: 10.5%
-2026-01-17T19:55:01.199768367Z [inf]     EDGE: 84.5% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.199773364Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $70 in January?
-2026-01-17T19:55:01.199778907Z [inf]     Price: $144.24 | Threshold: $70
-2026-01-17T19:55:01.199783612Z [inf]     Distance: -51.47%
-2026-01-17T19:55:01.199788011Z [inf]     Our prob: 95.0% | Market: 0.4%
-2026-01-17T19:55:01.199792584Z [inf]     EDGE: 94.7% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.199797250Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $110 in January?
-2026-01-17T19:55:01.199802134Z [inf]     Price: $144.24 | Threshold: $110
-2026-01-17T19:55:01.199807922Z [inf]     Distance: -23.74%
-2026-01-17T19:55:01.199812217Z [inf]     Our prob: 95.0% | Market: 2.2%
-2026-01-17T19:55:01.201242407Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.201247500Z [inf]     Price: $144.24 | Threshold: $50
-2026-01-17T19:55:01.201253324Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $30 in January?
-2026-01-17T19:55:01.201254062Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $80 in January?
-2026-01-17T19:55:01.201261051Z [inf]     Distance: -65.34%
-2026-01-17T19:55:01.201261207Z [inf]     Price: $144.24 | Threshold: $30
-2026-01-17T19:55:01.201264946Z [inf]     Price: $144.24 | Threshold: $80
-2026-01-17T19:55:01.201272625Z [inf]     Our prob: 95.0% | Market: 0.2%
-2026-01-17T19:55:01.201272797Z [inf]     Distance: -44.54%
-2026-01-17T19:55:01.201279897Z [inf]     Our prob: 95.0% | Market: 0.7%
-2026-01-17T19:55:01.201283764Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.201287105Z [inf]     EDGE: 94.3% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.201294207Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $60 in January?
-2026-01-17T19:55:01.201294242Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $40 in January?
-2026-01-17T19:55:01.201301619Z [inf]     Price: $144.24 | Threshold: $60
-2026-01-17T19:55:01.201304496Z [inf]     Price: $144.24 | Threshold: $40
-2026-01-17T19:55:01.201308759Z [inf]     Distance: -58.40%
-2026-01-17T19:55:01.201314989Z [inf]     Distance: -72.27%
-2026-01-17T19:55:01.201317067Z [inf]     Our prob: 95.0% | Market: 0.4%
-2026-01-17T19:55:01.201323528Z [inf]     EDGE: 94.7% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.201324979Z [inf]     Our prob: 95.0% | Market: 0.2%
-2026-01-17T19:55:01.201330134Z [inf]  2026-01-17 19:55:01 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $50 in January?
-2026-01-17T19:55:01.202119267Z [inf]     Distance: -79.20%
-2026-01-17T19:55:01.202132525Z [inf]     Our prob: 95.0% | Market: 0.1%
-2026-01-17T19:55:01.202140924Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
-2026-01-17T19:55:01.202149042Z [inf]  2026-01-17 19:55:01 [info     ] 💰 EXECUTING CRYPTO TRADE:
-2026-01-17T19:55:01.202156553Z [inf]     Market: Will Bitcoin dip to $50,000 in January?
-2026-01-17T19:55:01.202164169Z [inf]     Direction: buy_yes
-2026-01-17T19:55:01.202171550Z [inf]     Edge: 94.7%
-2026-01-17T19:55:01.202178689Z [inf]     Confidence: 80% component=engine
-2026-01-17T19:55:01.215066397Z [inf]  2026-01-17 19:55:01 [error    ] Error placing order            component=polymarket error="Client error '403 Forbidden' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-2026-01-17T19:55:01.215075234Z [inf]  2026-01-17 19:55:01 [warning  ] ❌ Crypto trade failed to execute component=engine
-2026-01-17T19:55:01.215081523Z [inf]  2026-01-17 19:55:01 [info     ] 💰 EXECUTING CRYPTO TRADE:
-2026-01-17T19:55:01.215087154Z [inf]     Market: Will Bitcoin reach $105,000 in January?
-2026-01-17T19:55:01.215092433Z [inf]     Direction: buy_no
-2026-01-17T19:55:01.215097842Z [inf]     Edge: 4.2%
-2026-01-17T19:55:01.215103179Z [inf]     Confidence: 58% component=engine
-2026-01-17T19:55:01.227986636Z [inf]  2026-01-17 19:55:01 [error    ] Error placing order            component=polymarket error="Client error '403 Forbidden' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-2026-01-17T19:55:01.227995707Z [inf]  2026-01-17 19:55:01 [warning  ] ❌ Crypto trade failed to execute component=engine
-2026-01-17T19:55:01.228001863Z [inf]  2026-01-17 19:55:01 [info     ] 💰 EXECUTING CRYPTO TRADE:
-2026-01-17T19:55:01.228007111Z [inf]     Market: Will Bitcoin reach $100,000 in January?
-2026-01-17T19:55:01.228012579Z [inf]     Direction: buy_no
-2026-01-17T19:55:01.228018226Z [inf]     Edge: 18.2%
-2026-01-17T19:55:01.228023126Z [inf]     Confidence: 80% component=engine
-2026-01-17T19:55:01.240628642Z [inf]  2026-01-17 19:55:01 [error    ] Error placing order            component=polymarket error="Client error '403 Forbidden' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-2026-01-17T19:55:01.240635444Z [inf]  2026-01-17 19:55:01 [warning  ] ❌ Crypto trade failed to execute component=engine
-2026-01-17T19:55:01.240640619Z [inf]  2026-01-17 19:55:01 [info     ] 💰 EXECUTING CRYPTO TRADE:
-2026-01-17T19:55:01.240645304Z [inf]     Market: Will Bitcoin dip to $55,000 in January?
-2026-01-17T19:55:01.240650184Z [inf]     Direction: buy_yes
-2026-01-17T19:55:01.240654797Z [inf]     Edge: 94.8%
-2026-01-17T19:55:01.240660557Z [inf]     Confidence: 80% component=engine
-2026-01-17T19:55:01.265874116Z [inf]  2026-01-17 19:55:01 [error    ] Error placing order            component=polymarket error="Client error '403 Forbidden' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-2026-01-17T19:55:01.265883065Z [inf]  2026-01-17 19:55:01 [warning  ] ❌ Crypto trade failed to execute component=engine
-2026-01-17T19:55:01.265890266Z [inf]  2026-01-17 19:55:01 [info     ] 💰 EXECUTING CRYPTO TRADE:
-2026-01-17T19:55:01.265896654Z [inf]     Market: Will Bitcoin reach $95,000 in January?
-2026-01-17T19:55:01.265901305Z [inf]     Direction: buy_no
-2026-01-17T19:55:01.265905592Z [inf]     Edge: 5.0%
-2026-01-17T19:55:01.265909679Z [inf]     Confidence: 80% component=engine
-2026-01-17T19:55:01.279621107Z [inf]  2026-01-17 19:55:01 [error    ] Error placing order            component=polymarket error="Client error '403 Forbidden' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-2026-01-17T19:55:01.279627330Z [inf]  2026-01-17 19:55:01 [warning  ] ❌ Crypto trade failed to execute component=engine
-2026-01-17T19:55:01.279631983Z [inf]  2026-01-17 19:55:01 [info     ] 💰 EXECUTING CRYPTO TRADE:
-2026-01-17T19:55:01.279636601Z [inf]     Market: Will Bitcoin dip to $40,000 in January?
-2026-01-17T19:55:01.279641654Z [inf]     Direction: buy_yes
-2026-01-17T19:55:01.279646023Z [inf]     Edge: 94.8%
-2026-01-17T19:55:01.279650396Z [inf]     Confidence: 80% component=engine
-2026-01-17T19:55:01.303039556Z [inf]  2026-01-17 19:55:01 [error    ] Error placing order            component=polymarket error="Client error '403 Forbidden' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-2026-01-17T19:55:01.303045245Z [inf]  2026-01-17 19:55:01 [warning  ] ❌ Crypto trade failed to execute component=engine
-2026-01-17T19:55:01.303049865Z [inf]  2026-01-17 19:55:01 [info     ] 💰 EXECUTING CRYPTO TRADE:
-2026-01-17T19:55:01.303054692Z [inf]     Market: Will Bitcoin reach $90,000 in January?
-2026-01-17T19:55:01.303059973Z [inf]     Direction: buy_no
-2026-01-17T19:55:01.303064542Z [inf]     Edge: 5.0%
-2026-01-17T19:55:01.303069147Z [inf]     Confidence: 60% component=engine
-2026-01-17T19:55:01.316277840Z [inf]  2026-01-17 19:55:01 [error    ] Error placing order            component=polymarket error="Client error '403 Forbidden' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-2026-01-17T19:55:01.316285703Z [inf]  2026-01-17 19:55:01 [warning  ] ❌ Crypto trade failed to execute component=engine
-2026-01-17T19:55:01.316292960Z [inf]  2026-01-17 19:55:01 [info     ] 💰 EXECUTING CRYPTO TRADE:
-2026-01-17T19:55:01.316299338Z [inf]     Market: Will Bitcoin dip to $85,000 in January?
-2026-01-17T19:55:01.316306740Z [inf]     Direction: buy_yes
-2026-01-17T19:55:01.316314387Z [inf]     Edge: 81.0%
-2026-01-17T19:55:01.316321346Z [inf]     Confidence: 80% component=engine
-2026-01-17T19:55:01.329160190Z [inf]  2026-01-17 19:55:01 [error    ] Error placing order            component=polymarket error="Client error '403 Forbidden' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-2026-01-17T19:55:01.329169127Z [inf]  2026-01-17 19:55:01 [warning  ] ❌ Crypto trade failed to execute component=engine
-2026-01-17T19:55:01.329175767Z [inf]  2026-01-17 19:55:01 [info     ] 💰 EXECUTING CRYPTO TRADE:
-2026-01-17T19:55:01.329181656Z [inf]     Market: Will Bitcoin dip to $80,000 in January?
-2026-01-17T19:55:01.329187711Z [inf]     Direction: buy_yes
-2026-01-17T19:55:01.329193591Z [inf]     Edge: 90.5%
-2026-01-17T19:55:01.329199530Z [inf]     Confidence: 80% component=engine
-2026-01-17T19:55:01.342104188Z [inf]  2026-01-17 19:55:01 [error    ] Error placing order            component=polymarket error="Client error '403 Forbidden' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-2026-01-17T19:55:01.342112904Z [inf]  2026-01-17 19:55:01 [warning  ] ❌ Crypto trade failed to execute component=engine
-2026-01-17T19:55:01.342117940Z [inf]  2026-01-17 19:55:01 [info     ] 💰 EXECUTING CRYPTO TRADE:
-2026-01-17T19:55:01.342122455Z [inf]     Market: Will Bitcoin dip to $65,000 in January?
-2026-01-17T19:55:01.342126880Z [inf]     Direction: buy_yes
-2026-01-17T19:55:01.342131787Z [inf]     Edge: 94.5%
-2026-01-17T19:55:01.342136513Z [inf]     Confidence: 80% component=engine
-2026-01-17T19:55:01.348165707Z [inf]  2026-01-17 19:55:01 [debug    ] Live stats returned 204 for 115548424308414207 component=lolesports
-2026-01-17T19:55:01.361383200Z [inf]  2026-01-17 19:55:01 [error    ] Error placing order            component=polymarket error="Client error '403 Forbidden' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-2026-01-17T19:55:01.361395220Z [inf]  2026-01-17 19:55:01 [warning  ] ❌ Crypto trade failed to execute component=engine
-2026-01-17T19:55:01.361401732Z [inf]  2026-01-17 19:55:01 [info     ] 💰 EXECUTING CRYPTO TRADE:
-2026-01-17T19:55:01.361408125Z [inf]     Market: Will Bitcoin dip to $75,000 in January?
-2026-01-17T19:55:01.361413949Z [inf]     Direction: buy_yes
-2026-01-17T19:55:01.361420189Z [inf]     Edge: 93.8%
-2026-01-17T19:55:01.361425597Z [inf]     Confidence: 80% component=engine
-2026-01-17T19:55:01.375245101Z [inf]  2026-01-17 19:55:01 [error    ] Error placing order            component=polymarket error="Client error '403 Forbidden' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-2026-01-17T19:55:01.375251708Z [inf]  2026-01-17 19:55:01 [warning  ] ❌ Crypto trade failed to execute component=engine
-2026-01-17T19:55:01.375256360Z [inf]  2026-01-17 19:55:01 [info     ] 💰 EXECUTING CRYPTO TRADE:
-2026-01-17T19:55:01.375260854Z [inf]     Market: Will Bitcoin dip to $70,000 in January?
-2026-01-17T19:55:01.375265814Z [inf]     Direction: buy_yes
-2026-01-17T19:55:01.375270541Z [inf]     Edge: 94.3%
-2026-01-17T19:55:01.375276519Z [inf]     Confidence: 80% component=engine
-2026-01-17T19:55:01.400697124Z [inf]  2026-01-17 19:55:01 [error    ] Error placing order            component=polymarket error="Client error '403 Forbidden' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-2026-01-17T19:55:01.400711718Z [inf]  2026-01-17 19:55:01 [warning  ] ❌ Crypto trade failed to execute component=engine
-2026-01-17T19:55:01.400725415Z [inf]  2026-01-17 19:55:01 [info     ] 💰 EXECUTING CRYPTO TRADE:
-2026-01-17T19:55:01.400733758Z [inf]     Market: Will Bitcoin dip to $60,000 in January?
-2026-01-17T19:55:01.400741654Z [inf]     Direction: buy_yes
-2026-01-17T19:55:01.400750204Z [inf]     Edge: 94.5%
-2026-01-17T19:55:01.400758887Z [inf]     Confidence: 80% component=engine
-2026-01-17T19:55:01.412909612Z [inf]  2026-01-17 19:55:01 [error    ] Error placing order            component=polymarket error="Client error '403 Forbidden' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-2026-01-17T19:55:01.412923201Z [inf]  2026-01-17 19:55:01 [warning  ] ❌ Crypto trade failed to execute component=engine
-2026-01-17T19:55:01.412932784Z [inf]  2026-01-17 19:55:01 [info     ] 💰 EXECUTING CRYPTO TRADE:
-2026-01-17T19:55:01.412941034Z [inf]     Market: Will Bitcoin dip to $45,000 in January?
-2026-01-17T19:55:01.412950117Z [inf]     Direction: buy_yes
-2026-01-17T19:55:01.412958759Z [inf]     Edge: 94.8%
-2026-01-17T19:55:01.412967404Z [inf]     Confidence: 80% component=engine
-2026-01-17T19:55:01.427858439Z [inf]  2026-01-17 19:55:01 [error    ] Error placing order            component=polymarket error="Client error '403 Forbidden' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/403"
-2026-01-17T19:55:01.427870393Z [inf]  2026-01-17 19:55:01 [warning  ] ❌ Crypto trade failed to execute component=engine
-2026-01-17T19:55:01.429334746Z [inf]  2026-01-17 19:55:01 [info     ] 💰 EXECUTING CRYPTO TRADE:
-2026-01-17T19:55:01.429344437Z [inf]     Market: Will Bitcoin reach $100,000 January 12-18?
-2026-01-17T19:55:01.429353055Z [inf]     Direction: buy_yes
-2026-01-17T19:55:01.429360659Z [inf]     Edge: 3.3%
-2026-01-17T19:55:01.429368046Z [inf]     Confidence: 57% component=engine
+2026-01-17T20:01:04.000000000Z [inf]  Starting Container
+2026-01-17T20:01:06.856249671Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:06.856263090Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:06.856271744Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:06.856370882Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:06.856378363Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:06.856386332Z [inf]  │                                     │
+2026-01-17T20:01:06.856408734Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:06.856419546Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:06.856426676Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:08.226844363Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:08.226856083Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:08.226863356Z [inf]  │                                     │
+2026-01-17T20:01:08.226872921Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:08.226879154Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:08.226885387Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:08.226893220Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:08.226901306Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:08.259759061Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:10.441867999Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:10.441877107Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:10.441883356Z [inf]  │                                     │
+2026-01-17T20:01:10.441889174Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:10.441895079Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:10.441901446Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:10.441907454Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:10.441913744Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:10.473738567Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:13.066973382Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:13.066984726Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:13.066992580Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:13.067000590Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:13.067051454Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:13.067057432Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:13.067060615Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:13.067066386Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:13.067075698Z [inf]  │                                     │
+2026-01-17T20:01:14.934237882Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:14.934255306Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:14.934263100Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:14.934283697Z [inf]  │                                     │
+2026-01-17T20:01:14.934289764Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:14.934296009Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:14.934302744Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:14.934303516Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:14.934310524Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:16.990529231Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:16.990533970Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:16.990538496Z [inf]  │                                     │
+2026-01-17T20:01:16.990542583Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:16.990546373Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:16.990550510Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:16.990555239Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:16.990559282Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:16.990563682Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:19.139264493Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:19.139269272Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:19.139273565Z [inf]  │                                     │
+2026-01-17T20:01:19.139277733Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:19.139283875Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:19.139288440Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:19.139292922Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:19.139296697Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:19.164326958Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:21.319222869Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:21.319233862Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:21.319240469Z [inf]  │                                     │
+2026-01-17T20:01:21.319247438Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:21.319254600Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:21.319262603Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:21.319270688Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:21.319278287Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:21.345671600Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:23.959700643Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:23.961476522Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:23.961484523Z [inf]  │                                     │
+2026-01-17T20:01:23.961489204Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:23.961494076Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:23.961499596Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:23.961504079Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:23.961509144Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:23.961513329Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:25.922940969Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:25.923010748Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:25.923016693Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:25.923022982Z [inf]  │                                     │
+2026-01-17T20:01:25.923031367Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:25.923037115Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:25.923043983Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:25.923051968Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:25.923058222Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:28.094782842Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:28.094794666Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:28.094807448Z [inf]  │                                     │
+2026-01-17T20:01:28.094816320Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:28.094825453Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:28.094833807Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:28.094842778Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:28.094852855Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:28.094861254Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:30.252946513Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:30.252956529Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:30.252963193Z [inf]  │                                     │
+2026-01-17T20:01:30.252970539Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:30.252976996Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:30.252983861Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:30.252990441Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:30.252998062Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:30.283449143Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:32.462167992Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:32.462177244Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:32.462183100Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:32.462188832Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:32.462290481Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:32.462296183Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:32.462303753Z [inf]  │                                     │
+2026-01-17T20:01:32.462309493Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:32.500196758Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:35.032854147Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:35.032862980Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:35.032870209Z [inf]  │                                     │
+2026-01-17T20:01:35.032877102Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:35.032884127Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:35.032891397Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:35.032898681Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:35.032905836Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:35.032914681Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:36.986715729Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:36.986724599Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:36.986732141Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:36.986739075Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:36.986744383Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:36.986791477Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:36.986795905Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:36.986801134Z [inf]  │                                     │
+2026-01-17T20:01:36.997859171Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:39.007069411Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:39.007076138Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:39.007083173Z [inf]  │                                     │
+2026-01-17T20:01:39.007091317Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:39.007100931Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:39.007108004Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:39.007114176Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:39.007120252Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:39.036873729Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:41.133208548Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:41.133216080Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:41.133225520Z [inf]  │                                     │
+2026-01-17T20:01:41.133234106Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:41.133242099Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:41.133249194Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:41.133256003Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:41.133263192Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:41.163870272Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:43.148681453Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:43.148693937Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:43.148701015Z [inf]  │                                     │
+2026-01-17T20:01:43.148707265Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:43.148713266Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:43.148719394Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:43.148725181Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:43.148731048Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:43.174655503Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.
+2026-01-17T20:01:45.178226324Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T20:01:45.178236564Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T20:01:45.178243563Z [inf]  │                                     │
+2026-01-17T20:01:45.178253554Z [inf]  │ Mode: 🔴 LIVE TRADING               │
+2026-01-17T20:01:45.178260780Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T20:01:45.178268437Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T20:01:45.178276979Z [inf]  │ Max Position: 10%                   │
+2026-01-17T20:01:45.178284170Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T20:01:45.209999067Z [inf]  ⚠️  You are about to start LIVE trading with real money. Continue? [y/N]: Aborted.

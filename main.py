@@ -54,11 +54,13 @@ def setup():
 def run(
     paper: bool = typer.Option(True, "--paper/--live", help="Paper trading mode"),
     debug: bool = typer.Option(False, "--debug", help="Enable debug logging"),
+    yes: bool = typer.Option(False, "--yes", "-y", help="Skip confirmation prompt (for automated deployments)"),
 ):
     """
     Start the esports arbitrage bot.
     
     By default runs in paper trading mode. Use --live for real trading.
+    Use --yes to skip the confirmation prompt for automated deployments.
     """
     setup()
     
@@ -80,7 +82,7 @@ def run(
         border_style="green",
     ))
     
-    if not paper:
+    if not paper and not yes:
         confirm = typer.confirm(
             "⚠️  You are about to start LIVE trading with real money. Continue?",
             default=False,
