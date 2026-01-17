@@ -116,28 +116,30 @@ class PandaScoreProvider(BaseEsportsProvider):
     async def get_match_state(self, match_id: str) -> Optional[GameState]:
         """Get current state of a match."""
         try:
-            # Try LoL first, then Dota
+            # FREE TIER STRATEGY: Try running matches first (always works)
+            # Then fall back to detailed endpoint if needed
+            for game in self.supported_games:
+                # First try to get from running matches (free tier friendly)
+                state = await self._get_match_state_from_running(match_id, game)
+                if state:
+                    logger.debug(f"Got match state from running: {state.team1.name} vs {state.team2.name}")
+                    return state
+            
+            # If not found in running, try detailed endpoint (may fail on free tier)
             for game in self.supported_games:
                 slug = self.GAME_SLUGS[game]
                 try:
                     match_data = await self._request("GET", f"/{slug}/matches/{match_id}")
                     state = self._parse_match_state(match_data, game)
                     if state and state.team1 and state.team2:
-                        logger.debug(f"Got match state: {state.team1.name} vs {state.team2.name}")
+                        logger.debug(f"Got match state from details: {state.team1.name} vs {state.team2.name}")
                     return state
                 except httpx.HTTPStatusError as e:
-                    if e.response.status_code == 403:
-                        # Free tier doesn't have access to detailed match data
-                        # Try to get basic info from running matches instead
-                        logger.debug(f"403 on match details (free tier limitation), using basic data")
-                        state = await self._get_match_state_from_running(match_id, game)
-                        if state:
-                            logger.debug(f"Got match state from running: {state.team1.name} vs {state.team2.name}")
-                        return state
-                    if e.response.status_code != 404:
-                        logger.warning(f"HTTP {e.response.status_code} for match {match_id}")
-                        raise
-                    continue
+                    if e.response.status_code in [403, 404]:
+                        # Free tier limitation or not found - try next game
+                        continue
+                    logger.warning(f"HTTP {e.response.status_code} for match {match_id}")
+                    raise
             
             logger.debug(f"Match {match_id} not found in any game")
             return None
@@ -152,9 +154,17 @@ class PandaScoreProvider(BaseEsportsProvider):
             slug = self.GAME_SLUGS[game]
             data = await self._request("GET", f"/{slug}/matches/running", params={"per_page": 50})
             
+            logger.debug(f"Checking {len(data)} running {slug} matches for ID {match_id}")
+            
             for match in data:
-                if str(match.get("id")) == str(match_id):
+                match_id_from_data = str(match.get("id"))
+                if match_id_from_data == str(match_id):
+                    logger.debug(f"Found match {match_id} in running matches!")
                     return self._parse_match_state(match, game)
+            
+            # Log available match IDs for debugging
+            available_ids = [str(m.get("id")) for m in data[:5]]
+            logger.debug(f"Match {match_id} not in running {slug} matches. Available: {available_ids}")
             
             return None
         except Exception as e:
