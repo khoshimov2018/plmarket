@@ -1,599 +1,1026 @@
-2026-01-17T20:48:36.000000000Z [inf]  Starting Container
-2026-01-17T20:48:37.872864509Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:37.872876963Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:37.872886282Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:37.872890217Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:37.872896421Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:37.872899437Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:37.872903073Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:37.872910094Z [err]      ^
-2026-01-17T20:48:37.872910188Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:37.872917466Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:37.872920928Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:37.872927619Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:37.872936500Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:38.492194139Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:38.492283232Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:38.492286877Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:38.492290652Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:38.492295020Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:38.492299266Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:38.492302863Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:38.492306433Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:38.492310083Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:38.492313643Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:38.492318068Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:38.492322289Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:38.492326006Z [err]      ^
-2026-01-17T20:48:39.717996496Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:39.718002359Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:39.718005954Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:39.718009541Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:39.718013487Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:39.718017475Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:39.718021583Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:39.718025565Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:39.718029197Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:39.718033088Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:39.718036652Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:39.718040666Z [err]      ^
-2026-01-17T20:48:39.718044932Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:40.891606692Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:40.891612574Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:40.891618270Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:40.891623481Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:40.891631658Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:40.891638692Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:40.891648870Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:40.891655741Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:40.891663191Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:40.891670327Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:40.891675287Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:40.891679173Z [err]      ^
-2026-01-17T20:48:40.891684427Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:41.909317663Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:41.909324029Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:41.909330624Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:41.909337183Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:41.909343161Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:41.909348206Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:41.909353638Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:41.909360148Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:41.909366406Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:41.909373251Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:41.909379622Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:41.909386148Z [err]      ^
-2026-01-17T20:48:41.909392445Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:43.098493318Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:43.098499707Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:43.098503998Z [err]      ^
-2026-01-17T20:48:43.098508289Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:43.098527578Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:43.098534117Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:43.098541288Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:43.098548605Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:43.098555129Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:43.098561024Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:43.098566876Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:43.098573075Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:43.098581244Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:44.271749145Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:44.271759729Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:44.271766480Z [err]      ^
-2026-01-17T20:48:44.271772981Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:44.271793775Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:44.271800080Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:44.271807479Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:44.271811185Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:44.271814843Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:44.271818647Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:44.271822231Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:44.271826087Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:44.271829664Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:48.773728534Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:48.773736329Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:48.773743324Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:48.773750259Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:48.773757172Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:48.773764216Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:48.773771330Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:48.773777761Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:48.773784124Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:48.773791023Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:48.773797791Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:48.773803822Z [err]      ^
-2026-01-17T20:48:48.773810504Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:49.731502209Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:49.731522644Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:49.731526657Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:49.731530288Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:49.731534015Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:49.731537787Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:49.731541801Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:49.731545394Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:49.731549264Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:49.731553191Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:49.731557532Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:49.731562376Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:49.731565995Z [err]      ^
-2026-01-17T20:48:51.090162767Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:51.090209607Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:51.090217427Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:51.090225372Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:51.090233039Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:51.090241989Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:51.090249624Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:51.090257524Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:51.090264417Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:51.090283309Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:51.090290835Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:51.090297997Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:51.090304798Z [err]      ^
-2026-01-17T20:48:52.168484357Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:52.168488483Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:52.168492639Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:52.168496694Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:52.168501030Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:52.168505430Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:52.168510752Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:52.168517193Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:52.168523730Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:52.168530360Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:52.168536798Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:52.168544731Z [err]      ^
-2026-01-17T20:48:52.168549551Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:53.073824853Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:53.073833200Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:53.073838430Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:53.073842687Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:53.073846722Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:53.073851486Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:53.073855974Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:53.073860844Z [err]      ^
-2026-01-17T20:48:53.073865419Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:53.073909183Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:53.073915170Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:53.073919716Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:53.073923334Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:53.918269618Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:53.918279043Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:53.918286703Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:53.918293186Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:53.918300155Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:53.918301107Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:53.918306908Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:53.918313396Z [err]      ^
-2026-01-17T20:48:53.918313452Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:53.918320245Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:53.918324320Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:53.918332384Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:53.918340341Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:55.136138582Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:55.136144756Z [err]      ^
-2026-01-17T20:48:55.136149493Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:55.136161862Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:55.136170783Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:55.136177093Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:55.136181467Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:55.136185972Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:55.136190344Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:55.136194890Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:55.136198649Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:55.136205595Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:55.136209442Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:56.102649939Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:56.102657579Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:56.102662101Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:56.102666383Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:56.102670604Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:56.102675162Z [err]      ^
-2026-01-17T20:48:56.102679442Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:56.102755605Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:56.102758941Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:56.102762459Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:56.102765798Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:56.102771513Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:56.102776260Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:57.184498970Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:57.184507050Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:57.184512711Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:57.184517953Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:57.184522580Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:57.184527763Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:57.184532205Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:57.184537649Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:57.184542050Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:57.184546436Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:57.184551268Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:57.184556394Z [err]      ^
-2026-01-17T20:48:57.184561789Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:58.331477517Z [err]      ^
-2026-01-17T20:48:58.331482786Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:58.331488199Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:48:58.331488269Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:58.331494887Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:58.331499303Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:58.331502902Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:58.331506837Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:58.331510491Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:58.331514125Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:58.331518543Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:58.331522454Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:58.331527100Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:59.230417626Z [err]  Traceback (most recent call last):
-2026-01-17T20:48:59.230424085Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:48:59.230431349Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:59.230437162Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:48:59.230442622Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:48:59.230448082Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:48:59.230452796Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:59.230456870Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:48:59.230462685Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:48:59.230467498Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:48:59.230472494Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:48:59.230476564Z [err]      ^
-2026-01-17T20:48:59.230480519Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:00.413768685Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:00.413780584Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:00.413782566Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:00.413789854Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:00.413793181Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:00.413796751Z [err]      ^
-2026-01-17T20:49:00.413801744Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:00.413803307Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:00.413810873Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:00.413816472Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:00.413821543Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:00.413826728Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:00.413832142Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:01.540627195Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:01.540634912Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:01.540643692Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:01.540651546Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:01.540659053Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:01.540666723Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:01.540674902Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:01.540680934Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:01.540686311Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:01.540690240Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:01.540694366Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:01.540699643Z [err]      ^
-2026-01-17T20:49:01.540704311Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:02.684257080Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:02.684268957Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:02.684276999Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:02.684284728Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:02.684291126Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:02.684298837Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:02.684307304Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:02.684314894Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:02.684322698Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:02.684330880Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:02.684337909Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:02.684345902Z [err]      ^
-2026-01-17T20:49:02.684352545Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:03.578926912Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:03.578933882Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:03.578939454Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:03.578945407Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:03.578951472Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:03.578957997Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:03.578963812Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:03.578969598Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:03.578975637Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:03.578981800Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:03.578998157Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:03.579004027Z [err]      ^
-2026-01-17T20:49:03.579010512Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:04.437274909Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:04.437283836Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:04.437293467Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:04.437303082Z [err]      ^
-2026-01-17T20:49:04.437311107Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:04.437324902Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:04.437337667Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:04.437343002Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:04.437349732Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:04.437352977Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:04.437358154Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:04.437363270Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:04.437367962Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:05.314548064Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:05.314559884Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:05.314568237Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:05.314575646Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:05.314583058Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:05.314589443Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:05.314594666Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:05.314599129Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:05.314605760Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:05.314610437Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:05.314614403Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:05.314618486Z [err]      ^
-2026-01-17T20:49:05.314622430Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:06.432636252Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:06.432644142Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:06.432650405Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:06.432656378Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:06.432662341Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:06.432668881Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:06.432675221Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:06.432681787Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:06.432687927Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:06.432692297Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:06.432696422Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:06.432701002Z [err]      ^
-2026-01-17T20:49:06.432707304Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:07.522933474Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:07.522941649Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:07.522946551Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:07.522951198Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:07.522955468Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:07.522960242Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:07.522964333Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:07.522968343Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:07.522973481Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:07.522978941Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:07.522982817Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:07.522989241Z [err]      ^
-2026-01-17T20:49:07.522995714Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:08.437860646Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:08.437865227Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:08.437868794Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:08.437872562Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:08.437876598Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:08.437880511Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:08.437884099Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:08.437887897Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:08.437891543Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:08.437895359Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:08.437899801Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:08.437904457Z [err]      ^
-2026-01-17T20:49:08.437908069Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:09.577171041Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:09.577175396Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:09.577179844Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:09.577184087Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:09.577188831Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:09.577193214Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:09.577198066Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:09.577202404Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:09.577206340Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:09.577210229Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:09.577214375Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:09.577218226Z [err]      ^
-2026-01-17T20:49:09.577223790Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:10.705005200Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:10.705009641Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:10.705014903Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:10.705016930Z [err]      ^
-2026-01-17T20:49:10.705020211Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:10.705025637Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:10.705026002Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:10.705053927Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:10.705059031Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:10.705063399Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:10.705067880Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:10.705071923Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:10.705075960Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:11.586265699Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:11.586274977Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:11.586280757Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:11.586285548Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:11.586289936Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:11.586294524Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:11.586299926Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:11.586304318Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:11.586308974Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:11.586314987Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:11.586319263Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:11.586323938Z [err]      ^
-2026-01-17T20:49:11.586328527Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:12.521588839Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:12.521596667Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:12.521600875Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:12.521605254Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:12.521609593Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:12.521613515Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:12.521617156Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:12.521620781Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:12.521624401Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:12.521628663Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:12.521633366Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:12.521637017Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:12.521640867Z [err]      ^
-2026-01-17T20:49:13.429030360Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:13.429083338Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:13.429090641Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:13.429095878Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:13.429101025Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:13.429108518Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:13.429115641Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:13.429122720Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:13.429131525Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:13.429138612Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:13.429143396Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:13.429147352Z [err]      ^
-2026-01-17T20:49:13.429152072Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:14.389606293Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:14.389606572Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:14.389615127Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:14.389615735Z [err]      ^
-2026-01-17T20:49:14.389622732Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:14.389623801Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:14.389634552Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:14.389642295Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:14.389649777Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:14.389657591Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:14.389664809Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:14.389669760Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:14.389676678Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:15.827698178Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:15.827711832Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:15.827721290Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:15.827730525Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:15.827739545Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:15.827747458Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:15.827754186Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:15.827759347Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:15.827763829Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:15.827769784Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:15.827774138Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:15.827777983Z [err]      ^
-2026-01-17T20:49:15.827782355Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:16.987297136Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:16.987298647Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:16.987305898Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:16.987307237Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:16.987312903Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:16.987316441Z [err]      ^
-2026-01-17T20:49:16.987319791Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:16.987323852Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:16.987333459Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:16.987340543Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:16.987347358Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:16.987353504Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:16.987359807Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:17.854597114Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:17.854601561Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:17.854607217Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:17.854612489Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:17.854618156Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:17.854620991Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:17.854626625Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:17.854629498Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:17.854634203Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:17.854637342Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:17.854641679Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:17.854646034Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:17.854648980Z [err]      ^
-2026-01-17T20:49:18.720274236Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:18.720284024Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:18.720292826Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:18.720298825Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:18.720304848Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:18.720311748Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:18.720318139Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:18.720324108Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:18.720330188Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:18.720336889Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:18.720341995Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:18.720347524Z [err]      ^
-2026-01-17T20:49:18.720352578Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:19.930595165Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:19.930603707Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:19.930612107Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:19.930616684Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:19.930621375Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:19.930626223Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:19.930631690Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:19.930636336Z [err]      ^
-2026-01-17T20:49:19.930640802Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:19.930668438Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:19.930675125Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:19.930681805Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:19.930687875Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:20.940696833Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:20.940706451Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:20.940713539Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:20.940720296Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:20.940725890Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:20.940731726Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:20.940737705Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:20.940744099Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:20.940749866Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:20.940755783Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:20.940762958Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:20.940769080Z [err]      ^
-2026-01-17T20:49:20.940774790Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:21.866686595Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:21.866697682Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:21.866706748Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:21.866713626Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:21.866720356Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:21.866727979Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:21.866734387Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:21.866740447Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:21.866746669Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:21.866753342Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:21.866759791Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:21.866766472Z [err]      ^
-2026-01-17T20:49:21.866772694Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:22.707151640Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:22.707160025Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:22.707166321Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:22.707172325Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:22.707178032Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:22.707194757Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:22.707200321Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:22.707206558Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:22.707212237Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:22.707218360Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:22.707225978Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:22.707231674Z [err]      ^
-2026-01-17T20:49:22.707237504Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:23.569502959Z [err]      ^
-2026-01-17T20:49:23.569508167Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:23.569511225Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:23.569516552Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:23.569523027Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:23.569528424Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:23.569534125Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:23.569539577Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:23.569547680Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:23.569553114Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:23.569559800Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:23.569565564Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:23.569571292Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:24.849369139Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:24.849379991Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:24.849387373Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:24.849394262Z [err]      ^
-2026-01-17T20:49:24.849401065Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:24.849404774Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:24.849414055Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:24.849422235Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:24.849429782Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:24.849439975Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:24.849448726Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:24.849458898Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:24.849466728Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:26.075978296Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:26.075981654Z [err]      ^
-2026-01-17T20:49:26.075991932Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:26.075998181Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:26.076001358Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:26.076010528Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:26.076018751Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:26.076026193Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:26.076033730Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:26.076041058Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:26.076050512Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:26.076061393Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:26.076067453Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:26.914926481Z [err]      ^
-2026-01-17T20:49:26.914932591Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:26.914938016Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:49:26.914941949Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:26.914948064Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:26.914953684Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:26.914958335Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:26.914963390Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:26.914967723Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:26.914972128Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:26.914977130Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:26.914982253Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:26.914986605Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:28.022432499Z [err]  Traceback (most recent call last):
-2026-01-17T20:49:28.022441394Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:49:28.022446728Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:28.022451777Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:49:28.022456529Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:49:28.022461639Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:49:28.022466351Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:28.022471943Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:49:28.022478516Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:49:28.022483796Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:49:28.022488269Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:49:28.022492556Z [err]      ^
-2026-01-17T20:49:28.022497256Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:55:47.338213655Z [inf]  2026-01-17 20:55:46 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:55:47.338220510Z [inf]  2026-01-17 20:55:46 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:55:47.338227262Z [inf]  2026-01-17 20:55:46 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:55:47.338234433Z [inf]     Market: Will Solana dip to $50 in January?
+2026-01-17T20:55:47.338241503Z [inf]     Direction: buy_yes
+2026-01-17T20:55:47.338248133Z [inf]     Edge: 94.8%
+2026-01-17T20:55:47.338254588Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:55:47.338264753Z [inf]  2026-01-17 20:55:46 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:55:47.338272533Z [inf]  2026-01-17 20:55:46 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:55:47.343608183Z [inf]  2026-01-17 20:55:46 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:55:47.343621316Z [inf]  2026-01-17 20:55:46 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:55:47.343629244Z [inf]  2026-01-17 20:55:46 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:55:47.343636861Z [inf]     Market: Will Solana dip to $30 in January?
+2026-01-17T20:55:47.343644224Z [inf]     Direction: buy_yes
+2026-01-17T20:55:47.343651822Z [inf]  2026-01-17 20:55:46 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:55:47.343653215Z [inf]     Edge: 94.8%
+2026-01-17T20:55:47.343661812Z [inf]     Market: Will Solana dip to $40 in January?
+2026-01-17T20:55:47.343662127Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:55:47.343671840Z [inf]  2026-01-17 20:55:46 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:47.343672180Z [inf]     Direction: buy_yes
+2026-01-17T20:55:47.343681525Z [inf]     Edge: 94.8%
+2026-01-17T20:55:47.343681999Z [inf]  2026-01-17 20:55:46 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:55:47.343691683Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:55:47.343692971Z [inf]  2026-01-17 20:55:46 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:55:47.343699971Z [inf]  2026-01-17 20:55:46 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:47.343702514Z [inf]  2026-01-17 20:55:46 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:47.350136265Z [inf]  2026-01-17 20:55:47 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:47.350143516Z [inf]  2026-01-17 20:55:47 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:47.350151044Z [inf]  2026-01-17 20:55:47 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:47.367215011Z [inf]  2026-01-17 20:55:47 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:47.407461956Z [inf]  2026-01-17 20:55:47 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:48.288710489Z [inf]  2026-01-17 20:55:47 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:48.288722199Z [inf]  2026-01-17 20:55:48 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:48.288863359Z [inf]  2026-01-17 20:55:47 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:48.288874235Z [inf]  2026-01-17 20:55:47 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:48.288881832Z [inf]  2026-01-17 20:55:47 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:48.298321109Z [inf]  2026-01-17 20:55:48 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:48.307231075Z [inf]  2026-01-17 20:55:48 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:48.325161714Z [inf]  2026-01-17 20:55:48 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:49.259318140Z [inf]  2026-01-17 20:55:48 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:49.259323403Z [inf]  2026-01-17 20:55:48 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:49.259328497Z [inf]  2026-01-17 20:55:48 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:49.259341262Z [inf]  2026-01-17 20:55:48 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:49.259346888Z [inf]  2026-01-17 20:55:48 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:49.259351344Z [inf]  2026-01-17 20:55:49 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:49.259359657Z [inf]  2026-01-17 20:55:49 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:49.335538775Z [inf]  2026-01-17 20:55:49 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:49.512102391Z [inf]  2026-01-17 20:55:49 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:50.287671636Z [inf]  2026-01-17 20:55:49 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:50.287883292Z [inf]  2026-01-17 20:55:49 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:50.287893056Z [inf]  2026-01-17 20:55:50 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:50.287909780Z [inf]  2026-01-17 20:55:50 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:50.288483732Z [inf]  2026-01-17 20:55:49 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:50.288488585Z [inf]  2026-01-17 20:55:49 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:50.335519727Z [inf]  2026-01-17 20:55:50 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:50.414481003Z [inf]  2026-01-17 20:55:50 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:50.438879757Z [inf]  2026-01-17 20:55:50 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:51.276666096Z [inf]  2026-01-17 20:55:50 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:51.276672547Z [inf]  2026-01-17 20:55:50 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:51.276678737Z [inf]  2026-01-17 20:55:50 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:51.276688911Z [inf]  2026-01-17 20:55:51 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:51.276694503Z [inf]  2026-01-17 20:55:51 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:51.276700055Z [inf]  2026-01-17 20:55:51 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:51.276705725Z [inf]  2026-01-17 20:55:51 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:51.276712111Z [inf]  2026-01-17 20:55:51 [debug    ] 📊 Arbitrage check: match=115565525419283331 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T20:55:51.283015089Z [inf]  2026-01-17 20:55:51 [debug    ] 📊 Arbitrage check: match=115548424308414206 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T20:55:51.319760669Z [inf]  2026-01-17 20:55:51 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:51.342550752Z [inf]  2026-01-17 20:55:51 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:51.356970004Z [inf]  2026-01-17 20:55:51 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:52.389133423Z [inf]  2026-01-17 20:55:51 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:52.389144217Z [inf]  2026-01-17 20:55:51 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:52.389145695Z [inf]  2026-01-17 20:55:52 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:52.389152614Z [inf]  2026-01-17 20:55:52 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:52.389159870Z [inf]  2026-01-17 20:55:52 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:52.389178709Z [inf]  2026-01-17 20:55:51 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:52.389191684Z [inf]  2026-01-17 20:55:51 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:52.389199570Z [inf]  2026-01-17 20:55:51 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:52.519979985Z [inf]  2026-01-17 20:55:52 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:53.319558995Z [inf]  2026-01-17 20:55:52 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:53.319565159Z [inf]  2026-01-17 20:55:52 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:53.319572087Z [inf]  2026-01-17 20:55:52 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:53.319578456Z [inf]  2026-01-17 20:55:52 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:53.319584305Z [inf]  2026-01-17 20:55:53 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:53.319590414Z [inf]  2026-01-17 20:55:53 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:53.345972776Z [inf]  2026-01-17 20:55:53 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:53.423591973Z [inf]  2026-01-17 20:55:53 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:53.497570352Z [inf]  2026-01-17 20:55:53 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:54.241602614Z [inf]  2026-01-17 20:55:53 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:54.241611432Z [inf]  2026-01-17 20:55:53 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:54.241619252Z [inf]  2026-01-17 20:55:53 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:54.241626722Z [inf]  2026-01-17 20:55:54 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:54.241634305Z [inf]  2026-01-17 20:55:54 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:54.327883820Z [inf]  2026-01-17 20:55:54 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:54.353768272Z [inf]  2026-01-17 20:55:54 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:54.430813045Z [inf]  2026-01-17 20:55:54 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:55.184877205Z [inf]  2026-01-17 20:55:54 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:55.184882641Z [inf]  2026-01-17 20:55:54 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:55.184887342Z [inf]  2026-01-17 20:55:54 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:55.184893202Z [inf]  2026-01-17 20:55:54 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:55.184898131Z [inf]  2026-01-17 20:55:55 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:55.239656121Z [inf]  2026-01-17 20:55:55 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:55.344757451Z [inf]  2026-01-17 20:55:55 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:55.351270687Z [inf]  2026-01-17 20:55:55 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:55.537012438Z [inf]  2026-01-17 20:55:55 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:56.233812999Z [inf]  2026-01-17 20:55:55 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:56.233856765Z [inf]  2026-01-17 20:55:55 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:56.233864783Z [inf]  2026-01-17 20:55:55 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:56.234372308Z [inf]  2026-01-17 20:55:55 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:56.234392837Z [inf]  2026-01-17 20:55:56 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:56.236704151Z [inf]  2026-01-17 20:55:56 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:56.275710605Z [inf]  2026-01-17 20:55:56 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:56.281752986Z [inf]  2026-01-17 20:55:56 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:56.299876581Z [inf]  2026-01-17 20:55:56 [debug    ] 📊 Arbitrage check: match=115565525419283331 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T20:55:56.360412599Z [inf]  2026-01-17 20:55:56 [debug    ] 📊 Arbitrage check: match=115548424308414206 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T20:55:56.360419680Z [inf]  2026-01-17 20:55:56 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:56.433569045Z [inf]  2026-01-17 20:55:56 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:57.194855666Z [inf]  2026-01-17 20:55:56 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:57.194870185Z [inf]  2026-01-17 20:55:56 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:57.194877794Z [inf]  2026-01-17 20:55:56 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:57.194889830Z [inf]  2026-01-17 20:55:57 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:57.194896481Z [inf]  2026-01-17 20:55:57 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:57.195590682Z [inf]  2026-01-17 20:55:56 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:57.339821817Z [inf]  2026-01-17 20:55:57 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:57.361317586Z [inf]  2026-01-17 20:55:57 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:57.497367143Z [inf]  2026-01-17 20:55:57 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:58.429662167Z [inf]  2026-01-17 20:55:57 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:58.429672054Z [inf]  2026-01-17 20:55:57 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:58.429682340Z [inf]  2026-01-17 20:55:57 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:58.429692906Z [inf]  2026-01-17 20:55:57 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:58.429703242Z [inf]  2026-01-17 20:55:58 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:58.429712888Z [inf]  2026-01-17 20:55:58 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:58.429727194Z [inf]  2026-01-17 20:55:58 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:58.429739004Z [inf]  2026-01-17 20:55:58 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:58.542477996Z [inf]  2026-01-17 20:55:58 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:59.432053225Z [inf]  2026-01-17 20:55:58 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:59.432061708Z [inf]  2026-01-17 20:55:58 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:59.432070627Z [inf]  2026-01-17 20:55:58 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:59.432092022Z [inf]  2026-01-17 20:55:59 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:59.432100332Z [inf]  2026-01-17 20:55:59 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:55:59.432107230Z [inf]  2026-01-17 20:55:59 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:55:59.432114437Z [inf]  2026-01-17 20:55:59 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:55:59.452887041Z [inf]  2026-01-17 20:55:59 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:00.601735295Z [inf]  2026-01-17 20:55:59 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:00.601755664Z [inf]  2026-01-17 20:55:59 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:00.601769604Z [inf]  2026-01-17 20:56:00 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:00.601781489Z [inf]  2026-01-17 20:56:00 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:00.601798443Z [inf]  2026-01-17 20:56:00 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:00.601803533Z [inf]  2026-01-17 20:55:59 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:00.601816820Z [inf]  2026-01-17 20:56:00 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:00.601825819Z [inf]  2026-01-17 20:55:59 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:00.601840094Z [inf]  2026-01-17 20:56:00 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:01.397697278Z [inf]  2026-01-17 20:56:01 [debug    ] 📊 Arbitrage check: match=115565525419283331 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T20:56:01.397709333Z [inf]  2026-01-17 20:56:01 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:01.398284298Z [inf]  2026-01-17 20:56:00 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:01.398290838Z [inf]  2026-01-17 20:56:00 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:01.398297049Z [inf]  2026-01-17 20:56:00 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:01.398303953Z [inf]  2026-01-17 20:56:00 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:01.398311882Z [inf]  2026-01-17 20:56:01 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:01.398319541Z [inf]  2026-01-17 20:56:01 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:01.398325678Z [inf]  2026-01-17 20:56:01 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:01.398352306Z [inf]  2026-01-17 20:56:01 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:01.441125823Z [inf]  2026-01-17 20:56:01 [debug    ] 📊 Arbitrage check: match=115548424308414206 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T20:56:01.470081705Z [inf]  2026-01-17 20:56:01 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:01.558098873Z [inf]  2026-01-17 20:56:01 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:02.383064040Z [inf]  2026-01-17 20:56:02 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:02.383077854Z [inf]  2026-01-17 20:56:02 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:02.383198230Z [inf]  2026-01-17 20:56:01 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:02.383213795Z [inf]  2026-01-17 20:56:01 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:02.383225126Z [inf]  2026-01-17 20:56:01 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:02.387286193Z [inf]  2026-01-17 20:56:02 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:02.400455219Z [inf]  2026-01-17 20:56:02 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:02.465252349Z [inf]  2026-01-17 20:56:02 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:03.471489028Z [inf]  2026-01-17 20:56:02 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:03.471497135Z [inf]  2026-01-17 20:56:02 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:03.471508504Z [inf]  2026-01-17 20:56:02 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:03.471516796Z [inf]  2026-01-17 20:56:03 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:03.471523603Z [inf]  2026-01-17 20:56:03 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:03.471532354Z [inf]  2026-01-17 20:56:03 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:03.471539315Z [inf]  2026-01-17 20:56:03 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:03.471546693Z [inf]  2026-01-17 20:56:03 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:04.570305401Z [inf]  2026-01-17 20:56:04 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:04.570316039Z [inf]  2026-01-17 20:56:04 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:04.570325734Z [inf]  2026-01-17 20:56:04 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:04.570357943Z [inf]  2026-01-17 20:56:04 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:04.570374760Z [inf]  2026-01-17 20:56:03 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:04.570389954Z [inf]  2026-01-17 20:56:03 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:04.570400135Z [inf]  2026-01-17 20:56:03 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:04.570412319Z [inf]  2026-01-17 20:56:03 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:04.570420240Z [inf]  2026-01-17 20:56:03 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:04.575838294Z [inf]  2026-01-17 20:56:04 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:05.464708086Z [inf]  2026-01-17 20:56:04 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:05.464739247Z [inf]  2026-01-17 20:56:04 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:05.464755033Z [inf]  2026-01-17 20:56:04 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:05.464785217Z [inf]  2026-01-17 20:56:05 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:05.464791768Z [inf]  2026-01-17 20:56:05 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:05.483245156Z [inf]  2026-01-17 20:56:05 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:05.483931324Z [inf]  2026-01-17 20:56:05 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:05.489061191Z [inf]  2026-01-17 20:56:05 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:06.423413870Z [inf]  2026-01-17 20:56:05 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:06.423422773Z [inf]  2026-01-17 20:56:05 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:06.423437970Z [inf]  2026-01-17 20:56:05 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:06.423451128Z [inf]  2026-01-17 20:56:06 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:06.423464014Z [inf]  2026-01-17 20:56:06 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:06.423796839Z [inf]  2026-01-17 20:56:06 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:06.423907579Z [inf]  2026-01-17 20:56:06 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:06.423911317Z [inf]  2026-01-17 20:56:06 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:06.423933810Z [inf]  2026-01-17 20:56:06 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:06.427936195Z [inf]  2026-01-17 20:56:06 [debug    ] 📊 Arbitrage check: match=115565525419283331 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T20:56:06.438183569Z [inf]  2026-01-17 20:56:06 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:06.494043542Z [inf]  2026-01-17 20:56:06 [debug    ] 📊 Arbitrage check: match=115548424308414206 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T20:56:07.386150042Z [inf]  2026-01-17 20:56:06 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:07.386160867Z [inf]  2026-01-17 20:56:06 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:07.386167635Z [inf]  2026-01-17 20:56:06 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:07.386201066Z [inf]  2026-01-17 20:56:07 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:07.386216237Z [inf]  2026-01-17 20:56:06 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:07.386236559Z [inf]  2026-01-17 20:56:06 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:07.386246090Z [inf]  2026-01-17 20:56:07 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:07.401652375Z [inf]  2026-01-17 20:56:07 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:07.589305491Z [inf]  2026-01-17 20:56:07 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:07.612338721Z [inf]  2026-01-17 20:56:07 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:08.407005477Z [inf]  2026-01-17 20:56:07 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:08.407014223Z [inf]  2026-01-17 20:56:07 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:08.407020581Z [inf]  2026-01-17 20:56:07 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:08.407028126Z [inf]  2026-01-17 20:56:08 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:08.407035241Z [inf]  2026-01-17 20:56:08 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:08.410282913Z [inf]  2026-01-17 20:56:08 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:08.488185733Z [inf]  2026-01-17 20:56:08 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:08.524181515Z [inf]  2026-01-17 20:56:08 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:09.440362291Z [inf]  2026-01-17 20:56:08 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:09.440368690Z [inf]  2026-01-17 20:56:08 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:09.440375835Z [inf]  2026-01-17 20:56:08 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:09.440383362Z [inf]  2026-01-17 20:56:09 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:09.440389961Z [inf]  2026-01-17 20:56:09 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:09.440396924Z [inf]  2026-01-17 20:56:09 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:09.440404529Z [inf]  2026-01-17 20:56:09 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:09.459375900Z [inf]  2026-01-17 20:56:09 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:10.368747848Z [inf]  2026-01-17 20:56:10 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:10.368760068Z [inf]  2026-01-17 20:56:10 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:10.368774184Z [inf]  2026-01-17 20:56:09 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:10.368796808Z [inf]  2026-01-17 20:56:09 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:10.368811534Z [inf]  2026-01-17 20:56:09 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:10.368818863Z [inf]  2026-01-17 20:56:09 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:10.375676255Z [inf]  2026-01-17 20:56:10 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:10.412315536Z [inf]  2026-01-17 20:56:10 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:10.601154675Z [inf]  2026-01-17 20:56:10 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:11.430255680Z [inf]  2026-01-17 20:56:10 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:11.430269207Z [inf]  2026-01-17 20:56:10 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:11.430278311Z [inf]  2026-01-17 20:56:10 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:11.430316463Z [inf]  2026-01-17 20:56:10 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:11.430352655Z [inf]  2026-01-17 20:56:11 [debug    ] Found LoL match: Karmine Corp vs Karmine Corp Blue (LEC) game_id=None component=lolesports
+2026-01-17T20:56:11.430374761Z [inf]  2026-01-17 20:56:11 [debug    ] Found LoL match: LEVIATÁN vs FURIA (CBLOL) game_id=115565525419283332 component=lolesports
+2026-01-17T20:56:11.430397803Z [inf]  2026-01-17 20:56:11 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T20:56:11.430417174Z [inf]  2026-01-17 20:56:11 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T20:56:11.430448711Z [inf]  2026-01-17 20:56:11 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:11.430460273Z [inf]  2026-01-17 20:56:11 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:11.430489454Z [inf]  2026-01-17 20:56:11 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T20:56:11.430499655Z [inf]  2026-01-17 20:56:11 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:11.436323020Z [inf]  2026-01-17 20:56:11 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:11.498837801Z [inf]  2026-01-17 20:56:11 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:11.504924317Z [inf]  2026-01-17 20:56:11 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:11.531432167Z [inf]  2026-01-17 20:56:11 [debug    ] 📊 Arbitrage check: match=115565525419283331 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T20:56:11.561152922Z [inf]  2026-01-17 20:56:11 [debug    ] 📊 Arbitrage check: match=115548424308414206 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T20:56:11.602348012Z [inf]  2026-01-17 20:56:11 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:12.304631092Z [inf]  2026-01-17 20:56:11 [debug    ] Found 0 live matches           component=pandascore
+2026-01-17T20:56:12.304637170Z [inf]  2026-01-17 20:56:11 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:12.304643212Z [inf]  2026-01-17 20:56:11 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:12.304649704Z [inf]  2026-01-17 20:56:11 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:12.304656206Z [inf]  2026-01-17 20:56:12 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:12.304662622Z [inf]  2026-01-17 20:56:12 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:12.406208951Z [inf]  2026-01-17 20:56:12 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:12.422780058Z [inf]  2026-01-17 20:56:12 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:12.520960772Z [inf]  2026-01-17 20:56:12 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:13.790812248Z [inf]  2026-01-17 20:56:13 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:13.790873793Z [inf]  2026-01-17 20:56:12 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:13.790885162Z [inf]  2026-01-17 20:56:12 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:13.790907009Z [inf]  2026-01-17 20:56:12 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:13.790915806Z [inf]  2026-01-17 20:56:13 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:13.790922883Z [inf]  2026-01-17 20:56:13 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:13.790931860Z [inf]  2026-01-17 20:56:13 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:13.790939911Z [inf]  2026-01-17 20:56:13 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:13.790947165Z [inf]  2026-01-17 20:56:13 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:13.790954121Z [inf]  2026-01-17 20:56:13 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:14.732421749Z [inf]  2026-01-17 20:56:14 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:14.732443347Z [inf]  2026-01-17 20:56:13 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:14.732443903Z [inf]  2026-01-17 20:56:14 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:14.732457037Z [inf]  2026-01-17 20:56:14 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:14.732462515Z [inf]  2026-01-17 20:56:13 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:14.732471111Z [inf]  2026-01-17 20:56:14 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:14.732479141Z [inf]  2026-01-17 20:56:14 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:14.732496858Z [inf]  2026-01-17 20:56:14 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:15.660718177Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $40,000 in January?
+2026-01-17T20:56:15.660732183Z [inf]     Price: $95,378.19 | Threshold: $40,000
+2026-01-17T20:56:15.660742619Z [inf]     Distance: -58.06%
+2026-01-17T20:56:15.660755192Z [inf]     Our prob: 95.0% | Market: 0.1%
+2026-01-17T20:56:15.660761511Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.660777717Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $90,000 in January?
+2026-01-17T20:56:15.660787710Z [inf]     Price: $95,378.19 | Threshold: $90,000
+2026-01-17T20:56:15.660794891Z [inf]     Price: $95,378.19 | Threshold: $100,000
+2026-01-17T20:56:15.660797364Z [inf]     Distance: -5.64%
+2026-01-17T20:56:15.660804492Z [inf]     Distance: +4.85%
+2026-01-17T20:56:15.660814673Z [inf]     Our prob: 27.7% | Market: 45.5%
+2026-01-17T20:56:15.660824049Z [inf]     EDGE: 17.8% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.660828383Z [inf]  2026-01-17 20:56:14 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:15.660835546Z [inf]     Our prob: 95.0% | Market: 100.0%
+2026-01-17T20:56:15.660837858Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $55,000 in January?
+2026-01-17T20:56:15.660838434Z [inf]  2026-01-17 20:56:14 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:15.660847591Z [inf]  2026-01-17 20:56:14 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:15.660849483Z [inf]     EDGE: 5.0% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.660849677Z [inf]     Price: $95,378.19 | Threshold: $55,000
+2026-01-17T20:56:15.660855495Z [inf]  2026-01-17 20:56:15 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:15.660860692Z [inf]     Distance: -42.33%
+2026-01-17T20:56:15.660864340Z [inf]  2026-01-17 20:56:15 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:15.660871998Z [inf]  2026-01-17 20:56:15 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:15.660872406Z [inf]     Our prob: 95.0% | Market: 0.3%
+2026-01-17T20:56:15.660879748Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $50,000 in January?
+2026-01-17T20:56:15.660882896Z [inf]     EDGE: 94.7% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.660886859Z [inf]     Price: $95,378.19 | Threshold: $50,000
+2026-01-17T20:56:15.660892508Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $95,000 in January?
+2026-01-17T20:56:15.660897440Z [inf]     Distance: -47.58%
+2026-01-17T20:56:15.660904049Z [inf]     Price: $95,378.19 | Threshold: $95,000
+2026-01-17T20:56:15.660906772Z [inf]     Our prob: 95.0% | Market: 0.3%
+2026-01-17T20:56:15.660910240Z [inf]     Our prob: 95.0% | Market: 0.5%
+2026-01-17T20:56:15.660914773Z [inf]     Distance: -0.40%
+2026-01-17T20:56:15.660917775Z [inf]     EDGE: 94.7% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.660926049Z [inf]     Our prob: 95.0% | Market: 100.0%
+2026-01-17T20:56:15.660927577Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $105,000 in January?
+2026-01-17T20:56:15.660928860Z [inf]     EDGE: 94.5% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.660937116Z [inf]     EDGE: 5.0% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.660937587Z [inf]     Price: $95,378.19 | Threshold: $105,000
+2026-01-17T20:56:15.660941073Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $75,000 in January?
+2026-01-17T20:56:15.660947502Z [inf]     Distance: +10.09%
+2026-01-17T20:56:15.660956289Z [inf]     Price: $95,378.19 | Threshold: $75,000
+2026-01-17T20:56:15.660957401Z [inf]     Our prob: 11.9% | Market: 16.0%
+2026-01-17T20:56:15.660967069Z [inf]     EDGE: 4.1% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.660969938Z [inf]     Distance: -21.37%
+2026-01-17T20:56:15.660977336Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $100,000 in January?
+2026-01-17T20:56:15.660980967Z [inf]     Our prob: 95.0% | Market: 1.1%
+2026-01-17T20:56:15.660989388Z [inf]     EDGE: 93.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.661013418Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $85,000 in January?
+2026-01-17T20:56:15.661023374Z [inf]     Price: $95,378.19 | Threshold: $85,000
+2026-01-17T20:56:15.661031798Z [inf]     Distance: -10.88%
+2026-01-17T20:56:15.661042433Z [inf]     Our prob: 95.0% | Market: 14.0%
+2026-01-17T20:56:15.661050320Z [inf]     EDGE: 81.0% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.661065790Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $80,000 in January?
+2026-01-17T20:56:15.661075159Z [inf]     Price: $95,378.19 | Threshold: $80,000
+2026-01-17T20:56:15.661083053Z [inf]     Distance: -16.12%
+2026-01-17T20:56:15.661091118Z [inf]     EDGE: 91.4% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.661093950Z [inf]     Our prob: 95.0% | Market: 3.6%
+2026-01-17T20:56:15.661102324Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $65,000 in January?
+2026-01-17T20:56:15.661111521Z [inf]     Price: $95,378.19 | Threshold: $65,000
+2026-01-17T20:56:15.661118620Z [inf]     Distance: -31.85%
+2026-01-17T20:56:15.661172656Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $70,000 in January?
+2026-01-17T20:56:15.661183606Z [inf]     Price: $95,378.19 | Threshold: $70,000
+2026-01-17T20:56:15.661196244Z [inf]     Distance: -26.61%
+2026-01-17T20:56:15.661200924Z [inf]     EDGE: 94.2% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.661213001Z [inf]     Our prob: 95.0% | Market: 0.8%
+2026-01-17T20:56:15.661216893Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $60,000 in January?
+2026-01-17T20:56:15.661226997Z [inf]     Price: $95,378.19 | Threshold: $60,000
+2026-01-17T20:56:15.661227672Z [inf]     Our prob: 95.0% | Market: 0.1%
+2026-01-17T20:56:15.661235641Z [inf]     Distance: -37.09%
+2026-01-17T20:56:15.661245428Z [inf]     Our prob: 95.0% | Market: 0.4%
+2026-01-17T20:56:15.661248725Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.661259401Z [inf]     EDGE: 94.5% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.661261633Z [inf]     Our prob: 4.1% | Market: 0.9%
+2026-01-17T20:56:15.661263294Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $100,000 January 12-18?
+2026-01-17T20:56:15.661269768Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $45,000 in January?
+2026-01-17T20:56:15.661279304Z [inf]     EDGE: 3.3% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.661281947Z [inf]     Price: $95,378.19 | Threshold: $100,000
+2026-01-17T20:56:15.661282507Z [inf]     Price: $95,378.19 | Threshold: $45,000
+2026-01-17T20:56:15.661296575Z [inf]     Distance: -52.82%
+2026-01-17T20:56:15.661298815Z [inf]     Distance: +4.85%
+2026-01-17T20:56:15.661298962Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $98,000 January 12-18?
+2026-01-17T20:56:15.664839915Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $80,000 January 12-18?
+2026-01-17T20:56:15.664851234Z [inf]     Price: $95,378.19 | Threshold: $80,000
+2026-01-17T20:56:15.664906262Z [inf]     Price: $95,378.19 | Threshold: $98,000
+2026-01-17T20:56:15.664912580Z [inf]     Distance: +2.75%
+2026-01-17T20:56:15.664918955Z [inf]     Our prob: 14.4% | Market: 5.3%
+2026-01-17T20:56:15.664925802Z [inf]     EDGE: 9.0% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.664934521Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $96,000 January 12-18?
+2026-01-17T20:56:15.664943637Z [inf]     Price: $95,378.19 | Threshold: $96,000
+2026-01-17T20:56:15.664949998Z [inf]     Distance: +0.65%
+2026-01-17T20:56:15.664957267Z [inf]     Our prob: 39.6% | Market: 100.0%
+2026-01-17T20:56:15.664965666Z [inf]     EDGE: 60.4% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.664973561Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin reach $94,000 January 12-18?
+2026-01-17T20:56:15.664981174Z [inf]     Price: $95,378.19 | Threshold: $94,000
+2026-01-17T20:56:15.664988074Z [inf]     Distance: -1.44%
+2026-01-17T20:56:15.664994163Z [inf]     Our prob: 95.0% | Market: 100.0%
+2026-01-17T20:56:15.665004897Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum reach $3,400 in January?
+2026-01-17T20:56:15.665005805Z [inf]     EDGE: 5.0% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665016784Z [inf]     Price: $3,317.33 | Threshold: $3,400
+2026-01-17T20:56:15.665021334Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $90,000 January 12-18?
+2026-01-17T20:56:15.665032264Z [inf]     Price: $95,378.19 | Threshold: $90,000
+2026-01-17T20:56:15.665036723Z [inf]     Distance: -16.12%
+2026-01-17T20:56:15.665048555Z [inf]     Distance: -5.64%
+2026-01-17T20:56:15.665051749Z [inf]     Our prob: 95.0% | Market: 0.1%
+2026-01-17T20:56:15.665064604Z [inf]     Our prob: 95.0% | Market: 1.1%
+2026-01-17T20:56:15.665066569Z [inf]     EDGE: 95.0% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665080937Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $1,000 in January?
+2026-01-17T20:56:15.665081504Z [inf]     EDGE: 93.9% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665095922Z [inf]     Price: $3,317.33 | Threshold: $1,000
+2026-01-17T20:56:15.665097793Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $88,000 January 12-18?
+2026-01-17T20:56:15.665112132Z [inf]     Distance: -69.86%
+2026-01-17T20:56:15.665112243Z [inf]     Price: $95,378.19 | Threshold: $88,000
+2026-01-17T20:56:15.665123327Z [inf]     Our prob: 95.0% | Market: 0.1%
+2026-01-17T20:56:15.665128892Z [inf]     Distance: -7.74%
+2026-01-17T20:56:15.665134284Z [inf]     Distance: -15.59%
+2026-01-17T20:56:15.665137597Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665144699Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum reach $4,000 in January?
+2026-01-17T20:56:15.665147541Z [inf]     Distance: +2.49%
+2026-01-17T20:56:15.665152783Z [inf]     Price: $3,317.33 | Threshold: $4,000
+2026-01-17T20:56:15.665160151Z [inf]     Distance: +20.58%
+2026-01-17T20:56:15.665162549Z [inf]     Our prob: 37.9% | Market: 100.0%
+2026-01-17T20:56:15.665167694Z [inf]     Our prob: 1.7% | Market: 4.5%
+2026-01-17T20:56:15.665173900Z [inf]     EDGE: 62.1% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665174976Z [inf]     EDGE: 2.8% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665181821Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum reach $3,800 in January?
+2026-01-17T20:56:15.665184265Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $2,000 in January?
+2026-01-17T20:56:15.665190565Z [inf]     Price: $3,317.33 | Threshold: $3,800
+2026-01-17T20:56:15.665193148Z [inf]     Price: $3,317.33 | Threshold: $2,000
+2026-01-17T20:56:15.665198252Z [inf]     Distance: +14.55%
+2026-01-17T20:56:15.665200906Z [inf]     Distance: -39.71%
+2026-01-17T20:56:15.665205256Z [inf]     Our prob: 5.3% | Market: 14.5%
+2026-01-17T20:56:15.665210890Z [inf]     Our prob: 95.0% | Market: 0.5%
+2026-01-17T20:56:15.665212941Z [inf]     EDGE: 9.2% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665219928Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum reach $3,600 in January?
+2026-01-17T20:56:15.665222046Z [inf]     EDGE: 94.5% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665227956Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum reach $3,200 in January?
+2026-01-17T20:56:15.665240048Z [inf]     Price: $3,317.33 | Threshold: $3,200
+2026-01-17T20:56:15.665246854Z [inf]     Distance: -3.54%
+2026-01-17T20:56:15.665253820Z [inf]     Our prob: 95.0% | Market: 100.0%
+2026-01-17T20:56:15.665263639Z [inf]     EDGE: 5.0% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665271302Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $2,200 in January?
+2026-01-17T20:56:15.665277699Z [inf]     Price: $3,317.33 | Threshold: $2,200
+2026-01-17T20:56:15.665283363Z [inf]     Distance: -33.68%
+2026-01-17T20:56:15.665396216Z [inf]     Our prob: 95.0% | Market: 0.9%
+2026-01-17T20:56:15.665405959Z [inf]     EDGE: 94.2% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665415443Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $2,800 in January?
+2026-01-17T20:56:15.665423280Z [inf]     Price: $3,317.33 | Threshold: $2,800
+2026-01-17T20:56:15.665462181Z [inf]     Our prob: 95.0% | Market: 10.0%
+2026-01-17T20:56:15.665468155Z [inf]     EDGE: 85.0% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665473836Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $2,600 in January?
+2026-01-17T20:56:15.665482120Z [inf]     Price: $3,317.33 | Threshold: $2,600
+2026-01-17T20:56:15.665488793Z [inf]     Distance: -21.62%
+2026-01-17T20:56:15.665495689Z [inf]     Our prob: 95.0% | Market: 4.5%
+2026-01-17T20:56:15.665501991Z [inf]     EDGE: 90.5% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665510599Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $2,400 in January?
+2026-01-17T20:56:15.665512951Z [inf]     Price: $3,317.33 | Threshold: $3,600
+2026-01-17T20:56:15.665519614Z [inf]     Price: $3,317.33 | Threshold: $2,400
+2026-01-17T20:56:15.665520608Z [inf]     Distance: +8.52%
+2026-01-17T20:56:15.665528130Z [inf]     Our prob: 15.6% | Market: 35.5%
+2026-01-17T20:56:15.665528814Z [inf]     Distance: -27.65%
+2026-01-17T20:56:15.665536463Z [inf]     EDGE: 19.9% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665536918Z [inf]     Our prob: 95.0% | Market: 2.1%
+2026-01-17T20:56:15.665544362Z [inf]     EDGE: 92.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665550120Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $1,400 in January?
+2026-01-17T20:56:15.665555550Z [inf]     Price: $3,317.33 | Threshold: $1,400
+2026-01-17T20:56:15.665560922Z [inf]     Distance: -57.80%
+2026-01-17T20:56:15.665565710Z [inf]     Our prob: 95.0% | Market: 0.2%
+2026-01-17T20:56:15.665571816Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665832268Z [inf]     Our prob: 95.0% | Market: 0.3%
+2026-01-17T20:56:15.665964610Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $1,800 in January?
+2026-01-17T20:56:15.665972412Z [inf]     Price: $3,317.33 | Threshold: $1,800
+2026-01-17T20:56:15.665981415Z [inf]     Distance: -45.74%
+2026-01-17T20:56:15.665987767Z [inf]     EDGE: 94.7% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.665996589Z [inf]     Our prob: 95.0% | Market: 0.5%
+2026-01-17T20:56:15.666003028Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $86,000 January 12-18?
+2026-01-17T20:56:15.666010572Z [inf]     EDGE: 94.5% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.666014964Z [inf]     Price: $95,378.19 | Threshold: $86,000
+2026-01-17T20:56:15.666026686Z [inf]     Distance: -9.83%
+2026-01-17T20:56:15.666027743Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $1,600 in January?
+2026-01-17T20:56:15.666037153Z [inf]     Price: $3,317.33 | Threshold: $1,600
+2026-01-17T20:56:15.666043665Z [inf]     Distance: -51.77%
+2026-01-17T20:56:15.666050753Z [inf]     Our prob: 95.0% | Market: 0.4%
+2026-01-17T20:56:15.666057305Z [inf]     EDGE: 94.6% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.666065536Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Ethereum dip to $1,200 in January?
+2026-01-17T20:56:15.666072489Z [inf]     Price: $3,317.33 | Threshold: $1,200
+2026-01-17T20:56:15.666080427Z [inf]     Distance: -63.83%
+2026-01-17T20:56:15.666088017Z [inf]     Our prob: 95.0% | Market: 0.2%
+2026-01-17T20:56:15.666095447Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.666102532Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: MegaETH market cap (FDV) >$4B one day after launch?
+2026-01-17T20:56:15.666109797Z [inf]     Price: $3,317.33 | Threshold: $4
+2026-01-17T20:56:15.666116437Z [inf]     Distance: -99.88%
+2026-01-17T20:56:15.666122871Z [inf]     Our prob: 95.0% | Market: 7.5%
+2026-01-17T20:56:15.666131596Z [inf]     EDGE: 87.5% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.666141224Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana reach $180 in January?
+2026-01-17T20:56:15.666964407Z [inf]     Our prob: 95.0% | Market: 0.2%
+2026-01-17T20:56:15.666980037Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.666988583Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $84,000 January 12-18?
+2026-01-17T20:56:15.666994416Z [inf]     Price: $95,378.19 | Threshold: $84,000
+2026-01-17T20:56:15.667001755Z [inf]     Distance: -11.93%
+2026-01-17T20:56:15.667011507Z [inf]     Our prob: 95.0% | Market: 0.1%
+2026-01-17T20:56:15.667018902Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.667025483Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $78,000 January 12-18?
+2026-01-17T20:56:15.667031228Z [inf]     Price: $95,378.19 | Threshold: $78,000
+2026-01-17T20:56:15.667037504Z [inf]     Distance: -18.22%
+2026-01-17T20:56:15.667046968Z [inf]     Our prob: 95.0% | Market: 0.1%
+2026-01-17T20:56:15.667052602Z [inf]     EDGE: 95.0% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.667057997Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Bitcoin dip to $82,000 January 12-18?
+2026-01-17T20:56:15.667069024Z [inf]     Price: $95,378.19 | Threshold: $82,000
+2026-01-17T20:56:15.667076898Z [inf]     Distance: -14.03%
+2026-01-17T20:56:15.667082856Z [inf]     Our prob: 95.0% | Market: 0.1%
+2026-01-17T20:56:15.667088708Z [inf]     EDGE: 95.0% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.673820899Z [inf]     Price: $144.53 | Threshold: $180
+2026-01-17T20:56:15.673828939Z [inf]     Distance: +24.54%
+2026-01-17T20:56:15.673835388Z [inf]     Our prob: 1.0% | Market: 6.0%
+2026-01-17T20:56:15.673842417Z [inf]     EDGE: 5.0% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.673848319Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $100 in January?
+2026-01-17T20:56:15.673854737Z [inf]     Price: $144.53 | Threshold: $100
+2026-01-17T20:56:15.673859972Z [inf]     Distance: -30.81%
+2026-01-17T20:56:15.673867314Z [inf]     Our prob: 95.0% | Market: 1.2%
+2026-01-17T20:56:15.673873155Z [inf]     EDGE: 93.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.673879386Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana reach $170 in January?
+2026-01-17T20:56:15.673886269Z [inf]     Price: $144.53 | Threshold: $170
+2026-01-17T20:56:15.673893087Z [inf]     Distance: +17.62%
+2026-01-17T20:56:15.673899478Z [inf]     Our prob: 3.0% | Market: 12.5%
+2026-01-17T20:56:15.673905477Z [inf]     EDGE: 9.5% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.673912276Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana reach $160 in January?
+2026-01-17T20:56:15.673919251Z [inf]     Price: $144.53 | Threshold: $160
+2026-01-17T20:56:15.673925531Z [inf]     Distance: +10.70%
+2026-01-17T20:56:15.673932150Z [inf]     Our prob: 10.7% | Market: 30.5%
+2026-01-17T20:56:15.673940549Z [inf]     EDGE: 19.8% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.673947104Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana reach $150 in January?
+2026-01-17T20:56:15.673953368Z [inf]     Price: $144.53 | Threshold: $150
+2026-01-17T20:56:15.673962645Z [inf]     Distance: +3.78%
+2026-01-17T20:56:15.673969089Z [inf]     Our prob: 32.1% | Market: 71.5%
+2026-01-17T20:56:15.674948802Z [inf]     Distance: -51.57%
+2026-01-17T20:56:15.674960782Z [inf]     EDGE: 39.4% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.674961153Z [inf]     Our prob: 95.0% | Market: 0.4%
+2026-01-17T20:56:15.674968249Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana reach $140 in January?
+2026-01-17T20:56:15.674971246Z [inf]     EDGE: 94.7% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.674977481Z [inf]     Price: $144.53 | Threshold: $140
+2026-01-17T20:56:15.674980860Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $110 in January?
+2026-01-17T20:56:15.674986209Z [inf]     Distance: -3.13%
+2026-01-17T20:56:15.674993273Z [inf]     Our prob: 95.0% | Market: 100.0%
+2026-01-17T20:56:15.675000778Z [inf]     EDGE: 5.0% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.675008114Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana reach $130 in January?
+2026-01-17T20:56:15.675015804Z [inf]     Price: $144.53 | Threshold: $130
+2026-01-17T20:56:15.675023028Z [inf]     Distance: -10.05%
+2026-01-17T20:56:15.675030480Z [inf]     Our prob: 95.0% | Market: 100.0%
+2026-01-17T20:56:15.675038337Z [inf]     EDGE: 5.0% | Action: BUY_NO component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.675045729Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $120 in January?
+2026-01-17T20:56:15.675053828Z [inf]     Price: $144.53 | Threshold: $120
+2026-01-17T20:56:15.675061504Z [inf]     Distance: -16.97%
+2026-01-17T20:56:15.675066601Z [inf]     Our prob: 95.0% | Market: 10.0%
+2026-01-17T20:56:15.675076021Z [inf]     EDGE: 85.0% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.675082283Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $70 in January?
+2026-01-17T20:56:15.675087933Z [inf]     Price: $144.53 | Threshold: $70
+2026-01-17T20:56:15.680246951Z [inf]     Our prob: 95.0% | Market: 0.2%
+2026-01-17T20:56:15.680270086Z [inf]     Price: $144.53 | Threshold: $110
+2026-01-17T20:56:15.680279462Z [inf]     Distance: -23.89%
+2026-01-17T20:56:15.680286096Z [inf]     Our prob: 95.0% | Market: 2.2%
+2026-01-17T20:56:15.680292283Z [inf]     EDGE: 92.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.680302025Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $90 in January?
+2026-01-17T20:56:15.680310020Z [inf]     Price: $144.53 | Threshold: $90
+2026-01-17T20:56:15.680315731Z [inf]     Distance: -37.73%
+2026-01-17T20:56:15.680321542Z [inf]     Our prob: 95.0% | Market: 1.1%
+2026-01-17T20:56:15.680326900Z [inf]     EDGE: 93.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.680333690Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $80 in January?
+2026-01-17T20:56:15.680339699Z [inf]     Price: $144.53 | Threshold: $80
+2026-01-17T20:56:15.680346164Z [inf]     Distance: -44.65%
+2026-01-17T20:56:15.680352768Z [inf]     Our prob: 95.0% | Market: 0.7%
+2026-01-17T20:56:15.680359285Z [inf]     EDGE: 94.3% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.680366448Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $60 in January?
+2026-01-17T20:56:15.680374879Z [inf]     Price: $144.53 | Threshold: $60
+2026-01-17T20:56:15.680381554Z [inf]     Distance: -58.49%
+2026-01-17T20:56:15.680388197Z [inf]     Our prob: 95.0% | Market: 0.4%
+2026-01-17T20:56:15.680394694Z [inf]     EDGE: 94.7% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.680401181Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $50 in January?
+2026-01-17T20:56:15.680407590Z [inf]     Price: $144.53 | Threshold: $50
+2026-01-17T20:56:15.680413601Z [inf]     Distance: -65.41%
+2026-01-17T20:56:15.684513172Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.684518368Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $40 in January?
+2026-01-17T20:56:15.684523591Z [inf]     Price: $144.53 | Threshold: $40
+2026-01-17T20:56:15.684528772Z [inf]     Distance: -72.32%
+2026-01-17T20:56:15.684534076Z [inf]     Our prob: 95.0% | Market: 0.2%
+2026-01-17T20:56:15.684539813Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.684544191Z [inf]  2026-01-17 20:56:15 [info     ] 🎯 CRYPTO OPPORTUNITY: Will Solana dip to $30 in January?
+2026-01-17T20:56:15.684550531Z [inf]     Price: $144.53 | Threshold: $30
+2026-01-17T20:56:15.684554712Z [inf]     Distance: -79.24%
+2026-01-17T20:56:15.684558969Z [inf]     Our prob: 95.0% | Market: 0.1%
+2026-01-17T20:56:15.684564653Z [inf]     EDGE: 94.8% | Action: BUY_YES component=src.crypto.crypto_arbitrage
+2026-01-17T20:56:15.684569493Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:15.684574116Z [inf]     Market: Will Bitcoin dip to $50,000 in January?
+2026-01-17T20:56:15.684578659Z [inf]     Direction: buy_yes
+2026-01-17T20:56:15.684583311Z [inf]     Edge: 94.7%
+2026-01-17T20:56:15.684588989Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:15.684600266Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:15.684605276Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:15.684609489Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:15.684614127Z [inf]     Market: Will Bitcoin reach $105,000 in January?
+2026-01-17T20:56:15.689240915Z [inf]     Direction: buy_no
+2026-01-17T20:56:15.689248450Z [inf]     Edge: 4.1%
+2026-01-17T20:56:15.689254982Z [inf]     Confidence: 58% component=engine
+2026-01-17T20:56:15.689262677Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:15.689270352Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:15.689279193Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:15.689285315Z [inf]     Market: Will Bitcoin reach $100,000 in January?
+2026-01-17T20:56:15.689293423Z [inf]     Direction: buy_no
+2026-01-17T20:56:15.689300414Z [inf]     Edge: 17.8%
+2026-01-17T20:56:15.689309849Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:15.689316903Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:15.689323632Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:15.689329616Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:15.689337206Z [inf]     Market: Will Bitcoin dip to $55,000 in January?
+2026-01-17T20:56:15.689344120Z [inf]     Direction: buy_yes
+2026-01-17T20:56:15.689352846Z [inf]     Edge: 94.7%
+2026-01-17T20:56:15.689359990Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:15.689366009Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:15.693809581Z [inf]     Edge: 94.8%
+2026-01-17T20:56:15.693816926Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:15.693826392Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:15.693828222Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:15.693835706Z [inf]     Market: Will Bitcoin reach $95,000 in January?
+2026-01-17T20:56:15.693843722Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:15.693844982Z [inf]     Direction: buy_no
+2026-01-17T20:56:15.693853857Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:15.693854549Z [inf]     Edge: 5.0%
+2026-01-17T20:56:15.693863331Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:15.693864467Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:15.693880354Z [inf]  2026-01-17 20:56:15 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:15.693890194Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:15.693897159Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:15.693903906Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:15.693910997Z [inf]     Market: Will Bitcoin dip to $40,000 in January?
+2026-01-17T20:56:15.693918009Z [inf]     Direction: buy_yes
+2026-01-17T20:56:15.698686787Z [inf]     Market: Will Bitcoin reach $90,000 in January?
+2026-01-17T20:56:15.698695963Z [inf]     Direction: buy_no
+2026-01-17T20:56:15.698705160Z [inf]     Edge: 5.0%
+2026-01-17T20:56:15.698714681Z [inf]     Confidence: 60% component=engine
+2026-01-17T20:56:15.698724307Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:15.698733228Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:15.698741926Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:15.698751737Z [inf]     Market: Will Bitcoin dip to $85,000 in January?
+2026-01-17T20:56:15.698762228Z [inf]     Direction: buy_yes
+2026-01-17T20:56:15.698770943Z [inf]     Edge: 81.0%
+2026-01-17T20:56:15.698779662Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:15.698787349Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:15.698805432Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:15.698815302Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:15.698824540Z [inf]     Market: Will Bitcoin dip to $80,000 in January?
+2026-01-17T20:56:15.698834753Z [inf]     Direction: buy_yes
+2026-01-17T20:56:15.698843779Z [inf]     Edge: 91.4%
+2026-01-17T20:56:15.698852688Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:15.724052510Z [inf]  2026-01-17 20:56:15 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:15.734121573Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:15.734129872Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:15.734136523Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:15.734143072Z [inf]     Market: Will Bitcoin dip to $65,000 in January?
+2026-01-17T20:56:15.734150624Z [inf]     Direction: buy_yes
+2026-01-17T20:56:15.734157678Z [inf]     Edge: 94.5%
+2026-01-17T20:56:15.734164990Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:15.762044563Z [inf]     Edge: 93.8%
+2026-01-17T20:56:15.762098122Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:15.762116654Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:15.762126383Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:15.762136516Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:15.762149465Z [inf]     Market: Will Bitcoin dip to $75,000 in January?
+2026-01-17T20:56:15.762158003Z [inf]     Direction: buy_yes
+2026-01-17T20:56:15.795784231Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:15.795802115Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:15.795813063Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:15.795822467Z [inf]     Market: Will Bitcoin dip to $70,000 in January?
+2026-01-17T20:56:15.795833177Z [inf]     Direction: buy_yes
+2026-01-17T20:56:15.795851237Z [inf]     Edge: 94.2%
+2026-01-17T20:56:15.795859899Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:15.817503028Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:15.817513156Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:15.817520380Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:15.817529247Z [inf]     Market: Will Bitcoin dip to $60,000 in January?
+2026-01-17T20:56:15.817536961Z [inf]     Direction: buy_yes
+2026-01-17T20:56:15.817543808Z [inf]     Edge: 94.5%
+2026-01-17T20:56:15.817550282Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.707807957Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.707818413Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.707819557Z [inf]     Market: Will Bitcoin reach $94,000 January 12-18?
+2026-01-17T20:56:16.707829880Z [inf]     Direction: buy_no
+2026-01-17T20:56:16.707832746Z [inf]     Edge: 9.0%
+2026-01-17T20:56:16.707832766Z [inf]     Direction: buy_no
+2026-01-17T20:56:16.707833569Z [inf]     Confidence: 100% component=engine
+2026-01-17T20:56:16.707843118Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.707844105Z [inf]     Confidence: 78% component=engine
+2026-01-17T20:56:16.707844395Z [inf]     Edge: 60.4%
+2026-01-17T20:56:16.707851121Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.707868638Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.707871253Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.707874601Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.707880302Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.707883852Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.707889852Z [inf]     Market: Will Bitcoin reach $98,000 January 12-18?
+2026-01-17T20:56:16.707890836Z [inf]     Market: Will Bitcoin reach $96,000 January 12-18?
+2026-01-17T20:56:16.707940546Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.707947293Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.707954836Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.707961815Z [inf]     Market: Will Bitcoin dip to $45,000 in January?
+2026-01-17T20:56:16.707969198Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.707976381Z [inf]     Edge: 94.8%
+2026-01-17T20:56:16.707984205Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.707992125Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.707998602Z [inf]  2026-01-17 20:56:15 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.708004506Z [inf]  2026-01-17 20:56:15 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.708010551Z [inf]     Market: Will Bitcoin reach $100,000 January 12-18?
+2026-01-17T20:56:16.708016527Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.708023604Z [inf]     Edge: 3.3%
+2026-01-17T20:56:16.708031268Z [inf]     Confidence: 57% component=engine
+2026-01-17T20:56:16.708037900Z [inf]  2026-01-17 20:56:15 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:16.708044640Z [inf]  2026-01-17 20:56:15 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.711469367Z [inf]     Edge: 5.0%
+2026-01-17T20:56:16.711476567Z [inf]     Confidence: 70% component=engine
+2026-01-17T20:56:16.711481092Z [inf]  2026-01-17 20:56:16 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:16.711485365Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.711490095Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.711496387Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.711501561Z [inf]     Market: Will Bitcoin dip to $90,000 January 12-18?
+2026-01-17T20:56:16.711507784Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.711512826Z [inf]     Edge: 93.9%
+2026-01-17T20:56:16.711517937Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.711525558Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.711531797Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.711538012Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.711543280Z [inf]     Market: Will Bitcoin dip to $88,000 January 12-18?
+2026-01-17T20:56:16.711548737Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.711553262Z [inf]     Edge: 94.7%
+2026-01-17T20:56:16.711558942Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.711564666Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.713870957Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.713877091Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.713883000Z [inf]     Market: Will Bitcoin dip to $86,000 January 12-18?
+2026-01-17T20:56:16.713889555Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.713895997Z [inf]     Edge: 94.8%
+2026-01-17T20:56:16.713902427Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.713909547Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.713915473Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.713921927Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.713928008Z [inf]     Market: Will Bitcoin dip to $84,000 January 12-18?
+2026-01-17T20:56:16.713935221Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.713941254Z [inf]     Edge: 94.8%
+2026-01-17T20:56:16.713946918Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.713954981Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.713961247Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.713967894Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.713975224Z [inf]     Market: Will Bitcoin dip to $78,000 January 12-18?
+2026-01-17T20:56:16.713982729Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.717176538Z [inf]     Edge: 95.0%
+2026-01-17T20:56:16.717182520Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.717189204Z [inf]  2026-01-17 20:56:16 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:16.717198571Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.717205544Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.717211046Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.717216172Z [inf]     Market: Will Bitcoin dip to $82,000 January 12-18?
+2026-01-17T20:56:16.717222480Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.717228744Z [inf]     Edge: 95.0%
+2026-01-17T20:56:16.717234846Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.717240838Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.717248212Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.717254656Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.717260761Z [inf]     Market: Will Bitcoin dip to $80,000 January 12-18?
+2026-01-17T20:56:16.717266739Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.717275521Z [inf]     Edge: 95.0%
+2026-01-17T20:56:16.717283060Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.717289736Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.720552904Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.720559069Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.720567467Z [inf]     Market: Will Ethereum dip to $1,000 in January?
+2026-01-17T20:56:16.720574143Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.720580161Z [inf]     Edge: 94.8%
+2026-01-17T20:56:16.720587887Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.720595953Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.720607959Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.720617310Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.720624332Z [inf]     Market: Will Ethereum reach $4,000 in January?
+2026-01-17T20:56:16.720633247Z [inf]     Direction: buy_no
+2026-01-17T20:56:16.720641085Z [inf]     Edge: 2.8%
+2026-01-17T20:56:16.720647742Z [inf]     Confidence: 56% component=engine
+2026-01-17T20:56:16.720653498Z [inf]  2026-01-17 20:56:16 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:16.720660277Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.720668557Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.720676492Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.724876070Z [inf]     Market: Will Ethereum reach $3,800 in January?
+2026-01-17T20:56:16.724883542Z [inf]     Direction: buy_no
+2026-01-17T20:56:16.724897665Z [inf]     Edge: 9.2%
+2026-01-17T20:56:16.724904903Z [inf]     Confidence: 68% component=engine
+2026-01-17T20:56:16.724914426Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.724922810Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.724929969Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.724937097Z [inf]     Market: Will Ethereum reach $3,600 in January?
+2026-01-17T20:56:16.724944222Z [inf]     Direction: buy_no
+2026-01-17T20:56:16.724953853Z [inf]     Edge: 19.9%
+2026-01-17T20:56:16.724960779Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.724973913Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.724982784Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.724991808Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.724999486Z [inf]     Market: Will Ethereum reach $3,400 in January?
+2026-01-17T20:56:16.725009521Z [inf]     Direction: buy_no
+2026-01-17T20:56:16.725020590Z [inf]     Edge: 62.1%
+2026-01-17T20:56:16.725029143Z [inf]     Confidence: 90% component=engine
+2026-01-17T20:56:16.725037964Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.731068751Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.731088858Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.731136382Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.731138252Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.731146898Z [inf]     Edge: 5.0%
+2026-01-17T20:56:16.731151999Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.731153794Z [inf]     Market: Will Ethereum dip to $2,200 in January?
+2026-01-17T20:56:16.731164920Z [inf]     Confidence: 60% component=engine
+2026-01-17T20:56:16.731167342Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.731168659Z [inf]     Market: Will Ethereum dip to $2,000 in January?
+2026-01-17T20:56:16.731177761Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.731186262Z [inf]     Edge: 94.5%
+2026-01-17T20:56:16.731195846Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.731204966Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.731212652Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.731221761Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.731229480Z [inf]     Market: Will Ethereum reach $3,200 in January?
+2026-01-17T20:56:16.731236074Z [inf]     Direction: buy_no
+2026-01-17T20:56:16.735384983Z [inf]     Edge: 94.2%
+2026-01-17T20:56:16.735391162Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.735397624Z [inf]  2026-01-17 20:56:16 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:16.735403452Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.735409087Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.735414176Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.735420336Z [inf]     Market: Will Ethereum dip to $2,800 in January?
+2026-01-17T20:56:16.735425841Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.735431983Z [inf]     Edge: 85.0%
+2026-01-17T20:56:16.735437622Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.735445502Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.735452214Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.735458018Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.735463804Z [inf]     Market: Will Ethereum dip to $2,600 in January?
+2026-01-17T20:56:16.735470238Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.735477109Z [inf]     Edge: 90.5%
+2026-01-17T20:56:16.735487194Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.735494074Z [inf]  2026-01-17 20:56:16 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:16.743822055Z [inf]  2026-01-17 20:56:16 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:16.743828560Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.743836431Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.743844782Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.743853583Z [inf]     Market: Will Ethereum dip to $2,400 in January?
+2026-01-17T20:56:16.743860841Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.743868351Z [inf]     Edge: 92.8%
+2026-01-17T20:56:16.743878231Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.743886067Z [inf]  2026-01-17 20:56:16 [debug    ] 📊 Arbitrage check: match=115565525419283331 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T20:56:16.743896268Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.743904201Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.743912426Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.743919939Z [inf]     Market: Will Ethereum dip to $1,400 in January?
+2026-01-17T20:56:16.743927047Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.743933590Z [inf]     Edge: 94.8%
+2026-01-17T20:56:16.743939796Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.743947215Z [inf]  2026-01-17 20:56:16 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:16.748650866Z [inf]  2026-01-17 20:56:16 [debug    ] 📊 Arbitrage check: match=115548424308414206 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T20:56:16.748662387Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.748670537Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.748678313Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.748687179Z [inf]     Market: Will Ethereum dip to $1,800 in January?
+2026-01-17T20:56:16.748695203Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.748701831Z [inf]     Edge: 94.5%
+2026-01-17T20:56:16.748709812Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.748719236Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.748726321Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.748733137Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.748739974Z [inf]     Market: Will Ethereum dip to $1,600 in January?
+2026-01-17T20:56:16.748746833Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.748754382Z [inf]     Edge: 94.6%
+2026-01-17T20:56:16.748761761Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.748775220Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.752485983Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.752495245Z [inf]     Market: MegaETH market cap (FDV) >$4B one day after launch?
+2026-01-17T20:56:16.752503940Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.752511573Z [inf]     Edge: 87.5%
+2026-01-17T20:56:16.752516735Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.752518752Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.752525406Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.752532248Z [inf]     Market: Will Ethereum dip to $1,200 in January?
+2026-01-17T20:56:16.752538959Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.752551919Z [inf]     Edge: 94.8%
+2026-01-17T20:56:16.752558377Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.752566423Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.752573170Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.761100641Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.761107833Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.761114064Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.761120705Z [inf]     Market: Will Solana reach $180 in January?
+2026-01-17T20:56:16.761148030Z [inf]     Direction: buy_no
+2026-01-17T20:56:16.761154834Z [inf]     Edge: 5.0%
+2026-01-17T20:56:16.761162392Z [inf]     Confidence: 60% component=engine
+2026-01-17T20:56:16.789894440Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:16.789901427Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:16.789907686Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:16.789914622Z [inf]     Market: Will Solana dip to $100 in January?
+2026-01-17T20:56:16.789931645Z [inf]     Direction: buy_yes
+2026-01-17T20:56:16.789938183Z [inf]     Edge: 93.8%
+2026-01-17T20:56:16.789945325Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:16.799803827Z [inf]  2026-01-17 20:56:16 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:17.615156279Z [inf]     Market: Will Solana reach $160 in January?
+2026-01-17T20:56:17.615253326Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:17.615263070Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:17.615269023Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:17.615283195Z [inf]     Market: Will Solana reach $170 in January?
+2026-01-17T20:56:17.615295835Z [inf]     Direction: buy_no
+2026-01-17T20:56:17.615303687Z [inf]     Edge: 9.5%
+2026-01-17T20:56:17.615334448Z [inf]     Confidence: 69% component=engine
+2026-01-17T20:56:17.615346236Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:17.615346520Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:17.615358662Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:17.615422692Z [inf]     Direction: buy_no
+2026-01-17T20:56:17.615431514Z [inf]     Edge: 19.8%
+2026-01-17T20:56:17.615437165Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:17.615442582Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:17.615448257Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:17.616687710Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:17.616694838Z [inf]     Market: Will Solana reach $150 in January?
+2026-01-17T20:56:17.616702082Z [inf]     Direction: buy_no
+2026-01-17T20:56:17.616708020Z [inf]     Edge: 39.4%
+2026-01-17T20:56:17.616714615Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:17.616721972Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:17.616729712Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:17.616735967Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:17.616741960Z [inf]     Market: Will Solana reach $140 in January?
+2026-01-17T20:56:17.616748252Z [inf]     Direction: buy_no
+2026-01-17T20:56:17.616754521Z [inf]     Edge: 5.0%
+2026-01-17T20:56:17.616761041Z [inf]     Confidence: 60% component=engine
+2026-01-17T20:56:17.618751026Z [inf]  2026-01-17 20:56:16 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:17.618760697Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:17.618766321Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:17.618772290Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:17.618781321Z [inf]     Market: Will Solana reach $130 in January?
+2026-01-17T20:56:17.618786298Z [inf]     Direction: buy_no
+2026-01-17T20:56:17.618932851Z [inf]     Edge: 5.0%
+2026-01-17T20:56:17.618937545Z [inf]     Confidence: 60% component=engine
+2026-01-17T20:56:17.618942485Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:17.618947419Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:17.618953013Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:17.618958057Z [inf]     Market: Will Solana dip to $120 in January?
+2026-01-17T20:56:17.618963288Z [inf]     Direction: buy_yes
+2026-01-17T20:56:17.618967989Z [inf]     Edge: 85.0%
+2026-01-17T20:56:17.618973469Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:17.618978147Z [inf]  2026-01-17 20:56:16 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:17.618982981Z [inf]  2026-01-17 20:56:16 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:17.618988793Z [inf]  2026-01-17 20:56:16 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:17.618993782Z [inf]     Market: Will Solana dip to $70 in January?
+2026-01-17T20:56:17.618999192Z [inf]     Direction: buy_yes
+2026-01-17T20:56:17.619004273Z [inf]     Edge: 94.7%
+2026-01-17T20:56:17.619010261Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:17.619014471Z [inf]  2026-01-17 20:56:17 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:17.620463545Z [inf]  2026-01-17 20:56:17 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:17.620469328Z [inf]  2026-01-17 20:56:17 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:17.620476270Z [inf]     Market: Will Solana dip to $110 in January?
+2026-01-17T20:56:17.620483067Z [inf]     Direction: buy_yes
+2026-01-17T20:56:17.620489002Z [inf]     Edge: 92.8%
+2026-01-17T20:56:17.620496495Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:17.620502373Z [inf]  2026-01-17 20:56:17 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:17.620508747Z [inf]  2026-01-17 20:56:17 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:17.620514414Z [inf]  2026-01-17 20:56:17 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:17.620522440Z [inf]     Market: Will Solana dip to $90 in January?
+2026-01-17T20:56:17.620529021Z [inf]     Direction: buy_yes
+2026-01-17T20:56:17.620535312Z [inf]     Edge: 93.8%
+2026-01-17T20:56:17.620540960Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:17.620548561Z [inf]  2026-01-17 20:56:17 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:17.620555143Z [inf]  2026-01-17 20:56:17 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:17.620562541Z [inf]  2026-01-17 20:56:17 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:17.620572516Z [inf]     Market: Will Solana dip to $80 in January?
+2026-01-17T20:56:17.620580356Z [inf]     Direction: buy_yes
+2026-01-17T20:56:17.625741777Z [inf]  2026-01-17 20:56:17 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:17.625754145Z [inf]     Market: Will Solana dip to $50 in January?
+2026-01-17T20:56:17.625763639Z [inf]     Direction: buy_yes
+2026-01-17T20:56:17.625770213Z [inf]     Edge: 94.8%
+2026-01-17T20:56:17.625776853Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:17.625784408Z [inf]  2026-01-17 20:56:17 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:17.625833145Z [inf]     Edge: 94.3%
+2026-01-17T20:56:17.625845814Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:17.625855534Z [inf]  2026-01-17 20:56:17 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:17.625864608Z [inf]  2026-01-17 20:56:17 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:17.625873074Z [inf]  2026-01-17 20:56:17 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:17.625889311Z [inf]  2026-01-17 20:56:17 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:17.625900681Z [inf]     Market: Will Solana dip to $60 in January?
+2026-01-17T20:56:17.625910729Z [inf]     Direction: buy_yes
+2026-01-17T20:56:17.625919826Z [inf]     Edge: 94.7%
+2026-01-17T20:56:17.625929187Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:17.625937929Z [inf]  2026-01-17 20:56:17 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:17.625947731Z [inf]  2026-01-17 20:56:17 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:17.629397517Z [inf]  2026-01-17 20:56:17 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:17.629410476Z [inf]  2026-01-17 20:56:17 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:17.629446031Z [inf]  2026-01-17 20:56:17 [error    ] Error placing order            component=polymarket error="Client error '401 Unauthorized' for url 'https://clob.polymarket.com/order'\nFor more information check: https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/401"
+2026-01-17T20:56:17.629456993Z [inf]  2026-01-17 20:56:17 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:17.629463075Z [inf]  2026-01-17 20:56:17 [warning  ] ❌ Crypto trade failed to execute component=engine
+2026-01-17T20:56:17.629466432Z [inf]  2026-01-17 20:56:17 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:17.629471904Z [inf]  2026-01-17 20:56:17 [info     ] 💰 EXECUTING CRYPTO TRADE:
+2026-01-17T20:56:17.629474640Z [inf]     Market: Will Solana dip to $30 in January?
+2026-01-17T20:56:17.629483136Z [inf]     Market: Will Solana dip to $40 in January?
+2026-01-17T20:56:17.629484658Z [inf]     Direction: buy_yes
+2026-01-17T20:56:17.629491918Z [inf]  2026-01-17 20:56:17 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:17.629493209Z [inf]     Direction: buy_yes
+2026-01-17T20:56:17.629494761Z [inf]     Edge: 94.8%
+2026-01-17T20:56:17.629503082Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:17.629503347Z [inf]     Edge: 94.8%
+2026-01-17T20:56:17.629512611Z [inf]     Confidence: 80% component=engine
+2026-01-17T20:56:17.629519153Z [inf]  2026-01-17 20:56:17 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:17.635716435Z [inf]  2026-01-17 20:56:17 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:17.635723152Z [inf]  2026-01-17 20:56:17 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:17.722870723Z [inf]  2026-01-17 20:56:17 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:17.765444691Z [inf]  2026-01-17 20:56:17 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:18.667746782Z [inf]  2026-01-17 20:56:17 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:18.667755770Z [inf]  2026-01-17 20:56:18 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:18.667762214Z [inf]  2026-01-17 20:56:18 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:18.667768739Z [inf]  2026-01-17 20:56:18 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:18.667774351Z [inf]  2026-01-17 20:56:18 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:18.667789395Z [inf]  2026-01-17 20:56:18 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:18.667797623Z [inf]  2026-01-17 20:56:18 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:18.734750044Z [inf]  2026-01-17 20:56:18 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:18.767376534Z [inf]  2026-01-17 20:56:18 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:19.724304726Z [inf]  2026-01-17 20:56:19 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:19.724374919Z [inf]  2026-01-17 20:56:18 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:19.724384786Z [inf]  2026-01-17 20:56:19 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:19.724394040Z [inf]  2026-01-17 20:56:19 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:19.724401051Z [inf]  2026-01-17 20:56:19 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:19.724409969Z [inf]  2026-01-17 20:56:19 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:19.724425470Z [inf]  2026-01-17 20:56:19 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:19.771823979Z [inf]  2026-01-17 20:56:19 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:20.619271630Z [inf]  2026-01-17 20:56:19 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:20.619278732Z [inf]  2026-01-17 20:56:19 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:20.619284638Z [inf]  2026-01-17 20:56:20 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:20.619289855Z [inf]  2026-01-17 20:56:20 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine
+2026-01-17T20:56:20.619295880Z [inf]  2026-01-17 20:56:20 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:20.619302739Z [inf]  2026-01-17 20:56:20 [debug    ] No game ID found for match 115548424308414206 - game may not have started yet component=lolesports
+2026-01-17T20:56:20.663401312Z [inf]  2026-01-17 20:56:20 [info     ] 📊 LIVE STATS for 115565525419283332: Blue kills=0 gold=0 | Red kills=0 gold=0 component=lolesports
+2026-01-17T20:56:20.772712730Z [inf]  2026-01-17 20:56:20 [debug    ] 💰 Crypto prices: BTCUSDT: $95,378.19 | ETHUSDT: $3,317.33 | SOLUSDT: $144.53 component=engine

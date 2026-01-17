@@ -192,8 +192,12 @@ class PolymarketClient:
             logger.error(f"Failed to create API signature: {e}")
             raise ValueError(f"Invalid POLYMARKET_API_SECRET format. Must be base64 encoded. Error: {e}")
         
+        # POLY_ADDRESS must be the EOA (signer) address, not the funder/proxy address
+        # The funder address is only used for order placement, not for API auth
+        eoa_address = self._account.address if self._account else self._address
+        
         return {
-            "POLY_ADDRESS": self._address,
+            "POLY_ADDRESS": eoa_address,
             "POLY_API_KEY": self._api_key,
             "POLY_SIGNATURE": signature_b64,
             "POLY_TIMESTAMP": timestamp,
@@ -723,6 +727,105 @@ class PolymarketClient:
         
         return yes_price, no_price
     
+    def _create_order_signature(
+        self,
+        token_id: str,
+        side: str,
+        size: str,
+        price: str,
+        nonce: int,
+        expiration: int,
+    ) -> str:
+        """
+        Create EIP-712 signature for order.
+        
+        Polymarket uses EIP-712 typed data signing for orders.
+        """
+        # EIP-712 domain for Polymarket CLOB
+        domain_data = {
+            "name": "Polymarket CTF Exchange",
+            "version": "1",
+            "chainId": self._chain_id,
+        }
+        
+        # Order type definition
+        order_types = {
+            "Order": [
+                {"name": "salt", "type": "uint256"},
+                {"name": "maker", "type": "address"},
+                {"name": "signer", "type": "address"},
+                {"name": "taker", "type": "address"},
+                {"name": "tokenId", "type": "uint256"},
+                {"name": "makerAmount", "type": "uint256"},
+                {"name": "takerAmount", "type": "uint256"},
+                {"name": "expiration", "type": "uint256"},
+                {"name": "nonce", "type": "uint256"},
+                {"name": "feeRateBps", "type": "uint256"},
+                {"name": "side", "type": "uint8"},
+                {"name": "signatureType", "type": "uint8"},
+            ]
+        }
+        
+        # Determine maker/taker amounts based on side
+        # For BUY: makerAmount = size * price (USDC), takerAmount = size (shares)
+        # For SELL: makerAmount = size (shares), takerAmount = size * price (USDC)
+        size_wei = int(Decimal(size) * Decimal(10**6))  # 6 decimals for shares
+        price_decimal = Decimal(price)
+        
+        if side == "BUY":
+            maker_amount = int(size_wei * price_decimal)  # USDC to pay
+            taker_amount = size_wei  # Shares to receive
+            side_int = 0
+        else:
+            maker_amount = size_wei  # Shares to sell
+            taker_amount = int(size_wei * price_decimal)  # USDC to receive
+            side_int = 1
+        
+        # Use funder address as maker if available (proxy wallet), otherwise EOA
+        maker_address = self._funder_address if self._funder_address else self._account.address
+        signer_address = self._account.address
+        
+        # Signature type: 0=EOA, 1=POLY_PROXY, 2=GNOSIS_SAFE
+        # Use GNOSIS_SAFE (2) for proxy wallets, EOA (0) for direct wallets
+        signature_type = 2 if self._funder_address else 0
+        
+        order_data = {
+            "salt": nonce,
+            "maker": Web3.to_checksum_address(maker_address),
+            "signer": Web3.to_checksum_address(signer_address),
+            "taker": "0x0000000000000000000000000000000000000000",
+            "tokenId": int(token_id),
+            "makerAmount": maker_amount,
+            "takerAmount": taker_amount,
+            "expiration": expiration,
+            "nonce": nonce,
+            "feeRateBps": 0,
+            "side": side_int,
+            "signatureType": signature_type,
+        }
+        
+        # Create EIP-712 structured data
+        from eth_account.messages import encode_typed_data
+        
+        full_message = {
+            "types": {
+                "EIP712Domain": [
+                    {"name": "name", "type": "string"},
+                    {"name": "version", "type": "string"},
+                    {"name": "chainId", "type": "uint256"},
+                ],
+                **order_types,
+            },
+            "primaryType": "Order",
+            "domain": domain_data,
+            "message": order_data,
+        }
+        
+        # Sign the typed data
+        signed = self._account.sign_message(encode_typed_data(full_message))
+        
+        return signed.signature.hex(), order_data, signature_type
+    
     async def place_order(
         self,
         token_id: str,
@@ -748,17 +851,50 @@ class PolymarketClient:
             return await self._paper_place_order(token_id, side, size, price)
         
         try:
-            # Create order payload
+            # Generate nonce and expiration
+            nonce = int(time.time() * 1000)
+            expiration = int(time.time()) + 86400  # 24 hours from now
+            
+            side_str = "BUY" if side == Side.BUY else "SELL"
+            
+            # Create signed order
+            signature, order_data, sig_type = self._create_order_signature(
+                token_id=token_id,
+                side=side_str,
+                size=str(size),
+                price=str(price),
+                nonce=nonce,
+                expiration=expiration,
+            )
+            
+            # Create order payload with signature
             order_payload = {
-                "tokenID": token_id,
-                "side": "BUY" if side == Side.BUY else "SELL",
-                "size": str(size),
-                "price": str(price),
+                "order": {
+                    "salt": order_data["salt"],
+                    "maker": order_data["maker"],
+                    "signer": order_data["signer"],
+                    "taker": order_data["taker"],
+                    "tokenId": str(order_data["tokenId"]),
+                    "makerAmount": str(order_data["makerAmount"]),
+                    "takerAmount": str(order_data["takerAmount"]),
+                    "expiration": str(order_data["expiration"]),
+                    "nonce": str(order_data["nonce"]),
+                    "feeRateBps": str(order_data["feeRateBps"]),
+                    "side": order_data["side"],
+                    "signatureType": sig_type,
+                },
+                "signature": signature,
                 "orderType": order_type,
             }
             
+            # Add funder if using proxy wallet
+            if self._funder_address:
+                order_payload["funder"] = self._funder_address
+            
             body = json.dumps(order_payload)
             headers = self._create_l2_headers("POST", "/order", body)
+            
+            logger.debug(f"Placing order: token={token_id}, side={side_str}, size={size}, price={price}")
             
             response = await self._clob_client.post(
                 "/order",
@@ -768,7 +904,7 @@ class PolymarketClient:
             response.raise_for_status()
             data = response.json()
             
-            order_id = data.get("orderID", str(int(time.time() * 1000)))
+            order_id = data.get("orderID", str(nonce))
             
             order = Order(
                 order_id=order_id,
@@ -792,6 +928,9 @@ class PolymarketClient:
             
         except httpx.HTTPError as e:
             logger.error("Error placing order", error=str(e))
+            return None
+        except Exception as e:
+            logger.error(f"Error creating/placing order: {e}")
             return None
     
     async def _paper_place_order(

@@ -23900,3 +23900,394 @@
 2026-01-17 21:53:33 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
 2026-01-17 21:53:33 [info     ] 🔍 Trying to match live game to market available_markets=695 component=engine match_id=8653470150 team1=Radiant team2=Dire
 2026-01-17 21:53:33 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:54:03 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 21:54:03 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 21:54:03 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 21:54:03 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 21:54:03 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:54:03 [info     ] 🔍 Trying to match live game to market available_markets=695 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 21:54:03 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 21:54:03 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:54:03 [info     ] 🔍 Trying to match live game to market available_markets=695 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:54:03 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:54:03 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:54:03 [info     ] 🔍 Trying to match live game to market available_markets=695 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:54:03 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:54:03 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:54:03 [info     ] 🔍 Trying to match live game to market available_markets=695 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:54:03 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:54:03 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:54:03 [info     ] 🔍 Trying to match live game to market available_markets=695 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:54:03 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:54:03 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:54:03 [info     ] 🔍 Trying to match live game to market available_markets=695 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:54:03 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:54:13 [info     ] Found 5 esports markets        component=polymarket
+2026-01-17 21:54:14 [info     ] Found 0 esports markets        component=polymarket
+2026-01-17 21:54:14 [info     ] Markets refreshed              component=engine dota_markets=0 lol_markets=5
+2026-01-17 21:54:34 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 21:54:34 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 21:54:34 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 21:54:34 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 21:54:34 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:54:34 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 21:54:34 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 21:54:34 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:54:34 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:54:34 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:54:34 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:54:34 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:54:34 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:54:34 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:54:34 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:54:34 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:54:34 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:54:34 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:54:34 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:54:34 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:54:34 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:54:34 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:55:04 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 21:55:04 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 21:55:05 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 21:55:05 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 21:55:05 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:55:05 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 21:55:05 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 21:55:05 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:55:05 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:55:05 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:55:05 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:55:05 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:55:05 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:55:05 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:55:05 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:55:05 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:55:05 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:55:05 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:55:05 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:55:05 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:55:05 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:55:05 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:55:35 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 21:55:35 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 21:55:35 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 21:55:35 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 21:55:35 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:55:35 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 21:55:35 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 21:55:35 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:55:35 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:55:35 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:55:35 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:55:35 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:55:35 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:55:35 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:55:35 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:55:35 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:55:35 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:55:35 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:55:35 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:55:35 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:55:35 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:55:35 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:55:43 [info     ] 📊 Status Update                avg_latency=0.0ms component=engine open_positions=0 opportunities=0 runtime=10.2h total_pnl=$0.00 trades=0 win_rate=0.0%
+2026-01-17 21:56:06 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 21:56:06 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 21:56:06 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 21:56:06 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 21:56:06 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:56:06 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 21:56:06 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 21:56:06 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:56:06 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:56:06 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:56:06 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:56:06 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:56:06 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:56:06 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:56:06 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:56:06 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:56:06 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:56:06 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:56:06 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:56:06 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:56:06 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:56:06 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:56:36 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 21:56:36 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 21:56:37 [debug    ] Found 5 live Dota 2 matches    component=opendota
+2026-01-17 21:56:37 [debug    ] Got 5 Dota matches from OpenDota component=engine
+2026-01-17 21:56:37 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:56:37 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:56:37 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:56:37 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:56:37 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:56:37 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:56:37 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:56:37 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:56:37 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:56:37 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:56:37 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:56:37 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:56:37 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:56:37 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:56:37 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:57:07 [debug    ] Found 1 live LoL matches       component=lolesports
+2026-01-17 21:57:07 [debug    ] Got 1 LoL matches from official API component=engine
+2026-01-17 21:57:07 [debug    ] Found 5 live Dota 2 matches    component=opendota
+2026-01-17 21:57:07 [debug    ] Got 5 Dota matches from OpenDota component=engine
+2026-01-17 21:57:07 [debug    ] Processing match               component=engine game=league_of_legends match_id=115548424308414176 source=lolesports team1='Movistar KOI' team2='G2 Esports'
+2026-01-17 21:57:08 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=115548424308414176 team1='Movistar KOI' team2='G2 Esports'
+2026-01-17 21:57:08 [debug    ] Market matched                 component=market_matcher market_id=1099170 match_id=115548424308414176 score=1.00
+2026-01-17 21:57:08 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1099170 market_question='LoL: Movistar KOI vs G2 Esports (BO1)' match_id=115548424308414176
+2026-01-17 21:57:08 [info     ] 🎮 match_started                component=games game=league_of_legends match_id=115548424308414176 team1='Movistar KOI' team2='G2 Esports'
+2026-01-17 21:57:08 [info     ] 📡 Subscribed to match          component=engine market='LoL: Movistar KOI vs G2 Esports (BO1)' match_id=115548424308414176 teams='Movistar KOI vs G2 Esports'
+2026-01-17 21:57:08 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:57:08 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:57:08 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:57:08 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:57:08 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:57:08 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:57:08 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:57:08 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:57:08 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:57:08 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:57:08 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:57:08 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:57:08 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:57:08 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:57:08 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:57:08 [info     ] Subscribing to LoL match 115548424308414176 component=lolesports
+2026-01-17 21:57:38 [debug    ] Found 1 live LoL matches       component=lolesports
+2026-01-17 21:57:38 [debug    ] Got 1 LoL matches from official API component=engine
+2026-01-17 21:57:38 [debug    ] Found 5 live Dota 2 matches    component=opendota
+2026-01-17 21:57:38 [debug    ] Got 5 Dota matches from OpenDota component=engine
+2026-01-17 21:57:38 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:57:38 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:57:38 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:57:38 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:57:38 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:57:38 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:57:38 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:57:38 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:57:38 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:57:38 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:57:38 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:57:38 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:57:38 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:57:38 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:57:38 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:58:09 [debug    ] Found 1 live LoL matches       component=lolesports
+2026-01-17 21:58:09 [debug    ] Got 1 LoL matches from official API component=engine
+2026-01-17 21:58:09 [debug    ] Found 5 live Dota 2 matches    component=opendota
+2026-01-17 21:58:09 [debug    ] Got 5 Dota matches from OpenDota component=engine
+2026-01-17 21:58:09 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:58:09 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:58:09 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:58:09 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:58:09 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:58:09 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:58:09 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:58:09 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:58:09 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:58:09 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:58:09 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:58:09 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:58:09 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:58:09 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:58:09 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:58:39 [debug    ] Found 1 live LoL matches       component=lolesports
+2026-01-17 21:58:39 [debug    ] Got 1 LoL matches from official API component=engine
+2026-01-17 21:58:40 [debug    ] Found 5 live Dota 2 matches    component=opendota
+2026-01-17 21:58:40 [debug    ] Got 5 Dota matches from OpenDota component=engine
+2026-01-17 21:58:40 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:58:40 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:58:40 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:58:40 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:58:40 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:58:40 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:58:40 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:58:40 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:58:40 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:58:40 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:58:40 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:58:40 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:58:40 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:58:40 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:58:40 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:59:10 [debug    ] Found 1 live LoL matches       component=lolesports
+2026-01-17 21:59:10 [debug    ] Got 1 LoL matches from official API component=engine
+2026-01-17 21:59:10 [debug    ] Found 5 live Dota 2 matches    component=opendota
+2026-01-17 21:59:10 [debug    ] Got 5 Dota matches from OpenDota component=engine
+2026-01-17 21:59:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:59:10 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:59:10 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:59:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:59:10 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:59:10 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:59:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:59:10 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:59:10 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:59:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:59:10 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:59:10 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:59:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:59:10 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:59:10 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:59:15 [info     ] Found 0 esports markets        component=polymarket
+2026-01-17 21:59:15 [info     ] Found 0 esports markets        component=polymarket
+2026-01-17 21:59:15 [info     ] Markets refreshed              component=engine dota_markets=0 lol_markets=0
+2026-01-17 21:59:41 [debug    ] Found 1 live LoL matches       component=lolesports
+2026-01-17 21:59:41 [debug    ] Got 1 LoL matches from official API component=engine
+2026-01-17 21:59:41 [debug    ] Found 5 live Dota 2 matches    component=opendota
+2026-01-17 21:59:41 [debug    ] Got 5 Dota matches from OpenDota component=engine
+2026-01-17 21:59:41 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:59:41 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:59:41 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 21:59:41 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:59:41 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:59:41 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 21:59:41 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:59:41 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:59:41 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 21:59:41 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:59:41 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:59:41 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 21:59:41 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 21:59:41 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 21:59:41 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 22:00:11 [debug    ] Found 1 live LoL matches       component=lolesports
+2026-01-17 22:00:11 [debug    ] Got 1 LoL matches from official API component=engine
+2026-01-17 22:00:12 [debug    ] Found 5 live Dota 2 matches    component=opendota
+2026-01-17 22:00:12 [debug    ] Got 5 Dota matches from OpenDota component=engine
+2026-01-17 22:00:12 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:00:12 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 22:00:12 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 22:00:12 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:00:12 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 22:00:12 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 22:00:12 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:00:12 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 22:00:12 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 22:00:12 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:00:12 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 22:00:12 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 22:00:12 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:00:12 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 22:00:12 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 22:00:42 [debug    ] Found 1 live LoL matches       component=lolesports
+2026-01-17 22:00:42 [debug    ] Got 1 LoL matches from official API component=engine
+2026-01-17 22:00:43 [debug    ] Found 5 live Dota 2 matches    component=opendota
+2026-01-17 22:00:43 [debug    ] Got 5 Dota matches from OpenDota component=engine
+2026-01-17 22:00:43 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:00:43 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 22:00:43 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 22:00:43 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:00:43 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 22:00:43 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 22:00:43 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:00:43 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 22:00:43 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 22:00:43 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:00:43 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 22:00:43 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 22:00:43 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:00:43 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 22:00:43 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 22:00:43 [info     ] 📊 Status Update                avg_latency=0.0ms component=engine open_positions=0 opportunities=0 runtime=10.3h total_pnl=$0.00 trades=0 win_rate=0.0%
+2026-01-17 22:01:13 [debug    ] Found 1 live LoL matches       component=lolesports
+2026-01-17 22:01:13 [debug    ] Got 1 LoL matches from official API component=engine
+2026-01-17 22:01:13 [debug    ] Found 5 live Dota 2 matches    component=opendota
+2026-01-17 22:01:13 [debug    ] Got 5 Dota matches from OpenDota component=engine
+2026-01-17 22:01:13 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:01:13 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 22:01:13 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 22:01:13 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:01:13 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 22:01:13 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 22:01:13 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:01:13 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 22:01:13 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 22:01:13 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:01:13 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 22:01:13 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 22:01:13 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:01:13 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 22:01:13 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 22:01:44 [debug    ] Found 1 live LoL matches       component=lolesports
+2026-01-17 22:01:44 [debug    ] Got 1 LoL matches from official API component=engine
+2026-01-17 22:01:44 [debug    ] Found 5 live Dota 2 matches    component=opendota
+2026-01-17 22:01:44 [debug    ] Got 5 Dota matches from OpenDota component=engine
+2026-01-17 22:01:44 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:01:44 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 22:01:44 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 22:01:44 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:01:44 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 22:01:44 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 22:01:44 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:01:44 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 22:01:44 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 22:01:44 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:01:44 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 22:01:44 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 22:01:44 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:01:44 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 22:01:44 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 22:02:14 [debug    ] Found 1 live LoL matches       component=lolesports
+2026-01-17 22:02:14 [debug    ] Got 1 LoL matches from official API component=engine
+2026-01-17 22:02:15 [debug    ] Found 5 live Dota 2 matches    component=opendota
+2026-01-17 22:02:15 [debug    ] Got 5 Dota matches from OpenDota component=engine
+2026-01-17 22:02:15 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:02:15 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 22:02:15 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 22:02:15 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:02:15 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 22:02:15 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 22:02:15 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:02:15 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 22:02:15 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 22:02:15 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:02:15 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 22:02:15 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 22:02:15 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:02:15 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 22:02:15 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 22:02:45 [debug    ] Found 1 live LoL matches       component=lolesports
+2026-01-17 22:02:45 [debug    ] Got 1 LoL matches from official API component=engine
+2026-01-17 22:02:46 [debug    ] Found 5 live Dota 2 matches    component=opendota
+2026-01-17 22:02:46 [debug    ] Got 5 Dota matches from OpenDota component=engine
+2026-01-17 22:02:46 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:02:46 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 22:02:46 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 22:02:46 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:02:46 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 22:02:46 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 22:02:46 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:02:46 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 22:02:46 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 22:02:46 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:02:46 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 22:02:46 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 22:02:46 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:02:46 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 22:02:46 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 22:03:16 [debug    ] Found 1 live LoL matches       component=lolesports
+2026-01-17 22:03:16 [debug    ] Got 1 LoL matches from official API component=engine
+2026-01-17 22:03:16 [debug    ] Found 5 live Dota 2 matches    component=opendota
+2026-01-17 22:03:16 [debug    ] Got 5 Dota matches from OpenDota component=engine
+2026-01-17 22:03:16 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:03:16 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 22:03:16 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 22:03:16 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:03:16 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 22:03:16 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 22:03:16 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:03:16 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 22:03:16 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 22:03:16 [debug    ] Processing match               component=engine game=dota2 match_id=8653485420 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:03:16 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 22:03:16 [debug    ] ❌ No market match found        component=engine match_id=8653485420 team1=Radiant team2=Dire
+2026-01-17 22:03:16 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 22:03:16 [info     ] 🔍 Trying to match live game to market available_markets=700 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 22:03:16 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire
