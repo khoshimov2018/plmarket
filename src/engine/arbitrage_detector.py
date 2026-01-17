@@ -4,7 +4,7 @@ Identifies mispricing between live game state and market odds.
 """
 
 from datetime import datetime, timedelta
-from typing import Optional
+from typing import Optional, Dict
 import uuid
 
 from src.models import (
@@ -36,7 +36,7 @@ class ArbitrageDetector:
         self._opportunities_executed = 0
         
         # Recent opportunities to avoid duplicates
-        self._recent_opportunities: dict[str, datetime] = {}
+        self._recent_opportunities: Dict[str, datetime] = {}
         self._cooldown_seconds = 10  # Don't signal same opportunity within 10s
     
     def detect_opportunity(

@@ -10,7 +10,7 @@ from dataclasses import dataclass, field
 from datetime import datetime, timedelta
 from decimal import Decimal
 from pathlib import Path
-from typing import Optional, Generator
+from typing import Optional, Generator, List, Tuple
 import random
 
 from src.models import (
@@ -93,7 +93,7 @@ class BacktestResult:
     peak_capital: Decimal = Decimal("0")
     
     # Trade details
-    trades: list[TradeRecord] = field(default_factory=list)
+    trades: List[TradeRecord] = field(default_factory=list)
     
     # Timing
     avg_hold_time_seconds: float = 0.0
@@ -164,7 +164,7 @@ class BacktestEngine:
         game: Game,
         duration_minutes: float = 35.0,
         volatility: float = 1.0,
-    ) -> Generator[tuple[GameState, SimulatedMarket, datetime], None, bool]:
+    ) -> Generator[Tuple[GameState, SimulatedMarket, datetime], None, bool]:
         """
         Generate a synthetic match with realistic game events.
         

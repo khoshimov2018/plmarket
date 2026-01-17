@@ -40,8 +40,8 @@ class LoLEsportsProvider(BaseEsportsProvider):
     def __init__(self, api_key: str = ""):
         super().__init__(api_key or self.API_KEY)
         self._session: Optional[aiohttp.ClientSession] = None
-        self._live_games: dict[str, dict] = {}
-        self._last_states: dict[str, GameState] = {}
+        self._live_games: Dict[str, dict] = {}
+        self._last_states: Dict[str, GameState] = {}
     
     @property
     def supported_games(self) -> List[Game]:

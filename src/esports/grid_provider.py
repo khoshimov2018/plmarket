@@ -53,12 +53,12 @@ class GridProvider:
         
         self._http_client: Optional[httpx.AsyncClient] = None
         self._ws_connection = None
-        self._event_callbacks: list[Callable] = []
+        self._event_callbacks: List[Callable] = []
         self._is_streaming = False
         
         # Cache for match data
-        self._live_matches: dict[str, dict] = {}
-        self._match_states: dict[str, GameState] = {}
+        self._live_matches: Dict[str, dict] = {}
+        self._match_states: Dict[str, GameState] = {}
     
     @property
     def enabled(self) -> bool:

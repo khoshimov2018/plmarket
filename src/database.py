@@ -7,7 +7,7 @@ import asyncio
 from datetime import datetime
 from decimal import Decimal
 from pathlib import Path
-from typing import Optional
+from typing import Optional, List
 import json
 
 from sqlalchemy import create_engine, Column, String, Float, DateTime, Integer, Text, Boolean
@@ -159,7 +159,7 @@ class Database:
         end_date: Optional[datetime] = None,
         game: Optional[Game] = None,
         limit: int = 100,
-    ) -> list[dict]:
+    ) -> List[dict]:
         """Get trade history with optional filters."""
         with self.Session() as session:
             query = session.query(TradeHistoryTable)

@@ -4,7 +4,7 @@ Main execution engine that orchestrates the entire trading system.
 
 import asyncio
 from datetime import datetime, timedelta
-from typing import Optional
+from typing import Optional, Dict
 
 from src.models import Game, GameState, GameEvent, MarketInfo, TradingOpportunity
 from src.config import get_config
@@ -59,9 +59,9 @@ class ExecutionEngine:
         
         # State tracking
         self._is_running = False
-        self._tracked_matches: dict[str, GameState] = {}
-        self._match_to_market: dict[str, MarketInfo] = {}
-        self._active_subscriptions: dict[str, asyncio.Task] = {}
+        self._tracked_matches: Dict[str, GameState] = {}
+        self._match_to_market: Dict[str, MarketInfo] = {}
+        self._active_subscriptions: Dict[str, asyncio.Task] = {}
         
         # Performance tracking
         self._start_time: Optional[datetime] = None

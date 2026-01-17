@@ -4,7 +4,7 @@ This is crucial for connecting live game data to the right trading opportunities
 """
 
 import re
-from typing import Optional
+from typing import Optional, Dict, List, Tuple
 from difflib import SequenceMatcher
 
 from src.models import Game, GameState, MarketInfo
@@ -49,14 +49,14 @@ class MarketMatcher:
     
     def __init__(self):
         # Build reverse lookup for aliases
-        self._alias_lookup: dict[str, str] = {}
+        self._alias_lookup: Dict[str, str] = {}
         for canonical, aliases in self.TEAM_ALIASES.items():
             for alias in aliases:
                 self._alias_lookup[alias.lower()] = canonical
     
     def match_market_to_game_state(
         self,
-        markets: list[MarketInfo],
+        markets: List[MarketInfo],
         game_state: GameState
     ) -> Optional[MarketInfo]:
         """
@@ -182,7 +182,7 @@ class MarketMatcher:
         
         return False
     
-    def extract_teams_from_question(self, question: str) -> tuple[str, str]:
+    def extract_teams_from_question(self, question: str) -> Tuple[str, str]:
         """
         Try to extract team names from a market question.
         

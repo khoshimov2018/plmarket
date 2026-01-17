@@ -41,8 +41,8 @@ class OpenDotaProvider(BaseEsportsProvider):
     def __init__(self, api_key: str = ""):
         super().__init__(api_key)
         self._session: Optional[aiohttp.ClientSession] = None
-        self._tracked_matches: dict[str, dict] = {}
-        self._last_states: dict[str, GameState] = {}
+        self._tracked_matches: Dict[str, dict] = {}
+        self._last_states: Dict[str, GameState] = {}
         # Store API key for authenticated requests
         self._opendota_api_key = api_key
     

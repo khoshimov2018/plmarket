@@ -35,8 +35,8 @@ class PandaScoreProvider(BaseEsportsProvider):
     def __init__(self, api_key: str):
         super().__init__(api_key)
         self._client: Optional[httpx.AsyncClient] = None
-        self._event_queues: dict[str, asyncio.Queue] = {}
-        self._polling_tasks: dict[str, asyncio.Task] = {}
+        self._event_queues: Dict[str, asyncio.Queue] = {}
+        self._polling_tasks: Dict[str, asyncio.Task] = {}
     
     @property
     def supported_games(self) -> List[Game]:
