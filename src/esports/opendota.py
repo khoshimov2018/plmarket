@@ -170,7 +170,7 @@ class OpenDotaProvider(BaseEsportsProvider):
             logger.error(f"Error fetching match state {match_id}: {e}")
             return None
     
-    def _parse_live_match(self, data: dict) -> GameState:
+    def _parse_live_match(self, data: dict) -> Optional[GameState]:
         """Parse OpenDota live match data into GameState."""
         
         # Extract team info
@@ -182,29 +182,32 @@ class OpenDotaProvider(BaseEsportsProvider):
         radiant_name = radiant.get("team_name") or radiant.get("name")
         dire_name = dire.get("team_name") or dire.get("name")
         
-        # If no team names, this is a pub match - skip it
-        if not radiant_name or radiant_name in ["Radiant", "Unknown"]:
+        # If no team names, this is a pub match - skip it entirely
+        if not radiant_name or radiant_name in ["Radiant", "Unknown", ""]:
             radiant_name = None
-        if not dire_name or dire_name in ["Dire", "Unknown"]:
+        if not dire_name or dire_name in ["Dire", "Unknown", ""]:
             dire_name = None
         
-        # Log team info for debugging
-        if radiant_name and dire_name:
-            logger.debug(f"Pro match found: {radiant_name} vs {dire_name}")
-        else:
-            logger.debug(f"Pub/unknown match - radiant_team: {radiant}, dire_team: {dire}")
+        # CRITICAL: Return None if we don't have real team names
+        # These matches will NEVER match Polymarket markets
+        if not radiant_name or not dire_name:
+            logger.debug(f"Skipping pub match - no team names: radiant={radiant}, dire={dire}")
+            return None
+        
+        # Log pro match found
+        logger.info(f"🎮 Pro Dota match found: {radiant_name} vs {dire_name}")
         
         team1 = Team(
             id=str(radiant.get("team_id", "radiant")),
-            name=radiant_name or "Unknown",  # Use "Unknown" to signal no match possible
-            short_name=radiant.get("team_tag") or (radiant_name[:3].upper() if radiant_name else "RAD"),
+            name=radiant_name,
+            short_name=radiant.get("team_tag") or radiant_name[:3].upper(),
             logo_url=radiant.get("team_logo"),
         )
         
         team2 = Team(
             id=str(dire.get("team_id", "dire")),
-            name=dire_name or "Unknown",  # Use "Unknown" to signal no match possible
-            short_name=dire.get("team_tag") or (dire_name[:3].upper() if dire_name else "DIR"),
+            name=dire_name,
+            short_name=dire.get("team_tag") or dire_name[:3].upper(),
             logo_url=dire.get("team_logo"),
         )
         

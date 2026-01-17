@@ -94,41 +94,43 @@ class GridProvider:
             return []
         
         try:
-            # GRID API endpoint for live matches
-            response = await self._http_client.get(
-                "/central-data/graphql",
-                params={
-                    "query": """
-                    query LiveMatches {
-                        allSeries(filter: {state: {equalTo: LIVE}}) {
-                            nodes {
-                                id
-                                title {
-                                    nameShortened
-                                }
-                                teams {
-                                    id
-                                    name
-                                    shortName
-                                    logoUrl
-                                }
-                                tournament {
-                                    name
-                                }
-                                game {
-                                    id
-                                    name
-                                }
-                                startTimeScheduled
+            # GRID API - GraphQL requires POST request with JSON body
+            graphql_query = {
+                "query": """
+                query LiveMatches {
+                    allSeries(filter: {state: {equalTo: LIVE}}) {
+                        nodes {
+                            id
+                            title {
+                                nameShortened
                             }
+                            teams {
+                                id
+                                name
+                                shortName
+                                logoUrl
+                            }
+                            tournament {
+                                name
+                            }
+                            game {
+                                id
+                                name
+                            }
+                            startTimeScheduled
                         }
                     }
-                    """
                 }
+                """
+            }
+            
+            response = await self._http_client.post(
+                "/central-data/graphql",
+                json=graphql_query
             )
             
             if response.status_code != 200:
-                logger.warning(f"GRID API returned {response.status_code}")
+                logger.warning(f"GRID API returned {response.status_code}: {response.text[:200]}")
                 return []
             
             data = response.json()
@@ -199,43 +201,45 @@ class GridProvider:
             return None
         
         try:
-            # Get match details from GRID
-            response = await self._http_client.get(
-                "/central-data/graphql",
-                params={
-                    "query": f"""
-                    query MatchState {{
-                        series(id: "{match_id}") {{
+            # Get match details from GRID - GraphQL requires POST
+            graphql_query = {
+                "query": f"""
+                query MatchState {{
+                    series(id: "{match_id}") {{
+                        id
+                        teams {{
                             id
+                            name
+                            shortName
+                        }}
+                        games {{
+                            id
+                            state
+                            clock {{
+                                currentSeconds
+                            }}
                             teams {{
                                 id
-                                name
-                                shortName
-                            }}
-                            games {{
-                                id
-                                state
-                                clock {{
-                                    currentSeconds
-                                }}
-                                teams {{
-                                    id
-                                    side
-                                    score {{
-                                        kills
-                                        deaths
-                                        gold
-                                        towers
-                                        dragons
-                                        barons
-                                        inhibitors
-                                    }}
+                                side
+                                score {{
+                                    kills
+                                    deaths
+                                    gold
+                                    towers
+                                    dragons
+                                    barons
+                                    inhibitors
                                 }}
                             }}
                         }}
                     }}
-                    """
-                }
+                }}
+                """
+            }
+            
+            response = await self._http_client.post(
+                "/central-data/graphql",
+                json=graphql_query
             )
             
             if response.status_code != 200:
