@@ -156,8 +156,10 @@ class PolymarketClient:
         """
         Fetch active esports markets from Polymarket.
         
-        Uses the correct API endpoint discovered from Polymarket's frontend:
-        /events/pagination?tag_slug=esports
+        Uses multiple search strategies to find esports markets:
+        1. Tag-based search (esports, sports)
+        2. Keyword search (lol, dota, valorant, cs2)
+        3. League-specific search (lck, lpl, lec)
         
         Args:
             game: Optional filter for specific game (LoL or Dota2)
@@ -167,8 +169,80 @@ class PolymarketClient:
         """
         try:
             markets = []
+            seen_ids = set()
             
-            # Use the correct pagination endpoint with esports tag
+            # Search terms based on game type
+            if game == Game.LOL:
+                search_terms = ["lol", "league-of-legends", "lck", "lpl", "lec", "worlds"]
+            elif game == Game.DOTA2:
+                search_terms = ["dota", "dota-2", "the-international"]
+            else:
+                search_terms = ["esports", "lol", "dota", "valorant", "counter-strike", "cs2"]
+            
+            # Try multiple tag slugs - Polymarket uses different tags
+            tag_slugs = ["esports", "sports", "lol", "league-of-legends", "dota-2", "valorant", "counter-strike-2"]
+            
+            for tag_slug in tag_slugs:
+                try:
+                    response = await self._gamma_client.get(
+                        "/events/pagination",
+                        params={
+                            "limit": 100,
+                            "active": "true",
+                            "archived": "false",
+                            "tag_slug": tag_slug,
+                            "closed": "false",
+                            "order": "volume",
+                            "ascending": "false",
+                        }
+                    )
+                    
+                    if response.status_code == 200:
+                        data = response.json()
+                        events = data if isinstance(data, list) else data.get("data", [])
+                        
+                        for event in events:
+                            event_markets = event.get("markets", [])
+                            if not event_markets:
+                                event_markets = [event]
+                            
+                            for market_data in event_markets:
+                                market_id = market_data.get("id", market_data.get("condition_id", ""))
+                                if market_id in seen_ids:
+                                    continue
+                                    
+                                question = market_data.get("question", "").lower()
+                                title = event.get("title", "").lower()
+                                combined = f"{title} {question}"
+                                
+                                # Check if it's an esports market
+                                is_esports = any(t in combined for t in [
+                                    "lol:", "league", "dota", "valorant", "cs2", "counter-strike",
+                                    "esport", "lck", "lpl", "lec", "worlds", "ti ", "blast"
+                                ])
+                                
+                                if not is_esports:
+                                    continue
+                                
+                                # Filter by game if specified
+                                if game == Game.LOL:
+                                    if not any(t in combined for t in ["lol", "league", "lck", "lec", "lpl", "worlds"]):
+                                        continue
+                                elif game == Game.DOTA2:
+                                    if not any(t in combined for t in ["dota", "ti ", "the international", "dpc"]):
+                                        continue
+                                
+                                market = self._parse_market(market_data, game, event)
+                                if market:
+                                    seen_ids.add(market_id)
+                                    markets.append(market)
+                                    self._market_cache[market.market_id] = market
+                                    self._esports_markets[market.market_id] = market
+                                    
+                except Exception as e:
+                    logger.debug(f"Tag search '{tag_slug}' failed: {e}")
+            
+            # Also try direct text search for esports terms
             try:
                 response = await self._gamma_client.get(
                     "/events/pagination",
@@ -176,7 +250,6 @@ class PolymarketClient:
                         "limit": 100,
                         "active": "true",
                         "archived": "false",
-                        "tag_slug": "esports",
                         "closed": "false",
                         "order": "volume",
                         "ascending": "false",
@@ -188,17 +261,27 @@ class PolymarketClient:
                     events = data if isinstance(data, list) else data.get("data", [])
                     
                     for event in events:
-                        # Each event may have multiple markets
                         event_markets = event.get("markets", [])
                         if not event_markets:
-                            # Single market event
                             event_markets = [event]
                         
                         for market_data in event_markets:
-                            # Filter by game if specified
+                            market_id = market_data.get("id", market_data.get("condition_id", ""))
+                            if market_id in seen_ids:
+                                continue
+                                
                             question = market_data.get("question", "").lower()
                             title = event.get("title", "").lower()
                             combined = f"{title} {question}"
+                            
+                            # Check if it's an esports market
+                            is_esports = any(t in combined for t in [
+                                "lol:", "league", "dota", "valorant", "cs2", "counter-strike",
+                                "esport", "lck", "lpl", "lec", "worlds", "ti ", "blast"
+                            ])
+                            
+                            if not is_esports:
+                                continue
                             
                             if game == Game.LOL:
                                 if not any(t in combined for t in ["lol", "league", "lck", "lec", "lpl", "worlds"]):
@@ -208,37 +291,14 @@ class PolymarketClient:
                                     continue
                             
                             market = self._parse_market(market_data, game, event)
-                            if market and market.market_id not in self._market_cache:
+                            if market:
+                                seen_ids.add(market_id)
                                 markets.append(market)
                                 self._market_cache[market.market_id] = market
                                 self._esports_markets[market.market_id] = market
                                 
             except Exception as e:
                 logger.warning(f"Events pagination failed: {e}")
-                
-                # Fallback: try direct markets endpoint
-                try:
-                    response = await self._gamma_client.get(
-                        "/markets",
-                        params={
-                            "closed": "false",
-                            "limit": 100,
-                        }
-                    )
-                    
-                    if response.status_code == 200:
-                        data = response.json()
-                        for market_data in data:
-                            question = market_data.get("question", "").lower()
-                            # Check if it's an esports market
-                            if any(t in question for t in ["esport", "league", "dota", "lol", "valorant", "cs2", "counter-strike"]):
-                                market = self._parse_market(market_data, game)
-                                if market and market.market_id not in self._market_cache:
-                                    markets.append(market)
-                                    self._market_cache[market.market_id] = market
-                                    self._esports_markets[market.market_id] = market
-                except Exception as e2:
-                    logger.debug(f"Fallback market search failed: {e2}")
             
             logger.info(f"Found {len(markets)} esports markets")
             return markets

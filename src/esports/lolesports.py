@@ -118,26 +118,39 @@ class LoLEsportsProvider(BaseEsportsProvider):
             if len(teams) < 2:
                 return None
             
-            return {
+            team1_name = teams[0].get("name", "")
+            team2_name = teams[1].get("name", "")
+            league_name = event.get("league", {}).get("name", "")
+            
+            # Log the match for debugging
+            logger.debug(f"Found LoL match: {team1_name} vs {team2_name} ({league_name})")
+            
+            # Store match data in format compatible with execution engine
+            match_data = {
                 "match_id": event.get("id", ""),
+                "id": event.get("id", ""),  # Also store as 'id' for compatibility
                 "game": Game.LOL,
                 "source": "lolesports",
-                "league": event.get("league", {}).get("name", ""),
+                "league": league_name,
                 "team1": {
                     "id": teams[0].get("code", ""),
-                    "name": teams[0].get("name", "Team 1"),
+                    "name": team1_name,
                     "code": teams[0].get("code", "T1"),
                     "image": teams[0].get("image", ""),
                 },
                 "team2": {
                     "id": teams[1].get("code", ""),
-                    "name": teams[1].get("name", "Team 2"),
+                    "name": team2_name,
                     "code": teams[1].get("code", "T2"),
                     "image": teams[1].get("image", ""),
                 },
                 "games": match_info.get("games", []),
                 "strategy": match_info.get("strategy", {}),
+                # Store raw event for get_match_state
+                "_raw_event": event,
             }
+            
+            return match_data
         except Exception as e:
             logger.error(f"Error parsing event: {e}")
             return None

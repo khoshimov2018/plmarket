@@ -14,6 +14,7 @@ from src.esports.lol_provider import LoLDataProvider
 from src.esports.dota_provider import DotaDataProvider
 from src.esports.opendota import OpenDotaProvider
 from src.esports.lolesports import LoLEsportsProvider
+from src.esports.grid_provider import GridProvider
 from src.trading.polymarket_client import PolymarketClient
 from src.trading.order_manager import OrderManager
 from src.trading.position_tracker import PositionTracker
@@ -40,6 +41,9 @@ class ExecutionEngine:
         self.config = get_config()
         
         # Initialize components (will be set up in start())
+        # FASTEST provider - GRID.gg (paid, WebSocket streaming)
+        self.grid: Optional[GridProvider] = None
+        
         # Primary providers (fast, free APIs)
         self.lol_esports: Optional[LoLEsportsProvider] = None  # Official Riot data
         self.opendota: Optional[OpenDotaProvider] = None  # Free Dota 2 API
@@ -68,6 +72,9 @@ class ExecutionEngine:
         """Initialize and start the execution engine."""
         logger.info("🚀 Starting Esports Arbitrage Bot...")
         
+        # Initialize GRID.gg - FASTEST provider (paid, WebSocket)
+        self.grid = GridProvider()
+        
         # Initialize PRIMARY data providers (fast, free)
         # These are the key to latency arbitrage - fastest possible data
         self.lol_esports = LoLEsportsProvider()  # Official Riot - fastest for LoL
@@ -80,12 +87,16 @@ class ExecutionEngine:
         # Initialize trading components
         self.polymarket = PolymarketClient()
         
-        # Connect to services - primary sources first
+        # Connect to services - GRID first (fastest), then others
         await asyncio.gather(
+            self.grid.connect(),
             self.lol_esports.connect(),
             self.opendota.connect(),
             self.polymarket.connect(),
         )
+        
+        if self.grid.enabled:
+            logger.info("✅ GRID.gg provider enabled - FASTEST data source active!")
         
         # Try to connect fallback providers (may fail with free tier)
         try:
@@ -188,6 +199,22 @@ class ExecutionEngine:
                     dota_markets=len(dota_markets),
                 )
                 
+                # Log market details for debugging
+                if lol_markets:
+                    for m in lol_markets[:3]:  # First 3
+                        logger.debug(f"LoL Market: {m.question[:60]}...")
+                if dota_markets:
+                    for m in dota_markets[:3]:
+                        logger.debug(f"Dota Market: {m.question[:60]}...")
+                
+                # CRITICAL: Warn if no markets available
+                if not all_markets:
+                    logger.warning(
+                        "⚠️ NO ESPORTS MARKETS AVAILABLE ON POLYMARKET! "
+                        "The bot cannot trade without active markets. "
+                        "Check https://polymarket.com for esports events."
+                    )
+                
             except Exception as e:
                 logger.error(f"Market discovery error: {e}")
             
@@ -198,16 +225,29 @@ class ExecutionEngine:
         """
         Monitor live matches and subscribe to events.
         
-        Uses PRIMARY fast data sources (LoL Esports, OpenDota) for speed.
-        Falls back to PandaScore if primary sources fail.
+        Priority order for data sources:
+        1. GRID.gg (fastest, paid) - WebSocket streaming
+        2. LoL Esports API (official Riot data)
+        3. OpenDota (free Dota 2 API)
+        4. PandaScore (fallback)
         """
         while self._is_running:
             try:
-                # Get live matches from FAST primary sources
+                # Get live matches from ALL sources, prioritize GRID
+                grid_matches = []
                 lol_matches = []
                 dota_matches = []
                 
-                # LoL: Try official esports API first (fastest)
+                # GRID: Try GRID.gg first (FASTEST - paid API)
+                if self.grid and self.grid.enabled:
+                    try:
+                        grid_matches = await self.grid.get_live_matches()
+                        if grid_matches:
+                            logger.info(f"🚀 Got {len(grid_matches)} matches from GRID.gg (FASTEST)")
+                    except Exception as e:
+                        logger.debug(f"GRID API failed: {e}")
+                
+                # LoL: Try official esports API (fast, free)
                 try:
                     lol_matches = await self.lol_esports.get_live_matches()
                     if lol_matches:
@@ -215,7 +255,7 @@ class ExecutionEngine:
                 except Exception as e:
                     logger.debug(f"LoL Esports API failed: {e}")
                 
-                # Dota: Try OpenDota first (free, fast)
+                # Dota: Try OpenDota (free, but may have generic team names)
                 try:
                     dota_matches = await self.opendota.get_live_matches()
                     if dota_matches:
@@ -224,19 +264,20 @@ class ExecutionEngine:
                     logger.debug(f"OpenDota API failed: {e}")
                 
                 # Fallback to PandaScore if primary sources found nothing
-                if not lol_matches and self.lol_provider:
+                if not lol_matches and not grid_matches and self.lol_provider:
                     try:
                         lol_matches = await self.lol_provider.get_live_matches()
                     except Exception:
                         pass
                 
-                if not dota_matches and self.dota_provider:
+                if not dota_matches and not grid_matches and self.dota_provider:
                     try:
                         dota_matches = await self.dota_provider.get_live_matches()
                     except Exception:
                         pass
                 
-                all_matches = lol_matches + dota_matches
+                # GRID matches take priority (have real team names)
+                all_matches = grid_matches + lol_matches + dota_matches
                 
                 for match_data in all_matches:
                     # Get match ID - different sources use different keys
@@ -260,13 +301,20 @@ class ExecutionEngine:
                     )
                     
                     # Select the fastest provider based on source
-                    if game == Game.LOL:
+                    # Priority: GRID > LoL Esports > OpenDota > PandaScore
+                    if source == "grid" and self.grid and self.grid.enabled:
+                        provider = self.grid
+                    elif game == Game.LOL:
                         if source == "lolesports":
                             provider = self.lol_esports
+                        elif self.grid and self.grid.enabled:
+                            provider = self.grid  # GRID is faster
                         else:
                             provider = self.lol_esports or self.lol_provider
                     else:  # Dota 2
-                        if source == "opendota":
+                        if self.grid and self.grid.enabled:
+                            provider = self.grid  # GRID is faster
+                        elif source == "opendota":
                             provider = self.opendota
                         else:
                             provider = self.opendota or self.dota_provider
@@ -275,6 +323,18 @@ class ExecutionEngine:
                     
                     if not game_state:
                         logger.debug(f"Could not get game state for match {match_id}")
+                        continue
+                    
+                    # CRITICAL: Skip matches with unknown/generic team names
+                    # These will NEVER match Polymarket markets
+                    team1_name = game_state.team1.name if game_state.team1 else "Unknown"
+                    team2_name = game_state.team2.name if game_state.team2 else "Unknown"
+                    
+                    if team1_name in ["Unknown", "Radiant", "Dire", "Team 1", "Team 2", ""]:
+                        logger.debug(f"Skipping match {match_id} - team1 has generic name: {team1_name}")
+                        continue
+                    if team2_name in ["Unknown", "Radiant", "Dire", "Team 1", "Team 2", ""]:
+                        logger.debug(f"Skipping match {match_id} - team2 has generic name: {team2_name}")
                         continue
                     
                     # Try to find matching market

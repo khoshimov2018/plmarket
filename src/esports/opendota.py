@@ -114,17 +114,29 @@ class OpenDotaProvider(BaseEsportsProvider):
         if league_id > 0:
             return True
         
-        # Check for pro teams (have team IDs)
+        # Check for pro teams (have team IDs AND team names)
         radiant_team = match.get("radiant_team", {})
         dire_team = match.get("dire_team", {})
         
+        # CRITICAL: Only consider matches with ACTUAL team names
+        # Matches without team names will never match Polymarket markets
+        radiant_name = radiant_team.get("team_name") or radiant_team.get("name")
+        dire_name = dire_team.get("team_name") or dire_team.get("name")
+        
         if radiant_team.get("team_id") and dire_team.get("team_id"):
-            return True
+            if radiant_name and dire_name:
+                logger.debug(f"Notable pro match: {radiant_name} vs {dire_name}")
+                return True
+            else:
+                logger.debug(f"Match has team IDs but no names - skipping")
+                return False
         
         # Check spectator count (popular matches)
         spectators = match.get("spectators", 0)
         if spectators > 1000:
-            return True
+            # Still need team names for matching
+            if radiant_name and dire_name:
+                return True
         
         return False
     
@@ -165,17 +177,34 @@ class OpenDotaProvider(BaseEsportsProvider):
         radiant = data.get("radiant_team", {})
         dire = data.get("dire_team", {})
         
+        # Get team names - CRITICAL: Don't use generic "Radiant/Dire" 
+        # as they will never match Polymarket markets
+        radiant_name = radiant.get("team_name") or radiant.get("name")
+        dire_name = dire.get("team_name") or dire.get("name")
+        
+        # If no team names, this is a pub match - skip it
+        if not radiant_name or radiant_name in ["Radiant", "Unknown"]:
+            radiant_name = None
+        if not dire_name or dire_name in ["Dire", "Unknown"]:
+            dire_name = None
+        
+        # Log team info for debugging
+        if radiant_name and dire_name:
+            logger.debug(f"Pro match found: {radiant_name} vs {dire_name}")
+        else:
+            logger.debug(f"Pub/unknown match - radiant_team: {radiant}, dire_team: {dire}")
+        
         team1 = Team(
             id=str(radiant.get("team_id", "radiant")),
-            name=radiant.get("team_name", "Radiant"),
-            short_name=radiant.get("team_tag", "RAD"),
+            name=radiant_name or "Unknown",  # Use "Unknown" to signal no match possible
+            short_name=radiant.get("team_tag") or (radiant_name[:3].upper() if radiant_name else "RAD"),
             logo_url=radiant.get("team_logo"),
         )
         
         team2 = Team(
             id=str(dire.get("team_id", "dire")),
-            name=dire.get("team_name", "Dire"),
-            short_name=dire.get("team_tag", "DIR"),
+            name=dire_name or "Unknown",  # Use "Unknown" to signal no match possible
+            short_name=dire.get("team_tag") or (dire_name[:3].upper() if dire_name else "DIR"),
             logo_url=dire.get("team_logo"),
         )
         
