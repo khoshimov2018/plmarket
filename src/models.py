@@ -47,6 +47,20 @@ class PositionStatus(Enum):
     STOPPED_OUT = "stopped_out"
 
 
+class EventType(Enum):
+    """Types of in-game events that affect win probability."""
+    KILL = "kill"
+    TOWER = "tower"
+    DRAGON = "dragon"
+    BARON = "baron"
+    ROSHAN = "roshan"
+    INHIBITOR = "inhibitor"
+    GAME_END = "game_end"
+    FIRST_BLOOD = "first_blood"
+    ACE = "ace"
+    TEAMFIGHT = "teamfight"
+
+
 @dataclass
 class Team:
     """Esports team information."""
