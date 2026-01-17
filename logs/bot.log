@@ -19903,3 +19903,781 @@
 2026-01-17 19:55:39 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
 2026-01-17 19:55:39 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653379555 team1=Radiant team2=Dire
 2026-01-17 19:55:39 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 19:56:09 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 19:56:09 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 19:56:10 [debug    ] Found 7 live Dota 2 matches    component=opendota
+2026-01-17 19:56:10 [debug    ] Got 7 Dota matches from OpenDota component=engine
+2026-01-17 19:56:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653250450 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:56:10 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653250450 team1=Radiant team2=Dire
+2026-01-17 19:56:10 [debug    ] ❌ No market match found        component=engine match_id=8653250450 team1=Radiant team2=Dire
+2026-01-17 19:56:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653271735 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:56:10 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653271735 team1=Radiant team2=Dire
+2026-01-17 19:56:10 [debug    ] ❌ No market match found        component=engine match_id=8653271735 team1=Radiant team2=Dire
+2026-01-17 19:56:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653263572 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:56:10 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653263572 team1=Radiant team2=Dire
+2026-01-17 19:56:10 [debug    ] ❌ No market match found        component=engine match_id=8653263572 team1=Radiant team2=Dire
+2026-01-17 19:56:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:56:10 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 19:56:10 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 19:56:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:56:10 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 19:56:10 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 19:56:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:56:10 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 19:56:10 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 19:56:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:56:10 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 19:56:10 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 19:57:06 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 19:57:06 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 19:57:06 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 19:57:06 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 19:57:06 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 19:57:06 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 19:57:06 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 19:57:07 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 19:57:07 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 19:57:07 [debug    ] Found 7 live Dota 2 matches    component=opendota
+2026-01-17 19:57:07 [debug    ] Got 7 Dota matches from OpenDota component=engine
+2026-01-17 19:57:07 [debug    ] Processing match               component=engine game=dota2 match_id=8653250450 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:57:07 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653250450 team1=Radiant team2=Dire
+2026-01-17 19:57:07 [debug    ] ❌ No market match found        component=engine match_id=8653250450 team1=Radiant team2=Dire
+2026-01-17 19:57:07 [debug    ] Processing match               component=engine game=dota2 match_id=8653271735 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:57:07 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653271735 team1=Radiant team2=Dire
+2026-01-17 19:57:07 [debug    ] ❌ No market match found        component=engine match_id=8653271735 team1=Radiant team2=Dire
+2026-01-17 19:57:07 [debug    ] Processing match               component=engine game=dota2 match_id=8653263572 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:57:07 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653263572 team1=Radiant team2=Dire
+2026-01-17 19:57:07 [debug    ] ❌ No market match found        component=engine match_id=8653263572 team1=Radiant team2=Dire
+2026-01-17 19:57:07 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:57:07 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 19:57:07 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 19:57:07 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:57:07 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 19:57:07 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 19:57:07 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:57:07 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 19:57:07 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 19:57:07 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:57:07 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 19:57:07 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 19:57:37 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 19:57:37 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 19:57:38 [debug    ] Found 7 live Dota 2 matches    component=opendota
+2026-01-17 19:57:38 [debug    ] Got 7 Dota matches from OpenDota component=engine
+2026-01-17 19:57:38 [debug    ] Processing match               component=engine game=dota2 match_id=8653250450 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:57:38 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653250450 team1=Radiant team2=Dire
+2026-01-17 19:57:38 [debug    ] ❌ No market match found        component=engine match_id=8653250450 team1=Radiant team2=Dire
+2026-01-17 19:57:38 [debug    ] Processing match               component=engine game=dota2 match_id=8653271735 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:57:38 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653271735 team1=Radiant team2=Dire
+2026-01-17 19:57:38 [debug    ] ❌ No market match found        component=engine match_id=8653271735 team1=Radiant team2=Dire
+2026-01-17 19:57:38 [debug    ] Processing match               component=engine game=dota2 match_id=8653263572 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:57:38 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653263572 team1=Radiant team2=Dire
+2026-01-17 19:57:38 [debug    ] ❌ No market match found        component=engine match_id=8653263572 team1=Radiant team2=Dire
+2026-01-17 19:57:38 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:57:38 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 19:57:38 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 19:57:38 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:57:38 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 19:57:38 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 19:57:38 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:57:38 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 19:57:38 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 19:57:38 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 19:57:38 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 19:57:38 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:15:35 [info     ] 📊 Status Update                avg_latency=0.0ms component=engine open_positions=0 opportunities=0 runtime=8.5h total_pnl=$0.00 trades=0 win_rate=0.0%
+2026-01-17 20:15:43 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:43 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:44 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:45 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:46 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:47 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:48 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:49 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:50 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:51 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:52 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:53 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:54 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:54 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:54 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:54 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:54 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:54 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:54 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:54 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:54 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:54 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:54 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:54 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:54 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:15:54 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:57 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:57 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:57 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:57 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:57 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:57 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:57 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:57 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:57 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:57 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:57 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:57 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:57 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:57 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:58 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:29:59 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:00 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [error    ] Error fetching live matches: Cannot connect to host esports-api.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [error    ] Error fetching live matches: Cannot connect to host api.opendota.com:443 ssl:default [nodename nor servname provided, or not known] component=opendota
+2026-01-17 20:30:01 [error    ] Error fetching live lol matches component=pandascore error='[Errno 8] nodename nor servname provided, or not known'
+2026-01-17 20:30:01 [debug    ] Found 0 live matches           component=pandascore
+2026-01-17 20:30:01 [error    ] Error fetching live dota2 matches component=pandascore error='[Errno 8] nodename nor servname provided, or not known'
+2026-01-17 20:30:01 [debug    ] Found 0 live matches           component=pandascore
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:30:01 [debug    ] Could not get live stats: Cannot connect to host feed.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:33:39 [error    ] Error fetching live matches: Cannot connect to host esports-api.lolesports.com:443 ssl:default [nodename nor servname provided, or not known] component=lolesports
+2026-01-17 20:33:39 [error    ] Error fetching live matches: Cannot connect to host api.opendota.com:443 ssl:default [nodename nor servname provided, or not known] component=opendota
+2026-01-17 20:33:39 [error    ] Error fetching live lol matches component=pandascore error='[Errno 8] nodename nor servname provided, or not known'
+2026-01-17 20:33:39 [debug    ] Found 0 live matches           component=pandascore
+2026-01-17 20:33:39 [error    ] Error fetching live dota2 matches component=pandascore error='[Errno 8] nodename nor servname provided, or not known'
+2026-01-17 20:33:39 [debug    ] Found 0 live matches           component=pandascore
+2026-01-17 20:33:49 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:33:49 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:33:49 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:33:49 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:33:49 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:33:49 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:33:49 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:34:10 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 20:34:10 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 20:34:10 [debug    ] Found 7 live Dota 2 matches    component=opendota
+2026-01-17 20:34:10 [debug    ] Got 7 Dota matches from OpenDota component=engine
+2026-01-17 20:34:10 [debug    ] Processing match               component=engine game=league_of_legends match_id=115565525419283359 source=lolesports team1=LOS team2='Vivo Keyd Stars'
+2026-01-17 20:34:10 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=115565525419283359 team1=LOS team2='Vivo Keyd Stars'
+2026-01-17 20:34:10 [debug    ] Market matched                 component=market_matcher market_id=1098801 match_id=115565525419283359 score=1.00
+2026-01-17 20:34:10 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1098801 market_question='LoL: LOS vs Vivo Keyd Stars (BO1)' match_id=115565525419283359
+2026-01-17 20:34:10 [info     ] 🎮 match_started                component=games game=league_of_legends match_id=115565525419283359 team1=LOS team2='Vivo Keyd Stars'
+2026-01-17 20:34:10 [info     ] 📡 Subscribed to match          component=engine market='LoL: LOS vs Vivo Keyd Stars (BO1)' match_id=115565525419283359 teams='LOS vs Vivo Keyd Stars'
+2026-01-17 20:34:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653263572 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:34:10 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653263572 team1=Radiant team2=Dire
+2026-01-17 20:34:10 [debug    ] ❌ No market match found        component=engine match_id=8653263572 team1=Radiant team2=Dire
+2026-01-17 20:34:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:34:10 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:34:10 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:34:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:34:10 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:34:10 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:34:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:34:10 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:34:10 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:34:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:34:10 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:34:10 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:34:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:34:10 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:34:10 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:34:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:34:10 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:34:10 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:34:10 [info     ] Subscribing to LoL match 115565525419283359 component=lolesports
+2026-01-17 20:37:24 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:37:24 [debug    ] Could not get live stats:      component=lolesports
+2026-01-17 20:37:28 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 20:37:28 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 20:37:29 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 20:37:29 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 20:37:29 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:37:29 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:37:29 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:37:29 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:37:29 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:37:29 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:37:29 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:37:29 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:37:29 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:37:29 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:37:29 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:37:29 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:37:29 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:37:29 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:37:29 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:37:29 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:37:29 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:37:29 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:37:59 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 20:37:59 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 20:38:00 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 20:38:00 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 20:38:00 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:38:00 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:38:00 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:38:00 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:38:00 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:38:00 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:38:00 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:38:00 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:38:00 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:38:00 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:38:00 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:38:00 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:38:00 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:38:00 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:38:00 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:38:00 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:38:00 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:38:00 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:38:39 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 20:38:39 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 20:38:39 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 20:38:39 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 20:38:39 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:38:39 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:38:39 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:38:39 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:38:39 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:38:39 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:38:39 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:38:39 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:38:39 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:38:39 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:38:39 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:38:39 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:38:39 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:38:39 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:38:39 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:38:39 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:38:39 [info     ] 🔍 Trying to match live game to market available_markets=666 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:38:39 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:38:47 [info     ] Found 16 esports markets       component=polymarket
+2026-01-17 20:38:47 [info     ] Found 0 esports markets        component=polymarket
+2026-01-17 20:38:47 [info     ] Markets refreshed              component=engine dota_markets=0 lol_markets=16
+2026-01-17 20:39:09 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 20:39:09 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 20:39:10 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 20:39:10 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 20:39:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:39:10 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:39:10 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:39:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:39:10 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:39:10 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:39:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:39:10 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:39:10 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:39:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:39:10 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:39:10 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:39:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:39:10 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:39:10 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:39:10 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:39:10 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:39:10 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:39:40 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 20:39:40 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 20:39:41 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 20:39:41 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 20:39:41 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:39:41 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:39:41 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:39:41 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:39:41 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:39:41 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:39:41 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:39:41 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:39:41 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:39:41 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:39:41 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:39:41 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:39:41 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:39:41 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:39:41 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:39:41 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:39:41 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:39:41 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:40:11 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 20:40:11 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 20:40:11 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 20:40:11 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 20:40:11 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:40:11 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:40:12 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:40:12 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:40:12 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:40:12 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:40:12 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:40:12 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:40:12 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:40:12 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:40:12 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:40:12 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:40:12 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:40:12 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:40:12 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:40:12 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:40:12 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:40:12 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:40:42 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 20:40:42 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 20:40:42 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 20:40:42 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 20:40:42 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:40:42 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:40:42 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:40:42 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:40:42 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:40:42 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:40:42 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:40:42 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:40:42 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:40:42 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:40:42 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:40:42 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:40:42 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:40:42 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:40:42 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:40:42 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:40:42 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:40:42 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:40:43 [info     ] 📊 Status Update                avg_latency=0.0ms component=engine open_positions=0 opportunities=0 runtime=8.9h total_pnl=$0.00 trades=0 win_rate=0.0%
+2026-01-17 20:41:13 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 20:41:13 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 20:41:14 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 20:41:14 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 20:41:14 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:41:14 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:41:14 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:41:14 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:41:14 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:41:14 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:41:14 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:41:14 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:41:14 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:41:14 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:41:14 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:41:14 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:41:14 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:41:14 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:41:14 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:41:14 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:41:14 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:41:14 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:41:44 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 20:41:44 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 20:41:44 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 20:41:44 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 20:41:44 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:41:44 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:41:44 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:41:44 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:41:44 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:41:44 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:41:44 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:41:44 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:41:44 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:41:44 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:41:44 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:41:44 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:41:44 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:41:44 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:41:44 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:41:44 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:41:44 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:41:44 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:42:15 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 20:42:15 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 20:42:15 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 20:42:15 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 20:42:15 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:42:15 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:42:15 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:42:15 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:42:15 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:42:15 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:42:15 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:42:15 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:42:15 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:42:15 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:42:15 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:42:15 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:42:15 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:42:15 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:42:15 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:42:15 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:42:15 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:42:15 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:42:45 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 20:42:45 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 20:42:46 [debug    ] Found 6 live Dota 2 matches    component=opendota
+2026-01-17 20:42:46 [debug    ] Got 6 Dota matches from OpenDota component=engine
+2026-01-17 20:42:46 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:42:46 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:42:46 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:42:46 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:42:46 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:42:46 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:42:46 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:42:46 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:42:46 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:42:46 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:42:46 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:42:46 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:42:46 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:42:46 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:42:46 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:42:46 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:42:46 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:42:46 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:43:16 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17 20:43:16 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17 20:43:17 [debug    ] Found 7 live Dota 2 matches    component=opendota
+2026-01-17 20:43:17 [debug    ] Got 7 Dota matches from OpenDota component=engine
+2026-01-17 20:43:17 [debug    ] Processing match               component=engine game=dota2 match_id=8653333403 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:43:17 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:43:17 [debug    ] ❌ No market match found        component=engine match_id=8653333403 team1=Radiant team2=Dire
+2026-01-17 20:43:17 [debug    ] Processing match               component=engine game=dota2 match_id=8653305675 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:43:17 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:43:17 [debug    ] ❌ No market match found        component=engine match_id=8653305675 team1=Radiant team2=Dire
+2026-01-17 20:43:17 [debug    ] Processing match               component=engine game=dota2 match_id=8653370192 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:43:17 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:43:17 [debug    ] ❌ No market match found        component=engine match_id=8653370192 team1=Radiant team2=Dire
+2026-01-17 20:43:17 [debug    ] Processing match               component=engine game=dota2 match_id=8653379555 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:43:17 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:43:17 [debug    ] ❌ No market match found        component=engine match_id=8653379555 team1=Radiant team2=Dire
+2026-01-17 20:43:17 [debug    ] Processing match               component=engine game=dota2 match_id=8653426326 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:43:17 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:43:17 [debug    ] ❌ No market match found        component=engine match_id=8653426326 team1=Radiant team2=Dire
+2026-01-17 20:43:17 [debug    ] Processing match               component=engine game=dota2 match_id=8653443254 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:43:17 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:43:17 [debug    ] ❌ No market match found        component=engine match_id=8653443254 team1=Radiant team2=Dire
+2026-01-17 20:43:17 [debug    ] Processing match               component=engine game=dota2 match_id=8653470150 source=opendota team1=Unknown team2=Unknown
+2026-01-17 20:43:17 [info     ] 🔍 Trying to match live game to market available_markets=682 component=engine match_id=8653470150 team1=Radiant team2=Dire
+2026-01-17 20:43:17 [debug    ] ❌ No market match found        component=engine match_id=8653470150 team1=Radiant team2=Dire

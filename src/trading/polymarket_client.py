@@ -163,6 +163,7 @@ class PolymarketClient:
             raise ValueError(f"Invalid POLYMARKET_API_SECRET format. Must be base64 encoded. Error: {e}")
         
         return {
+            "POLY_ADDRESS": self._address,
             "POLY_API_KEY": self._api_key,
             "POLY_SIGNATURE": signature_b64,
             "POLY_TIMESTAMP": timestamp,
