@@ -15,6 +15,7 @@ from src.esports.dota_provider import DotaDataProvider
 from src.esports.opendota import OpenDotaProvider
 from src.esports.lolesports import LoLEsportsProvider
 from src.esports.grid_provider import GridProvider
+from src.esports.stratz_provider import StratzProvider
 from src.trading.polymarket_client import PolymarketClient
 from src.trading.order_manager import OrderManager
 from src.trading.position_tracker import PositionTracker
@@ -47,6 +48,7 @@ class ExecutionEngine:
         # Primary providers (fast, free APIs)
         self.lol_esports: Optional[LoLEsportsProvider] = None  # Official Riot data
         self.opendota: Optional[OpenDotaProvider] = None  # Free Dota 2 API
+        self.stratz: Optional[StratzProvider] = None  # FREE Dota 2 with win probability!
         
         # Fallback providers (PandaScore - paid/slower)
         self.lol_provider: Optional[LoLDataProvider] = None
@@ -79,6 +81,7 @@ class ExecutionEngine:
         # These are the key to latency arbitrage - fastest possible data
         self.lol_esports = LoLEsportsProvider()  # Official Riot - fastest for LoL
         self.opendota = OpenDotaProvider(self.config.esports.opendota_api_key)  # With API key for higher rate limits
+        self.stratz = StratzProvider()  # FREE Dota 2 with win probability!
         
         # Initialize FALLBACK providers (PandaScore - may need paid plan)
         self.lol_provider = LoLDataProvider(self.config.esports.pandascore_api_key)
@@ -92,11 +95,14 @@ class ExecutionEngine:
             self.grid.connect(),
             self.lol_esports.connect(),
             self.opendota.connect(),
+            self.stratz.connect(),  # FREE Dota 2 provider with win probability!
             self.polymarket.connect(),
         )
         
         if self.grid.enabled:
             logger.info("✅ GRID.gg provider enabled - FASTEST data source active!")
+        
+        logger.info("✅ Stratz provider enabled - FREE Dota 2 with win probability!")
         
         # Try to connect fallback providers (may fail with free tier)
         try:
@@ -213,7 +219,7 @@ class ExecutionEngine:
                         "⚠️ NO ESPORTS MARKETS AVAILABLE ON POLYMARKET! "
                         "The bot cannot trade without active markets. "
                         "Check https://polymarket.com for esports events."
-                    )
+                )
                 
             except Exception as e:
                 logger.error(f"Market discovery error: {e}")
@@ -255,13 +261,24 @@ class ExecutionEngine:
                 except Exception as e:
                     logger.debug(f"LoL Esports API failed: {e}")
                 
-                # Dota: Try OpenDota (free, but may have generic team names)
+                # Dota: Try Stratz FIRST (FREE with win probability!)
+                stratz_matches = []
                 try:
-                    dota_matches = await self.opendota.get_live_matches()
-                    if dota_matches:
-                        logger.debug(f"Got {len(dota_matches)} Dota matches from OpenDota")
+                    stratz_matches = await self.stratz.get_live_matches()
+                    if stratz_matches:
+                        logger.info(f"🎯 Got {len(stratz_matches)} Dota matches from Stratz (FREE with win prob!)")
+                        dota_matches = stratz_matches  # Use Stratz as primary
                 except Exception as e:
-                    logger.debug(f"OpenDota API failed: {e}")
+                    logger.debug(f"Stratz API failed: {e}")
+                
+                # Dota: Try OpenDota as backup (free, but may have generic team names)
+                if not dota_matches:
+                    try:
+                        dota_matches = await self.opendota.get_live_matches()
+                        if dota_matches:
+                            logger.debug(f"Got {len(dota_matches)} Dota matches from OpenDota")
+                    except Exception as e:
+                        logger.debug(f"OpenDota API failed: {e}")
                 
                 # Fallback to PandaScore if primary sources found nothing
                 if not lol_matches and not grid_matches and self.lol_provider:
@@ -276,8 +293,8 @@ class ExecutionEngine:
                     except Exception:
                         pass
                 
-                # GRID matches take priority (have real team names)
-                all_matches = grid_matches + lol_matches + dota_matches
+                # Stratz and GRID matches take priority (have real team names + win prob)
+                all_matches = grid_matches + stratz_matches + lol_matches + dota_matches
                 
                 for match_data in all_matches:
                     # Get match ID - different sources use different keys
@@ -321,6 +338,8 @@ class ExecutionEngine:
                     # Different providers use different match IDs!
                     if source == "grid" and self.grid and self.grid.enabled:
                         provider = self.grid
+                    elif source == "stratz":
+                        provider = self.stratz  # FREE with win probability!
                     elif source == "lolesports":
                         provider = self.lol_esports
                     elif source == "opendota":
@@ -336,7 +355,7 @@ class ExecutionEngine:
                         if game == Game.LOL:
                             provider = self.lol_esports or self.lol_provider
                         else:
-                            provider = self.opendota or self.dota_provider
+                            provider = self.stratz or self.opendota or self.dota_provider
                     
                     logger.debug(f"Using provider {provider.__class__.__name__} for match {match_id}")
                     
@@ -387,7 +406,7 @@ class ExecutionEngine:
                             match_id=match_id,
                             team1=game_state.team1.name if game_state.team1 else "Unknown",
                             team2=game_state.team2.name if game_state.team2 else "Unknown",
-                        )
+                    )
                     
                     if market:
                         # Store mappings
@@ -438,8 +457,8 @@ class ExecutionEngine:
         if game == Game.LOL:
             provider = self.lol_esports or self.lol_provider
         else:
-            # For PandaScore matches, use the dota_provider which extends PandaScore
-            provider = self.dota_provider or self.opendota
+            # For Dota 2, prefer Stratz (FREE with win probability!)
+            provider = self.stratz or self.opendota or self.dota_provider
         
         # Start both strategies concurrently
         event_task = asyncio.create_task(
@@ -614,7 +633,7 @@ class ExecutionEngine:
                 
                 if opportunity:
                     await self._execute_opportunity(opportunity)
-        
+                
         except asyncio.CancelledError:
             pass
         except Exception as e:
