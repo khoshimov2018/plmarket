@@ -1,168 +1,688 @@
-2026-01-17T16:43:51.000000000Z [inf]  Starting Container
-2026-01-17T16:43:53.684942038Z [inf]  ╭─────────── Configuration ───────────╮
-2026-01-17T16:43:53.684946663Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
-2026-01-17T16:43:53.684951362Z [inf]  │                                     │
-2026-01-17T16:43:53.684958295Z [inf]  │ Mode: Paper Trading                 │
-2026-01-17T16:43:53.684963168Z [inf]  │ Initial Capital: $25.00             │
-2026-01-17T16:43:53.684967985Z [inf]  │ Min Edge: 2.0%                      │
-2026-01-17T16:43:53.684972693Z [inf]  │ Max Position: 10%                   │
-2026-01-17T16:43:53.684977458Z [inf]  ╰─────────────────────────────────────╯
-2026-01-17T16:43:53.684982278Z [inf]  2026-01-17 16:43:53 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
-2026-01-17T16:43:53.684986898Z [inf]  2026-01-17 16:43:53 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
-2026-01-17T16:43:53.796690905Z [inf]  2026-01-17 16:43:53 [info     ] Connected to Stratz API        component=stratz
-2026-01-17T16:43:53.796821242Z [inf]  2026-01-17 16:43:53 [info     ] ✅ GRID Open Access HTTP client connected component=grid
-2026-01-17T16:43:53.796825557Z [inf]  2026-01-17 16:43:53 [info     ] Connected to LoL Esports API   component=lolesports
-2026-01-17T16:43:53.796831931Z [inf]  2026-01-17 16:43:53 [info     ] Connected to OpenDota API      component=opendota
-2026-01-17T16:43:53.809295774Z [inf]  2026-01-17 16:43:53 [info     ] Connected to Polymarket (LIVE) address=0x58C8665BCc2b6e2DaAA1b340BF1975A65bbFC72E component=polymarket
-2026-01-17T16:43:53.809304593Z [inf]  2026-01-17 16:43:53 [info     ] ✅ GRID.gg provider enabled - FASTEST data source active! component=engine
-2026-01-17T16:43:53.809314797Z [inf]  2026-01-17 16:43:53 [info     ] ✅ Stratz provider enabled - FREE Dota 2 with win probability! component=engine
-2026-01-17T16:43:53.811370996Z [inf]  2026-01-17 16:43:53 [info     ] Connected to PandaScore API    component=pandascore
-2026-01-17T16:43:53.824801749Z [inf]  2026-01-17 16:43:53 [info     ] Connected to PandaScore API    component=pandascore
-2026-01-17T16:43:53.824811820Z [inf]  2026-01-17 16:43:53 [info     ] 🎮 Bot started in LIVE TRADING mode component=engine initial_capital=$25.00 max_position=10% min_edge=2.0%
-2026-01-17T16:43:53.848341215Z [inf]  2026-01-17 16:43:53 [info     ] 📊 Status Update                avg_latency=0.0ms component=engine open_positions=0 opportunities=0 runtime=0.0h total_pnl=$0.00 trades=0 win_rate=0.0%
-2026-01-17T16:43:54.719079169Z [inf]  2026-01-17 16:43:54 [error    ] GRID GraphQL errors: [{'message': 'Requester forbidden to make query', 'path': ['queryValue'], 'extensions': {'errorType': 'PERMISSION_DENIED', 'serviceName': 'gql-cd-query', 'code': 'DOWNSTREAM_SERVICE_ERROR'}}] component=grid
-2026-01-17T16:43:54.719084322Z [inf]  2026-01-17 16:43:54 [debug    ] Found LoL match: Fnatic vs Los Ratones (LEC) component=lolesports
-2026-01-17T16:43:54.719123415Z [inf]  2026-01-17 16:43:54 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
-2026-01-17T16:43:54.719128884Z [inf]  2026-01-17 16:43:54 [debug    ] Found 2 live LoL matches       component=lolesports
-2026-01-17T16:43:54.719133492Z [inf]  2026-01-17 16:43:54 [debug    ] Got 2 LoL matches from official API component=engine
-2026-01-17T16:43:54.719138517Z [inf]  2026-01-17 16:43:54 [debug    ] Found 0 live Dota 2 matches from Stratz component=stratz
-2026-01-17T16:43:54.939662993Z [inf]  2026-01-17 16:43:54 [debug    ] Found 0 live Dota 2 matches    component=opendota
-2026-01-17T16:43:55.725822322Z [inf]  2026-01-17 16:43:55 [debug    ] Found 1 live matches           component=pandascore
-2026-01-17T16:43:55.725828899Z [inf]  2026-01-17 16:43:55 [debug    ] Processing match               component=engine game=league_of_legends match_id=115548424308414192 source=lolesports team1=Fnatic team2='Los Ratones'
-2026-01-17T16:43:55.725834337Z [inf]  2026-01-17 16:43:55 [debug    ] Using provider LoLEsportsProvider for match 115548424308414192 component=engine
-2026-01-17T16:43:55.725839891Z [inf]  2026-01-17 16:43:55 [info     ] 🔍 Trying to match live game to market available_markets=743 component=engine match_id=115548424308414192 team1=Fnatic team2='Los Ratones'
-2026-01-17T16:43:55.742055829Z [inf]  2026-01-17 16:43:55 [debug    ] Market matched                 component=market_matcher market_id=1097358 match_id=115548424308414192 score=1.00
-2026-01-17T16:43:55.742065433Z [inf]  2026-01-17 16:43:55 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1097358 market_question='LoL: Los Ratones vs Fnatic (BO1)' match_id=115548424308414192
-2026-01-17T16:43:55.742072550Z [inf]  2026-01-17 16:43:55 [info     ] 🎮 match_started                component=games game=league_of_legends match_id=115548424308414192 team1=Fnatic team2='Los Ratones'
-2026-01-17T16:43:55.742079175Z [inf]  2026-01-17 16:43:55 [info     ] 📡 Subscribed to match          component=engine market='LoL: Los Ratones vs Fnatic (BO1)' match_id=115548424308414192 teams='Fnatic vs Los Ratones'
-2026-01-17T16:43:55.742085851Z [inf]  2026-01-17 16:43:55 [debug    ] Processing match               component=engine game=league_of_legends match_id=115565525419348905 source=lolesports team1='Vivo Keyd Stars' team2='paiN Gaming'
-2026-01-17T16:43:55.742092913Z [inf]  2026-01-17 16:43:55 [debug    ] Using provider LoLEsportsProvider for match 115565525419348905 component=engine
-2026-01-17T16:43:55.742980128Z [inf]  2026-01-17 16:43:55 [info     ] Subscribing to LoL match 115548424308414192 component=lolesports
-2026-01-17T16:43:55.742986073Z [inf]  2026-01-17 16:43:55 [info     ] 🔄 Starting arbitrage polling for match 115548424308414192 component=engine
-2026-01-17T16:43:55.786614266Z [inf]  2026-01-17 16:43:55 [info     ] 🔍 Trying to match live game to market available_markets=743 component=engine match_id=115565525419348905 team1='Vivo Keyd Stars' team2='paiN Gaming'
-2026-01-17T16:43:55.970730408Z [inf]  2026-01-17 16:43:55 [debug    ] Market matched                 component=market_matcher market_id=1097357 match_id=115565525419348905 score=1.00
-2026-01-17T16:43:55.970737757Z [inf]  2026-01-17 16:43:55 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1097357 market_question='LoL: Vivo Keyd Stars vs paiN Gaming (BO1)' match_id=115565525419348905
-2026-01-17T16:43:55.970745297Z [inf]  2026-01-17 16:43:55 [info     ] 🎮 match_started                component=games game=league_of_legends match_id=115565525419348905 team1='Vivo Keyd Stars' team2='paiN Gaming'
-2026-01-17T16:43:55.970752865Z [inf]  2026-01-17 16:43:55 [info     ] 📡 Subscribed to match          component=engine market='LoL: Vivo Keyd Stars vs paiN Gaming (BO1' match_id=115565525419348905 teams='Vivo Keyd Stars vs paiN Gaming'
-2026-01-17T16:43:55.970761480Z [inf]  2026-01-17 16:43:55 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
-2026-01-17T16:43:55.970770315Z [inf]  2026-01-17 16:43:55 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
-2026-01-17T16:43:55.970777945Z [inf]  2026-01-17 16:43:55 [info     ] Subscribing to LoL match 115565525419348905 component=lolesports
-2026-01-17T16:43:55.970932812Z [inf]  2026-01-17 16:43:55 [info     ] 🔄 Starting arbitrage polling for match 115565525419348905 component=engine
-2026-01-17T16:43:56.163693397Z [inf]  2026-01-17 16:43:56 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
-2026-01-17T16:43:56.163699061Z [inf]  2026-01-17 16:43:56 [debug    ] Found match 1323622 in running matches! component=pandascore
-2026-01-17T16:43:56.165029743Z [inf]  2026-01-17 16:43:56 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
-2026-01-17T16:43:56.165035466Z [inf]  2026-01-17 16:43:56 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
-2026-01-17T16:43:56.165040694Z [inf]  2026-01-17 16:43:56 [info     ] 🔍 Trying to match live game to market available_markets=759 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
-2026-01-17T16:43:56.165046418Z [inf]  2026-01-17 16:43:56 [debug    ] ❌ No market match found        component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
-2026-01-17T16:43:56.328392651Z [inf]  2026-01-17 16:43:56 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
-2026-01-17T16:43:56.328400446Z [inf]  2026-01-17 16:43:56 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=0.0% edge=50.0% component=engine
-2026-01-17T16:43:56.330161587Z [inf]  2026-01-17 16:43:56 [info     ] opportunity_detected           component=trades edge=50.00% market_id=1097358 market_prob=0.00% match_id=115548424308414192 model_prob=50.00% triggering_event=None
-2026-01-17T16:43:56.330171424Z [inf]  2026-01-17 16:43:56 [info     ] 🎯 Opportunity detected         component=arbitrage edge=50.00% market='LoL: Los Ratones vs Fnatic (BO1)' side=buy target=yes
-2026-01-17T16:43:56.330177193Z [inf]  2026-01-17 16:43:56 [error    ] Error in arbitrage polling: 'TradingOpportunity' object has no attribute 'our_probability' component=engine
-2026-01-17T16:43:58.411094674Z [inf]  2026-01-17 16:43:58 [info     ] Found 1326 esports markets     component=polymarket
-2026-01-17T16:44:01.429567901Z [inf]  2026-01-17 16:44:01 [info     ] Found 116 esports markets      component=polymarket
-2026-01-17T16:44:01.437849146Z [inf]  2026-01-17 16:44:01 [info     ] Markets refreshed              component=engine dota_markets=116 lol_markets=1326
-2026-01-17T16:44:01.437860635Z [inf]  2026-01-17 16:44:01 [debug    ] LoL Market: Game Handicap: AL (-1.5) vs Bilibili Gaming (+1.5)... component=engine
-2026-01-17T16:44:01.437870704Z [inf]  2026-01-17 16:44:01 [debug    ] LoL Market: Series: Anyone's Legend Kill Handicap (-5.5) vs Bilibili Gam... component=engine
-2026-01-17T16:44:01.437878030Z [inf]  2026-01-17 16:44:01 [debug    ] LoL Market: Series: Anyone's Legend Drake Handicap (-0.5) vs Bilibili Ga... component=engine
-2026-01-17T16:44:01.437885581Z [inf]  2026-01-17 16:44:01 [debug    ] Dota Market: Game Handicap: AVL (-1.5) vs Aurora (+1.5)... component=engine
-2026-01-17T16:44:01.437893733Z [inf]  2026-01-17 16:44:01 [debug    ] Dota Market: Dota 2: Aurora vs AVULUS (BO3) - ESL One Birmingham: Eastern... component=engine
-2026-01-17T16:44:01.437900396Z [inf]  2026-01-17 16:44:01 [debug    ] Dota Market: Dota 2: Aurora vs AVULUS - Game 1 Winner... component=engine
-2026-01-17T16:44:01.790453976Z [inf]  2026-01-17 16:44:01 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
-2026-01-17T16:44:01.847733247Z [inf]  2026-01-17 16:44:01 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=0.0% edge=50.0% component=engine
-2026-01-17T16:44:01.847739242Z [inf]  2026-01-17 16:44:01 [debug    ] Opportunity on cooldown        component=arbitrage market_id=1097358
-2026-01-17T16:44:07.258066212Z [inf]  2026-01-17 16:44:07 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=0.0% edge=50.0% component=engine
-2026-01-17T16:44:07.258071245Z [inf]  2026-01-17 16:44:07 [info     ] opportunity_detected           component=trades edge=50.00% market_id=1097358 market_prob=0.00% match_id=115548424308414192 model_prob=50.00% triggering_event=None
-2026-01-17T16:44:07.258076926Z [inf]  2026-01-17 16:44:07 [info     ] 🎯 Opportunity detected         component=arbitrage edge=50.00% market='LoL: Los Ratones vs Fnatic (BO1)' side=buy target=yes
-2026-01-17T16:44:07.258082302Z [inf]  2026-01-17 16:44:07 [error    ] Error in arbitrage polling: 'TradingOpportunity' object has no attribute 'our_probability' component=engine
-2026-01-17T16:44:07.335746699Z [inf]  2026-01-17 16:44:07 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
-2026-01-17T16:44:12.804588933Z [inf]  2026-01-17 16:44:12 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=0.0% edge=50.0% component=engine
-2026-01-17T16:44:12.804594029Z [inf]  2026-01-17 16:44:12 [debug    ] Opportunity on cooldown        component=arbitrage market_id=1097358
-2026-01-17T16:44:12.804600530Z [inf]  2026-01-17 16:44:12 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
-2026-01-17T16:44:17.988793628Z [inf]  2026-01-17 16:44:17 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=0.0% edge=50.0% component=engine
-2026-01-17T16:44:17.988801208Z [inf]  2026-01-17 16:44:17 [info     ] opportunity_detected           component=trades edge=50.00% market_id=1097358 market_prob=0.00% match_id=115548424308414192 model_prob=50.00% triggering_event=None
-2026-01-17T16:44:17.988806384Z [inf]  2026-01-17 16:44:17 [info     ] 🎯 Opportunity detected         component=arbitrage edge=50.00% market='LoL: Los Ratones vs Fnatic (BO1)' side=buy target=yes
-2026-01-17T16:44:17.988811861Z [inf]  2026-01-17 16:44:17 [error    ] Error in arbitrage polling: 'TradingOpportunity' object has no attribute 'our_probability' component=engine
-2026-01-17T16:44:18.064870541Z [inf]  2026-01-17 16:44:18 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
-2026-01-17T16:44:23.366670574Z [inf]  2026-01-17 16:44:23 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=0.0% edge=50.0% component=engine
-2026-01-17T16:44:23.366679416Z [inf]  2026-01-17 16:44:23 [debug    ] Opportunity on cooldown        component=arbitrage market_id=1097358
-2026-01-17T16:44:23.480710851Z [inf]  2026-01-17 16:44:23 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
-2026-01-17T16:44:26.841462754Z [inf]  2026-01-17 16:44:26 [debug    ] Found 0 live Dota 2 matches from Stratz component=stratz
-2026-01-17T16:44:26.841602876Z [inf]  2026-01-17 16:44:26 [error    ] GRID GraphQL errors: [{'message': 'Requester forbidden to make query', 'path': ['queryValue'], 'extensions': {'errorType': 'PERMISSION_DENIED', 'serviceName': 'gql-cd-query', 'code': 'DOWNSTREAM_SERVICE_ERROR'}}] component=grid
-2026-01-17T16:44:26.841609067Z [inf]  2026-01-17 16:44:26 [debug    ] Found LoL match: Fnatic vs Los Ratones (LEC) component=lolesports
-2026-01-17T16:44:26.841615142Z [inf]  2026-01-17 16:44:26 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
-2026-01-17T16:44:26.841621291Z [inf]  2026-01-17 16:44:26 [debug    ] Found 2 live LoL matches       component=lolesports
-2026-01-17T16:44:26.841626699Z [inf]  2026-01-17 16:44:26 [debug    ] Got 2 LoL matches from official API component=engine
-2026-01-17T16:44:26.991748821Z [inf]  2026-01-17 16:44:26 [debug    ] Found 0 live Dota 2 matches    component=opendota
-2026-01-17T16:44:27.446112630Z [inf]  2026-01-17 16:44:27 [debug    ] Found 1 live matches           component=pandascore
-2026-01-17T16:44:27.447099070Z [inf]  2026-01-17 16:44:27 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
-2026-01-17T16:44:27.447106538Z [inf]  2026-01-17 16:44:27 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
-2026-01-17T16:44:27.870398366Z [inf]  2026-01-17 16:44:27 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
-2026-01-17T16:44:27.870409341Z [inf]  2026-01-17 16:44:27 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
-2026-01-17T16:44:27.870422911Z [inf]  2026-01-17 16:44:27 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
-2026-01-17T16:44:27.870428653Z [inf]  2026-01-17 16:44:27 [debug    ] Found match 1323622 in running matches! component=pandascore
-2026-01-17T16:44:27.870434372Z [inf]  2026-01-17 16:44:27 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
-2026-01-17T16:44:27.870440263Z [inf]  2026-01-17 16:44:27 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
-2026-01-17T16:44:27.870452868Z [inf]  2026-01-17 16:44:27 [info     ] 🔍 Trying to match live game to market available_markets=1442 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
-2026-01-17T16:44:27.870458239Z [inf]  2026-01-17 16:44:27 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
-2026-01-17T16:44:27.870464041Z [inf]  2026-01-17 16:44:27 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
-2026-01-17T16:44:27.870469066Z [inf]  2026-01-17 16:44:27 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
-2026-01-17T16:44:27.870474424Z [inf]  2026-01-17 16:44:27 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
-2026-01-17T16:44:27.870479566Z [inf]  2026-01-17 16:44:27 [info     ] Subscribing to Stratz match 1323622 component=stratz
-2026-01-17T16:44:27.871042279Z [inf]  2026-01-17 16:44:27 [debug    ] Found 0 live Dota 2 matches from Stratz component=stratz
-2026-01-17T16:44:27.873991073Z [inf]  2026-01-17 16:44:27 [info     ] Match 1323622 ended or not found component=engine
-2026-01-17T16:44:27.873999743Z [inf]  2026-01-17 16:44:27 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
-2026-01-17T16:44:27.874005562Z [inf]  2026-01-17 16:44:27 [debug    ] Stratz subscription cancelled for match 1323622 component=stratz
-2026-01-17T16:44:27.874073943Z [inf]  2026-01-17 16:44:27 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
-2026-01-17T16:44:27.874082024Z [inf]  2026-01-17 16:44:27 [debug    ] Match 1323622 not found in Stratz live data component=stratz
-2026-01-17T16:44:28.886950013Z [inf]  2026-01-17 16:44:28 [error    ] Error in arbitrage polling: 'TradingOpportunity' object has no attribute 'our_probability' component=engine
-2026-01-17T16:44:28.886953487Z [inf]  2026-01-17 16:44:28 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=0.0% edge=50.0% component=engine
-2026-01-17T16:44:28.886960709Z [inf]  2026-01-17 16:44:28 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
-2026-01-17T16:44:28.886964404Z [inf]  2026-01-17 16:44:28 [info     ] opportunity_detected           component=trades edge=50.00% market_id=1097358 market_prob=0.00% match_id=115548424308414192 model_prob=50.00% triggering_event=None
-2026-01-17T16:44:28.886973785Z [inf]  2026-01-17 16:44:28 [info     ] 🎯 Opportunity detected         component=arbitrage edge=50.00% market='LoL: Los Ratones vs Fnatic (BO1)' side=buy target=yes
-2026-01-17T16:44:34.227970470Z [inf]  2026-01-17 16:44:34 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=0.0% edge=50.0% component=engine
-2026-01-17T16:44:34.227979659Z [inf]  2026-01-17 16:44:34 [debug    ] Opportunity on cooldown        component=arbitrage market_id=1097358
-2026-01-17T16:44:34.268246702Z [inf]  2026-01-17 16:44:34 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
-2026-01-17T16:44:39.555154394Z [inf]  2026-01-17 16:44:39 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=0.0% edge=50.0% component=engine
-2026-01-17T16:44:39.555162216Z [inf]  2026-01-17 16:44:39 [info     ] opportunity_detected           component=trades edge=50.00% market_id=1097358 market_prob=0.00% match_id=115548424308414192 model_prob=50.00% triggering_event=None
-2026-01-17T16:44:39.555169656Z [inf]  2026-01-17 16:44:39 [info     ] 🎯 Opportunity detected         component=arbitrage edge=50.00% market='LoL: Los Ratones vs Fnatic (BO1)' side=buy target=yes
-2026-01-17T16:44:39.555177829Z [inf]  2026-01-17 16:44:39 [error    ] Error in arbitrage polling: 'TradingOpportunity' object has no attribute 'our_probability' component=engine
-2026-01-17T16:44:39.701033570Z [inf]  2026-01-17 16:44:39 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
-2026-01-17T16:44:45.049219229Z [inf]  2026-01-17 16:44:44 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=0.0% edge=50.0% component=engine
-2026-01-17T16:44:45.049224931Z [inf]  2026-01-17 16:44:44 [debug    ] Opportunity on cooldown        component=arbitrage market_id=1097358
-2026-01-17T16:44:45.075789206Z [inf]  2026-01-17 16:44:45 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
-2026-01-17T16:44:50.309571912Z [inf]  2026-01-17 16:44:50 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=0.0% edge=50.0% component=engine
-2026-01-17T16:44:50.309581724Z [inf]  2026-01-17 16:44:50 [info     ] opportunity_detected           component=trades edge=50.00% market_id=1097358 market_prob=0.00% match_id=115548424308414192 model_prob=50.00% triggering_event=None
-2026-01-17T16:44:50.309588959Z [inf]  2026-01-17 16:44:50 [info     ] 🎯 Opportunity detected         component=arbitrage edge=50.00% market='LoL: Los Ratones vs Fnatic (BO1)' side=buy target=yes
-2026-01-17T16:44:50.309595966Z [inf]  2026-01-17 16:44:50 [error    ] Error in arbitrage polling: 'TradingOpportunity' object has no attribute 'our_probability' component=engine
-2026-01-17T16:44:50.498792119Z [inf]  2026-01-17 16:44:50 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
-2026-01-17T16:44:55.676300849Z [inf]  2026-01-17 16:44:55 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=0.0% edge=50.0% component=engine
-2026-01-17T16:44:55.676307833Z [inf]  2026-01-17 16:44:55 [debug    ] Opportunity on cooldown        component=arbitrage market_id=1097358
-2026-01-17T16:44:55.877239197Z [inf]  2026-01-17 16:44:55 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
-2026-01-17T16:44:58.446803593Z [inf]  2026-01-17 16:44:58 [error    ] GRID GraphQL errors: [{'message': 'Requester forbidden to make query', 'path': ['queryValue'], 'extensions': {'errorType': 'PERMISSION_DENIED', 'serviceName': 'gql-cd-query', 'code': 'DOWNSTREAM_SERVICE_ERROR'}}] component=grid
-2026-01-17T16:44:58.488604240Z [inf]  2026-01-17 16:44:58 [debug    ] Found LoL match: Fnatic vs Los Ratones (LEC) component=lolesports
-2026-01-17T16:44:58.488609131Z [inf]  2026-01-17 16:44:58 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
-2026-01-17T16:44:58.488613819Z [inf]  2026-01-17 16:44:58 [debug    ] Found 2 live LoL matches       component=lolesports
-2026-01-17T16:44:58.488618780Z [inf]  2026-01-17 16:44:58 [debug    ] Got 2 LoL matches from official API component=engine
-2026-01-17T16:44:58.690611344Z [inf]  2026-01-17 16:44:58 [debug    ] Found 0 live Dota 2 matches    component=opendota
-2026-01-17T16:44:59.251458432Z [inf]  2026-01-17 16:44:59 [debug    ] Found 1 live matches           component=pandascore
-2026-01-17T16:44:59.251467022Z [inf]  2026-01-17 16:44:59 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
-2026-01-17T16:44:59.251476897Z [inf]  2026-01-17 16:44:59 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
-2026-01-17T16:44:59.394573228Z [inf]  2026-01-17 16:44:59 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
-2026-01-17T16:44:59.394581506Z [inf]  2026-01-17 16:44:59 [debug    ] Found match 1323622 in running matches! component=pandascore
-2026-01-17T16:44:59.394588877Z [inf]  2026-01-17 16:44:59 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
-2026-01-17T16:44:59.394593798Z [inf]  2026-01-17 16:44:59 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
-2026-01-17T16:44:59.394598812Z [inf]  2026-01-17 16:44:59 [info     ] 🔍 Trying to match live game to market available_markets=1442 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
-2026-01-17T16:44:59.401050969Z [inf]  2026-01-17 16:44:59 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
-2026-01-17T16:44:59.401060550Z [inf]  2026-01-17 16:44:59 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
-2026-01-17T16:44:59.401066483Z [inf]  2026-01-17 16:44:59 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
-2026-01-17T16:44:59.401071795Z [inf]  2026-01-17 16:44:59 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
-2026-01-17T16:44:59.402624775Z [inf]  2026-01-17 16:44:59 [info     ] Subscribing to Stratz match 1323622 component=stratz
-2026-01-17T16:44:59.402632368Z [inf]  2026-01-17 16:44:59 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
-2026-01-17T16:44:59.451791774Z [inf]  2026-01-17 16:44:59 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
-2026-01-17T16:44:59.451798262Z [inf]  2026-01-17 16:44:59 [debug    ] Match 1323622 not found in Stratz live data component=stratz
-2026-01-17T16:44:59.451802979Z [inf]  2026-01-17 16:44:59 [info     ] Match 1323622 ended or not found in Stratz component=stratz
-2026-01-17T16:44:59.453350631Z [inf]  2026-01-17 16:44:59 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
-2026-01-17T16:44:59.453358102Z [inf]  2026-01-17 16:44:59 [debug    ] Match 1323622 not found in Stratz live data component=stratz
-2026-01-17T16:44:59.453364376Z [inf]  2026-01-17 16:44:59 [info     ] Match 1323622 ended or not found component=engine
-2026-01-17T16:44:59.453370155Z [inf]  2026-01-17 16:44:59 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
+2026-01-17T16:49:51.000000000Z [inf]  Starting Container
+2026-01-17T16:49:52.747476134Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T16:49:52.747486070Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T16:49:52.747495277Z [inf]  │                                     │
+2026-01-17T16:49:52.747505025Z [inf]  │ Mode: Paper Trading                 │
+2026-01-17T16:49:52.747514482Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T16:49:52.747521415Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T16:49:52.747528627Z [inf]  │ Max Position: 10%                   │
+2026-01-17T16:49:52.747535100Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T16:49:52.747542468Z [inf]  2026-01-17 16:49:52 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
+2026-01-17T16:49:52.747551222Z [inf]  2026-01-17 16:49:52 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
+2026-01-17T16:49:52.747560848Z [inf]  2026-01-17 16:49:52 [info     ] ✅ GRID Open Access HTTP client connected component=grid
+2026-01-17T16:49:52.747571230Z [inf]  2026-01-17 16:49:52 [info     ] Connected to LoL Esports API   component=lolesports
+2026-01-17T16:49:52.747580787Z [inf]  2026-01-17 16:49:52 [info     ] Connected to OpenDota API      component=opendota
+2026-01-17T16:49:52.747592088Z [inf]  2026-01-17 16:49:52 [info     ] Connected to Stratz API        component=stratz
+2026-01-17T16:49:52.747601358Z [inf]  2026-01-17 16:49:52 [info     ] Connected to Polymarket (LIVE) address=0x58C8665BCc2b6e2DaAA1b340BF1975A65bbFC72E component=polymarket
+2026-01-17T16:49:52.747610924Z [inf]  2026-01-17 16:49:52 [info     ] ✅ GRID.gg provider enabled - FASTEST data source active! component=engine
+2026-01-17T16:49:52.747620734Z [inf]  2026-01-17 16:49:52 [info     ] ✅ Stratz provider enabled - FREE Dota 2 with win probability! component=engine
+2026-01-17T16:49:52.747836594Z [inf]  2026-01-17 16:49:52 [info     ] Connected to PandaScore API    component=pandascore
+2026-01-17T16:49:52.747846581Z [inf]  2026-01-17 16:49:52 [info     ] Connected to PandaScore API    component=pandascore
+2026-01-17T16:49:52.747856157Z [inf]  2026-01-17 16:49:52 [info     ] 🎮 Bot started in LIVE TRADING mode component=engine initial_capital=$25.00 max_position=10% min_edge=2.0%
+2026-01-17T16:49:52.747865943Z [inf]  2026-01-17 16:49:52 [info     ] 📊 Status Update                avg_latency=0.0ms component=engine open_positions=0 opportunities=0 runtime=0.0h total_pnl=$0.00 trades=0 win_rate=0.0%
+2026-01-17T16:49:52.828746063Z [inf]  2026-01-17 16:49:52 [debug    ] Found LoL match: Fnatic vs Los Ratones (LEC) component=lolesports
+2026-01-17T16:49:52.828758366Z [inf]  2026-01-17 16:49:52 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:49:52.828766351Z [inf]  2026-01-17 16:49:52 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:49:52.828774664Z [inf]  2026-01-17 16:49:52 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:49:52.874066812Z [inf]  2026-01-17 16:49:52 [debug    ] Found 0 live Dota 2 matches from Stratz component=stratz
+2026-01-17T16:49:53.101976162Z [inf]  2026-01-17 16:49:53 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T16:49:53.719969904Z [inf]  2026-01-17 16:49:53 [debug    ] Found 1 live matches           component=pandascore
+2026-01-17T16:49:53.719978348Z [inf]  2026-01-17 16:49:53 [debug    ] Processing match               component=engine game=league_of_legends match_id=115548424308414192 source=lolesports team1=Fnatic team2='Los Ratones'
+2026-01-17T16:49:53.719985691Z [inf]  2026-01-17 16:49:53 [debug    ] Using provider LoLEsportsProvider for match 115548424308414192 component=engine
+2026-01-17T16:49:53.719993618Z [inf]  2026-01-17 16:49:53 [info     ] 🔍 Trying to match live game to market available_markets=512 component=engine match_id=115548424308414192 team1=Fnatic team2='Los Ratones'
+2026-01-17T16:49:53.780543220Z [inf]  2026-01-17 16:49:53 [debug    ] Market matched                 component=market_matcher market_id=1097358 match_id=115548424308414192 score=1.00
+2026-01-17T16:49:53.780554334Z [inf]  2026-01-17 16:49:53 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1097358 market_question='LoL: Los Ratones vs Fnatic (BO1)' match_id=115548424308414192
+2026-01-17T16:49:53.780562636Z [inf]  2026-01-17 16:49:53 [info     ] 🎮 match_started                component=games game=league_of_legends match_id=115548424308414192 team1=Fnatic team2='Los Ratones'
+2026-01-17T16:49:53.780569186Z [inf]  2026-01-17 16:49:53 [info     ] 📡 Subscribed to match          component=engine market='LoL: Los Ratones vs Fnatic (BO1)' match_id=115548424308414192 teams='Fnatic vs Los Ratones'
+2026-01-17T16:49:53.780573934Z [inf]  2026-01-17 16:49:53 [debug    ] Processing match               component=engine game=league_of_legends match_id=115565525419348905 source=lolesports team1='Vivo Keyd Stars' team2='paiN Gaming'
+2026-01-17T16:49:53.780578571Z [inf]  2026-01-17 16:49:53 [debug    ] Using provider LoLEsportsProvider for match 115565525419348905 component=engine
+2026-01-17T16:49:53.780583191Z [inf]  2026-01-17 16:49:53 [info     ] Subscribing to LoL match 115548424308414192 component=lolesports
+2026-01-17T16:49:53.780587976Z [inf]  2026-01-17 16:49:53 [info     ] 🔄 Starting arbitrage polling for match 115548424308414192 component=engine
+2026-01-17T16:49:53.791562591Z [inf]  2026-01-17 16:49:53 [info     ] 🔍 Trying to match live game to market available_markets=512 component=engine match_id=115565525419348905 team1='Vivo Keyd Stars' team2='paiN Gaming'
+2026-01-17T16:49:53.932189541Z [inf]  2026-01-17 16:49:53 [debug    ] Market matched                 component=market_matcher market_id=1097357 match_id=115565525419348905 score=1.00
+2026-01-17T16:49:53.932200536Z [inf]  2026-01-17 16:49:53 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1097357 market_question='LoL: Vivo Keyd Stars vs paiN Gaming (BO1)' match_id=115565525419348905
+2026-01-17T16:49:53.932209608Z [inf]  2026-01-17 16:49:53 [info     ] 🎮 match_started                component=games game=league_of_legends match_id=115565525419348905 team1='Vivo Keyd Stars' team2='paiN Gaming'
+2026-01-17T16:49:53.932220654Z [inf]  2026-01-17 16:49:53 [info     ] 📡 Subscribed to match          component=engine market='LoL: Vivo Keyd Stars vs paiN Gaming (BO1' match_id=115565525419348905 teams='Vivo Keyd Stars vs paiN Gaming'
+2026-01-17T16:49:53.932227528Z [inf]  2026-01-17 16:49:53 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:49:53.932232078Z [inf]  2026-01-17 16:49:53 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
+2026-01-17T16:49:53.932236851Z [inf]  2026-01-17 16:49:53 [info     ] Subscribing to LoL match 115565525419348905 component=lolesports
+2026-01-17T16:49:53.932241585Z [inf]  2026-01-17 16:49:53 [info     ] 🔄 Starting arbitrage polling for match 115565525419348905 component=engine
+2026-01-17T16:49:54.072587098Z [inf]  2026-01-17 16:49:54 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
+2026-01-17T16:49:54.072592512Z [inf]  2026-01-17 16:49:54 [debug    ] Found match 1323622 in running matches! component=pandascore
+2026-01-17T16:49:54.072597431Z [inf]  2026-01-17 16:49:54 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
+2026-01-17T16:49:54.072602284Z [inf]  2026-01-17 16:49:54 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
+2026-01-17T16:49:54.072606596Z [inf]  2026-01-17 16:49:54 [info     ] 🔍 Trying to match live game to market available_markets=512 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:49:54.072611237Z [inf]  2026-01-17 16:49:54 [debug    ] ❌ No market match found        component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:49:54.277708482Z [inf]  2026-01-17 16:49:54 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:49:54.385018505Z [inf]  2026-01-17 16:49:54 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:49:59.785721929Z [inf]  2026-01-17 16:49:59 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:49:59.785746723Z [inf]  2026-01-17 16:49:59 [info     ] Found 1320 esports markets     component=polymarket
+2026-01-17T16:49:59.785753537Z [inf]  2026-01-17 16:49:59 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:04.496563783Z [inf]  2026-01-17 16:50:04 [info     ] Found 116 esports markets      component=polymarket
+2026-01-17T16:50:04.509911488Z [inf]  2026-01-17 16:50:04 [info     ] Markets refreshed              component=engine dota_markets=116 lol_markets=1320
+2026-01-17T16:50:04.509920166Z [inf]  2026-01-17 16:50:04 [debug    ] LoL Market: Game Handicap: AL (-1.5) vs Bilibili Gaming (+1.5)... component=engine
+2026-01-17T16:50:04.509927237Z [inf]  2026-01-17 16:50:04 [debug    ] LoL Market: Series: Anyone's Legend Kill Handicap (-5.5) vs Bilibili Gam... component=engine
+2026-01-17T16:50:04.509935588Z [inf]  2026-01-17 16:50:04 [debug    ] LoL Market: Series: Anyone's Legend Drake Handicap (-0.5) vs Bilibili Ga... component=engine
+2026-01-17T16:50:04.509943612Z [inf]  2026-01-17 16:50:04 [debug    ] Dota Market: Game Handicap: AVL (-1.5) vs Aurora (+1.5)... component=engine
+2026-01-17T16:50:04.509950073Z [inf]  2026-01-17 16:50:04 [debug    ] Dota Market: Dota 2: Aurora vs AVULUS (BO3) - ESL One Birmingham: Eastern... component=engine
+2026-01-17T16:50:04.509956538Z [inf]  2026-01-17 16:50:04 [debug    ] Dota Market: Dota 2: Aurora vs AVULUS - Game 1 Winner... component=engine
+2026-01-17T16:50:05.166270083Z [inf]  2026-01-17 16:50:05 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:05.166280843Z [inf]  2026-01-17 16:50:05 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:10.581764701Z [inf]  2026-01-17 16:50:10 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:10.581773686Z [inf]  2026-01-17 16:50:10 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:16.170286700Z [inf]  2026-01-17 16:50:15 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:16.170293691Z [inf]  2026-01-17 16:50:15 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:21.332188103Z [inf]  2026-01-17 16:50:21 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:21.348761605Z [inf]  2026-01-17 16:50:21 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:24.246674759Z [inf]  2026-01-17 16:50:24 [debug    ] Found LoL match: Fnatic vs Los Ratones (LEC) component=lolesports
+2026-01-17T16:50:24.246680117Z [inf]  2026-01-17 16:50:24 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:50:24.246686108Z [inf]  2026-01-17 16:50:24 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:50:24.246691116Z [inf]  2026-01-17 16:50:24 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:50:24.246696143Z [inf]  2026-01-17 16:50:24 [debug    ] Found 0 live Dota 2 matches from Stratz component=stratz
+2026-01-17T16:50:24.464426175Z [inf]  2026-01-17 16:50:24 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T16:50:25.005728782Z [inf]  2026-01-17 16:50:24 [debug    ] Found 1 live matches           component=pandascore
+2026-01-17T16:50:25.005734114Z [inf]  2026-01-17 16:50:24 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:50:25.005739554Z [inf]  2026-01-17 16:50:24 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
+2026-01-17T16:50:25.254370417Z [inf]  2026-01-17 16:50:25 [info     ] Subscribing to Stratz match 1323622 component=stratz
+2026-01-17T16:50:25.254382500Z [inf]  2026-01-17 16:50:25 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
+2026-01-17T16:50:25.254389052Z [inf]  2026-01-17 16:50:25 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:50:25.254403927Z [inf]  2026-01-17 16:50:25 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
+2026-01-17T16:50:25.254408845Z [inf]  2026-01-17 16:50:25 [debug    ] Found match 1323622 in running matches! component=pandascore
+2026-01-17T16:50:25.254413632Z [inf]  2026-01-17 16:50:25 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
+2026-01-17T16:50:25.254418607Z [inf]  2026-01-17 16:50:25 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
+2026-01-17T16:50:25.254423353Z [inf]  2026-01-17 16:50:25 [info     ] 🔍 Trying to match live game to market available_markets=1436 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:50:25.254428004Z [inf]  2026-01-17 16:50:25 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
+2026-01-17T16:50:25.254432735Z [inf]  2026-01-17 16:50:25 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
+2026-01-17T16:50:25.254437151Z [inf]  2026-01-17 16:50:25 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:50:25.254441847Z [inf]  2026-01-17 16:50:25 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
+2026-01-17T16:50:25.254758347Z [inf]  2026-01-17 16:50:25 [debug    ] Found 0 live Dota 2 matches from Stratz component=stratz
+2026-01-17T16:50:25.254764622Z [inf]  2026-01-17 16:50:25 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:50:25.254769417Z [inf]  2026-01-17 16:50:25 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:50:25.254773784Z [inf]  2026-01-17 16:50:25 [info     ] Match 1323622 ended or not found component=engine
+2026-01-17T16:50:25.254778342Z [inf]  2026-01-17 16:50:25 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
+2026-01-17T16:50:25.254783457Z [inf]  2026-01-17 16:50:25 [debug    ] Stratz subscription cancelled for match 1323622 component=stratz
+2026-01-17T16:50:26.720579786Z [inf]  2026-01-17 16:50:26 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:26.742527646Z [inf]  2026-01-17 16:50:26 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:32.055719832Z [inf]  2026-01-17 16:50:32 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:32.420445052Z [inf]  2026-01-17 16:50:32 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:37.558151693Z [inf]  2026-01-17 16:50:37 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:37.712732640Z [inf]  2026-01-17 16:50:37 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:42.759766627Z [inf]  2026-01-17 16:50:42 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:43.065211268Z [inf]  2026-01-17 16:50:43 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:48.205825025Z [inf]  2026-01-17 16:50:48 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:48.462389185Z [inf]  2026-01-17 16:50:48 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:53.513333036Z [inf]  2026-01-17 16:50:53 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:53.855979180Z [inf]  2026-01-17 16:50:53 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:55.200443213Z [inf]  2026-01-17 16:50:55 [debug    ] Found LoL match: Fnatic vs Los Ratones (LEC) component=lolesports
+2026-01-17T16:50:55.200454751Z [inf]  2026-01-17 16:50:55 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:50:55.200462589Z [inf]  2026-01-17 16:50:55 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:50:55.200469466Z [inf]  2026-01-17 16:50:55 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:50:55.393712819Z [inf]  2026-01-17 16:50:55 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T16:50:56.002624320Z [inf]  2026-01-17 16:50:56 [debug    ] Found 1 live matches           component=pandascore
+2026-01-17T16:50:56.002631100Z [inf]  2026-01-17 16:50:56 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:50:56.002636515Z [inf]  2026-01-17 16:50:56 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
+2026-01-17T16:50:56.313607778Z [inf]  2026-01-17 16:50:56 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
+2026-01-17T16:50:56.313616745Z [inf]  2026-01-17 16:50:56 [debug    ] Found match 1323622 in running matches! component=pandascore
+2026-01-17T16:50:56.313624213Z [inf]  2026-01-17 16:50:56 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
+2026-01-17T16:50:56.313630998Z [inf]  2026-01-17 16:50:56 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
+2026-01-17T16:50:56.313639044Z [inf]  2026-01-17 16:50:56 [info     ] 🔍 Trying to match live game to market available_markets=1436 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:50:56.326945522Z [inf]  2026-01-17 16:50:56 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
+2026-01-17T16:50:56.326991068Z [inf]  2026-01-17 16:50:56 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
+2026-01-17T16:50:56.326996060Z [inf]  2026-01-17 16:50:56 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
+2026-01-17T16:50:56.327005062Z [inf]  2026-01-17 16:50:56 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:50:56.327009899Z [inf]  2026-01-17 16:50:56 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
+2026-01-17T16:50:56.327014720Z [inf]  2026-01-17 16:50:56 [info     ] Subscribing to Stratz match 1323622 component=stratz
+2026-01-17T16:50:56.389156983Z [inf]  2026-01-17 16:50:56 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:50:56.389161799Z [inf]  2026-01-17 16:50:56 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:50:56.389166435Z [inf]  2026-01-17 16:50:56 [info     ] Match 1323622 ended or not found in Stratz component=stratz
+2026-01-17T16:50:56.389171282Z [inf]  2026-01-17 16:50:56 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:50:56.389176049Z [inf]  2026-01-17 16:50:56 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:50:56.389180379Z [inf]  2026-01-17 16:50:56 [info     ] Match 1323622 ended or not found component=engine
+2026-01-17T16:50:56.389184539Z [inf]  2026-01-17 16:50:56 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
+2026-01-17T16:50:58.943009832Z [inf]  2026-01-17 16:50:58 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:50:59.197377027Z [inf]  2026-01-17 16:50:59 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:04.210475532Z [inf]  2026-01-17 16:51:04 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:04.611767266Z [inf]  2026-01-17 16:51:04 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:09.603069280Z [inf]  2026-01-17 16:51:09 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:10.163408126Z [inf]  2026-01-17 16:51:10 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:15.126101736Z [inf]  2026-01-17 16:51:14 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:15.770808352Z [inf]  2026-01-17 16:51:15 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:20.361987482Z [inf]  2026-01-17 16:51:20 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:21.230754470Z [inf]  2026-01-17 16:51:21 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:25.697597580Z [inf]  2026-01-17 16:51:25 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:26.356515703Z [inf]  2026-01-17 16:51:26 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:51:26.356522508Z [inf]  2026-01-17 16:51:26 [debug    ] Found LoL match: Shifters vs GIANTX (LEC) component=lolesports
+2026-01-17T16:51:26.356527480Z [inf]  2026-01-17 16:51:26 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:51:26.356532128Z [inf]  2026-01-17 16:51:26 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:51:26.539818540Z [inf]  2026-01-17 16:51:26 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T16:51:26.564025643Z [inf]  2026-01-17 16:51:26 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:26.991119487Z [inf]  2026-01-17 16:51:26 [debug    ] Found 1 live matches           component=pandascore
+2026-01-17T16:51:26.991126310Z [inf]  2026-01-17 16:51:26 [debug    ] Processing match               component=engine game=league_of_legends match_id=115548424308414160 source=lolesports team1=Shifters team2=GIANTX
+2026-01-17T16:51:26.991131486Z [inf]  2026-01-17 16:51:26 [debug    ] Using provider LoLEsportsProvider for match 115548424308414160 component=engine
+2026-01-17T16:51:27.031990176Z [inf]  2026-01-17 16:51:27 [info     ] 🔍 Trying to match live game to market available_markets=1436 component=engine match_id=115548424308414160 team1=Shifters team2=GIANTX
+2026-01-17T16:51:27.285203163Z [inf]  2026-01-17 16:51:27 [info     ] 📡 Subscribed to match          component=engine market='LoL: Shifters vs GIANTX (BO1)' match_id=115548424308414160 teams='Shifters vs GIANTX'
+2026-01-17T16:51:27.285211847Z [inf]  2026-01-17 16:51:27 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:51:27.285218086Z [inf]  2026-01-17 16:51:27 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
+2026-01-17T16:51:27.285223893Z [inf]  2026-01-17 16:51:27 [info     ] Subscribing to LoL match 115548424308414160 component=lolesports
+2026-01-17T16:51:27.285229006Z [inf]  2026-01-17 16:51:27 [info     ] 🔄 Starting arbitrage polling for match 115548424308414160 component=engine
+2026-01-17T16:51:27.285274729Z [inf]  2026-01-17 16:51:27 [debug    ] Market matched                 component=market_matcher market_id=1097844 match_id=115548424308414160 score=1.00
+2026-01-17T16:51:27.285279675Z [inf]  2026-01-17 16:51:27 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1097844 market_question='LoL: Shifters vs GIANTX (BO1)' match_id=115548424308414160
+2026-01-17T16:51:27.285284504Z [inf]  2026-01-17 16:51:27 [info     ] 🎮 match_started                component=games game=league_of_legends match_id=115548424308414160 team1=Shifters team2=GIANTX
+2026-01-17T16:51:27.445652168Z [inf]  2026-01-17 16:51:27 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
+2026-01-17T16:51:27.445657243Z [inf]  2026-01-17 16:51:27 [debug    ] Found match 1323622 in running matches! component=pandascore
+2026-01-17T16:51:27.445662534Z [inf]  2026-01-17 16:51:27 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
+2026-01-17T16:51:27.445667378Z [inf]  2026-01-17 16:51:27 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
+2026-01-17T16:51:27.445672349Z [inf]  2026-01-17 16:51:27 [info     ] 🔍 Trying to match live game to market available_markets=1436 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:51:27.467769063Z [inf]  2026-01-17 16:51:27 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
+2026-01-17T16:51:27.467777502Z [inf]  2026-01-17 16:51:27 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
+2026-01-17T16:51:27.467782979Z [inf]  2026-01-17 16:51:27 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:51:27.467787608Z [inf]  2026-01-17 16:51:27 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
+2026-01-17T16:51:27.467791941Z [inf]  2026-01-17 16:51:27 [info     ] Subscribing to Stratz match 1323622 component=stratz
+2026-01-17T16:51:27.467796623Z [inf]  2026-01-17 16:51:27 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
+2026-01-17T16:51:27.530610785Z [inf]  2026-01-17 16:51:27 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:51:27.530624746Z [inf]  2026-01-17 16:51:27 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:51:27.530633035Z [inf]  2026-01-17 16:51:27 [info     ] Match 1323622 ended or not found component=engine
+2026-01-17T16:51:27.530641294Z [inf]  2026-01-17 16:51:27 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
+2026-01-17T16:51:27.530649535Z [inf]  2026-01-17 16:51:27 [debug    ] Stratz subscription cancelled for match 1323622 component=stratz
+2026-01-17T16:51:27.644283248Z [inf]  2026-01-17 16:51:27 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:31.107452108Z [inf]  2026-01-17 16:51:31 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:31.922475585Z [inf]  2026-01-17 16:51:31 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:33.052311061Z [inf]  2026-01-17 16:51:33 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:36.468775639Z [inf]  2026-01-17 16:51:36 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:37.455354878Z [inf]  2026-01-17 16:51:37 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:38.482754202Z [inf]  2026-01-17 16:51:38 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:41.888164032Z [inf]  2026-01-17 16:51:41 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:42.721224542Z [inf]  2026-01-17 16:51:42 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:43.749525245Z [inf]  2026-01-17 16:51:43 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:47.250688504Z [inf]  2026-01-17 16:51:47 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:48.084425050Z [inf]  2026-01-17 16:51:48 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:49.142140450Z [inf]  2026-01-17 16:51:49 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:52.877549705Z [inf]  2026-01-17 16:51:52 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:53.469612556Z [inf]  2026-01-17 16:51:53 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:54.502952920Z [inf]  2026-01-17 16:51:54 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:57.537712139Z [inf]  2026-01-17 16:51:57 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:51:57.537720195Z [inf]  2026-01-17 16:51:57 [debug    ] Found LoL match: Shifters vs GIANTX (LEC) component=lolesports
+2026-01-17T16:51:57.537727835Z [inf]  2026-01-17 16:51:57 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:51:57.537733742Z [inf]  2026-01-17 16:51:57 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:51:57.946279047Z [inf]  2026-01-17 16:51:57 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T16:51:58.069819051Z [inf]  2026-01-17 16:51:58 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:58.246547065Z [inf]  2026-01-17 16:51:58 [debug    ] Found 1 live matches           component=pandascore
+2026-01-17T16:51:58.246554458Z [inf]  2026-01-17 16:51:58 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:51:58.246559347Z [inf]  2026-01-17 16:51:58 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
+2026-01-17T16:51:58.436654668Z [inf]  2026-01-17 16:51:58 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
+2026-01-17T16:51:58.436661497Z [inf]  2026-01-17 16:51:58 [debug    ] Found match 1323622 in running matches! component=pandascore
+2026-01-17T16:51:58.436666522Z [inf]  2026-01-17 16:51:58 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
+2026-01-17T16:51:58.436671391Z [inf]  2026-01-17 16:51:58 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
+2026-01-17T16:51:58.436680152Z [inf]  2026-01-17 16:51:58 [info     ] 🔍 Trying to match live game to market available_markets=1436 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:51:58.459367404Z [inf]  2026-01-17 16:51:58 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
+2026-01-17T16:51:58.459374018Z [inf]  2026-01-17 16:51:58 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
+2026-01-17T16:51:58.459379868Z [inf]  2026-01-17 16:51:58 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:51:58.459384501Z [inf]  2026-01-17 16:51:58 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
+2026-01-17T16:51:58.459389256Z [inf]  2026-01-17 16:51:58 [info     ] Subscribing to Stratz match 1323622 component=stratz
+2026-01-17T16:51:58.459393911Z [inf]  2026-01-17 16:51:58 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
+2026-01-17T16:51:58.511896333Z [inf]  2026-01-17 16:51:58 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:51:58.511901520Z [inf]  2026-01-17 16:51:58 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:51:58.511906271Z [inf]  2026-01-17 16:51:58 [info     ] Match 1323622 ended or not found component=engine
+2026-01-17T16:51:58.511912385Z [inf]  2026-01-17 16:51:58 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
+2026-01-17T16:51:58.511917162Z [inf]  2026-01-17 16:51:58 [debug    ] Stratz subscription cancelled for match 1323622 component=stratz
+2026-01-17T16:51:58.941053992Z [inf]  2026-01-17 16:51:58 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:51:59.947280116Z [inf]  2026-01-17 16:51:59 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:03.425756198Z [inf]  2026-01-17 16:52:03 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:04.275187010Z [inf]  2026-01-17 16:52:04 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:05.197409521Z [inf]  2026-01-17 16:52:05 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:09.013455769Z [inf]  2026-01-17 16:52:08 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:09.634482665Z [inf]  2026-01-17 16:52:09 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:10.588462544Z [inf]  2026-01-17 16:52:10 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:14.169708798Z [inf]  2026-01-17 16:52:14 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:15.061964122Z [inf]  2026-01-17 16:52:14 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:16.097257575Z [inf]  2026-01-17 16:52:15 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:19.536575828Z [inf]  2026-01-17 16:52:19 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:20.403850820Z [inf]  2026-01-17 16:52:20 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:21.316460186Z [inf]  2026-01-17 16:52:21 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:24.938670306Z [inf]  2026-01-17 16:52:24 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:25.741600112Z [inf]  2026-01-17 16:52:25 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:26.677777645Z [inf]  2026-01-17 16:52:26 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:28.509726470Z [inf]  2026-01-17 16:52:28 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:52:28.509731795Z [inf]  2026-01-17 16:52:28 [debug    ] Found LoL match: Shifters vs GIANTX (LEC) component=lolesports
+2026-01-17T16:52:28.509738302Z [inf]  2026-01-17 16:52:28 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:52:28.509743295Z [inf]  2026-01-17 16:52:28 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:52:28.667204056Z [inf]  2026-01-17 16:52:28 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T16:52:29.319746966Z [inf]  2026-01-17 16:52:29 [debug    ] Found 1 live matches           component=pandascore
+2026-01-17T16:52:29.319756666Z [inf]  2026-01-17 16:52:29 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:52:29.319765013Z [inf]  2026-01-17 16:52:29 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
+2026-01-17T16:52:29.433498374Z [inf]  2026-01-17 16:52:29 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
+2026-01-17T16:52:29.433507752Z [inf]  2026-01-17 16:52:29 [debug    ] Found match 1323622 in running matches! component=pandascore
+2026-01-17T16:52:29.433515553Z [inf]  2026-01-17 16:52:29 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
+2026-01-17T16:52:29.433636193Z [inf]  2026-01-17 16:52:29 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
+2026-01-17T16:52:29.433644463Z [inf]  2026-01-17 16:52:29 [info     ] 🔍 Trying to match live game to market available_markets=1436 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:52:29.433652142Z [inf]  2026-01-17 16:52:29 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
+2026-01-17T16:52:29.433659857Z [inf]  2026-01-17 16:52:29 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
+2026-01-17T16:52:29.433667694Z [inf]  2026-01-17 16:52:29 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:52:29.433675988Z [inf]  2026-01-17 16:52:29 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
+2026-01-17T16:52:29.433684685Z [inf]  2026-01-17 16:52:29 [info     ] Subscribing to Stratz match 1323622 component=stratz
+2026-01-17T16:52:29.433693664Z [inf]  2026-01-17 16:52:29 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
+2026-01-17T16:52:29.462450029Z [inf]  2026-01-17 16:52:29 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:52:29.462460904Z [inf]  2026-01-17 16:52:29 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:52:29.462469222Z [inf]  2026-01-17 16:52:29 [info     ] Match 1323622 ended or not found in Stratz component=stratz
+2026-01-17T16:52:29.469666950Z [inf]  2026-01-17 16:52:29 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:52:29.469676923Z [inf]  2026-01-17 16:52:29 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:52:29.469684095Z [inf]  2026-01-17 16:52:29 [info     ] Match 1323622 ended or not found component=engine
+2026-01-17T16:52:29.469690780Z [inf]  2026-01-17 16:52:29 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
+2026-01-17T16:52:30.368543290Z [inf]  2026-01-17 16:52:30 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:31.119149416Z [inf]  2026-01-17 16:52:31 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:32.095191219Z [inf]  2026-01-17 16:52:32 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:35.683589356Z [inf]  2026-01-17 16:52:35 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:36.540588415Z [inf]  2026-01-17 16:52:36 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:37.439275171Z [inf]  2026-01-17 16:52:37 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:41.089656300Z [inf]  2026-01-17 16:52:41 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:41.909265993Z [inf]  2026-01-17 16:52:41 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:42.879433190Z [inf]  2026-01-17 16:52:42 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:46.687622318Z [inf]  2026-01-17 16:52:46 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:47.283215390Z [inf]  2026-01-17 16:52:47 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:48.316735041Z [inf]  2026-01-17 16:52:48 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:51.876172501Z [inf]  2026-01-17 16:52:51 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:52.874871557Z [inf]  2026-01-17 16:52:52 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:53.831580787Z [inf]  2026-01-17 16:52:53 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:57.232613840Z [inf]  2026-01-17 16:52:57 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:58.028751297Z [inf]  2026-01-17 16:52:58 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:59.108794380Z [inf]  2026-01-17 16:52:59 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:52:59.466956577Z [inf]  2026-01-17 16:52:59 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:52:59.466962424Z [inf]  2026-01-17 16:52:59 [debug    ] Found LoL match: Shifters vs GIANTX (LEC) component=lolesports
+2026-01-17T16:52:59.466968447Z [inf]  2026-01-17 16:52:59 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:52:59.466973968Z [inf]  2026-01-17 16:52:59 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:52:59.644822036Z [inf]  2026-01-17 16:52:59 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T16:53:00.120013767Z [inf]  2026-01-17 16:53:00 [debug    ] Found 1 live matches           component=pandascore
+2026-01-17T16:53:00.120024338Z [inf]  2026-01-17 16:53:00 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:53:00.120030489Z [inf]  2026-01-17 16:53:00 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
+2026-01-17T16:53:00.580074204Z [inf]  2026-01-17 16:53:00 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
+2026-01-17T16:53:00.580088069Z [inf]  2026-01-17 16:53:00 [debug    ] Found match 1323622 in running matches! component=pandascore
+2026-01-17T16:53:00.580096677Z [inf]  2026-01-17 16:53:00 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
+2026-01-17T16:53:00.580104936Z [inf]  2026-01-17 16:53:00 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
+2026-01-17T16:53:00.580118649Z [inf]  2026-01-17 16:53:00 [info     ] 🔍 Trying to match live game to market available_markets=1436 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:53:00.620857190Z [inf]  2026-01-17 16:53:00 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
+2026-01-17T16:53:00.620870952Z [inf]  2026-01-17 16:53:00 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
+2026-01-17T16:53:00.620880119Z [inf]  2026-01-17 16:53:00 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:53:00.620887960Z [inf]  2026-01-17 16:53:00 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
+2026-01-17T16:53:00.620897806Z [inf]  2026-01-17 16:53:00 [info     ] Subscribing to Stratz match 1323622 component=stratz
+2026-01-17T16:53:00.620904007Z [inf]  2026-01-17 16:53:00 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
+2026-01-17T16:53:00.687589508Z [inf]  2026-01-17 16:53:00 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:53:00.687595311Z [inf]  2026-01-17 16:53:00 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:53:00.687600668Z [inf]  2026-01-17 16:53:00 [info     ] Match 1323622 ended or not found in Stratz component=stratz
+2026-01-17T16:53:00.687606090Z [inf]  2026-01-17 16:53:00 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:53:00.687611814Z [inf]  2026-01-17 16:53:00 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:53:00.687619030Z [inf]  2026-01-17 16:53:00 [info     ] Match 1323622 ended or not found component=engine
+2026-01-17T16:53:00.687624155Z [inf]  2026-01-17 16:53:00 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
+2026-01-17T16:53:02.588362082Z [inf]  2026-01-17 16:53:02 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:03.378576992Z [inf]  2026-01-17 16:53:03 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:04.437396759Z [inf]  2026-01-17 16:53:04 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:08.058645405Z [inf]  2026-01-17 16:53:07 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:08.728795157Z [inf]  2026-01-17 16:53:08 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:09.791815743Z [inf]  2026-01-17 16:53:09 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:13.417188531Z [inf]  2026-01-17 16:53:13 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:14.317665416Z [inf]  2026-01-17 16:53:14 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:15.168218991Z [inf]  2026-01-17 16:53:15 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:18.803966594Z [inf]  2026-01-17 16:53:18 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:19.761023103Z [inf]  2026-01-17 16:53:19 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:20.587383641Z [inf]  2026-01-17 16:53:20 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:24.310942189Z [inf]  2026-01-17 16:53:24 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:25.319325464Z [inf]  2026-01-17 16:53:25 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:25.939192296Z [inf]  2026-01-17 16:53:25 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:29.540127256Z [inf]  2026-01-17 16:53:29 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:30.489348477Z [inf]  2026-01-17 16:53:30 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:30.655066401Z [inf]  2026-01-17 16:53:30 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:53:30.655071506Z [inf]  2026-01-17 16:53:30 [debug    ] Found LoL match: Shifters vs GIANTX (LEC) component=lolesports
+2026-01-17T16:53:30.655076054Z [inf]  2026-01-17 16:53:30 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:53:30.655080146Z [inf]  2026-01-17 16:53:30 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:53:30.874591603Z [inf]  2026-01-17 16:53:30 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T16:53:31.366856363Z [inf]  2026-01-17 16:53:31 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:31.408014516Z [inf]  2026-01-17 16:53:31 [debug    ] Found 1 live matches           component=pandascore
+2026-01-17T16:53:31.408021504Z [inf]  2026-01-17 16:53:31 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:53:31.408026466Z [inf]  2026-01-17 16:53:31 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
+2026-01-17T16:53:31.660311914Z [inf]  2026-01-17 16:53:31 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
+2026-01-17T16:53:31.660320331Z [inf]  2026-01-17 16:53:31 [debug    ] Found match 1323622 in running matches! component=pandascore
+2026-01-17T16:53:31.660326359Z [inf]  2026-01-17 16:53:31 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
+2026-01-17T16:53:31.660331362Z [inf]  2026-01-17 16:53:31 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
+2026-01-17T16:53:31.660339186Z [inf]  2026-01-17 16:53:31 [info     ] 🔍 Trying to match live game to market available_markets=1436 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:53:31.682839132Z [inf]  2026-01-17 16:53:31 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
+2026-01-17T16:53:31.682847942Z [inf]  2026-01-17 16:53:31 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
+2026-01-17T16:53:31.682853558Z [inf]  2026-01-17 16:53:31 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:53:31.682858946Z [inf]  2026-01-17 16:53:31 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
+2026-01-17T16:53:31.682866403Z [inf]  2026-01-17 16:53:31 [info     ] Subscribing to Stratz match 1323622 component=stratz
+2026-01-17T16:53:31.682871403Z [inf]  2026-01-17 16:53:31 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
+2026-01-17T16:53:31.727233174Z [inf]  2026-01-17 16:53:31 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:53:31.727242422Z [inf]  2026-01-17 16:53:31 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:53:31.727248450Z [inf]  2026-01-17 16:53:31 [info     ] Match 1323622 ended or not found in Stratz component=stratz
+2026-01-17T16:53:31.733204260Z [inf]  2026-01-17 16:53:31 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:53:31.733212608Z [inf]  2026-01-17 16:53:31 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:53:31.733218069Z [inf]  2026-01-17 16:53:31 [info     ] Match 1323622 ended or not found component=engine
+2026-01-17T16:53:31.733224649Z [inf]  2026-01-17 16:53:31 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
+2026-01-17T16:53:34.946248545Z [inf]  2026-01-17 16:53:34 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:35.859717085Z [inf]  2026-01-17 16:53:35 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:36.687501452Z [inf]  2026-01-17 16:53:36 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:40.493038139Z [inf]  2026-01-17 16:53:40 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:41.234877000Z [inf]  2026-01-17 16:53:41 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:41.975433546Z [inf]  2026-01-17 16:53:41 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:45.661799953Z [inf]  2026-01-17 16:53:45 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:46.606777349Z [inf]  2026-01-17 16:53:46 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:47.639798437Z [inf]  2026-01-17 16:53:47 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:51.045635790Z [inf]  2026-01-17 16:53:51 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:52.055682818Z [inf]  2026-01-17 16:53:52 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:52.737254568Z [inf]  2026-01-17 16:53:52 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:56.401326210Z [inf]  2026-01-17 16:53:56 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:57.454012261Z [inf]  2026-01-17 16:53:57 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:53:58.077655403Z [inf]  2026-01-17 16:53:58 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:01.754129111Z [inf]  2026-01-17 16:54:01 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:54:01.754135052Z [inf]  2026-01-17 16:54:01 [debug    ] Found LoL match: Shifters vs GIANTX (LEC) component=lolesports
+2026-01-17T16:54:01.754140669Z [inf]  2026-01-17 16:54:01 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:54:01.754146391Z [inf]  2026-01-17 16:54:01 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:54:01.870376286Z [inf]  2026-01-17 16:54:01 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:01.967212068Z [inf]  2026-01-17 16:54:01 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T16:54:02.782098482Z [inf]  2026-01-17 16:54:02 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:02.895148368Z [inf]  2026-01-17 16:54:02 [debug    ] Found 1 live matches           component=pandascore
+2026-01-17T16:54:02.895153461Z [inf]  2026-01-17 16:54:02 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:54:02.895159389Z [inf]  2026-01-17 16:54:02 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
+2026-01-17T16:54:03.492455901Z [inf]  2026-01-17 16:54:03 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:03.533304775Z [inf]  2026-01-17 16:54:03 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
+2026-01-17T16:54:03.533314145Z [inf]  2026-01-17 16:54:03 [debug    ] Found match 1323622 in running matches! component=pandascore
+2026-01-17T16:54:03.533320428Z [inf]  2026-01-17 16:54:03 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
+2026-01-17T16:54:03.533325948Z [inf]  2026-01-17 16:54:03 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
+2026-01-17T16:54:03.533331162Z [inf]  2026-01-17 16:54:03 [info     ] 🔍 Trying to match live game to market available_markets=1436 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:54:03.533336716Z [inf]  2026-01-17 16:54:03 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
+2026-01-17T16:54:03.533341768Z [inf]  2026-01-17 16:54:03 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
+2026-01-17T16:54:03.533347105Z [inf]  2026-01-17 16:54:03 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:54:03.533351703Z [inf]  2026-01-17 16:54:03 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
+2026-01-17T16:54:03.533356856Z [inf]  2026-01-17 16:54:03 [info     ] Subscribing to Stratz match 1323622 component=stratz
+2026-01-17T16:54:03.533362160Z [inf]  2026-01-17 16:54:03 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
+2026-01-17T16:54:03.750705722Z [inf]  2026-01-17 16:54:03 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:54:03.750710184Z [inf]  2026-01-17 16:54:03 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:54:03.750714508Z [inf]  2026-01-17 16:54:03 [info     ] Match 1323622 ended or not found component=engine
+2026-01-17T16:54:03.750719060Z [inf]  2026-01-17 16:54:03 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
+2026-01-17T16:54:03.750723703Z [inf]  2026-01-17 16:54:03 [debug    ] Stratz subscription cancelled for match 1323622 component=stratz
+2026-01-17T16:54:07.188855941Z [inf]  2026-01-17 16:54:07 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:08.175288002Z [inf]  2026-01-17 16:54:08 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:08.810430258Z [inf]  2026-01-17 16:54:08 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:12.546181124Z [inf]  2026-01-17 16:54:12 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:13.548403393Z [inf]  2026-01-17 16:54:13 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:14.187220978Z [inf]  2026-01-17 16:54:14 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:18.122569130Z [inf]  2026-01-17 16:54:18 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:18.966510310Z [inf]  2026-01-17 16:54:18 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:19.598559277Z [inf]  2026-01-17 16:54:19 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:23.492420914Z [inf]  2026-01-17 16:54:23 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:24.252728953Z [inf]  2026-01-17 16:54:24 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:25.046134364Z [inf]  2026-01-17 16:54:24 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:29.093989092Z [inf]  2026-01-17 16:54:28 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:29.621554415Z [inf]  2026-01-17 16:54:29 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:54:30.281053723Z [inf]  2026-01-17 16:54:30 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:33.560016417Z [inf]  2026-01-17 16:54:33 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:54:33.560026499Z [inf]  2026-01-17 16:54:33 [debug    ] Found LoL match: Shifters vs GIANTX (LEC) component=lolesports
+2026-01-17T16:54:33.560034841Z [inf]  2026-01-17 16:54:33 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:54:33.560040510Z [inf]  2026-01-17 16:54:33 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:54:33.811395317Z [inf]  2026-01-17 16:54:33 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T16:54:34.262204428Z [inf]  2026-01-17 16:54:34 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:34.522713123Z [inf]  2026-01-17 16:54:34 [debug    ] Found 1 live matches           component=pandascore
+2026-01-17T16:54:34.522718690Z [inf]  2026-01-17 16:54:34 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:54:34.522723260Z [inf]  2026-01-17 16:54:34 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
+2026-01-17T16:54:35.130879951Z [inf]  2026-01-17 16:54:34 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
+2026-01-17T16:54:35.130889835Z [inf]  2026-01-17 16:54:34 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
+2026-01-17T16:54:35.130896305Z [inf]  2026-01-17 16:54:34 [info     ] 🔍 Trying to match live game to market available_markets=1436 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:54:35.130904720Z [inf]  2026-01-17 16:54:34 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
+2026-01-17T16:54:35.130909995Z [inf]  2026-01-17 16:54:34 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
+2026-01-17T16:54:35.130915525Z [inf]  2026-01-17 16:54:34 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:54:35.130921303Z [inf]  2026-01-17 16:54:34 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
+2026-01-17T16:54:35.130927551Z [inf]  2026-01-17 16:54:34 [info     ] Subscribing to Stratz match 1323622 component=stratz
+2026-01-17T16:54:35.130935137Z [inf]  2026-01-17 16:54:34 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
+2026-01-17T16:54:35.130941139Z [inf]  2026-01-17 16:54:34 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:54:35.130952027Z [inf]  2026-01-17 16:54:34 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
+2026-01-17T16:54:35.130956474Z [inf]  2026-01-17 16:54:34 [debug    ] Found match 1323622 in running matches! component=pandascore
+2026-01-17T16:54:35.131363069Z [inf]  2026-01-17 16:54:34 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:54:35.131368863Z [inf]  2026-01-17 16:54:34 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:54:35.131373413Z [inf]  2026-01-17 16:54:34 [info     ] Match 1323622 ended or not found in Stratz component=stratz
+2026-01-17T16:54:35.131378325Z [inf]  2026-01-17 16:54:34 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:54:35.131382990Z [inf]  2026-01-17 16:54:34 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:54:35.131388338Z [inf]  2026-01-17 16:54:34 [info     ] Match 1323622 ended or not found component=engine
+2026-01-17T16:54:35.131392975Z [inf]  2026-01-17 16:54:34 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
+2026-01-17T16:54:35.643318831Z [inf]  2026-01-17 16:54:35 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:39.616434661Z [inf]  2026-01-17 16:54:39 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:40.360081687Z [inf]  2026-01-17 16:54:40 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:54:41.178917995Z [inf]  2026-01-17 16:54:40 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:44.972205924Z [inf]  2026-01-17 16:54:44 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:45.730986147Z [inf]  2026-01-17 16:54:45 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.1% edge=-0.1% component=engine
+2026-01-17T16:54:46.327978800Z [inf]  2026-01-17 16:54:46 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:50.360493204Z [inf]  2026-01-17 16:54:50 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:51.093110641Z [inf]  2026-01-17 16:54:51 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.1% edge=-0.1% component=engine
+2026-01-17T16:54:51.670743176Z [inf]  2026-01-17 16:54:51 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:52.749330125Z [inf]  2026-01-17 16:54:52 [info     ] 📊 Status Update                avg_latency=0.0ms component=engine open_positions=0 opportunities=0 runtime=0.1h total_pnl=$0.00 trades=0 win_rate=0.0%
+2026-01-17T16:54:55.739831900Z [inf]  2026-01-17 16:54:55 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:54:56.475532658Z [inf]  2026-01-17 16:54:56 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.1% edge=-0.1% component=engine
+2026-01-17T16:54:57.050777795Z [inf]  2026-01-17 16:54:57 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:01.083776857Z [inf]  2026-01-17 16:55:01 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:01.831489016Z [inf]  2026-01-17 16:55:01 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.1% edge=-0.1% component=engine
+2026-01-17T16:55:02.495653745Z [inf]  2026-01-17 16:55:02 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:05.083620482Z [inf]  2026-01-17 16:55:04 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:55:05.083627513Z [inf]  2026-01-17 16:55:04 [debug    ] Found LoL match: Shifters vs GIANTX (LEC) component=lolesports
+2026-01-17T16:55:05.083633219Z [inf]  2026-01-17 16:55:04 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:55:05.083640097Z [inf]  2026-01-17 16:55:04 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:55:05.126702207Z [inf]  2026-01-17 16:55:05 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T16:55:06.061045743Z [inf]  2026-01-17 16:55:06 [debug    ] Found 1 live matches           component=pandascore
+2026-01-17T16:55:06.061054320Z [inf]  2026-01-17 16:55:06 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:55:06.061063930Z [inf]  2026-01-17 16:55:06 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
+2026-01-17T16:55:06.562882232Z [inf]  2026-01-17 16:55:06 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:06.899154545Z [inf]  2026-01-17 16:55:06 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
+2026-01-17T16:55:06.899164338Z [inf]  2026-01-17 16:55:06 [debug    ] Found match 1323622 in running matches! component=pandascore
+2026-01-17T16:55:06.899172243Z [inf]  2026-01-17 16:55:06 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
+2026-01-17T16:55:06.899180553Z [inf]  2026-01-17 16:55:06 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
+2026-01-17T16:55:06.899187459Z [inf]  2026-01-17 16:55:06 [info     ] 🔍 Trying to match live game to market available_markets=1436 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:55:06.911988226Z [inf]  2026-01-17 16:55:06 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
+2026-01-17T16:55:06.911995936Z [inf]  2026-01-17 16:55:06 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
+2026-01-17T16:55:06.912001753Z [inf]  2026-01-17 16:55:06 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:55:06.912006995Z [inf]  2026-01-17 16:55:06 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
+2026-01-17T16:55:06.912011922Z [inf]  2026-01-17 16:55:06 [info     ] Subscribing to Stratz match 1323622 component=stratz
+2026-01-17T16:55:06.912017782Z [inf]  2026-01-17 16:55:06 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
+2026-01-17T16:55:07.001793321Z [inf]  2026-01-17 16:55:07 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:55:07.002978365Z [inf]  2026-01-17 16:55:07 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:55:07.002985359Z [inf]  2026-01-17 16:55:07 [info     ] Match 1323622 ended or not found in Stratz component=stratz
+2026-01-17T16:55:07.009464638Z [inf]  2026-01-17 16:55:07 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:55:07.009472517Z [inf]  2026-01-17 16:55:07 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:55:07.009481729Z [inf]  2026-01-17 16:55:07 [info     ] Match 1323622 ended or not found component=engine
+2026-01-17T16:55:07.009489417Z [inf]  2026-01-17 16:55:07 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
+2026-01-17T16:55:07.176252001Z [inf]  2026-01-17 16:55:07 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:55:07.768654562Z [inf]  2026-01-17 16:55:07 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:11.800073619Z [inf]  2026-01-17 16:55:11 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:12.532738548Z [inf]  2026-01-17 16:55:12 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:55:13.099597347Z [inf]  2026-01-17 16:55:13 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:17.263776812Z [inf]  2026-01-17 16:55:17 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:17.990762432Z [inf]  2026-01-17 16:55:17 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:55:18.640428529Z [inf]  2026-01-17 16:55:18 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:22.743982923Z [inf]  2026-01-17 16:55:22 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:23.353381725Z [inf]  2026-01-17 16:55:23 [info     ] Found 1320 esports markets     component=polymarket
+2026-01-17T16:55:23.737824276Z [inf]  2026-01-17 16:55:23 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:55:23.817709048Z [inf]  2026-01-17 16:55:23 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:27.909331051Z [inf]  2026-01-17 16:55:27 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:29.000816365Z [inf]  2026-01-17 16:55:28 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:55:29.139044692Z [inf]  2026-01-17 16:55:29 [info     ] Found 116 esports markets      component=polymarket
+2026-01-17T16:55:29.139053591Z [inf]  2026-01-17 16:55:29 [info     ] Markets refreshed              component=engine dota_markets=116 lol_markets=1320
+2026-01-17T16:55:29.139060817Z [inf]  2026-01-17 16:55:29 [debug    ] LoL Market: Game Handicap: AL (-1.5) vs Bilibili Gaming (+1.5)... component=engine
+2026-01-17T16:55:29.139067361Z [inf]  2026-01-17 16:55:29 [debug    ] LoL Market: Series: Anyone's Legend Kill Handicap (-5.5) vs Bilibili Gam... component=engine
+2026-01-17T16:55:29.139073854Z [inf]  2026-01-17 16:55:29 [debug    ] LoL Market: Series: Anyone's Legend Drake Handicap (-0.5) vs Bilibili Ga... component=engine
+2026-01-17T16:55:29.139079554Z [inf]  2026-01-17 16:55:29 [debug    ] Dota Market: Game Handicap: AVL (-1.5) vs Aurora (+1.5)... component=engine
+2026-01-17T16:55:29.139085094Z [inf]  2026-01-17 16:55:29 [debug    ] Dota Market: Dota 2: Aurora vs AVULUS (BO3) - ESL One Birmingham: Eastern... component=engine
+2026-01-17T16:55:29.139090953Z [inf]  2026-01-17 16:55:29 [debug    ] Dota Market: Dota 2: Aurora vs AVULUS - Game 1 Winner... component=engine
+2026-01-17T16:55:29.353914716Z [inf]  2026-01-17 16:55:29 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:33.263344074Z [inf]  2026-01-17 16:55:33 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:34.262142913Z [inf]  2026-01-17 16:55:34 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:55:34.855809636Z [inf]  2026-01-17 16:55:34 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:36.940116405Z [inf]  2026-01-17 16:55:36 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:55:36.940142233Z [inf]  2026-01-17 16:55:36 [debug    ] Found LoL match: Shifters vs GIANTX (LEC) component=lolesports
+2026-01-17T16:55:36.940149675Z [inf]  2026-01-17 16:55:36 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:55:36.940156665Z [inf]  2026-01-17 16:55:36 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:55:37.172851763Z [inf]  2026-01-17 16:55:37 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T16:55:37.892848869Z [inf]  2026-01-17 16:55:37 [debug    ] Found 1 live matches           component=pandascore
+2026-01-17T16:55:37.892855935Z [inf]  2026-01-17 16:55:37 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:55:37.892861037Z [inf]  2026-01-17 16:55:37 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
+2026-01-17T16:55:37.892866598Z [inf]  2026-01-17 16:55:37 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
+2026-01-17T16:55:37.894020802Z [inf]  2026-01-17 16:55:37 [debug    ] Found match 1323622 in running matches! component=pandascore
+2026-01-17T16:55:37.894028432Z [inf]  2026-01-17 16:55:37 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
+2026-01-17T16:55:37.894033365Z [inf]  2026-01-17 16:55:37 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
+2026-01-17T16:55:37.894038077Z [inf]  2026-01-17 16:55:37 [info     ] 🔍 Trying to match live game to market available_markets=1436 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:55:37.894042527Z [inf]  2026-01-17 16:55:37 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
+2026-01-17T16:55:37.894047718Z [inf]  2026-01-17 16:55:37 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
+2026-01-17T16:55:37.894052685Z [inf]  2026-01-17 16:55:37 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:55:37.894057933Z [inf]  2026-01-17 16:55:37 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
+2026-01-17T16:55:37.894075793Z [inf]  2026-01-17 16:55:37 [info     ] Subscribing to Stratz match 1323622 component=stratz
+2026-01-17T16:55:37.894081150Z [inf]  2026-01-17 16:55:37 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
+2026-01-17T16:55:37.939585855Z [inf]  2026-01-17 16:55:37 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:55:37.939594388Z [inf]  2026-01-17 16:55:37 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:55:37.939600518Z [inf]  2026-01-17 16:55:37 [info     ] Match 1323622 ended or not found in Stratz component=stratz
+2026-01-17T16:55:37.939605513Z [inf]  2026-01-17 16:55:37 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:55:37.939612463Z [inf]  2026-01-17 16:55:37 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:55:37.939618333Z [inf]  2026-01-17 16:55:37 [info     ] Match 1323622 ended or not found component=engine
+2026-01-17T16:55:37.939624971Z [inf]  2026-01-17 16:55:37 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
+2026-01-17T16:55:38.628140797Z [inf]  2026-01-17 16:55:38 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:39.616682233Z [inf]  2026-01-17 16:55:39 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:55:40.088380358Z [inf]  2026-01-17 16:55:40 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:43.981537879Z [inf]  2026-01-17 16:55:43 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:45.045690186Z [inf]  2026-01-17 16:55:44 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:55:45.417214773Z [inf]  2026-01-17 16:55:45 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:49.311520209Z [inf]  2026-01-17 16:55:49 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:50.402843737Z [inf]  2026-01-17 16:55:50 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:55:50.767659992Z [inf]  2026-01-17 16:55:50 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:54.680321242Z [inf]  2026-01-17 16:55:54 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:55:55.743945072Z [inf]  2026-01-17 16:55:55 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:55:56.271962180Z [inf]  2026-01-17 16:55:56 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:00.002972219Z [inf]  2026-01-17 16:55:59 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:01.093432253Z [inf]  2026-01-17 16:56:01 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:56:01.478080886Z [inf]  2026-01-17 16:56:01 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:05.449242899Z [inf]  2026-01-17 16:56:05 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:06.471216510Z [inf]  2026-01-17 16:56:06 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:56:06.884550016Z [inf]  2026-01-17 16:56:06 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:07.927649950Z [inf]  2026-01-17 16:56:07 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:56:07.927657726Z [inf]  2026-01-17 16:56:07 [debug    ] Found LoL match: Shifters vs GIANTX (LEC) component=lolesports
+2026-01-17T16:56:07.927663198Z [inf]  2026-01-17 16:56:07 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:56:07.927668429Z [inf]  2026-01-17 16:56:07 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:56:08.149046455Z [inf]  2026-01-17 16:56:08 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T16:56:08.751625623Z [inf]  2026-01-17 16:56:08 [debug    ] Found 1 live matches           component=pandascore
+2026-01-17T16:56:08.751631923Z [inf]  2026-01-17 16:56:08 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:56:08.751637682Z [inf]  2026-01-17 16:56:08 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
+2026-01-17T16:56:09.454500890Z [inf]  2026-01-17 16:56:09 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
+2026-01-17T16:56:09.454509042Z [inf]  2026-01-17 16:56:09 [debug    ] Found match 1323622 in running matches! component=pandascore
+2026-01-17T16:56:09.454516211Z [inf]  2026-01-17 16:56:09 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
+2026-01-17T16:56:09.454523662Z [inf]  2026-01-17 16:56:09 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
+2026-01-17T16:56:09.454531515Z [inf]  2026-01-17 16:56:09 [info     ] 🔍 Trying to match live game to market available_markets=1436 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:56:09.454539533Z [inf]  2026-01-17 16:56:09 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
+2026-01-17T16:56:09.454548720Z [inf]  2026-01-17 16:56:09 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
+2026-01-17T16:56:09.454556355Z [inf]  2026-01-17 16:56:09 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:56:09.454564403Z [inf]  2026-01-17 16:56:09 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
+2026-01-17T16:56:09.454572715Z [inf]  2026-01-17 16:56:09 [info     ] Subscribing to Stratz match 1323622 component=stratz
+2026-01-17T16:56:09.454580273Z [inf]  2026-01-17 16:56:09 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
+2026-01-17T16:56:09.454588715Z [inf]  2026-01-17 16:56:09 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:56:09.454994655Z [inf]  2026-01-17 16:56:09 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:56:09.455001093Z [inf]  2026-01-17 16:56:09 [info     ] Match 1323622 ended or not found in Stratz component=stratz
+2026-01-17T16:56:09.455006574Z [inf]  2026-01-17 16:56:09 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:56:09.455011620Z [inf]  2026-01-17 16:56:09 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:56:09.455016431Z [inf]  2026-01-17 16:56:09 [info     ] Match 1323622 ended or not found component=engine
+2026-01-17T16:56:09.455022043Z [inf]  2026-01-17 16:56:09 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
+2026-01-17T16:56:10.681437405Z [inf]  2026-01-17 16:56:10 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:11.846808089Z [inf]  2026-01-17 16:56:11 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:56:12.470055235Z [inf]  2026-01-17 16:56:12 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:16.077386492Z [inf]  2026-01-17 16:56:16 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:17.221140755Z [inf]  2026-01-17 16:56:17 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:56:17.715731605Z [inf]  2026-01-17 16:56:17 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:21.546228843Z [inf]  2026-01-17 16:56:21 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:22.595969358Z [inf]  2026-01-17 16:56:22 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:56:23.086414038Z [inf]  2026-01-17 16:56:23 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:26.797743796Z [inf]  2026-01-17 16:56:26 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:28.000716424Z [inf]  2026-01-17 16:56:27 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:56:28.417512060Z [inf]  2026-01-17 16:56:28 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:32.199069288Z [inf]  2026-01-17 16:56:32 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:33.290739585Z [inf]  2026-01-17 16:56:33 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:56:33.804793364Z [inf]  2026-01-17 16:56:33 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:37.569708969Z [inf]  2026-01-17 16:56:37 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:38.822341789Z [inf]  2026-01-17 16:56:38 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:56:39.149946705Z [inf]  2026-01-17 16:56:39 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:39.302595848Z [inf]  2026-01-17 16:56:39 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:56:39.302600677Z [inf]  2026-01-17 16:56:39 [debug    ] Found LoL match: Shifters vs GIANTX (LEC) component=lolesports
+2026-01-17T16:56:39.302605366Z [inf]  2026-01-17 16:56:39 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:56:39.302614223Z [inf]  2026-01-17 16:56:39 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:56:39.448330341Z [inf]  2026-01-17 16:56:39 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T16:56:40.058592793Z [inf]  2026-01-17 16:56:40 [debug    ] Found 1 live matches           component=pandascore
+2026-01-17T16:56:40.058597818Z [inf]  2026-01-17 16:56:40 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:56:40.058602723Z [inf]  2026-01-17 16:56:40 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
+2026-01-17T16:56:40.455892664Z [inf]  2026-01-17 16:56:40 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
+2026-01-17T16:56:40.455900087Z [inf]  2026-01-17 16:56:40 [debug    ] Found match 1323622 in running matches! component=pandascore
+2026-01-17T16:56:40.455905125Z [inf]  2026-01-17 16:56:40 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
+2026-01-17T16:56:40.455911057Z [inf]  2026-01-17 16:56:40 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
+2026-01-17T16:56:40.455916078Z [inf]  2026-01-17 16:56:40 [info     ] 🔍 Trying to match live game to market available_markets=1436 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:56:40.478406020Z [inf]  2026-01-17 16:56:40 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
+2026-01-17T16:56:40.478416587Z [inf]  2026-01-17 16:56:40 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
+2026-01-17T16:56:40.478425106Z [inf]  2026-01-17 16:56:40 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:56:40.478432544Z [inf]  2026-01-17 16:56:40 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
+2026-01-17T16:56:40.478440982Z [inf]  2026-01-17 16:56:40 [info     ] Subscribing to Stratz match 1323622 component=stratz
+2026-01-17T16:56:40.478447964Z [inf]  2026-01-17 16:56:40 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
+2026-01-17T16:56:40.544371249Z [inf]  2026-01-17 16:56:40 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:56:40.544385257Z [inf]  2026-01-17 16:56:40 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:56:40.544393845Z [inf]  2026-01-17 16:56:40 [info     ] Match 1323622 ended or not found component=engine
+2026-01-17T16:56:40.544402912Z [inf]  2026-01-17 16:56:40 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
+2026-01-17T16:56:40.544409165Z [inf]  2026-01-17 16:56:40 [debug    ] Stratz subscription cancelled for match 1323622 component=stratz
+2026-01-17T16:56:42.938533167Z [inf]  2026-01-17 16:56:42 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:44.051674958Z [inf]  2026-01-17 16:56:44 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:56:44.518555583Z [inf]  2026-01-17 16:56:44 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:48.314671672Z [inf]  2026-01-17 16:56:48 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:49.407216515Z [inf]  2026-01-17 16:56:49 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:56:49.930225913Z [inf]  2026-01-17 16:56:49 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:53.659908884Z [inf]  2026-01-17 16:56:53 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:54.906606452Z [inf]  2026-01-17 16:56:54 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:56:55.280260356Z [inf]  2026-01-17 16:56:55 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:56:59.048264203Z [inf]  2026-01-17 16:56:59 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:00.105539288Z [inf]  2026-01-17 16:57:00 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:57:00.675950264Z [inf]  2026-01-17 16:57:00 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:04.394298728Z [inf]  2026-01-17 16:57:04 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:05.456802475Z [inf]  2026-01-17 16:57:05 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:57:06.037341680Z [inf]  2026-01-17 16:57:06 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:09.754656003Z [inf]  2026-01-17 16:57:09 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:10.581049786Z [inf]  2026-01-17 16:57:10 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:57:10.581058528Z [inf]  2026-01-17 16:57:10 [debug    ] Found LoL match: Shifters vs GIANTX (LEC) component=lolesports
+2026-01-17T16:57:10.581065913Z [inf]  2026-01-17 16:57:10 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:57:10.581072076Z [inf]  2026-01-17 16:57:10 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:57:10.784287623Z [inf]  2026-01-17 16:57:10 [debug    ] Found 0 live Dota 2 matches    component=opendota
+2026-01-17T16:57:10.785484718Z [inf]  2026-01-17 16:57:10 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:57:11.486602432Z [inf]  2026-01-17 16:57:11 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:11.525840355Z [inf]  2026-01-17 16:57:11 [debug    ] Found 1 live matches           component=pandascore
+2026-01-17T16:57:11.525850418Z [inf]  2026-01-17 16:57:11 [debug    ] Processing match               component=engine game=dota2 match_id=1323622 source=pandascore team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:57:11.525858033Z [inf]  2026-01-17 16:57:11 [debug    ] Using provider DotaDataProvider for match 1323622 component=engine
+2026-01-17T16:57:11.806309554Z [inf]  2026-01-17 16:57:11 [debug    ] Checking 1 running dota2 matches for ID 1323622 component=pandascore
+2026-01-17T16:57:11.806322150Z [inf]  2026-01-17 16:57:11 [debug    ] Found match 1323622 in running matches! component=pandascore
+2026-01-17T16:57:11.806330011Z [inf]  2026-01-17 16:57:11 [debug    ] Got match state from running: DOGSENT vs  alohasquad component=pandascore
+2026-01-17T16:57:11.806337382Z [inf]  2026-01-17 16:57:11 [debug    ] win_probability_calculated     component=dota_provider gold_factor=0.000 match_id=1323622 phase=late team1_prob=50.00%
+2026-01-17T16:57:11.806344483Z [inf]  2026-01-17 16:57:11 [info     ] 🔍 Trying to match live game to market available_markets=1436 component=engine match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:57:11.819110215Z [inf]  2026-01-17 16:57:11 [debug    ] Market matched                 component=market_matcher market_id=1203369 match_id=1323622 score=1.00
+2026-01-17T16:57:11.819116685Z [inf]  2026-01-17 16:57:11 [info     ] ✅ MATCHED! Found market for live game component=engine market_id=1203369 market_question='Dota 2: DOGSENT vs  alohasquad (BO3) - EPL Champio' match_id=1323622
+2026-01-17T16:57:11.819121699Z [inf]  2026-01-17 16:57:11 [info     ] 🎮 match_started                component=games game=dota2 match_id=1323622 team1=DOGSENT team2=' alohasquad'
+2026-01-17T16:57:11.819126311Z [inf]  2026-01-17 16:57:11 [info     ] 📡 Subscribed to match          component=engine market='Dota 2: DOGSENT vs  alohasquad (BO3) - E' match_id=1323622 teams='DOGSENT vs  alohasquad'
+2026-01-17T16:57:11.819131899Z [inf]  2026-01-17 16:57:11 [info     ] Subscribing to Stratz match 1323622 component=stratz
+2026-01-17T16:57:11.819138865Z [inf]  2026-01-17 16:57:11 [info     ] 🔄 Starting arbitrage polling for match 1323622 component=engine
+2026-01-17T16:57:12.069928401Z [inf]  2026-01-17 16:57:11 [warning  ] Stratz API blocked by Cloudflare - disabling provider component=stratz
+2026-01-17T16:57:12.069935701Z [inf]  2026-01-17 16:57:11 [debug    ] Match 1323622 not found in Stratz live data component=stratz
+2026-01-17T16:57:12.069941973Z [inf]  2026-01-17 16:57:11 [info     ] Match 1323622 ended or not found component=engine
+2026-01-17T16:57:12.069947227Z [inf]  2026-01-17 16:57:11 [info     ] 🔄 Stopped arbitrage polling for match 1323622 component=engine
+2026-01-17T16:57:12.069952073Z [inf]  2026-01-17 16:57:11 [debug    ] Stratz subscription cancelled for match 1323622 component=stratz
+2026-01-17T16:57:15.134980337Z [inf]  2026-01-17 16:57:15 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:16.165262368Z [inf]  2026-01-17 16:57:16 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:57:16.767227680Z [inf]  2026-01-17 16:57:16 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:20.425134178Z [inf]  2026-01-17 16:57:20 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:21.598204965Z [inf]  2026-01-17 16:57:21 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:57:22.158520875Z [inf]  2026-01-17 16:57:22 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:25.802146392Z [inf]  2026-01-17 16:57:25 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:26.913019519Z [inf]  2026-01-17 16:57:26 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:57:27.508297724Z [inf]  2026-01-17 16:57:27 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:31.212065038Z [inf]  2026-01-17 16:57:31 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:32.290843121Z [inf]  2026-01-17 16:57:32 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:57:32.886556786Z [inf]  2026-01-17 16:57:32 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:36.515330999Z [inf]  2026-01-17 16:57:36 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:37.705871141Z [inf]  2026-01-17 16:57:37 [debug    ] 📊 Arbitrage check: match=115565525419348905 our_prob=50.0% market_yes=50.0% edge=-0.0% component=engine
+2026-01-17T16:57:38.370383748Z [inf]  2026-01-17 16:57:38 [debug    ] 📊 Arbitrage check: match=115548424308414160 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:41.843014394Z [inf]  2026-01-17 16:57:41 [debug    ] 📊 Arbitrage check: match=115548424308414192 our_prob=50.0% market_yes=50.0% edge=0.0% component=engine
+2026-01-17T16:57:41.847969133Z [inf]  2026-01-17 16:57:41 [debug    ] Found LoL match: Vivo Keyd Stars vs paiN Gaming (CBLOL) component=lolesports
+2026-01-17T16:57:41.847975138Z [inf]  2026-01-17 16:57:41 [debug    ] Found LoL match: Shifters vs GIANTX (LEC) component=lolesports
+2026-01-17T16:57:41.847980516Z [inf]  2026-01-17 16:57:41 [debug    ] Found 2 live LoL matches       component=lolesports
+2026-01-17T16:57:41.847985087Z [inf]  2026-01-17 16:57:41 [debug    ] Got 2 LoL matches from official API component=engine
+2026-01-17T16:57:42.098063198Z [inf]  2026-01-17 16:57:42 [debug    ] Found 0 live Dota 2 matches    component=opendota

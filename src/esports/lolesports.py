@@ -187,11 +187,25 @@ class LoLEsportsProvider(BaseEsportsProvider):
             
             async with self._session.get(url) as response:
                 if response.status == 200:
-                    return await response.json()
+                    data = await response.json()
+                    frames = data.get("frames", [])
+                    if frames:
+                        latest = frames[-1]
+                        # Log that we got real stats
+                        blue_team = latest.get("blueTeam", {})
+                        red_team = latest.get("redTeam", {})
+                        logger.info(
+                            f"📊 LIVE STATS for {match_id}: "
+                            f"Blue kills={blue_team.get('totalKills', 0)} gold={blue_team.get('totalGold', 0)} | "
+                            f"Red kills={red_team.get('totalKills', 0)} gold={red_team.get('totalGold', 0)}"
+                        )
+                    return data
+                else:
+                    logger.debug(f"Live stats returned {response.status} for {match_id}")
                 return None
                 
         except Exception as e:
-            logger.debug(f"Could not get live stats: {e}")
+            logger.debug(f"Could not get live stats for {match_id}: {e}")
             return None
     
     def _build_game_state(self, match_data: dict, live_stats: Optional[dict]) -> GameState:
@@ -258,7 +272,7 @@ class LoLEsportsProvider(BaseEsportsProvider):
         team1_wins = sum(1 for g in games if g.get("winner") == team1.id)
         team2_wins = sum(1 for g in games if g.get("winner") == team2.id)
         
-        return GameState(
+        state = GameState(
             match_id=match_data.get("match_id", ""),
             game=Game.LOL,
             team1=team1,
@@ -275,6 +289,92 @@ class LoLEsportsProvider(BaseEsportsProvider):
             team2_series_score=team2_wins,
             series_format=series_format,
         )
+        
+        # Calculate win probability based on game state
+        state.team1_win_prob, state.team2_win_prob = self._calculate_win_probability(state)
+        
+        return state
+    
+    def _calculate_win_probability(self, state: GameState) -> tuple:
+        """
+        Calculate win probability based on current game state.
+        Uses gold lead, kill lead, objective control, and game time.
+        """
+        # Base probability starts at 50/50
+        base_prob = 0.5
+        
+        # If no meaningful data, return 50/50
+        if state.team1_gold == 0 and state.team2_gold == 0:
+            if state.team1_kills == 0 and state.team2_kills == 0:
+                return (0.5, 0.5)
+        
+        # Determine game phase (affects weight of factors)
+        game_minutes = state.game_time_seconds / 60 if state.game_time_seconds else 0
+        
+        if game_minutes < 10:
+            phase = "early"
+            gold_weight = 0.15
+            kill_weight = 0.10
+            tower_weight = 0.05
+        elif game_minutes < 25:
+            phase = "mid"
+            gold_weight = 0.25
+            kill_weight = 0.15
+            tower_weight = 0.15
+        else:
+            phase = "late"
+            gold_weight = 0.35
+            kill_weight = 0.10
+            tower_weight = 0.25
+        
+        # Gold advantage factor
+        total_gold = state.team1_gold + state.team2_gold
+        if total_gold > 0:
+            gold_diff = state.team1_gold - state.team2_gold
+            # Normalize: 10k gold lead = ~0.3 probability shift
+            gold_factor = gold_diff / 30000  # 30k gold = max factor
+            gold_factor = max(-0.35, min(0.35, gold_factor))
+        else:
+            gold_factor = 0
+        
+        # Kill advantage factor
+        total_kills = state.team1_kills + state.team2_kills
+        if total_kills > 0:
+            kill_diff = state.team1_kills - state.team2_kills
+            # Normalize: 10 kill lead = ~0.15 probability shift
+            kill_factor = kill_diff / 20  # 20 kills = max factor
+            kill_factor = max(-0.20, min(0.20, kill_factor))
+        else:
+            kill_factor = 0
+        
+        # Tower advantage factor
+        total_towers = state.team1_towers + state.team2_towers
+        if total_towers > 0:
+            tower_diff = state.team1_towers - state.team2_towers
+            # Each tower is significant
+            tower_factor = tower_diff / 11  # 11 towers = max factor
+            tower_factor = max(-0.25, min(0.25, tower_factor))
+        else:
+            tower_factor = 0
+        
+        # Combine factors with phase-appropriate weights
+        adjustment = (
+            gold_factor * gold_weight +
+            kill_factor * kill_weight +
+            tower_factor * tower_weight
+        )
+        
+        # Calculate final probability
+        team1_prob = base_prob + adjustment
+        team1_prob = max(0.05, min(0.95, team1_prob))  # Clamp to 5-95%
+        
+        logger.debug(
+            f"win_probability_calculated: match={state.match_id} phase={phase} "
+            f"gold_factor={gold_factor:.3f} kill_factor={kill_factor:.3f} "
+            f"tower_factor={tower_factor:.3f} team1_prob={team1_prob:.2%}"
+        )
+        
+        return (team1_prob, 1 - team1_prob)
     
     async def subscribe_to_match(self, match_id: str) -> AsyncIterator[GameEvent]:
         """
