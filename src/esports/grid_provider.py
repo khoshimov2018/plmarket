@@ -32,10 +32,10 @@ class GridProvider:
     providing the fastest and most accurate live game data.
     """
     
-    # API endpoints - Open Access uses api-op.grid.gg
-    GRAPHQL_URL = "https://api-op.grid.gg/central-data/graphql"
-    REST_BASE_URL = "https://api-op.grid.gg"
-    WS_BASE_URL = "wss://api-op.grid.gg/live"
+    # API endpoints - GRID uses api.grid.gg
+    GRAPHQL_URL = "https://api.grid.gg/central-data/graphql"
+    REST_BASE_URL = "https://api.grid.gg"
+    FILE_DOWNLOAD_URL = "https://api.grid.gg/file-download"
     
     def __init__(self):
         config = get_config()
@@ -96,17 +96,32 @@ class GridProvider:
             return []
         
         try:
-            # GraphQL query for live series
+            # GraphQL query for recent esports series (LoL and Dota 2)
+            # titleId 3 = LoL, titleId 4 = Dota 2
+            # We get recent matches and filter for ones that might be live
+            from datetime import datetime, timedelta
+            
+            # Get matches from last 6 hours (likely to include live ones)
+            six_hours_ago = (datetime.utcnow() - timedelta(hours=6)).strftime("%Y-%m-%dT%H:%M:%SZ")
+            
             query = """
-            query GetLiveSeries {
+            query GetRecentSeries($startTime: DateTime) {
                 allSeries(
-                    filter: { state: { eq: LIVE } }
                     first: 50
+                    filter: {
+                        types: ESPORTS
+                        startTimeScheduled: {
+                            gte: $startTime
+                        }
+                    }
+                    orderBy: StartTimeScheduled
+                    orderDirection: DESC
                 ) {
+                    totalCount
                     edges {
                         node {
                             id
-                            state
+                            startTimeScheduled
                             format {
                                 type
                                 numberOfGames
@@ -120,11 +135,6 @@ class GridProvider:
                                 name
                                 shortName
                             }
-                            games {
-                                id
-                                state
-                                sequenceNumber
-                            }
                             title {
                                 id
                                 name
@@ -137,7 +147,10 @@ class GridProvider:
             
             response = await self._http_client.post(
                 self.GRAPHQL_URL,
-                json={"query": query}
+                json={
+                    "query": query,
+                    "variables": {"startTime": six_hours_ago}
+                }
             )
             
             if response.status_code != 200:
