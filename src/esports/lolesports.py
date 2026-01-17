@@ -122,8 +122,27 @@ class LoLEsportsProvider(BaseEsportsProvider):
             team2_name = teams[1].get("name", "")
             league_name = event.get("league", {}).get("name", "")
             
+            # Get the current game ID for live stats
+            # The /window/ endpoint needs the GAME ID, not the EVENT ID
+            games = match_info.get("games", [])
+            current_game_id = None
+            
+            # Find the currently live game (state = "inProgress")
+            for game in games:
+                game_state = game.get("state", "")
+                if game_state == "inProgress":
+                    current_game_id = game.get("id")
+                    break
+            
+            # If no game in progress, try to get the most recent unfinished game
+            if not current_game_id and games:
+                for game in games:
+                    if game.get("state") != "completed":
+                        current_game_id = game.get("id")
+                        break
+            
             # Log the match for debugging
-            logger.debug(f"Found LoL match: {team1_name} vs {team2_name} ({league_name})")
+            logger.debug(f"Found LoL match: {team1_name} vs {team2_name} ({league_name}) game_id={current_game_id}")
             
             # Store match data in format compatible with execution engine
             match_data = {
@@ -144,8 +163,10 @@ class LoLEsportsProvider(BaseEsportsProvider):
                     "code": teams[1].get("code", "T2"),
                     "image": teams[1].get("image", ""),
                 },
-                "games": match_info.get("games", []),
+                "games": games,
                 "strategy": match_info.get("strategy", {}),
+                # Store the current game ID for live stats
+                "current_game_id": current_game_id,
                 # Store raw event for get_match_state
                 "_raw_event": event,
             }
@@ -170,8 +191,25 @@ class LoLEsportsProvider(BaseEsportsProvider):
             if not match_data:
                 return None
             
-            # Try to get live stats
-            live_stats = await self._get_live_stats(match_id)
+            # Get the current game ID for live stats
+            # The /window/ endpoint needs the GAME ID, not the EVENT ID
+            game_id = match_data.get("current_game_id")
+            
+            if not game_id:
+                # Try to find a game in progress from the games list
+                games = match_data.get("games", [])
+                for game in games:
+                    if game.get("state") == "inProgress":
+                        game_id = game.get("id")
+                        match_data["current_game_id"] = game_id
+                        break
+            
+            # Try to get live stats using the GAME ID
+            live_stats = None
+            if game_id:
+                live_stats = await self._get_live_stats(game_id)
+            else:
+                logger.debug(f"No game ID found for match {match_id} - game may not have started yet")
             
             return self._build_game_state(match_data, live_stats)
             
