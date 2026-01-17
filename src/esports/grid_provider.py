@@ -96,22 +96,22 @@ class GridProvider:
             return []
         
         try:
-            # GraphQL query for recent esports series (LoL and Dota 2)
-            # titleId 3 = LoL, titleId 4 = Dota 2
-            # We get recent matches and filter for ones that might be live
+            # GraphQL query for recent esports series
+            # Based on GRID docs - get series from last 24 hours
             from datetime import datetime, timedelta
             
-            # Get matches from last 6 hours (likely to include live ones)
-            six_hours_ago = (datetime.utcnow() - timedelta(hours=6)).strftime("%Y-%m-%dT%H:%M:%SZ")
+            now = datetime.utcnow()
+            start_time = (now - timedelta(hours=12)).strftime("%Y-%m-%dT%H:%M:%SZ")
+            end_time = (now + timedelta(hours=12)).strftime("%Y-%m-%dT%H:%M:%SZ")
             
             query = """
-            query GetRecentSeries($startTime: DateTime) {
+            query GetRecentSeries($startTime: DateTime, $endTime: DateTime) {
                 allSeries(
                     first: 50
                     filter: {
-                        types: ESPORTS
                         startTimeScheduled: {
                             gte: $startTime
+                            lte: $endTime
                         }
                     }
                     orderBy: StartTimeScheduled
@@ -123,21 +123,22 @@ class GridProvider:
                             id
                             startTimeScheduled
                             format {
-                                type
-                                numberOfGames
+                                name
+                                nameShortened
                             }
                             tournament {
-                                id
                                 name
+                                nameShortened
                             }
                             teams {
-                                id
-                                name
-                                shortName
+                                baseInfo {
+                                    name
+                                }
+                                scoreAdvantage
                             }
                             title {
-                                id
                                 name
+                                nameShortened
                             }
                         }
                     }
@@ -149,7 +150,10 @@ class GridProvider:
                 self.GRAPHQL_URL,
                 json={
                     "query": query,
-                    "variables": {"startTime": six_hours_ago}
+                    "variables": {
+                        "startTime": start_time,
+                        "endTime": end_time
+                    }
                 }
             )
             
@@ -164,6 +168,9 @@ class GridProvider:
                 return []
             
             edges = data.get("data", {}).get("allSeries", {}).get("edges", [])
+            total_count = data.get("data", {}).get("allSeries", {}).get("totalCount", 0)
+            
+            logger.debug(f"GRID returned {total_count} series in time window")
             
             matches = []
             for edge in edges:
@@ -173,9 +180,19 @@ class GridProvider:
                 if len(teams) < 2:
                     continue
                 
+                # Get team names from baseInfo (per GRID schema)
+                team1_info = teams[0].get("baseInfo", {}) or {}
+                team2_info = teams[1].get("baseInfo", {}) or {}
+                team1_name = team1_info.get("name", "")
+                team2_name = team2_info.get("name", "")
+                
+                # Skip if no team names
+                if not team1_name or not team2_name:
+                    continue
+                
                 # Get game title
-                title = series.get("title", {})
-                game_name = (title.get("name", "") if title else "").lower()
+                title = series.get("title", {}) or {}
+                game_name = (title.get("name", "") or title.get("nameShortened", "") or "").lower()
                 
                 # Determine game type
                 if "league" in game_name or "lol" in game_name:
@@ -187,37 +204,38 @@ class GridProvider:
                 else:
                     continue  # Skip other games
                 
+                tournament = series.get("tournament", {}) or {}
+                tournament_name = tournament.get("name", "") or tournament.get("nameShortened", "")
+                
                 match_data = {
                     "match_id": series.get("id"),
                     "id": series.get("id"),
                     "game": game,
                     "source": "grid",
-                    "tournament": series.get("tournament", {}).get("name", "") if series.get("tournament") else "",
+                    "tournament": tournament_name,
                     "team1": {
-                        "id": str(teams[0].get("id", "")),
-                        "name": teams[0].get("name", ""),
-                        "short_name": teams[0].get("shortName", ""),
+                        "id": str(series.get("id", "")),
+                        "name": team1_name,
                     },
                     "team2": {
-                        "id": str(teams[1].get("id", "")),
-                        "name": teams[1].get("name", ""),
-                        "short_name": teams[1].get("shortName", ""),
+                        "id": str(series.get("id", "")),
+                        "name": team2_name,
                     },
-                    "team1_name": teams[0].get("name", ""),
-                    "team2_name": teams[1].get("name", ""),
+                    "team1_name": team1_name,
+                    "team2_name": team2_name,
+                    "start_time": series.get("startTimeScheduled"),
                 }
                 
                 # Log the match with actual team names
                 logger.info(
-                    f"🚀 GRID Live: {match_data['team1']['name']} vs {match_data['team2']['name']} "
-                    f"({match_data['tournament']})"
+                    f"🚀 GRID: {team1_name} vs {team2_name} ({tournament_name}) - {game_name}"
                 )
                 
                 matches.append(match_data)
                 self._live_matches[series.get("id")] = match_data
             
             if matches:
-                logger.info(f"🎮 Found {len(matches)} live matches from GRID (FASTEST source!)")
+                logger.info(f"🎮 Found {len(matches)} matches from GRID (FASTEST source!)")
             
             return matches
             
@@ -227,43 +245,42 @@ class GridProvider:
     
     async def get_match_state(self, match_id: str) -> Optional[GameState]:
         """
-        Get detailed game state for a match using GraphQL.
+        Get detailed LIVE game state using seriesState query.
         
-        GRID provides real-time game state including:
-        - Kills, deaths, assists per team
-        - Gold difference
-        - Objectives (towers, dragons, barons, etc.)
-        - Current game time
+        GRID's seriesState provides real-time data including:
+        - Player kills, deaths, net worth
+        - Team scores
+        - Game progress (started/finished)
         """
         if not self._enabled or not self._http_client:
             return None
         
         try:
-            # GraphQL query for series details
+            # Use seriesState for LIVE data (per GRID docs)
             query = """
-            query GetSeriesState($seriesId: ID!) {
-                series(id: $seriesId) {
-                    id
-                    state
+            query GetLiveSeriesState($seriesId: ID!) {
+                seriesState(id: $seriesId) {
+                    valid
+                    updatedAt
+                    format
+                    started
+                    finished
                     teams {
-                        id
                         name
-                        shortName
+                        won
                     }
-                    games {
-                        id
-                        state
+                    games(filter: { started: true }) {
                         sequenceNumber
+                        finished
                         teams {
-                            team {
-                                id
+                            name
+                            players {
                                 name
+                                kills
+                                deaths
+                                netWorth
                             }
-                            score
                         }
-                    }
-                    title {
-                        name
                     }
                 }
             }
@@ -278,7 +295,7 @@ class GridProvider:
             )
             
             if response.status_code != 200:
-                logger.debug(f"GRID match state failed: {response.status_code}")
+                logger.debug(f"GRID seriesState failed: {response.status_code}")
                 return None
             
             data = response.json()
@@ -287,78 +304,88 @@ class GridProvider:
                 logger.debug(f"GRID GraphQL errors: {data['errors']}")
                 return None
             
-            series = data.get("data", {}).get("series")
-            if not series:
+            series_state = data.get("data", {}).get("seriesState")
+            if not series_state or not series_state.get("valid"):
+                logger.debug(f"GRID seriesState not valid for {match_id}")
                 return None
             
-            teams = series.get("teams", [])
-            games = series.get("games", [])
+            teams = series_state.get("teams", [])
+            games = series_state.get("games", [])
             
             if len(teams) < 2:
                 return None
             
-            # Get the current/latest game
+            # Get the current/latest game (started but not finished)
             current_game = None
             for game in games:
-                if game.get("state") == "LIVE":
+                if not game.get("finished"):
                     current_game = game
                     break
             
             if not current_game and games:
                 current_game = games[-1]  # Use latest game
             
-            # Parse team scores from current game
+            # Calculate team stats from players
             team1_kills = 0
             team2_kills = 0
+            team1_gold = 0
+            team2_gold = 0
             
             if current_game:
                 game_teams = current_game.get("teams", [])
                 if len(game_teams) >= 2:
-                    team1_kills = game_teams[0].get("score", 0) or 0
-                    team2_kills = game_teams[1].get("score", 0) or 0
+                    # Sum up player stats for each team
+                    for player in game_teams[0].get("players", []):
+                        team1_kills += player.get("kills", 0) or 0
+                        team1_gold += player.get("netWorth", 0) or 0
+                    
+                    for player in game_teams[1].get("players", []):
+                        team2_kills += player.get("kills", 0) or 0
+                        team2_gold += player.get("netWorth", 0) or 0
             
             # Create Team objects
             team1 = Team(
-                id=str(teams[0].get("id", "")),
+                id=str(match_id),
                 name=teams[0].get("name", "Team 1"),
-                tag=teams[0].get("shortName", "T1"),
+                tag="",
             )
             
             team2 = Team(
-                id=str(teams[1].get("id", "")),
+                id=str(match_id),
                 name=teams[1].get("name", "Team 2"),
-                tag=teams[1].get("shortName", "T2"),
+                tag="",
             )
             
-            # Determine game type from cached match data or title
+            # Determine game type from cached match data
             cached_match = self._live_matches.get(match_id, {})
-            game_type = cached_match.get("game", Game.LOL)
+            game_type = cached_match.get("game", Game.DOTA2)
             
-            title_name = (series.get("title", {}).get("name", "") if series.get("title") else "").lower()
-            if "dota" in title_name:
-                game_type = Game.DOTA2
-            elif "league" in title_name or "lol" in title_name:
-                game_type = Game.LOL
+            # Count series score (games won)
+            team1_series = 1 if teams[0].get("won") else 0
+            team2_series = 1 if teams[1].get("won") else 0
             
-            # Create GameState
+            # Create GameState with LIVE data
             game_state = GameState(
                 match_id=match_id,
                 game=game_type,
                 team1=team1,
                 team2=team2,
-                game_number=len([g for g in games if g.get("state") in ["FINISHED", "LIVE"]]),
-                game_time_seconds=0.0,  # GRID doesn't provide this in basic query
+                game_number=len([g for g in games if not g.get("finished")]) or 1,
+                game_time_seconds=0.0,
                 team1_kills=team1_kills,
                 team2_kills=team2_kills,
-                team1_gold=0,  # Would need live-data endpoint
-                team2_gold=0,
+                team1_gold=team1_gold,
+                team2_gold=team2_gold,
                 team1_towers=0,
                 team2_towers=0,
+                team1_series_score=team1_series,
+                team2_series_score=team2_series,
             )
             
-            logger.debug(
-                f"GRID match state: {team1.name} vs {team2.name}, "
-                f"kills={team1_kills}-{team2_kills}"
+            logger.info(
+                f"🎮 GRID LIVE: {team1.name} vs {team2.name}, "
+                f"kills={team1_kills}-{team2_kills}, "
+                f"gold={team1_gold}-{team2_gold}"
             )
             
             self._match_states[match_id] = game_state
