@@ -448,7 +448,13 @@ class PolymarketClient:
             tokens = data.get("tokens", [])
             
             # Also check clobTokenIds which is sometimes used
+            # NOTE: clobTokenIds can be a JSON string or a list!
             clob_token_ids = data.get("clobTokenIds", [])
+            if isinstance(clob_token_ids, str):
+                try:
+                    clob_token_ids = json.loads(clob_token_ids)
+                except:
+                    clob_token_ids = []
             
             yes_token = next((t for t in tokens if t.get("outcome") == "Yes"), None)
             no_token = next((t for t in tokens if t.get("outcome") == "No"), None)
