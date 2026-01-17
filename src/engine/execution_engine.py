@@ -291,14 +291,30 @@ class ExecutionEngine:
                     game = match_data.get("game", Game.LOL)
                     source = match_data.get("source", "")
                     
+                    # Extract team names - different sources use different formats
+                    # PandaScore uses "opponents" array, others use "team1"/"team2"
+                    if "opponents" in match_data:
+                        opponents = match_data.get("opponents", [])
+                        team1_name = opponents[0].get("opponent", {}).get("name", "Unknown") if len(opponents) > 0 else "Unknown"
+                        team2_name = opponents[1].get("opponent", {}).get("name", "Unknown") if len(opponents) > 1 else "Unknown"
+                    else:
+                        team1_name = match_data.get("team1", {}).get("name", match_data.get("team1_name", "Unknown"))
+                        team2_name = match_data.get("team2", {}).get("name", match_data.get("team2_name", "Unknown"))
+                    
                     logger.debug(
                         "Processing match",
                         match_id=match_id,
                         game=game.value if hasattr(game, 'value') else str(game),
                         source=source,
-                        team1=match_data.get("team1", {}).get("name", "Unknown"),
-                        team2=match_data.get("team2", {}).get("name", "Unknown"),
+                        team1=team1_name,
+                        team2=team2_name,
                     )
+                    
+                    # Skip matches without real team names early
+                    if team1_name in ["Unknown", "Radiant", "Dire", "Team 1", "Team 2", ""] or \
+                       team2_name in ["Unknown", "Radiant", "Dire", "Team 1", "Team 2", ""]:
+                        logger.debug(f"Skipping match {match_id} - missing team names")
+                        continue
                     
                     # Select the fastest provider based on source
                     # Priority: GRID > LoL Esports > OpenDota > PandaScore
