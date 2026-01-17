@@ -20,6 +20,11 @@ class PolymarketConfig(BaseSettings):
     api_passphrase: str = Field("", alias="POLYMARKET_API_PASSPHRASE")
     chain_id: int = Field(137, alias="CHAIN_ID")
     
+    # Funder address - this is your PROXY wallet address shown on Polymarket profile
+    # If not set, it will use the address derived from private_key
+    # Go to https://polymarket.com/settings to find your proxy wallet address
+    funder_address: str = Field("", alias="POLYMARKET_FUNDER_ADDRESS")
+    
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
     
     def is_configured(self) -> bool:
