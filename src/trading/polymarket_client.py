@@ -444,8 +444,11 @@ class PolymarketClient:
             question = data.get("question", "")
             title = (event or data).get("title", "") if event else question
             
-            # Extract token IDs
+            # Extract token IDs - try multiple field names
             tokens = data.get("tokens", [])
+            
+            # Also check clobTokenIds which is sometimes used
+            clob_token_ids = data.get("clobTokenIds", [])
             
             yes_token = next((t for t in tokens if t.get("outcome") == "Yes"), None)
             no_token = next((t for t in tokens if t.get("outcome") == "No"), None)
@@ -454,15 +457,33 @@ class PolymarketClient:
             token_id_yes = ""
             token_id_no = ""
             
+            # Try to get from tokens first
             if yes_token:
-                raw_yes = str(yes_token.get("token_id", ""))
-                if len(raw_yes) >= 10 and raw_yes.isdigit():
+                # Try multiple field names for token ID
+                raw_yes = str(yes_token.get("token_id", "") or yes_token.get("tokenId", "") or yes_token.get("id", ""))
+                if raw_yes and raw_yes.isdigit():
                     token_id_yes = raw_yes
             
             if no_token:
-                raw_no = str(no_token.get("token_id", ""))
-                if len(raw_no) >= 10 and raw_no.isdigit():
+                raw_no = str(no_token.get("token_id", "") or no_token.get("tokenId", "") or no_token.get("id", ""))
+                if raw_no and raw_no.isdigit():
                     token_id_no = raw_no
+            
+            # Fallback to clobTokenIds if tokens didn't have IDs
+            if not token_id_yes and len(clob_token_ids) >= 1:
+                raw_yes = str(clob_token_ids[0])
+                if raw_yes.isdigit():
+                    token_id_yes = raw_yes
+            
+            if not token_id_no and len(clob_token_ids) >= 2:
+                raw_no = str(clob_token_ids[1])
+                if raw_no.isdigit():
+                    token_id_no = raw_no
+            
+            # Skip markets without valid token IDs
+            if not token_id_yes or not token_id_no:
+                logger.debug(f"Skipping crypto market '{question[:50]}' - missing token IDs (yes={token_id_yes}, no={token_id_no})")
+                return None
             
             # Get prices - outcomePrices can be a JSON string or list
             yes_price = 0.5
@@ -849,6 +870,18 @@ class PolymarketClient:
         """
         if self._paper_trading:
             return await self._paper_place_order(token_id, side, size, price)
+        
+        # Validate token_id before attempting to place order
+        if not token_id or not token_id.strip():
+            logger.error("Cannot place order: token_id is empty")
+            return None
+        
+        # Ensure token_id is a valid numeric string
+        try:
+            int(token_id)
+        except ValueError:
+            logger.error(f"Cannot place order: token_id '{token_id}' is not a valid numeric ID")
+            return None
         
         try:
             # Generate nonce and expiration
