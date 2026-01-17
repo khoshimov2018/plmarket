@@ -11,7 +11,7 @@ This is the FASTEST data source for esports - used by professional traders.
 
 import asyncio
 from datetime import datetime
-from typing import Optional, Callable, Any
+from typing import Optional, Callable, Any, List, Dict
 import json
 
 import httpx
@@ -89,7 +89,7 @@ class GridProvider:
         self._is_streaming = False
         logger.info("GRID provider disconnected")
     
-    async def get_live_matches(self) -> list[dict]:
+    async def get_live_matches(self) -> List[Dict]:
         """
         Fetch currently live matches from GRID.
         

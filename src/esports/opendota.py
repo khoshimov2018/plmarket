@@ -136,18 +136,6 @@ class OpenDotaProvider(BaseEsportsProvider):
         
         logger.info(f"🎮 Pro Dota match: {radiant_name} vs {dire_name}")
         return True
-            else:
-                logger.debug(f"Match has team IDs but no names - skipping")
-                return False
-        
-        # Check spectator count (popular matches)
-        spectators = match.get("spectators", 0)
-        if spectators > 1000:
-            # Still need team names for matching
-            if radiant_name and dire_name:
-                return True
-        
-        return False
     
     async def get_match_state(self, match_id: str) -> Optional[GameState]:
         """
