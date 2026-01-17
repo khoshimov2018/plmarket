@@ -115,26 +115,27 @@ class OpenDotaProvider(BaseEsportsProvider):
     
     def _is_notable_match(self, match: dict) -> bool:
         """Check if match is notable enough to have a Polymarket market."""
-        # Check for league/tournament info
-        league_id = match.get("league_id", 0)
-        
-        # Major tournaments have league IDs
-        if league_id > 0:
-            return True
-        
         # Check for pro teams (have team IDs AND team names)
         radiant_team = match.get("radiant_team", {})
         dire_team = match.get("dire_team", {})
         
         # CRITICAL: Only consider matches with ACTUAL team names
-        # Matches without team names will never match Polymarket markets
+        # Matches without team names will NEVER match Polymarket markets
         radiant_name = radiant_team.get("team_name") or radiant_team.get("name")
         dire_name = dire_team.get("team_name") or dire_team.get("name")
         
-        if radiant_team.get("team_id") and dire_team.get("team_id"):
-            if radiant_name and dire_name:
-                logger.debug(f"Notable pro match: {radiant_name} vs {dire_name}")
-                return True
+        # Skip if either team name is missing or generic
+        if not radiant_name or radiant_name in ["Radiant", "Unknown", ""]:
+            return False
+        if not dire_name or dire_name in ["Dire", "Unknown", ""]:
+            return False
+        
+        # Must have team IDs to be a pro match
+        if not radiant_team.get("team_id") or not dire_team.get("team_id"):
+            return False
+        
+        logger.info(f"🎮 Pro Dota match: {radiant_name} vs {dire_name}")
+        return True
             else:
                 logger.debug(f"Match has team IDs but no names - skipping")
                 return False

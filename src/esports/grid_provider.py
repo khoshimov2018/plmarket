@@ -44,8 +44,12 @@ class GridProvider:
             logger.warning("GRID API key not configured - provider disabled")
             self._enabled = False
         else:
-            self._enabled = True
-            logger.info("GRID provider initialized")
+            # GRID API endpoints are not working with current key format
+            # Disable until we figure out the correct API endpoints
+            # The key might be for file downloads only, not live data
+            self._enabled = False
+            logger.warning("GRID provider disabled - API endpoints need configuration")
+            logger.info("GRID provider initialized (disabled - endpoints not configured)")
         
         self._http_client: Optional[httpx.AsyncClient] = None
         self._ws_connection = None
