@@ -316,24 +316,29 @@ class ExecutionEngine:
                         logger.debug(f"Skipping match {match_id} - missing team names")
                         continue
                     
-                    # Select the fastest provider based on source
-                    # Priority: GRID > LoL Esports > OpenDota > PandaScore
+                    # Select the provider based on source
+                    # IMPORTANT: Use the SAME provider that found the match
+                    # Different providers use different match IDs!
                     if source == "grid" and self.grid and self.grid.enabled:
                         provider = self.grid
-                    elif game == Game.LOL:
-                        if source == "lolesports":
-                            provider = self.lol_esports
-                        elif self.grid and self.grid.enabled:
-                            provider = self.grid  # GRID is faster
+                    elif source == "lolesports":
+                        provider = self.lol_esports
+                    elif source == "opendota":
+                        provider = self.opendota
+                    elif source == "pandascore" or source == "":
+                        # PandaScore matches - use the appropriate game provider
+                        if game == Game.LOL:
+                            provider = self.lol_provider
                         else:
+                            provider = self.dota_provider
+                    else:
+                        # Fallback based on game
+                        if game == Game.LOL:
                             provider = self.lol_esports or self.lol_provider
-                    else:  # Dota 2
-                        if self.grid and self.grid.enabled:
-                            provider = self.grid  # GRID is faster
-                        elif source == "opendota":
-                            provider = self.opendota
                         else:
                             provider = self.opendota or self.dota_provider
+                    
+                    logger.debug(f"Using provider {provider.__class__.__name__} for match {match_id}")
                     
                     game_state = await provider.get_match_state(match_id)
                     

@@ -104,6 +104,7 @@ class PandaScoreProvider(BaseEsportsProvider):
                 
                 for match in data:
                     match["game"] = g
+                    match["source"] = "pandascore"  # Mark source for provider selection
                     matches.append(match)
                     
             except httpx.HTTPError as e:
