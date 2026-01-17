@@ -411,9 +411,25 @@ class PolymarketClient:
                 if len(raw_no) >= 10 and raw_no.isdigit():
                     token_id_no = raw_no
             
-            # Get prices
-            yes_price = float(data.get("outcomePrices", [0.5, 0.5])[0]) if data.get("outcomePrices") else 0.5
-            no_price = float(data.get("outcomePrices", [0.5, 0.5])[1]) if data.get("outcomePrices") else 0.5
+            # Get prices - outcomePrices can be a JSON string or list
+            yes_price = 0.5
+            no_price = 0.5
+            outcome_prices = data.get("outcomePrices")
+            if outcome_prices:
+                # Handle JSON string format
+                if isinstance(outcome_prices, str):
+                    try:
+                        import json
+                        outcome_prices = json.loads(outcome_prices)
+                    except:
+                        outcome_prices = None
+                
+                if isinstance(outcome_prices, list) and len(outcome_prices) >= 2:
+                    try:
+                        yes_price = float(outcome_prices[0])
+                        no_price = float(outcome_prices[1])
+                    except (ValueError, TypeError):
+                        pass
             
             # Parse end date
             end_date_str = data.get("endDate") or data.get("end_date_iso")
