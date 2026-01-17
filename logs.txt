@@ -1,1001 +1,599 @@
-2026-01-17T20:40:19.400386524Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:19.400395796Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:19.400403216Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:19.400407731Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:19.400413041Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:19.400418840Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:19.400425074Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:19.400429508Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:19.400768302Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:19.400774311Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:19.400778662Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:19.400782546Z [err]      ^
-2026-01-17T20:40:19.400786565Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:20.692573110Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:20.692578655Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:20.692584463Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:20.692589980Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:20.692595430Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:20.692601480Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:20.692607816Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:20.692614370Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:20.692619841Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:20.692625497Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:20.692631240Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:20.692636974Z [err]      ^
-2026-01-17T20:40:20.692642636Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:21.732776845Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:21.732801502Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:21.732807511Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:21.732813574Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:21.732819496Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:21.732826028Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:21.732832446Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:21.732838718Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:21.732845229Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:21.732850814Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:21.732854500Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:21.732858618Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:21.732862304Z [err]      ^
-2026-01-17T20:40:22.654546348Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:22.654554397Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:22.654562685Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:22.654571228Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:22.654578984Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:22.654586352Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:22.654593662Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:22.654601531Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:22.654608622Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:22.654615932Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:22.654622907Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:22.654630394Z [err]      ^
-2026-01-17T20:40:22.654637690Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:23.930732055Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:23.930739582Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:23.930745845Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:23.930750994Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:23.930759353Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:23.930764677Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:23.930769528Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:23.930776318Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:23.930780857Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:23.930786787Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:23.930791043Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:23.930795141Z [err]      ^
-2026-01-17T20:40:23.930800503Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:25.193538188Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:25.193544024Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:25.193550081Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:25.193554153Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:25.193559097Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:25.193563873Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:25.193567920Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:25.193573225Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:25.193577492Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:25.193581450Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:25.193585663Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:25.193589440Z [err]      ^
-2026-01-17T20:40:25.193599848Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:26.467831381Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:26.467838857Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:26.467845518Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:26.467851939Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:26.467859051Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:26.467865966Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:26.467873454Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:26.467880406Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:26.467887279Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:26.467894125Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:26.467902300Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:26.467909302Z [err]      ^
-2026-01-17T20:40:26.467914727Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:27.514487615Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:27.514495548Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:27.514501211Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:27.514506063Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:27.514512323Z [err]      ^
-2026-01-17T20:40:27.514519652Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:27.514530056Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:27.514542511Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:27.514552595Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:27.514560720Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:27.514567540Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:27.514575249Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:27.514613804Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:28.554140416Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:28.554149287Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:28.554157148Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:28.554165122Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:28.554168024Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:28.554171790Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:28.554180920Z [err]      ^
-2026-01-17T20:40:28.554181385Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:28.554188156Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:28.554193085Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:28.554202554Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:28.554212867Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:28.554225648Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:29.646513345Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:29.646518996Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:29.646524473Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:29.646529539Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:29.646534977Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:29.646539176Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:29.646543536Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:29.646548640Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:29.646553526Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:29.646558457Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:29.646562777Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:29.646567213Z [err]      ^
-2026-01-17T20:40:29.646575768Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:30.656687021Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:30.656707111Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:30.656707357Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:30.656715828Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:30.656720759Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:30.656724130Z [err]      ^
-2026-01-17T20:40:30.656730950Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:30.656733475Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:30.656740383Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:30.656746823Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:30.656753729Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:30.656761690Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:30.656769857Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:31.644558024Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:31.644564142Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:31.644570217Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:31.644575934Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:31.644583452Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:31.644589221Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:31.644596207Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:31.644601760Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:31.644607114Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:31.644611966Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:31.644617282Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:31.644621067Z [err]      ^
-2026-01-17T20:40:31.644624707Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:32.908219099Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:32.908233779Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:32.908242772Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:32.908249057Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:32.908259769Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:32.908266355Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:32.908271636Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:32.908277423Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:32.908286482Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:32.908293812Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:32.908299932Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:32.908306059Z [err]      ^
-2026-01-17T20:40:32.908311260Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:34.197272837Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:34.197282465Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:34.197289883Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:34.197296302Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:34.197303051Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:34.197310118Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:34.197318088Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:34.197327266Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:34.197333475Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:34.197340021Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:34.197346308Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:34.197352618Z [err]      ^
-2026-01-17T20:40:34.197358518Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:35.174035778Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:35.174038165Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:35.174049017Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:35.174051728Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:35.174057666Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:35.174060916Z [err]      ^
-2026-01-17T20:40:35.174067273Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:35.174068033Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:35.174077719Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:35.174086503Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:35.174092094Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:35.174096688Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:35.174102345Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:36.124415702Z [err]      ^
-2026-01-17T20:40:36.124423554Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:36.124427479Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:36.124434835Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:36.124441655Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:36.124448048Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:36.124455270Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:36.124463871Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:36.124470096Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:36.124476605Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:36.124483021Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:36.124489594Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:36.124496789Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:37.143532276Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:37.143540771Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:37.143548494Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:37.143556062Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:37.143564794Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:37.143574201Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:37.143582574Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:37.143590099Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:37.143598234Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:37.143606024Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:37.143613712Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:37.143621818Z [err]      ^
-2026-01-17T20:40:37.143630027Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:38.179302652Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:38.179313181Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:38.179320126Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:38.179327105Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:38.179333639Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:38.179340919Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:38.179347082Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:38.179354256Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:38.179360424Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:38.179366636Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:38.179372307Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:38.179380052Z [err]      ^
-2026-01-17T20:40:38.179386457Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:39.160409582Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:39.160418023Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:39.160423600Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:39.160428584Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:39.160433062Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:39.160438279Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:39.160442584Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:39.160448623Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:39.160453221Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:39.160457772Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:39.160462157Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:39.160466303Z [err]      ^
-2026-01-17T20:40:39.160472325Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:40.599898418Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:40.599910780Z [err]      ^
-2026-01-17T20:40:40.599917792Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:40.599917962Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:40.599929667Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:40.599937525Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:40.599939187Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:40.599944526Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:40.599946221Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:40.599950738Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:40.599954409Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:40.599956490Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:40.599964611Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:41.582299237Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:41.582307110Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:41.582314392Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:41.582321832Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:41.582329252Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:41.582336861Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:41.582341772Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:41.582347109Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:41.582353987Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:41.582360772Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:41.582367515Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:41.582374010Z [err]      ^
-2026-01-17T20:40:41.582381602Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:42.613007458Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:42.613013971Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:42.613026028Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:42.613034277Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:42.613041243Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:42.613048127Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:42.613054760Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:42.613061326Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:42.613068231Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:42.613075187Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:42.613080715Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:42.613088184Z [err]      ^
-2026-01-17T20:40:42.613097073Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:43.597714639Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:43.597721937Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:43.597726684Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:43.597731660Z [err]      ^
-2026-01-17T20:40:43.597736970Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:43.597758681Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:43.597764463Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:43.597769439Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:43.597774400Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:43.597779190Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:43.597784197Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:43.597788650Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:43.597795281Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:44.625688148Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:44.625698854Z [err]      ^
-2026-01-17T20:40:44.625705640Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:44.625743523Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:44.625748259Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:44.625752333Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:44.625756086Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:44.625759828Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:44.625765127Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:44.625770443Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:44.625775013Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:44.625779496Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:44.625783048Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:45.629245776Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:45.629247035Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:45.629256877Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:45.629258023Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:45.629265050Z [err]      ^
-2026-01-17T20:40:45.629267311Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:45.629272404Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:45.629274694Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:45.629278737Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:45.629282707Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:45.629286993Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:45.629291023Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:45.629299740Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:46.689944339Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:46.689951077Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:46.689955452Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:46.689961124Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:46.689972209Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:46.689977786Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:46.689984354Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:46.689991125Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:46.690007567Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:46.690012700Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:46.690017063Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:46.690021124Z [err]      ^
-2026-01-17T20:40:46.690025110Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:47.723105862Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:47.723115600Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:47.723123597Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:47.723130869Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:47.723138412Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:47.723149097Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:47.723149183Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:47.723156591Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:47.723162654Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:47.723169226Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:47.723176273Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:47.723184951Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:47.723192448Z [err]      ^
-2026-01-17T20:40:48.711724975Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:48.711735650Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:48.711743201Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:48.711750012Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:48.711756474Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:48.711763166Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:48.711769322Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:48.711777963Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:48.711784750Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:48.711792210Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:48.711799057Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:48.711805787Z [err]      ^
-2026-01-17T20:40:48.711812984Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:49.658973142Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:49.658981069Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:49.658987063Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:49.658991948Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:49.658997461Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:49.659001880Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:49.659006255Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:49.659010809Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:49.659015869Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:49.659021529Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:49.659025752Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:49.659030122Z [err]      ^
-2026-01-17T20:40:49.659034555Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:50.667201599Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:50.667211561Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:50.667218664Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:50.667225833Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:50.667232014Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:50.667238370Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:50.667245765Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:50.667252505Z [err]      ^
-2026-01-17T20:40:50.667252871Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:50.667258458Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:50.667260114Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:50.667263640Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:50.667268002Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:51.715381608Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:51.715390499Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:51.715397012Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:51.715402702Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:51.715408421Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:51.715415421Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:51.715419559Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:51.715424070Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:51.715429092Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:51.715433975Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:51.715438620Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:51.715448002Z [err]      ^
-2026-01-17T20:40:51.715452413Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:52.713181958Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:52.713191215Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:52.713201025Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:52.713207928Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:52.713215477Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:52.713221706Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:52.713228508Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:52.713234967Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:52.713240899Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:52.713249784Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:52.713256723Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:52.713264234Z [err]      ^
-2026-01-17T20:40:52.713271664Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:53.690121092Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:53.690132524Z [err]      ^
-2026-01-17T20:40:53.690209789Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:53.690219523Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:53.690226444Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:53.690233380Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:53.690239117Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:53.690245507Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:53.690251419Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:53.690256690Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:53.690263907Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:53.690270419Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:53.690276935Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:54.914114928Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:54.914125057Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:54.914133161Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:54.914142342Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:54.914149532Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:54.914157003Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:54.914164104Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:54.914172362Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:54.914179205Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:54.914186372Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:54.914193288Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:54.914197459Z [err]      ^
-2026-01-17T20:40:54.914201334Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:56.123142549Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:56.123149036Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:56.123153198Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:56.123157471Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:56.123163301Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:56.123168121Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:56.123172239Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:56.123176359Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:56.123180562Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:56.123185335Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:56.123189799Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:56.123193514Z [err]      ^
-2026-01-17T20:40:56.123197431Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:57.477082435Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:57.477095196Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:57.477103909Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:57.477110796Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:57.477118508Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:57.477125696Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:57.477132665Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:57.477140540Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:57.477147347Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:57.477154950Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:57.477161469Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:57.477167884Z [err]      ^
-2026-01-17T20:40:57.477175711Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:58.500317080Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:58.500328199Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:58.500336933Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:58.500344800Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:58.500352427Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:58.500359681Z [err]      ^
-2026-01-17T20:40:58.500366630Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:40:58.500460563Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:58.500469300Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:58.500476566Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:58.500483895Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:58.500490396Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:58.500496558Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:59.723200579Z [err]  Traceback (most recent call last):
-2026-01-17T20:40:59.723205600Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:40:59.723210761Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:59.723215526Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:40:59.723219962Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:40:59.723224004Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:40:59.723229404Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:59.723234450Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:40:59.723239579Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:40:59.723243867Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:40:59.723248815Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:40:59.723253736Z [err]      ^
-2026-01-17T20:40:59.723258504Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:00.934932469Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:00.934935818Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:00.934943135Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:00.934949336Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:00.934954104Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:00.934959361Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:00.934964349Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:00.934967889Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:00.934975165Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:00.934977061Z [err]      ^
-2026-01-17T20:41:00.934985708Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:00.934986894Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:00.934995032Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:02.198375315Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:02.198378816Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:02.198382753Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:02.198387813Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:02.198389866Z [err]      ^
-2026-01-17T20:41:02.198393764Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:02.198398559Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:02.198399809Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:02.198404315Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:02.198410046Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:02.198414573Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:02.198419350Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:02.198424125Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:03.498255720Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:03.498261420Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:03.498266590Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:03.498271523Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:03.498275579Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:03.498279320Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:03.498284360Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:03.498289074Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:03.498293807Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:03.498297909Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:03.498301513Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:03.498306199Z [err]      ^
-2026-01-17T20:41:03.498310697Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:04.794626655Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:04.794637216Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:04.794644317Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:04.794654284Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:04.794661915Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:04.794669411Z [err]      ^
-2026-01-17T20:41:04.794676296Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:04.794766079Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:04.794771189Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:04.794778413Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:04.794783199Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:04.794787760Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:04.794793001Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:05.789751329Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:05.789762041Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:05.789769670Z [err]      ^
-2026-01-17T20:41:05.789773550Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:05.789774359Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:05.789781165Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:05.789786128Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:05.789787482Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:05.789796165Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:05.789797684Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:05.789807216Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:05.789816153Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:05.789824196Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:07.088757279Z [err]      ^
-2026-01-17T20:41:07.088772937Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:07.088793043Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:07.088797084Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:07.088801311Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:07.088805621Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:07.088809574Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:07.088819681Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:07.088823952Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:07.088828095Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:07.088833285Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:07.088838539Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:07.088842341Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:08.182550756Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:08.182556380Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:08.182561220Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:08.182569844Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:08.182570058Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:08.182577565Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:08.182580355Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:08.182584291Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:08.182589861Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:08.182590364Z [err]      ^
-2026-01-17T20:41:08.182595330Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:08.182604300Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:08.182610223Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:09.348282377Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:09.348283285Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:09.348293195Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:09.348298412Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:09.348302403Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:09.348306485Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:09.348311558Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:09.348312630Z [err]      ^
-2026-01-17T20:41:09.348318998Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:09.348320669Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:09.348327850Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:09.348334523Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:09.348341233Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:10.398454630Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:10.398460461Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:10.398466056Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:10.398472324Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:10.398478868Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:10.398484797Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:10.398491384Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:10.398497696Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:10.398503754Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:10.398510096Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:10.398515201Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:10.398520657Z [err]      ^
-2026-01-17T20:41:10.398526118Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:11.389595260Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:11.389603774Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:11.389609225Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:11.389614237Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:11.389620124Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:11.389625711Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:11.389630933Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:11.389636138Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:11.389641252Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:11.389646404Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:11.389651507Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:11.389657392Z [err]      ^
-2026-01-17T20:41:11.389662946Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:12.428157371Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:12.428171776Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:12.428176770Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:12.428181030Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:12.428186092Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:12.428190263Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:12.428194264Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:12.428198056Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:12.428205630Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:12.428209903Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:12.428215973Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:12.428219783Z [err]      ^
-2026-01-17T20:41:12.428235198Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:13.486950421Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:13.486959664Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:13.486960096Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:13.486968122Z [err]      ^
-2026-01-17T20:41:13.486972270Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:13.486976505Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:13.486979948Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:13.486987091Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:13.486994520Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:13.487001970Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:13.487010990Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:13.487018902Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:13.487026438Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:14.500904009Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:14.500909865Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:14.500915983Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:14.500921889Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:14.500927268Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:14.500934734Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:14.500941260Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:14.500947065Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:14.500952615Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:14.500959165Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:14.500964838Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:14.500970842Z [err]      ^
-2026-01-17T20:41:14.500974795Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:15.821458218Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:15.821467218Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:15.821474201Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:15.821480450Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:15.821486423Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:15.821493166Z [err]      ^
-2026-01-17T20:41:15.821499564Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:15.821520721Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:15.821525196Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:15.821530370Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:15.821534790Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:15.821539328Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:15.821544407Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:17.003051695Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:17.003053792Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:17.003058923Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:17.003073069Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:17.003081120Z [err]      ^
-2026-01-17T20:41:17.003082983Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:17.003088690Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:17.003091407Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:17.003098311Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:17.003105130Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:17.003112686Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:17.003119715Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:17.003125240Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:18.040294588Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:18.040301419Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:18.040306918Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:18.040312566Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:18.040318004Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:18.040323535Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:18.040327724Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:18.040331919Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:18.040336168Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:18.040340837Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:18.040346678Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:18.040351385Z [err]      ^
-2026-01-17T20:41:18.040356480Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:19.030650399Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:19.030658153Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:19.030670893Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:19.030677207Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:19.030681763Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:19.030686442Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:19.030692490Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:19.030698812Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:19.030705689Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:19.030711896Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:19.030720267Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:19.030727246Z [err]      ^
-2026-01-17T20:41:19.030734409Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:19.974088965Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:19.974093711Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:19.974098222Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:19.974102977Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:19.974108080Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:19.974113319Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:19.974119617Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:19.974123735Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:19.974129307Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:19.974134050Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:19.974138925Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:19.974143205Z [err]      ^
-2026-01-17T20:41:19.974147384Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:21.048175045Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:21.048177606Z [err]      ^
-2026-01-17T20:41:21.048185979Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:21.048193342Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:21.048194922Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:21.048201443Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:21.048207804Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:21.048214309Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:21.048221937Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:21.048227890Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:21.048233256Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:21.048240870Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:21.048247261Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:22.107294480Z [err]      ^
-2026-01-17T20:41:22.107309645Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:22.107309749Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:22.107316885Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:22.107321865Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:22.107326383Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:22.107332913Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:22.107337697Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:22.107342902Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:22.107347386Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:22.107351733Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:22.107356339Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:22.107361600Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:23.395603514Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:23.395611694Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:23.395616155Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:23.395622090Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:23.395626830Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:23.395630918Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:23.395635488Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:23.395642286Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:23.395647590Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:23.395651930Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:23.395656361Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:23.395661776Z [err]      ^
-2026-01-17T20:41:23.395666426Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:24.667561696Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:24.667571036Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:24.667578663Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:24.667584296Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:24.667588137Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:24.667592229Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:24.667596585Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:24.667603622Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:24.667607690Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:24.667611830Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:24.667616051Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:24.667621039Z [err]      ^
-2026-01-17T20:41:24.667624792Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:25.648461159Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:25.648472808Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:25.648474302Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:25.648474432Z [err]      ^
-2026-01-17T20:41:25.648485055Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:25.648486130Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:25.648489334Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:25.648495559Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:25.648496285Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:25.648504436Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:25.648507022Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:25.648513325Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:25.648517402Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:26.655275313Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:26.655279079Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:26.655287641Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:26.655292874Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:26.655296148Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:26.655301841Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:26.655304821Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:26.655307728Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:26.655312899Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:26.655316316Z [err]      ^
-2026-01-17T20:41:26.655317935Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:26.655322594Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:26.655327603Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:27.662963316Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:27.662973394Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:27.662979606Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:27.662984824Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:27.662989907Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:27.662995673Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:27.663005492Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:27.663010537Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:27.663014972Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:27.663020088Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:27.663025117Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:27.663029727Z [err]      ^
-2026-01-17T20:41:27.663036240Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:28.643353829Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:28.643365682Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:28.643372683Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:28.643379008Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:28.643385011Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:28.643391453Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:28.643397177Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:28.643403067Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:28.643408665Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:28.643414973Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:28.643420577Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:28.643425687Z [err]      ^
-2026-01-17T20:41:28.643430702Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:29.607508199Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:29.607512757Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:29.607519846Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:29.607522290Z [err]      ^
-2026-01-17T20:41:29.607528889Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:29.607529976Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:29.607539415Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:29.607547493Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:29.607553232Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:29.607559404Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:29.607564656Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:29.607570077Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:29.607575759Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:30.609664512Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:30.609678239Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:30.609688584Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:30.609696965Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:30.609703241Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:30.609710082Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:30.609716410Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:30.609723388Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:30.609730088Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:30.609736405Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:30.609743103Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:30.609749512Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:30.609756444Z [err]      ^
-2026-01-17T20:41:31.600840132Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:31.600840614Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:31.600849579Z [err]      ^
-2026-01-17T20:41:31.600851513Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:31.600856272Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:31.600860687Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:31.600867848Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:31.600874717Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:31.600878835Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:31.600882418Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:31.600886471Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:31.600890541Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:31.600896872Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:32.569812460Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:32.569824072Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:32.569831880Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:32.569839823Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:32.569846581Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:32.569853750Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:32.569860524Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:32.569867318Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:32.569873623Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:32.569880795Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:32.569888413Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:32.569895093Z [err]      ^
-2026-01-17T20:41:32.569901452Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:33.601615411Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:33.601624496Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:33.601628073Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:33.601631379Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:33.601637793Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:33.601637896Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:33.601644467Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:33.601645957Z [err]      ^
-2026-01-17T20:41:33.601650758Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:33.601653533Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:33.601660752Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:33.601666024Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:33.601671976Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:34.584239638Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:34.584251674Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:34.584260692Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:34.584269743Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:34.584278153Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:34.584286807Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:34.584295996Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:34.584309889Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:34.584318456Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:34.584327406Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:34.584337530Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:34.584346201Z [err]      ^
-2026-01-17T20:41:34.584355738Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:35.909038871Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:35.909053745Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:35.909057725Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:35.909058068Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:35.909064084Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:35.909065946Z [err]      ^
-2026-01-17T20:41:35.909066501Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:35.909070730Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:35.909073008Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:35.909077357Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:35.909078198Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:35.909080425Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:35.909085105Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:36.904193533Z [err]      ^
-2026-01-17T20:41:36.904204961Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:36.904213018Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:36.904221556Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:36.904228527Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:36.904235421Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:36.904243618Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:36.904250617Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:36.904259337Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:36.904267227Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:36.904276292Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:36.904284307Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:36.904292262Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:37.919021075Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:37.919029359Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:37.919034546Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:37.919039254Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:37.919044179Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:37.919051572Z [err]      ^
-2026-01-17T20:41:37.919056539Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:37.919193402Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:37.919200610Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:37.919207503Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:37.919214453Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:37.919222581Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:37.919231118Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:38.921292736Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:38.921303893Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:38.921305516Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:38.921308025Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:38.921314213Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:38.921315762Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:38.921318487Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:38.921331110Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:38.921331658Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:38.921340978Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:38.921343236Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:38.921350025Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:38.921357477Z [err]      ^
-2026-01-17T20:41:40.090468808Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:40.090488107Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:40.090495859Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:40.090503261Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:40.090509532Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:40.090518923Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:40.090524874Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:40.090530577Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:40.090536720Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:40.090543055Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:40.090551050Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:40.090558288Z [err]      ^
-2026-01-17T20:41:40.090564593Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:41.291650169Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:41.291657802Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:41.291662172Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:41.291667094Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:41.291671146Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:41.291675537Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:41.291679964Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:41.291685180Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:41.291689842Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:41.291693802Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:41.291698027Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:41.291701767Z [err]      ^
-2026-01-17T20:41:41.291705930Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
-2026-01-17T20:41:42.283400599Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:42.283411417Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
-2026-01-17T20:41:42.283417614Z [err]  Traceback (most recent call last):
-2026-01-17T20:41:42.283419723Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:42.283424997Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T20:41:42.283428029Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
-2026-01-17T20:41:42.283432892Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T20:41:42.283436112Z [err]      from src.trading.polymarket_client import PolymarketClient
-2026-01-17T20:41:42.283439800Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T20:41:42.283443662Z [err]    File "/app/src/trading/polymarket_client.py", line 66
-2026-01-17T20:41:42.283449592Z [err]      self._account = Account.from_key(self._private_key)
-2026-01-17T20:41:42.283455537Z [err]      ^
-2026-01-17T20:41:42.283461005Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:36.000000000Z [inf]  Starting Container
+2026-01-17T20:48:37.872864509Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:37.872876963Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:37.872886282Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:37.872890217Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:37.872896421Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:37.872899437Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:37.872903073Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:37.872910094Z [err]      ^
+2026-01-17T20:48:37.872910188Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:37.872917466Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:37.872920928Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:37.872927619Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:37.872936500Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:38.492194139Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:38.492283232Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:38.492286877Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:38.492290652Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:38.492295020Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:38.492299266Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:38.492302863Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:38.492306433Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:38.492310083Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:38.492313643Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:38.492318068Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:38.492322289Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:38.492326006Z [err]      ^
+2026-01-17T20:48:39.717996496Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:39.718002359Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:39.718005954Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:39.718009541Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:39.718013487Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:39.718017475Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:39.718021583Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:39.718025565Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:39.718029197Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:39.718033088Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:39.718036652Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:39.718040666Z [err]      ^
+2026-01-17T20:48:39.718044932Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:40.891606692Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:40.891612574Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:40.891618270Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:40.891623481Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:40.891631658Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:40.891638692Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:40.891648870Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:40.891655741Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:40.891663191Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:40.891670327Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:40.891675287Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:40.891679173Z [err]      ^
+2026-01-17T20:48:40.891684427Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:41.909317663Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:41.909324029Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:41.909330624Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:41.909337183Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:41.909343161Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:41.909348206Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:41.909353638Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:41.909360148Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:41.909366406Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:41.909373251Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:41.909379622Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:41.909386148Z [err]      ^
+2026-01-17T20:48:41.909392445Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:43.098493318Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:43.098499707Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:43.098503998Z [err]      ^
+2026-01-17T20:48:43.098508289Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:43.098527578Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:43.098534117Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:43.098541288Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:43.098548605Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:43.098555129Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:43.098561024Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:43.098566876Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:43.098573075Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:43.098581244Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:44.271749145Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:44.271759729Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:44.271766480Z [err]      ^
+2026-01-17T20:48:44.271772981Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:44.271793775Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:44.271800080Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:44.271807479Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:44.271811185Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:44.271814843Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:44.271818647Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:44.271822231Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:44.271826087Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:44.271829664Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:48.773728534Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:48.773736329Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:48.773743324Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:48.773750259Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:48.773757172Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:48.773764216Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:48.773771330Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:48.773777761Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:48.773784124Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:48.773791023Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:48.773797791Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:48.773803822Z [err]      ^
+2026-01-17T20:48:48.773810504Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:49.731502209Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:49.731522644Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:49.731526657Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:49.731530288Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:49.731534015Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:49.731537787Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:49.731541801Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:49.731545394Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:49.731549264Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:49.731553191Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:49.731557532Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:49.731562376Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:49.731565995Z [err]      ^
+2026-01-17T20:48:51.090162767Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:51.090209607Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:51.090217427Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:51.090225372Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:51.090233039Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:51.090241989Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:51.090249624Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:51.090257524Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:51.090264417Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:51.090283309Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:51.090290835Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:51.090297997Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:51.090304798Z [err]      ^
+2026-01-17T20:48:52.168484357Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:52.168488483Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:52.168492639Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:52.168496694Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:52.168501030Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:52.168505430Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:52.168510752Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:52.168517193Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:52.168523730Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:52.168530360Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:52.168536798Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:52.168544731Z [err]      ^
+2026-01-17T20:48:52.168549551Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:53.073824853Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:53.073833200Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:53.073838430Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:53.073842687Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:53.073846722Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:53.073851486Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:53.073855974Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:53.073860844Z [err]      ^
+2026-01-17T20:48:53.073865419Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:53.073909183Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:53.073915170Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:53.073919716Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:53.073923334Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:53.918269618Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:53.918279043Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:53.918286703Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:53.918293186Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:53.918300155Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:53.918301107Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:53.918306908Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:53.918313396Z [err]      ^
+2026-01-17T20:48:53.918313452Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:53.918320245Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:53.918324320Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:53.918332384Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:53.918340341Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:55.136138582Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:55.136144756Z [err]      ^
+2026-01-17T20:48:55.136149493Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:55.136161862Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:55.136170783Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:55.136177093Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:55.136181467Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:55.136185972Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:55.136190344Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:55.136194890Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:55.136198649Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:55.136205595Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:55.136209442Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:56.102649939Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:56.102657579Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:56.102662101Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:56.102666383Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:56.102670604Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:56.102675162Z [err]      ^
+2026-01-17T20:48:56.102679442Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:56.102755605Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:56.102758941Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:56.102762459Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:56.102765798Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:56.102771513Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:56.102776260Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:57.184498970Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:57.184507050Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:57.184512711Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:57.184517953Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:57.184522580Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:57.184527763Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:57.184532205Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:57.184537649Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:57.184542050Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:57.184546436Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:57.184551268Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:57.184556394Z [err]      ^
+2026-01-17T20:48:57.184561789Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:58.331477517Z [err]      ^
+2026-01-17T20:48:58.331482786Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:58.331488199Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:48:58.331488269Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:58.331494887Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:58.331499303Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:58.331502902Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:58.331506837Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:58.331510491Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:58.331514125Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:58.331518543Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:58.331522454Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:58.331527100Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:59.230417626Z [err]  Traceback (most recent call last):
+2026-01-17T20:48:59.230424085Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:48:59.230431349Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:59.230437162Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:48:59.230442622Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:48:59.230448082Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:48:59.230452796Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:59.230456870Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:48:59.230462685Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:48:59.230467498Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:48:59.230472494Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:48:59.230476564Z [err]      ^
+2026-01-17T20:48:59.230480519Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:00.413768685Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:00.413780584Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:00.413782566Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:00.413789854Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:00.413793181Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:00.413796751Z [err]      ^
+2026-01-17T20:49:00.413801744Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:00.413803307Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:00.413810873Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:00.413816472Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:00.413821543Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:00.413826728Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:00.413832142Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:01.540627195Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:01.540634912Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:01.540643692Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:01.540651546Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:01.540659053Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:01.540666723Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:01.540674902Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:01.540680934Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:01.540686311Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:01.540690240Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:01.540694366Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:01.540699643Z [err]      ^
+2026-01-17T20:49:01.540704311Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:02.684257080Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:02.684268957Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:02.684276999Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:02.684284728Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:02.684291126Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:02.684298837Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:02.684307304Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:02.684314894Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:02.684322698Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:02.684330880Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:02.684337909Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:02.684345902Z [err]      ^
+2026-01-17T20:49:02.684352545Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:03.578926912Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:03.578933882Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:03.578939454Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:03.578945407Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:03.578951472Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:03.578957997Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:03.578963812Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:03.578969598Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:03.578975637Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:03.578981800Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:03.578998157Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:03.579004027Z [err]      ^
+2026-01-17T20:49:03.579010512Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:04.437274909Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:04.437283836Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:04.437293467Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:04.437303082Z [err]      ^
+2026-01-17T20:49:04.437311107Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:04.437324902Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:04.437337667Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:04.437343002Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:04.437349732Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:04.437352977Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:04.437358154Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:04.437363270Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:04.437367962Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:05.314548064Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:05.314559884Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:05.314568237Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:05.314575646Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:05.314583058Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:05.314589443Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:05.314594666Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:05.314599129Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:05.314605760Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:05.314610437Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:05.314614403Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:05.314618486Z [err]      ^
+2026-01-17T20:49:05.314622430Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:06.432636252Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:06.432644142Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:06.432650405Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:06.432656378Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:06.432662341Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:06.432668881Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:06.432675221Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:06.432681787Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:06.432687927Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:06.432692297Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:06.432696422Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:06.432701002Z [err]      ^
+2026-01-17T20:49:06.432707304Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:07.522933474Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:07.522941649Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:07.522946551Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:07.522951198Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:07.522955468Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:07.522960242Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:07.522964333Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:07.522968343Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:07.522973481Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:07.522978941Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:07.522982817Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:07.522989241Z [err]      ^
+2026-01-17T20:49:07.522995714Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:08.437860646Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:08.437865227Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:08.437868794Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:08.437872562Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:08.437876598Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:08.437880511Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:08.437884099Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:08.437887897Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:08.437891543Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:08.437895359Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:08.437899801Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:08.437904457Z [err]      ^
+2026-01-17T20:49:08.437908069Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:09.577171041Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:09.577175396Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:09.577179844Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:09.577184087Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:09.577188831Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:09.577193214Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:09.577198066Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:09.577202404Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:09.577206340Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:09.577210229Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:09.577214375Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:09.577218226Z [err]      ^
+2026-01-17T20:49:09.577223790Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:10.705005200Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:10.705009641Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:10.705014903Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:10.705016930Z [err]      ^
+2026-01-17T20:49:10.705020211Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:10.705025637Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:10.705026002Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:10.705053927Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:10.705059031Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:10.705063399Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:10.705067880Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:10.705071923Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:10.705075960Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:11.586265699Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:11.586274977Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:11.586280757Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:11.586285548Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:11.586289936Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:11.586294524Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:11.586299926Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:11.586304318Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:11.586308974Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:11.586314987Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:11.586319263Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:11.586323938Z [err]      ^
+2026-01-17T20:49:11.586328527Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:12.521588839Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:12.521596667Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:12.521600875Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:12.521605254Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:12.521609593Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:12.521613515Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:12.521617156Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:12.521620781Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:12.521624401Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:12.521628663Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:12.521633366Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:12.521637017Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:12.521640867Z [err]      ^
+2026-01-17T20:49:13.429030360Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:13.429083338Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:13.429090641Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:13.429095878Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:13.429101025Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:13.429108518Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:13.429115641Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:13.429122720Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:13.429131525Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:13.429138612Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:13.429143396Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:13.429147352Z [err]      ^
+2026-01-17T20:49:13.429152072Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:14.389606293Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:14.389606572Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:14.389615127Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:14.389615735Z [err]      ^
+2026-01-17T20:49:14.389622732Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:14.389623801Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:14.389634552Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:14.389642295Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:14.389649777Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:14.389657591Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:14.389664809Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:14.389669760Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:14.389676678Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:15.827698178Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:15.827711832Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:15.827721290Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:15.827730525Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:15.827739545Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:15.827747458Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:15.827754186Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:15.827759347Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:15.827763829Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:15.827769784Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:15.827774138Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:15.827777983Z [err]      ^
+2026-01-17T20:49:15.827782355Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:16.987297136Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:16.987298647Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:16.987305898Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:16.987307237Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:16.987312903Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:16.987316441Z [err]      ^
+2026-01-17T20:49:16.987319791Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:16.987323852Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:16.987333459Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:16.987340543Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:16.987347358Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:16.987353504Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:16.987359807Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:17.854597114Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:17.854601561Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:17.854607217Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:17.854612489Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:17.854618156Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:17.854620991Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:17.854626625Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:17.854629498Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:17.854634203Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:17.854637342Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:17.854641679Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:17.854646034Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:17.854648980Z [err]      ^
+2026-01-17T20:49:18.720274236Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:18.720284024Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:18.720292826Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:18.720298825Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:18.720304848Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:18.720311748Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:18.720318139Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:18.720324108Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:18.720330188Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:18.720336889Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:18.720341995Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:18.720347524Z [err]      ^
+2026-01-17T20:49:18.720352578Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:19.930595165Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:19.930603707Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:19.930612107Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:19.930616684Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:19.930621375Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:19.930626223Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:19.930631690Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:19.930636336Z [err]      ^
+2026-01-17T20:49:19.930640802Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:19.930668438Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:19.930675125Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:19.930681805Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:19.930687875Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:20.940696833Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:20.940706451Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:20.940713539Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:20.940720296Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:20.940725890Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:20.940731726Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:20.940737705Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:20.940744099Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:20.940749866Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:20.940755783Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:20.940762958Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:20.940769080Z [err]      ^
+2026-01-17T20:49:20.940774790Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:21.866686595Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:21.866697682Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:21.866706748Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:21.866713626Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:21.866720356Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:21.866727979Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:21.866734387Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:21.866740447Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:21.866746669Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:21.866753342Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:21.866759791Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:21.866766472Z [err]      ^
+2026-01-17T20:49:21.866772694Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:22.707151640Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:22.707160025Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:22.707166321Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:22.707172325Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:22.707178032Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:22.707194757Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:22.707200321Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:22.707206558Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:22.707212237Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:22.707218360Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:22.707225978Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:22.707231674Z [err]      ^
+2026-01-17T20:49:22.707237504Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:23.569502959Z [err]      ^
+2026-01-17T20:49:23.569508167Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:23.569511225Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:23.569516552Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:23.569523027Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:23.569528424Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:23.569534125Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:23.569539577Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:23.569547680Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:23.569553114Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:23.569559800Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:23.569565564Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:23.569571292Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:24.849369139Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:24.849379991Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:24.849387373Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:24.849394262Z [err]      ^
+2026-01-17T20:49:24.849401065Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:24.849404774Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:24.849414055Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:24.849422235Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:24.849429782Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:24.849439975Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:24.849448726Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:24.849458898Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:24.849466728Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:26.075978296Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:26.075981654Z [err]      ^
+2026-01-17T20:49:26.075991932Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:26.075998181Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:26.076001358Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:26.076010528Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:26.076018751Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:26.076026193Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:26.076033730Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:26.076041058Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:26.076050512Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:26.076061393Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:26.076067453Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:26.914926481Z [err]      ^
+2026-01-17T20:49:26.914932591Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:26.914938016Z [err]  IndentationError: expected an indented block after 'if' statement on line 65
+2026-01-17T20:49:26.914941949Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:26.914948064Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:26.914953684Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:26.914958335Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:26.914963390Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:26.914967723Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:26.914972128Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:26.914977130Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:26.914982253Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:26.914986605Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:28.022432499Z [err]  Traceback (most recent call last):
+2026-01-17T20:49:28.022441394Z [err]    File "/app/main.py", line 30, in <module>
+2026-01-17T20:49:28.022446728Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:28.022451777Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
+2026-01-17T20:49:28.022456529Z [err]      from src.engine.execution_engine import ExecutionEngine
+2026-01-17T20:49:28.022461639Z [err]    File "/app/src/engine/execution_engine.py", line 21, in <module>
+2026-01-17T20:49:28.022466351Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:28.022471943Z [err]    File "/app/src/trading/__init__.py", line 5, in <module>
+2026-01-17T20:49:28.022478516Z [err]      from src.trading.polymarket_client import PolymarketClient
+2026-01-17T20:49:28.022483796Z [err]    File "/app/src/trading/polymarket_client.py", line 66
+2026-01-17T20:49:28.022488269Z [err]      self._account = Account.from_key(self._private_key)
+2026-01-17T20:49:28.022492556Z [err]      ^
+2026-01-17T20:49:28.022497256Z [err]  IndentationError: expected an indented block after 'if' statement on line 65

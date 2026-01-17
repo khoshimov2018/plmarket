@@ -63,14 +63,14 @@ class PolymarketClient:
         self._paper_trading = config.development.paper_trading
         
         if self._private_key:
-        self._account = Account.from_key(self._private_key)
+            self._account = Account.from_key(self._private_key)
             # Use funder address if provided (proxy wallet), otherwise use EOA address
             if self._funder_address:
                 self._address = self._funder_address
                 logger.info(f"Using funder/proxy address: {self._address}")
                 logger.info(f"EOA (signer) address: {self._account.address}")
             else:
-        self._address = self._account.address
+                self._address = self._account.address
                 logger.warning("No POLYMARKET_FUNDER_ADDRESS set - using EOA address")
                 logger.warning("If you're using a proxy wallet, set POLYMARKET_FUNDER_ADDRESS to your Polymarket profile address")
         else:
@@ -182,12 +182,12 @@ class PolymarketClient:
             if padding_needed:
                 secret += '=' * (4 - padding_needed)
             
-        signature = hmac.new(
+            signature = hmac.new(
                 base64.urlsafe_b64decode(secret),
-            message.encode(),
-            hashlib.sha256
-        ).digest()
-        signature_b64 = base64.b64encode(signature).decode()
+                message.encode(),
+                hashlib.sha256
+            ).digest()
+            signature_b64 = base64.b64encode(signature).decode()
         except Exception as e:
             logger.error(f"Failed to create API signature: {e}")
             raise ValueError(f"Invalid POLYMARKET_API_SECRET format. Must be base64 encoded. Error: {e}")
@@ -532,8 +532,8 @@ class PolymarketClient:
                     # Check for other esports we might want to support later
                     if any(term in combined for term in ["valorant", "cs2", "counter-strike"]):
                         game = Game.LOL  # Temporary: treat as LoL for now
-                else:
-                    return None  # Not an esports market we care about
+                    else:
+                        return None  # Not an esports market we care about
             
             # Extract token IDs - handle different API response formats
             tokens = data.get("tokens", [])
