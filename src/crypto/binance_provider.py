@@ -99,8 +99,13 @@ class BinanceProvider:
     - Price threshold crossing detection
     """
     
+    # Primary endpoints (global)
     WS_BASE_URL = "wss://stream.binance.com:9443/ws"
     REST_BASE_URL = "https://api.binance.com/api/v3"
+    
+    # Fallback endpoints (for regions where binance.com is blocked)
+    WS_FALLBACK_URL = "wss://data-stream.binance.vision/ws"
+    REST_FALLBACK_URL = "https://data-api.binance.vision/api/v3"
     
     def __init__(
         self,
@@ -161,28 +166,39 @@ class BinanceProvider:
         if not self._http_session:
             return
         
-        try:
-            # Fetch 24hr ticker for all symbols
-            url = f"{self.REST_BASE_URL}/ticker/24hr"
-            async with self._http_session.get(url) as response:
-                if response.status == 200:
-                    data = await response.json()
-                    for ticker in data:
-                        symbol = ticker.get("symbol", "")
-                        if symbol in self._symbols:
-                            self._prices[symbol] = PriceData(
-                                symbol=symbol,
-                                price=float(ticker.get("lastPrice", 0)),
-                                bid=float(ticker.get("bidPrice", 0)),
-                                ask=float(ticker.get("askPrice", 0)),
-                                bid_qty=float(ticker.get("bidQty", 0)),
-                                ask_qty=float(ticker.get("askQty", 0)),
-                                volume_24h=float(ticker.get("volume", 0)),
-                                price_change_24h=float(ticker.get("priceChangePercent", 0))
-                            )
-                            logger.info(f"📊 {symbol}: ${self._prices[symbol].price:,.2f}")
-        except Exception as e:
-            logger.error(f"Error fetching initial prices: {e}")
+        # Try primary endpoint first, then fallback
+        endpoints = [self.REST_BASE_URL, self.REST_FALLBACK_URL]
+        
+        for base_url in endpoints:
+            try:
+                # Fetch 24hr ticker for all symbols
+                url = f"{base_url}/ticker/24hr"
+                async with self._http_session.get(url) as response:
+                    if response.status == 200:
+                        data = await response.json()
+                        for ticker in data:
+                            symbol = ticker.get("symbol", "")
+                            if symbol in self._symbols:
+                                self._prices[symbol] = PriceData(
+                                    symbol=symbol,
+                                    price=float(ticker.get("lastPrice", 0)),
+                                    bid=float(ticker.get("bidPrice", 0)),
+                                    ask=float(ticker.get("askPrice", 0)),
+                                    bid_qty=float(ticker.get("bidQty", 0)),
+                                    ask_qty=float(ticker.get("askQty", 0)),
+                                    volume_24h=float(ticker.get("volume", 0)),
+                                    price_change_24h=float(ticker.get("priceChangePercent", 0))
+                                )
+                                logger.info(f"📊 {symbol}: ${self._prices[symbol].price:,.2f}")
+                        return  # Success, exit
+                    elif response.status == 451:
+                        logger.warning(f"Binance REST blocked (451) at {base_url}, trying fallback...")
+                        continue
+            except Exception as e:
+                logger.warning(f"Error fetching from {base_url}: {e}")
+                continue
+        
+        logger.error("Failed to fetch prices from all Binance endpoints")
     
     async def start_websocket_stream(self) -> None:
         """Start WebSocket stream for real-time price updates."""
@@ -195,30 +211,44 @@ class BinanceProvider:
             streams.append(f"{symbol_lower}@bookTicker")  # Best bid/ask
             streams.append(f"{symbol_lower}@depth20@100ms")  # Order book depth
         
-        stream_url = f"{self.WS_BASE_URL}/{'/'.join(streams)}"
-        
-        # Use combined stream endpoint
-        combined_url = f"wss://stream.binance.com:9443/stream?streams={'/'.join(streams)}"
+        # Try multiple WebSocket endpoints (primary and fallback)
+        ws_endpoints = [
+            f"wss://stream.binance.com:9443/stream?streams={'/'.join(streams)}",
+            f"wss://data-stream.binance.vision/stream?streams={'/'.join(streams)}",
+        ]
         
         logger.info(f"🔌 Connecting to Binance WebSocket...")
         
         while self._running:
-            try:
-                async with websockets.connect(combined_url) as ws:
-                    self._ws_connection = ws
-                    logger.info("✅ Binance WebSocket connected")
-                    
-                    async for message in ws:
-                        if not self._running:
-                            break
+            connected = False
+            for ws_url in ws_endpoints:
+                if not self._running:
+                    break
+                try:
+                    async with websockets.connect(ws_url) as ws:
+                        self._ws_connection = ws
+                        logger.info("✅ Binance WebSocket connected")
+                        connected = True
                         
-                        await self._handle_ws_message(message)
+                        async for message in ws:
+                            if not self._running:
+                                break
+                            
+                            await self._handle_ws_message(message)
+                        break  # Exit endpoint loop if we were connected
                         
-            except websockets.exceptions.ConnectionClosed:
-                logger.warning("WebSocket connection closed, reconnecting...")
-                await asyncio.sleep(1)
-            except Exception as e:
-                logger.error(f"WebSocket error: {e}")
+                except websockets.exceptions.ConnectionClosed:
+                    logger.warning("WebSocket connection closed, trying next endpoint...")
+                    continue
+                except Exception as e:
+                    if "451" in str(e):
+                        logger.warning(f"Binance WebSocket blocked (451), trying fallback...")
+                        continue
+                    logger.error(f"WebSocket error: {e}")
+                    continue
+            
+            if not connected:
+                logger.warning("All Binance WebSocket endpoints failed, retrying in 5s...")
                 await asyncio.sleep(5)
     
     async def _handle_ws_message(self, message: str) -> None:
