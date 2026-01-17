@@ -65,10 +65,11 @@ class GridProvider:
         if not self._enabled:
             return
             
+        # GRID API uses x-api-key header for authentication
         self._http_client = httpx.AsyncClient(
             base_url=self.REST_BASE_URL,
             headers={
-                "Authorization": f"Bearer {self._api_key}",
+                "x-api-key": self._api_key,
                 "Content-Type": "application/json",
             },
             timeout=30.0,
@@ -94,47 +95,28 @@ class GridProvider:
             return []
         
         try:
-            # GRID API - GraphQL requires POST request with JSON body
-            graphql_query = {
-                "query": """
-                query LiveMatches {
-                    allSeries(filter: {state: {equalTo: LIVE}}) {
-                        nodes {
-                            id
-                            title {
-                                nameShortened
-                            }
-                            teams {
-                                id
-                                name
-                                shortName
-                                logoUrl
-                            }
-                            tournament {
-                                name
-                            }
-                            game {
-                                id
-                                name
-                            }
-                            startTimeScheduled
-                        }
-                    }
-                }
-                """
-            }
+            # GRID API - Try REST endpoint for live series
+            # Based on docs: https://api.grid.gg/file-download/...
+            response = await self._http_client.get("/live-data/series")
             
-            response = await self._http_client.post(
-                "/central-data/graphql",
-                json=graphql_query
-            )
+            if response.status_code == 404:
+                # Try alternative endpoint
+                response = await self._http_client.get("/series?state=live")
             
             if response.status_code != 200:
-                logger.warning(f"GRID API returned {response.status_code}: {response.text[:200]}")
+                # Log more details for debugging
+                logger.warning(
+                    f"GRID API returned {response.status_code}",
+                    extra={"response": response.text[:300] if response.text else "empty"}
+                )
                 return []
             
             data = response.json()
-            series_list = data.get("data", {}).get("allSeries", {}).get("nodes", [])
+            # Handle different response formats
+            if isinstance(data, list):
+                series_list = data
+            elif isinstance(data, dict):
+                series_list = data.get("data", data.get("series", data.get("nodes", [])))
             
             matches = []
             for series in series_list:
@@ -201,52 +183,23 @@ class GridProvider:
             return None
         
         try:
-            # Get match details from GRID - GraphQL requires POST
-            graphql_query = {
-                "query": f"""
-                query MatchState {{
-                    series(id: "{match_id}") {{
-                        id
-                        teams {{
-                            id
-                            name
-                            shortName
-                        }}
-                        games {{
-                            id
-                            state
-                            clock {{
-                                currentSeconds
-                            }}
-                            teams {{
-                                id
-                                side
-                                score {{
-                                    kills
-                                    deaths
-                                    gold
-                                    towers
-                                    dragons
-                                    barons
-                                    inhibitors
-                                }}
-                            }}
-                        }}
-                    }}
-                }}
-                """
-            }
+            # Get match details from GRID REST API
+            response = await self._http_client.get(f"/live-data/series/{match_id}")
             
-            response = await self._http_client.post(
-                "/central-data/graphql",
-                json=graphql_query
-            )
+            if response.status_code == 404:
+                # Try alternative endpoint
+                response = await self._http_client.get(f"/series/{match_id}")
             
             if response.status_code != 200:
+                logger.debug(f"GRID match state failed: {response.status_code}")
                 return None
             
             data = response.json()
-            series = data.get("data", {}).get("series")
+            # Handle different response formats
+            if isinstance(data, dict):
+                series = data.get("data", data.get("series", data))
+            else:
+                series = data
             
             if not series:
                 return None
