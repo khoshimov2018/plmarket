@@ -165,7 +165,16 @@ class GridProvider:
             data = response.json()
             
             if "errors" in data:
-                logger.error(f"GRID GraphQL errors: {data['errors']}")
+                errors = data['errors']
+                logger.error(f"GRID GraphQL errors: {errors}")
+                
+                # Check if it's a permission error - disable provider
+                for err in errors:
+                    if err.get("extensions", {}).get("errorType") == "PERMISSION_DENIED":
+                        logger.warning("GRID Open Access API doesn't support this query - disabling provider")
+                        self._enabled = False
+                        break
+                
                 return []
             
             edges = data.get("data", {}).get("allSeries", {}).get("edges", [])

@@ -509,8 +509,15 @@ class PolymarketClient:
         yes_book = await self.get_order_book(market.token_id_yes)
         no_book = await self.get_order_book(market.token_id_no)
         
-        yes_price = yes_book.mid_price_yes if yes_book else 0.5
-        no_price = no_book.mid_price_yes if no_book else 0.5
+        # Get mid prices, defaulting to cached prices if order book unavailable
+        yes_price = yes_book.mid_price_yes if yes_book and yes_book.mid_price_yes > 0 else market.yes_price
+        no_price = no_book.mid_price_yes if no_book and no_book.mid_price_yes > 0 else market.no_price
+        
+        # If still no valid prices, use 0.5 as default
+        if yes_price <= 0:
+            yes_price = 0.5
+        if no_price <= 0:
+            no_price = 0.5
         
         # Normalize prices (should sum to ~1)
         total = yes_price + no_price

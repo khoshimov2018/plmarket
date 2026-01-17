@@ -557,8 +557,8 @@ class ExecutionEngine:
                             f"🎯 ARBITRAGE DETECTED! "
                             f"edge={opportunity.edge:.1%} "
                             f"side={opportunity.side} "
-                            f"our_prob={opportunity.our_probability:.1%} "
-                            f"market={opportunity.market_price:.1%}"
+                            f"our_prob={opportunity.model_prob:.1%} "
+                            f"market={opportunity.market_prob:.1%}"
                         )
                         await self._execute_opportunity(opportunity)
                         last_opportunity_id = opportunity.opportunity_id
