@@ -25,10 +25,10 @@ class OpenDotaProvider(BaseEsportsProvider):
     OpenDota API client for real-time Dota 2 data.
     
     Key advantages:
-    - FREE with generous rate limits
+    - FREE with generous rate limits (higher with API key)
     - Real-time match data via Steam API
     - Detailed game state (kills, gold, items, etc.)
-    - No authentication required for basic endpoints
+    - API key provides higher rate limits and better access
     """
     
     BASE_URL = "https://api.opendota.com/api"
@@ -43,6 +43,8 @@ class OpenDotaProvider(BaseEsportsProvider):
         self._session: Optional[aiohttp.ClientSession] = None
         self._tracked_matches: dict[str, dict] = {}
         self._last_states: dict[str, GameState] = {}
+        # Store API key for authenticated requests
+        self._opendota_api_key = api_key
     
     @property
     def supported_games(self) -> List[Game]:
@@ -65,11 +67,17 @@ class OpenDotaProvider(BaseEsportsProvider):
         logger.info("Disconnected from OpenDota API")
     
     async def _request(self, endpoint: str, params: Optional[dict] = None) -> Union[Dict, List]:
-        """Make API request."""
+        """Make API request with optional API key authentication."""
         if not self._session:
             raise RuntimeError("Not connected to OpenDota API")
         
         url = f"{self.BASE_URL}{endpoint}"
+        
+        # Add API key if available for higher rate limits
+        if params is None:
+            params = {}
+        if self._opendota_api_key:
+            params["api_key"] = self._opendota_api_key
         
         async with self._session.get(url, params=params) as response:
             response.raise_for_status()

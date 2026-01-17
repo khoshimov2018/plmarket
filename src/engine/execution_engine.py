@@ -78,7 +78,7 @@ class ExecutionEngine:
         # Initialize PRIMARY data providers (fast, free)
         # These are the key to latency arbitrage - fastest possible data
         self.lol_esports = LoLEsportsProvider()  # Official Riot - fastest for LoL
-        self.opendota = OpenDotaProvider()  # Free API - fast for Dota 2
+        self.opendota = OpenDotaProvider(self.config.esports.opendota_api_key)  # With API key for higher rate limits
         
         # Initialize FALLBACK providers (PandaScore - may need paid plan)
         self.lol_provider = LoLDataProvider(self.config.esports.pandascore_api_key)

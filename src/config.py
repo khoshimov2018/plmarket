@@ -33,6 +33,7 @@ class EsportsDataConfig(BaseSettings):
     pandascore_api_key: str = Field("", alias="PANDASCORE_API_KEY")
     grid_api_key: str = Field("", alias="GRID_API_KEY")
     stratz_api_key: str = Field("", alias="STRATZ_API_KEY")
+    opendota_api_key: str = Field("", alias="OPENDOTA_API_KEY")
     
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
