@@ -430,14 +430,141 @@ class ExecutionEngine:
         Process events for a specific match.
         This is where the magic happens - detecting and acting on price discrepancies.
         
-        Uses the FASTEST available data source for each game type.
+        Uses TWO strategies:
+        1. Event-based: React to kills, objectives, etc. (requires detailed data)
+        2. Polling-based: Continuously compare probability vs market price (works with basic data)
         """
-        # Select fastest provider for this game
+        # Select provider for this game
         if game == Game.LOL:
             provider = self.lol_esports or self.lol_provider
         else:
-            provider = self.opendota or self.dota_provider
+            # For PandaScore matches, use the dota_provider which extends PandaScore
+            provider = self.dota_provider or self.opendota
         
+        # Start both strategies concurrently
+        event_task = asyncio.create_task(
+            self._process_events_stream(match_id, game, market, provider)
+        )
+        polling_task = asyncio.create_task(
+            self._poll_for_arbitrage(match_id, game, market, provider)
+        )
+        
+        try:
+            # Wait for either to complete (match ends or error)
+            done, pending = await asyncio.wait(
+                [event_task, polling_task],
+                return_when=asyncio.FIRST_COMPLETED,
+            )
+            
+            # Cancel the other task
+            for task in pending:
+                task.cancel()
+                try:
+                    await task
+                except asyncio.CancelledError:
+                    pass
+                    
+        except asyncio.CancelledError:
+            event_task.cancel()
+            polling_task.cancel()
+            logger.debug(f"Match subscription cancelled: {match_id}")
+        except Exception as e:
+            logger.error(f"Error processing match {match_id}: {e}")
+        finally:
+            # Cleanup
+            if match_id in self._active_subscriptions:
+                del self._active_subscriptions[match_id]
+            if match_id in self._tracked_matches:
+                del self._tracked_matches[match_id]
+    
+    async def _poll_for_arbitrage(
+        self,
+        match_id: str,
+        game: Game,
+        market: MarketInfo,
+        provider,
+    ) -> None:
+        """
+        Continuously poll for arbitrage opportunities.
+        This works even when we don't have detailed event data.
+        """
+        poll_interval = 5.0  # Check every 5 seconds
+        last_opportunity_id = None
+        
+        logger.info(f"🔄 Starting arbitrage polling for match {match_id}")
+        
+        try:
+            while self._is_running:
+                try:
+                    # Get current game state
+                    game_state = await provider.get_match_state(match_id)
+                    if not game_state:
+                        logger.info(f"Match {match_id} ended or not found")
+                        break
+                    
+                    # Update tracked state
+                    self._tracked_matches[match_id] = game_state
+                    
+                    # Get current market prices
+                    yes_price, no_price = await self.polymarket.get_market_price(
+                        market.market_id
+                    )
+                    
+                    if yes_price is None or no_price is None:
+                        logger.debug(f"Could not get market prices for {market.market_id}")
+                        await asyncio.sleep(poll_interval)
+                        continue
+                    
+                    market.yes_price = yes_price
+                    market.no_price = no_price
+                    market.last_price_update = datetime.utcnow()
+                    
+                    # Log current state for debugging
+                    win_prob = game_state.team1_win_probability or 0.5
+                    logger.debug(
+                        f"📊 Arbitrage check: match={match_id} "
+                        f"our_prob={win_prob:.1%} market_yes={yes_price:.1%} "
+                        f"edge={(win_prob - yes_price)*100:.1f}%"
+                    )
+                    
+                    # Detect arbitrage opportunity
+                    opportunity = self.arbitrage_detector.detect_opportunity(
+                        game_state=game_state,
+                        market=market,
+                    )
+                    
+                    if opportunity and opportunity.opportunity_id != last_opportunity_id:
+                        logger.info(
+                            f"🎯 ARBITRAGE DETECTED! "
+                            f"edge={opportunity.edge:.1%} "
+                            f"side={opportunity.side} "
+                            f"our_prob={opportunity.our_probability:.1%} "
+                            f"market={opportunity.market_price:.1%}"
+                        )
+                        await self._execute_opportunity(opportunity)
+                        last_opportunity_id = opportunity.opportunity_id
+                    
+                except Exception as e:
+                    logger.error(f"Error in arbitrage polling: {e}")
+                
+                await asyncio.sleep(poll_interval)
+                
+        except asyncio.CancelledError:
+            pass
+        
+        logger.info(f"🔄 Stopped arbitrage polling for match {match_id}")
+    
+    async def _process_events_stream(
+        self,
+        match_id: str,
+        game: Game,
+        market: MarketInfo,
+        provider,
+    ) -> None:
+        """
+        Process event stream from provider.
+        This is the fast path - reacts immediately to kills, objectives, etc.
+        """
         try:
             async for event in provider.subscribe_to_match(match_id):
                 if not self._is_running:
@@ -487,27 +614,11 @@ class ExecutionEngine:
                 
                 if opportunity:
                     await self._execute_opportunity(opportunity)
-                
-                # Also check for general mispricing
-                general_opportunity = self.arbitrage_detector.detect_opportunity(
-                    game_state=game_state,
-                    market=market,
-                )
-                
-                if general_opportunity and (not opportunity or 
-                    general_opportunity.opportunity_id != opportunity.opportunity_id):
-                    await self._execute_opportunity(general_opportunity)
         
         except asyncio.CancelledError:
-            logger.debug(f"Match subscription cancelled: {match_id}")
+            pass
         except Exception as e:
-            logger.error(f"Error processing match {match_id}: {e}")
-        finally:
-            # Cleanup
-            if match_id in self._active_subscriptions:
-                del self._active_subscriptions[match_id]
-            if match_id in self._tracked_matches:
-                del self._tracked_matches[match_id]
+            logger.error(f"Error in event stream: {e}")
     
     async def _handle_game_ending(
         self,
