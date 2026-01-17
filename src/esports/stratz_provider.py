@@ -542,3 +542,19 @@ class StratzProvider(BaseEsportsProvider):
             base_impact = abs(event.details.get("change", 0))
         
         return base_impact
+    
+    async def get_upcoming_matches(
+        self, 
+        game: Optional[Game] = None,
+        hours_ahead: int = 24
+    ) -> List[Dict]:
+        """
+        Get upcoming scheduled matches.
+        
+        Stratz focuses on live matches, so we return an empty list.
+        Use other providers (GRID, PandaScore) for upcoming matches.
+        """
+        # Stratz API is primarily for live/completed matches
+        # It doesn't have a dedicated upcoming matches endpoint
+        logger.debug("Stratz doesn't provide upcoming matches - use GRID or PandaScore")
+        return []

@@ -1,1001 +1,169 @@
-2026-01-17T15:10:09.394198052Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:09.394208243Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:09.394208551Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:09.394219861Z [err]      else:
-2026-01-17T15:10:09.394221876Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:10.420111232Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:10.420117568Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:10.420122748Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:10.420127543Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:10.420131896Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:10.420136238Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:10.420140726Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:10.420146920Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:10.420151643Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:10.420156351Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:10.420163611Z [err]      else:
-2026-01-17T15:10:10.420169991Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:11.841376537Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:11.841381894Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:11.841403282Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:11.841408393Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:11.841413022Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:11.841417441Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:11.841427522Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:11.841433830Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:11.841438730Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:11.841444290Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:11.841448637Z [err]      else:
-2026-01-17T15:10:11.841458171Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:12.880445843Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:12.880450715Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:12.880456362Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:12.880462463Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:12.880467580Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:12.880472596Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:12.880477696Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:12.880482837Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:12.880487728Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:12.880492726Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:12.880497549Z [err]      else:
-2026-01-17T15:10:12.880502213Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:14.097513592Z [err]      else:
-2026-01-17T15:10:14.097514135Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:14.097527155Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:14.097535660Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:14.097538948Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:14.097547426Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:14.097555852Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:14.097562448Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:14.097567381Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:14.097572168Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:14.097577489Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:14.097583856Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:15.366149183Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:15.366158630Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:15.366167264Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:15.366176066Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:15.366184279Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:15.366192503Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:15.366199769Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:15.366205852Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:15.366211107Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:15.366216173Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:15.366222947Z [err]      else:
-2026-01-17T15:10:15.366230901Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:16.870804982Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:16.870818302Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:16.870827830Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:16.870836206Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:16.870844929Z [err]      else:
-2026-01-17T15:10:16.870854343Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:16.870900539Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:16.870908302Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:16.870915922Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:16.870923611Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:16.870930984Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:16.870939077Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:17.950730758Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:17.950742926Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:17.950751673Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:17.950761175Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:17.950768816Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:17.950774591Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:17.950780417Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:17.950785872Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:17.950791038Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:17.950796413Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:17.950801618Z [err]      else:
-2026-01-17T15:10:17.950807040Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:19.193322401Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:19.193328397Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:19.193334354Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:19.193341639Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:19.193348025Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:19.193353727Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:19.193358855Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:19.193365372Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:19.193371504Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:19.193376719Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:19.193382993Z [err]      else:
-2026-01-17T15:10:19.193388660Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:20.420943965Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:20.420946888Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:20.420954355Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:20.420957077Z [err]      else:
-2026-01-17T15:10:20.420963165Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:20.420966915Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:20.420970619Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:20.420977492Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:20.420984535Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:20.420992060Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:20.420999308Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:20.421004981Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:21.508170706Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:21.508177790Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:21.508183358Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:21.508188337Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:21.508194857Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:21.508201697Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:21.508211781Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:21.508219742Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:21.508226827Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:21.508234108Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:21.508244223Z [err]      else:
-2026-01-17T15:10:21.508252054Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:23.202292884Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:23.202299071Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:23.202310816Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:23.202320004Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:23.202328240Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:23.202336920Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:23.202344623Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:23.202352128Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:23.202358460Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:23.202363977Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:23.202369771Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:23.202374761Z [err]      else:
-2026-01-17T15:10:24.878790664Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:24.878802795Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:24.878814470Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:24.878824059Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:24.878833315Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:24.878841683Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:24.878849766Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:24.878861334Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:24.878870696Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:24.878880326Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:24.878889956Z [err]      else:
-2026-01-17T15:10:24.878898034Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:25.867322295Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:25.867328741Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:25.867335621Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:25.867342552Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:25.867348836Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:25.867354612Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:25.867360207Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:25.867365465Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:25.867371746Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:25.867377392Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:25.867382759Z [err]      else:
-2026-01-17T15:10:25.867389374Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:26.950816361Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:26.950826102Z [err]      else:
-2026-01-17T15:10:26.950833288Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:26.950836248Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:26.950841165Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:26.950846268Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:26.950851111Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:26.950858561Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:26.950863501Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:26.950869821Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:26.950874943Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:26.950880145Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:28.350637896Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:28.350650759Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:28.350657934Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:28.350665145Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:28.350671689Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:28.350678349Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:28.350684788Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:28.350691037Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:28.350696772Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:28.350703180Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:28.350709779Z [err]      else:
-2026-01-17T15:10:28.350715584Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:29.548949088Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:29.548956285Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:29.548960751Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:29.548966084Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:29.548971067Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:29.548976709Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:29.548982202Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:29.548987025Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:29.548992176Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:29.548997811Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:29.549003267Z [err]      else:
-2026-01-17T15:10:29.549009272Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:30.954190934Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:30.954203686Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:30.954213384Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:30.954222491Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:30.954230751Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:30.954239293Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:30.954247125Z [err]      else:
-2026-01-17T15:10:30.954254616Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:30.954314167Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:30.954318998Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:30.954324402Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:30.954330774Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:32.005985710Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:32.005997280Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:32.006004324Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:32.006011938Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:32.006020108Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:32.006029593Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:32.006039267Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:32.006046662Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:32.006054313Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:32.006061426Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:32.006068117Z [err]      else:
-2026-01-17T15:10:32.006074848Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:33.209842292Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:33.209852037Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:33.209858950Z [err]      else:
-2026-01-17T15:10:33.209867290Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:33.209867404Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:33.209875952Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:33.209881104Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:33.209886581Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:33.209894449Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:33.209899405Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:33.209905874Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:33.209911419Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:35.124568531Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:35.124584294Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:35.124595401Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:35.124604866Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:35.124613243Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:35.124622174Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:35.124631801Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:35.124640642Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:35.124648970Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:35.124658814Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:35.124666464Z [err]      else:
-2026-01-17T15:10:35.124674258Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:36.283135952Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:36.283150220Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:36.283159511Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:36.283167123Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:36.283175791Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:36.283186843Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:36.283196081Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:36.283204223Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:36.283212970Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:36.283223311Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:36.283245631Z [err]      else:
-2026-01-17T15:10:36.283262321Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:37.548059836Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:37.548070964Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:37.548080523Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:37.548181628Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:37.548191977Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:37.548200283Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:37.548208578Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:37.548216765Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:37.548704670Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:37.548713996Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:37.548722701Z [err]      else:
-2026-01-17T15:10:37.548730624Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:38.706999126Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:38.707011154Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:38.707019613Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:38.707026715Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:38.707033781Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:38.707041906Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:38.707052507Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:38.707058998Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:38.707065488Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:38.707073143Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:38.707080441Z [err]      else:
-2026-01-17T15:10:38.707087505Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:40.083616301Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:40.083627936Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:40.083635940Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:40.083642804Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:40.083653141Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:40.083662822Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:40.083687336Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:40.083697222Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:40.083709397Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:40.083719440Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:40.083726929Z [err]      else:
-2026-01-17T15:10:40.083739803Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:41.154580501Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:41.154590556Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:41.154591798Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:41.154598848Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:41.154600262Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:41.154607233Z [err]      else:
-2026-01-17T15:10:41.154609028Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:41.154614938Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:41.154618131Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:41.154627274Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:41.154637679Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:41.154645076Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:42.330327841Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:42.330340529Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:42.330349258Z [err]      else:
-2026-01-17T15:10:42.330358177Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:42.330470673Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:42.330484768Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:42.330494450Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:42.330502903Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:42.330510854Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:42.330519636Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:42.330527407Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:42.330535115Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:43.537773133Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:43.537783166Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:43.537789898Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:43.537795894Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:43.537802533Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:43.537808752Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:43.537815274Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:43.537820964Z [err]      else:
-2026-01-17T15:10:43.537826587Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:43.537959343Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:43.537967324Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:43.537974613Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:44.725638384Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:44.725642339Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:44.725651112Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:44.725658482Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:44.725667365Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:44.725674313Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:44.725676674Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:44.725686732Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:44.725687736Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:44.725697534Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:44.725706673Z [err]      else:
-2026-01-17T15:10:44.725789740Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:46.179126032Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:46.179138050Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:46.179145822Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:46.179152910Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:46.179160247Z [err]      else:
-2026-01-17T15:10:46.179166818Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:46.179322454Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:46.179327391Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:46.179332876Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:46.179337589Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:46.179345374Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:46.179351541Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:47.437126682Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:47.437140853Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:47.437148243Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:47.437160259Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:47.437166383Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:47.437173068Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:47.437178709Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:47.437186771Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:47.437192980Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:47.437199092Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:47.437204759Z [err]      else:
-2026-01-17T15:10:47.437209890Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:48.606444153Z [err]      else:
-2026-01-17T15:10:48.606453926Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:48.606467882Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:48.606474630Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:48.606482708Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:48.606485023Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:48.606490647Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:48.606505262Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:48.606513986Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:48.606526927Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:48.606538434Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:48.606546489Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:49.760702498Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:49.760712002Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:49.760721590Z [err]      else:
-2026-01-17T15:10:49.760729989Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:49.760739099Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:49.760748609Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:49.760754010Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:49.760759074Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:49.760763937Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:49.760768807Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:49.760773684Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:49.760778584Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:51.224613040Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:51.224624668Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:51.224635040Z [err]      else:
-2026-01-17T15:10:51.224643434Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:51.224696669Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:51.224710269Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:51.224733210Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:51.224742284Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:51.224757849Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:51.224758731Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:51.224768335Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:51.224775859Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:52.415187015Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:52.415195940Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:52.415219198Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:52.415228448Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:52.415234442Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:52.415239753Z [err]      else:
-2026-01-17T15:10:52.415246398Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:52.415247822Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:52.415255283Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:52.415262180Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:52.415270728Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:52.415280173Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:53.767441986Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:53.767441991Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:53.767453279Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:53.767454620Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:53.767462007Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:53.767463212Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:53.767470323Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:53.767471794Z [err]      else:
-2026-01-17T15:10:53.767478653Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:53.767487266Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:53.767490364Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:53.767503281Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:55.262639966Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:55.262651756Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:55.262660739Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:55.262674371Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:55.262682718Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:55.262691743Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:55.262700168Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:55.262708081Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:55.262716498Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:55.262725255Z [err]      else:
-2026-01-17T15:10:55.262729634Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:55.262733646Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:56.278857666Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:56.278866750Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:56.278873489Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:56.278878863Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:56.278884876Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:56.278891444Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:56.278897058Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:56.278902638Z [err]      else:
-2026-01-17T15:10:56.278907942Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:56.279052728Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:56.279056989Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:56.279061336Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:57.307031417Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:57.307040173Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:57.307046602Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:57.307051492Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:57.307054070Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:57.307063547Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:57.307069614Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:57.307074940Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:57.307078737Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:57.307082605Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:57.307087397Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:57.307088312Z [err]      else:
-2026-01-17T15:10:58.354520226Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:58.354526164Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:58.354532319Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:58.354537557Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:58.354542762Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:58.354547712Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:58.354553327Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:58.354559562Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:58.354565771Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:58.354571174Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:58.354576227Z [err]      else:
-2026-01-17T15:10:58.354581896Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:59.379507622Z [err]  IndentationError: unexpected indent
-2026-01-17T15:10:59.379649321Z [err]  Traceback (most recent call last):
-2026-01-17T15:10:59.379658161Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:10:59.379664157Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:59.379673879Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:10:59.379681772Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:10:59.379687432Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:10:59.379693489Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:10:59.379698102Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:10:59.379702592Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:10:59.379707753Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:10:59.379714302Z [err]      else:
-2026-01-17T15:11:00.857055660Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:00.857064162Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:00.857070152Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:00.857076349Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:00.857082820Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:00.857088477Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:00.857093600Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:00.857098801Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:00.857104472Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:00.857109832Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:00.857114783Z [err]      else:
-2026-01-17T15:11:00.857120112Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:02.456245826Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:02.456254423Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:02.456264339Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:02.456272641Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:02.456277015Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:02.456285153Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:02.456289125Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:02.456297515Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:02.456305735Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:02.456313430Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:02.456321817Z [err]      else:
-2026-01-17T15:11:02.456329578Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:03.451905251Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:03.451922674Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:03.451932007Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:03.451940984Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:03.451949864Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:03.451958610Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:03.451966977Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:03.451975024Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:03.451983084Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:03.451991297Z [err]      else:
-2026-01-17T15:11:03.451997520Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:03.452169230Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:04.481782416Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:04.481793005Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:04.481800898Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:04.481808784Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:04.481816022Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:04.481823962Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:04.481831609Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:04.481838032Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:04.481842604Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:04.481846880Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:04.481851585Z [err]      else:
-2026-01-17T15:11:04.481856309Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:06.501688420Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:06.501700979Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:06.501710278Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:06.501719219Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:06.501727554Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:06.501735576Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:06.501743910Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:06.501751850Z [err]      else:
-2026-01-17T15:11:06.501760078Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:06.501862855Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:06.501871488Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:06.501880527Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:07.560311294Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:07.560322055Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:07.560322091Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:07.560332032Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:07.560335827Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:07.560344356Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:07.560347104Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:07.560365274Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:07.560377489Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:07.560386621Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:07.560395574Z [err]      else:
-2026-01-17T15:11:07.560403349Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:09.530076138Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:09.530085108Z [err]      else:
-2026-01-17T15:11:09.530091902Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:09.530105118Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:09.530111757Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:09.530116311Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:09.530118555Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:09.530130133Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:09.530142533Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:09.530146686Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:09.530168004Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:09.530178604Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:10.864713939Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:10.864722686Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:10.864733726Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:10.864742537Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:10.864751850Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:10.864761301Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:10.864762041Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:10.864771226Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:10.864776184Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:10.864780652Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:10.864788197Z [err]      else:
-2026-01-17T15:11:10.864829297Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:11.995895695Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:11.995902551Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:11.995908060Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:11.995914343Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:11.995920354Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:11.995925918Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:11.995931147Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:11.995936855Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:11.995942992Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:11.995948090Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:11.995954045Z [err]      else:
-2026-01-17T15:11:11.995963612Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:13.023649123Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:13.023662874Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:13.023671808Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:13.023681028Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:13.023691370Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:13.023700082Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:13.023705720Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:13.023710808Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:13.023716285Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:13.023723121Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:13.023728233Z [err]      else:
-2026-01-17T15:11:13.023733946Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:14.043390575Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:14.043395455Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:14.043400457Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:14.043404585Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:14.043409430Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:14.043414844Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:14.043419310Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:14.043424567Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:14.043429365Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:14.043434606Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:14.043438842Z [err]      else:
-2026-01-17T15:11:14.043443029Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:15.053890903Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:15.053900352Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:15.053907972Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:15.053908307Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:15.053915684Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:15.053917975Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:15.053922454Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:15.053926774Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:15.053929958Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:15.053933287Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:15.053941627Z [err]      else:
-2026-01-17T15:11:15.053948204Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:16.079108361Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:16.079118747Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:16.079125908Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:16.079131076Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:16.079136460Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:16.079142690Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:16.079147594Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:16.079153003Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:16.079160427Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:16.079166394Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:16.079171639Z [err]      else:
-2026-01-17T15:11:16.079176684Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:17.113754925Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:17.113767673Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:17.113776467Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:17.113785055Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:17.113794100Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:17.113804577Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:17.113813405Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:17.113821578Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:17.113830070Z [err]      else:
-2026-01-17T15:11:17.113838737Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:17.113959500Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:17.113964338Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:18.214502772Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:18.214511794Z [err]      else:
-2026-01-17T15:11:18.214518364Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:18.214530025Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:18.214539424Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:18.214544968Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:18.214549615Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:18.214556918Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:18.214562234Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:18.214567703Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:18.214572878Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:18.214577978Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:19.593686537Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:19.593693222Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:19.593699812Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:19.593707597Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:19.593714797Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:19.593724462Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:19.593735012Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:19.593742021Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:19.593748633Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:19.593757245Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:19.593764983Z [err]      else:
-2026-01-17T15:11:19.593770259Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:20.815755393Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:20.815755394Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:20.815765845Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:20.815766435Z [err]      else:
-2026-01-17T15:11:20.815773880Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:20.815775122Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:20.815781807Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:20.815790888Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:20.815799466Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:20.815807543Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:20.815815422Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:20.815823152Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:22.162492528Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:22.162497419Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:22.162501887Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:22.162506222Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:22.162519185Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:22.162524092Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:22.162528431Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:22.162532746Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:22.162537008Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:22.162541210Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:22.162545989Z [err]      else:
-2026-01-17T15:11:22.162550275Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:23.558200423Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:23.558212165Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:23.558220715Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:23.558232364Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:23.558240884Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:23.558251511Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:23.558259813Z [err]      else:
-2026-01-17T15:11:23.558268007Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:23.558295512Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:23.558300877Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:23.558306021Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:23.558312540Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:24.523374858Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:24.523385818Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:24.523394212Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:24.523403571Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:24.523411281Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:24.523420411Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:24.523428292Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:24.523437585Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:24.523446619Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:24.523455481Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:24.523463777Z [err]      else:
-2026-01-17T15:11:24.523472056Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:25.562487191Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:25.562490781Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:25.562500416Z [err]      else:
-2026-01-17T15:11:25.562503696Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:25.562511481Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:25.562514480Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:25.562520091Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:25.562525050Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:25.562532879Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:25.562541927Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:25.562559861Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:25.562567606Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:26.890089372Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:26.890102013Z [err]      else:
-2026-01-17T15:11:26.890111417Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:26.890115956Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:26.890127005Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:26.890136560Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:26.890146067Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:26.890154993Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:26.890164225Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:26.890173699Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:26.890183232Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:26.890193943Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:28.091307385Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:28.091313830Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:28.091319822Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:28.091325485Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:28.091332584Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:28.091337880Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:28.091343360Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:28.091348788Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:28.091355031Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:28.091360555Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:28.091365898Z [err]      else:
-2026-01-17T15:11:28.091371361Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:29.286409038Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:29.286418775Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:29.286425023Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:29.286430065Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:29.286435238Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:29.286440515Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:29.286445298Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:29.286450043Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:29.286455572Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:29.286461417Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:29.286466320Z [err]      else:
-2026-01-17T15:11:29.286470930Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:30.638291935Z [err]      else:
-2026-01-17T15:11:30.638300985Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:30.638330478Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:30.638337128Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:30.638342672Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:30.638349032Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:30.638354544Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:30.638359904Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:30.638366527Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:30.638372753Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:30.638379888Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:30.638385912Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:31.816470018Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:31.816476590Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:31.816480961Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:31.816485121Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:31.816489700Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:31.816494465Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:31.816498843Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:31.816505341Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:31.816509575Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:31.816513880Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:31.816518363Z [err]      else:
-2026-01-17T15:11:31.816522526Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:32.945468082Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:32.945483133Z [err]      else:
-2026-01-17T15:11:32.945484891Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:32.945494906Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:32.945495493Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:32.945503816Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:32.945511961Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:32.945516589Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:32.945525785Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:32.945534929Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:32.945542600Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:32.945550965Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:34.230393044Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:34.230401085Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:34.230407468Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:34.230412608Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:34.230417638Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:34.230422858Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:34.230427918Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:34.230432896Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:34.230438423Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:34.230443422Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:34.230450091Z [err]      else:
-2026-01-17T15:11:34.230455764Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:35.666147604Z [err]      else:
-2026-01-17T15:11:35.666160520Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:35.666223327Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:35.666233637Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:35.666242576Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:35.666265027Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:35.666273617Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:35.666281740Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:35.666289461Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:35.666299309Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:35.666307245Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:35.666314590Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:36.830616312Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:36.830628970Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:36.830641703Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:36.830653058Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:36.830665752Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:36.830676445Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:36.830688747Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:36.830706067Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:36.830718160Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:36.830729448Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:36.830741240Z [err]      else:
-2026-01-17T15:11:36.830752798Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:37.907159311Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:37.907174837Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:37.907183321Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:37.907191709Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:37.907200737Z [err]      else:
-2026-01-17T15:11:37.907209760Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:37.907362289Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:37.907370279Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:37.907378208Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:37.907387458Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:37.907395166Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:37.907400473Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:38.890518178Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:38.890527477Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:38.890534935Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:38.890541592Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:38.890549367Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:38.890557069Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:38.890564124Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:38.890571677Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:38.890577007Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:38.890581903Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:38.890586686Z [err]      else:
-2026-01-17T15:11:38.890591503Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:40.029581845Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:40.029590049Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:40.029598378Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:40.029617542Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:40.029625480Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:40.029633487Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:40.029641967Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:40.029650459Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:40.029658371Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:40.029668131Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:40.029677355Z [err]      else:
-2026-01-17T15:11:40.029686578Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:41.392849912Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:41.392864604Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:41.392873574Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:41.392882176Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:41.392889779Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:41.392898977Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:41.392907147Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:41.392914979Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:41.392923740Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:41.392934005Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:41.392941268Z [err]      else:
-2026-01-17T15:11:41.392947978Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:42.837734091Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:42.837740060Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:42.837745403Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:42.837750293Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:42.837754982Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:42.837762423Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:42.837768701Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:42.837783871Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:42.837793573Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:42.837805212Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:42.837815592Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:42.837823578Z [err]      else:
-2026-01-17T15:11:43.834957689Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:43.834962462Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:43.834966965Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:43.834972326Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:43.834977205Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:43.834981644Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:43.834986319Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:43.834990820Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:43.834995097Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:43.834999415Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:43.835004004Z [err]      else:
-2026-01-17T15:11:43.835008738Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:44.931466656Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:44.931479818Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:44.931491029Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:44.931499739Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:44.931508082Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:44.931516999Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:44.931524979Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:44.931532699Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:44.931540662Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:44.931549332Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:44.931557614Z [err]      else:
-2026-01-17T15:11:44.931566084Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:46.090036597Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:46.090045835Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:46.090057789Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:46.090066877Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:46.090075424Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:46.090085042Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:46.090093471Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:46.090104927Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:46.090113532Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:46.090121907Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:46.090129649Z [err]      else:
-2026-01-17T15:11:46.090138642Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:47.160477120Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:47.160489824Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:47.160498614Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:47.160505174Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:47.160514216Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:47.160522112Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:47.160528351Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:47.160536117Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:47.160542884Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:47.160549567Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:47.160555649Z [err]      else:
-2026-01-17T15:11:47.160563102Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:48.230437625Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:48.230447105Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:48.230453741Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:48.230460703Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:48.230468008Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:48.230475810Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:48.230483054Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:48.230493742Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:48.230499871Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:48.230507143Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:48.230513860Z [err]      else:
-2026-01-17T15:11:48.230521314Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:49.302113823Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:49.302123169Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:49.302128691Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:49.302133294Z [err]      else:
-2026-01-17T15:11:49.302138096Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:49.302149596Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:49.302158421Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:49.302168915Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:49.302176543Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:49.302183939Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:49.302191257Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:49.302199175Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:50.377835907Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:50.377850558Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:50.377860579Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:50.377875822Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:50.377884505Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:50.377892672Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:50.377900480Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:50.377909383Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:50.377917740Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:50.377926815Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:50.377934951Z [err]      else:
-2026-01-17T15:11:50.377942466Z [err]  IndentationError: unexpected indent
-2026-01-17T15:11:51.905844528Z [err]  Traceback (most recent call last):
-2026-01-17T15:11:51.905853445Z [err]    File "/app/main.py", line 30, in <module>
-2026-01-17T15:11:51.905859886Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:51.905865322Z [err]    File "/app/src/engine/__init__.py", line 6, in <module>
-2026-01-17T15:11:51.905892715Z [err]      from src.engine.execution_engine import ExecutionEngine
-2026-01-17T15:11:51.905898944Z [err]    File "/app/src/engine/execution_engine.py", line 13, in <module>
-2026-01-17T15:11:51.905905863Z [err]      from src.esports.lol_provider import LoLDataProvider
-2026-01-17T15:11:51.905911558Z [err]    File "/app/src/esports/__init__.py", line 15, in <module>
-2026-01-17T15:11:51.905916441Z [err]      from src.esports.opendota import OpenDotaProvider
-2026-01-17T15:11:51.905921755Z [err]    File "/app/src/esports/opendota.py", line 139
-2026-01-17T15:11:51.905926569Z [err]      else:
-2026-01-17T15:11:51.905931180Z [err]  IndentationError: unexpected indent
+2026-01-17T16:23:24.000000000Z [inf]  Starting Container
+2026-01-17T16:23:26.513636608Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T16:23:26.513643288Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T16:23:26.513645289Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T16:23:26.513649769Z [inf]  │ Max Position: 10%                   │
+2026-01-17T16:23:26.513653403Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T16:23:26.513660515Z [inf]  │                                     │
+2026-01-17T16:23:26.513661918Z [inf]  get_upcoming_matches
+2026-01-17T16:23:26.513666352Z [inf]  │ Mode: Paper Trading                 │
+2026-01-17T16:23:26.513737544Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T16:23:26.513753253Z [inf]  2026-01-17 16:23:25 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
+2026-01-17T16:23:26.513762614Z [inf]  2026-01-17 16:23:25 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
+2026-01-17T16:23:26.513771466Z [inf]  Error: Can't instantiate abstract class StratzProvider with abstract method 
+2026-01-17T16:23:28.874530163Z [inf]  2026-01-17 16:23:27 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
+2026-01-17T16:23:28.874541506Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T16:23:28.874544023Z [inf]  Error: Can't instantiate abstract class StratzProvider with abstract method 
+2026-01-17T16:23:28.874556359Z [inf]  get_upcoming_matches
+2026-01-17T16:23:28.874557223Z [inf]  │                                     │
+2026-01-17T16:23:28.874565311Z [inf]  │ Max Position: 10%                   │
+2026-01-17T16:23:28.874567200Z [inf]  │ Mode: Paper Trading                 │
+2026-01-17T16:23:28.874577868Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T16:23:28.874582752Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T16:23:28.874592004Z [inf]  2026-01-17 16:23:27 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
+2026-01-17T16:23:28.874601306Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T16:23:28.874635723Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T16:23:31.680631130Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T16:23:31.680636933Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T16:23:31.680642543Z [inf]  │                                     │
+2026-01-17T16:23:31.680648184Z [inf]  │ Mode: Paper Trading                 │
+2026-01-17T16:23:31.680653706Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T16:23:31.680659993Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T16:23:31.680665704Z [inf]  │ Max Position: 10%                   │
+2026-01-17T16:23:31.680671424Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T16:23:31.680677382Z [inf]  2026-01-17 16:23:31 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
+2026-01-17T16:23:31.680683340Z [inf]  2026-01-17 16:23:31 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
+2026-01-17T16:23:31.680689634Z [inf]  Error: Can't instantiate abstract class StratzProvider with abstract method 
+2026-01-17T16:23:31.680695695Z [inf]  get_upcoming_matches
+2026-01-17T16:23:33.926287953Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T16:23:33.926294919Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T16:23:33.926301228Z [inf]  │                                     │
+2026-01-17T16:23:33.926307726Z [inf]  │ Mode: Paper Trading                 │
+2026-01-17T16:23:33.926314320Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T16:23:33.926322561Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T16:23:33.926328977Z [inf]  │ Max Position: 10%                   │
+2026-01-17T16:23:33.926335210Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T16:23:33.926341354Z [inf]  2026-01-17 16:23:33 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
+2026-01-17T16:23:33.926347711Z [inf]  2026-01-17 16:23:33 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
+2026-01-17T16:23:33.926354359Z [inf]  Error: Can't instantiate abstract class StratzProvider with abstract method 
+2026-01-17T16:23:33.926360533Z [inf]  get_upcoming_matches
+2026-01-17T16:23:36.768442955Z [inf]  get_upcoming_matches
+2026-01-17T16:23:36.768473845Z [inf]  │                                     │
+2026-01-17T16:23:36.768482296Z [inf]  │ Mode: Paper Trading                 │
+2026-01-17T16:23:36.768487516Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T16:23:36.768491832Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T16:23:36.768496275Z [inf]  │ Max Position: 10%                   │
+2026-01-17T16:23:36.768502525Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T16:23:36.768507167Z [inf]  2026-01-17 16:23:36 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
+2026-01-17T16:23:36.768511834Z [inf]  2026-01-17 16:23:36 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
+2026-01-17T16:23:36.768516513Z [inf]  Error: Can't instantiate abstract class StratzProvider with abstract method 
+2026-01-17T16:23:36.768523766Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T16:23:36.768528042Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T16:23:38.977078317Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T16:23:38.977083488Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T16:23:38.977088343Z [inf]  │                                     │
+2026-01-17T16:23:38.977097150Z [inf]  │ Mode: Paper Trading                 │
+2026-01-17T16:23:38.977102692Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T16:23:38.977109019Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T16:23:38.977115600Z [inf]  │ Max Position: 10%                   │
+2026-01-17T16:23:38.977122687Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T16:23:38.977127993Z [inf]  2026-01-17 16:23:38 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
+2026-01-17T16:23:38.977133557Z [inf]  2026-01-17 16:23:38 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
+2026-01-17T16:23:38.977139165Z [inf]  Error: Can't instantiate abstract class StratzProvider with abstract method 
+2026-01-17T16:23:38.977145146Z [inf]  get_upcoming_matches
+2026-01-17T16:23:41.822654501Z [inf]  2026-01-17 16:23:41 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
+2026-01-17T16:23:41.822664343Z [inf]  Error: Can't instantiate abstract class StratzProvider with abstract method 
+2026-01-17T16:23:41.822669758Z [inf]  get_upcoming_matches
+2026-01-17T16:23:41.822681559Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T16:23:41.822686664Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T16:23:41.822691338Z [inf]  │                                     │
+2026-01-17T16:23:41.822698593Z [inf]  │ Mode: Paper Trading                 │
+2026-01-17T16:23:41.822703369Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T16:23:41.822710523Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T16:23:41.822729692Z [inf]  │ Max Position: 10%                   │
+2026-01-17T16:23:41.822736317Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T16:23:41.822743264Z [inf]  2026-01-17 16:23:41 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
+2026-01-17T16:23:44.041768149Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T16:23:44.041776407Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T16:23:44.041783639Z [inf]  │                                     │
+2026-01-17T16:23:44.041791479Z [inf]  │ Mode: Paper Trading                 │
+2026-01-17T16:23:44.041797612Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T16:23:44.041804858Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T16:23:44.041812756Z [inf]  │ Max Position: 10%                   │
+2026-01-17T16:23:44.041821828Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T16:23:44.041829259Z [inf]  2026-01-17 16:23:44 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
+2026-01-17T16:23:44.041835900Z [inf]  2026-01-17 16:23:44 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
+2026-01-17T16:23:44.041842157Z [inf]  Error: Can't instantiate abstract class StratzProvider with abstract method 
+2026-01-17T16:23:44.041849992Z [inf]  get_upcoming_matches
+2026-01-17T16:23:46.967618458Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T16:23:46.967623731Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T16:23:46.967631494Z [inf]  │                                     │
+2026-01-17T16:23:46.967637363Z [inf]  │ Mode: Paper Trading                 │
+2026-01-17T16:23:46.967643002Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T16:23:46.967650234Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T16:23:46.967655925Z [inf]  │ Max Position: 10%                   │
+2026-01-17T16:23:46.967663059Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T16:23:46.967668816Z [inf]  2026-01-17 16:23:46 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
+2026-01-17T16:23:46.967674782Z [inf]  2026-01-17 16:23:46 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
+2026-01-17T16:23:46.967680719Z [inf]  Error: Can't instantiate abstract class StratzProvider with abstract method 
+2026-01-17T16:23:46.967686529Z [inf]  get_upcoming_matches
+2026-01-17T16:23:48.939235082Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T16:23:48.939246309Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T16:23:48.939253361Z [inf]  │ Max Position: 10%                   │
+2026-01-17T16:23:48.939261748Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T16:23:48.939267777Z [inf]  │                                     │
+2026-01-17T16:23:48.939272941Z [inf]  2026-01-17 16:23:48 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
+2026-01-17T16:23:48.939280253Z [inf]  2026-01-17 16:23:48 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
+2026-01-17T16:23:48.939286232Z [inf]  Error: Can't instantiate abstract class StratzProvider with abstract method 
+2026-01-17T16:23:48.939292852Z [inf]  get_upcoming_matches
+2026-01-17T16:23:48.939294710Z [inf]  │ Mode: Paper Trading                 │
+2026-01-17T16:23:48.939349775Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T16:23:48.939356424Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T16:23:51.909251896Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T16:23:51.909257062Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T16:23:51.909262090Z [inf]  │                                     │
+2026-01-17T16:23:51.909267757Z [inf]  │ Mode: Paper Trading                 │
+2026-01-17T16:23:51.909273448Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T16:23:51.909279087Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T16:23:51.914638392Z [inf]  │ Max Position: 10%                   │
+2026-01-17T16:23:51.914655005Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T16:23:51.914662637Z [inf]  2026-01-17 16:23:51 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
+2026-01-17T16:23:51.914670743Z [inf]  2026-01-17 16:23:51 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
+2026-01-17T16:23:51.914676154Z [inf]  Error: Can't instantiate abstract class StratzProvider with abstract method 
+2026-01-17T16:23:51.914681665Z [inf]  get_upcoming_matches
+2026-01-17T16:23:54.010521774Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T16:23:54.010526715Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T16:23:54.010530965Z [inf]  │                                     │
+2026-01-17T16:23:54.010534858Z [inf]  │ Mode: Paper Trading                 │
+2026-01-17T16:23:54.010540324Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T16:23:54.010544519Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T16:23:54.010549072Z [inf]  │ Max Position: 10%                   │
+2026-01-17T16:23:54.010556539Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T16:23:54.010562422Z [inf]  2026-01-17 16:23:53 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
+2026-01-17T16:23:54.010567690Z [inf]  2026-01-17 16:23:53 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
+2026-01-17T16:23:54.010573799Z [inf]  Error: Can't instantiate abstract class StratzProvider with abstract method 
+2026-01-17T16:23:54.010579292Z [inf]  get_upcoming_matches
+2026-01-17T16:23:56.934570956Z [inf]  2026-01-17 16:23:56 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
+2026-01-17T16:23:56.934579307Z [inf]  2026-01-17 16:23:56 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
+2026-01-17T16:23:56.934586182Z [inf]  Error: Can't instantiate abstract class StratzProvider with abstract method 
+2026-01-17T16:23:56.934593034Z [inf]  get_upcoming_matches
+2026-01-17T16:23:56.934818403Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T16:23:56.934823434Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T16:23:56.934827746Z [inf]  │                                     │
+2026-01-17T16:23:56.934832159Z [inf]  │ Mode: Paper Trading                 │
+2026-01-17T16:23:56.934836111Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T16:23:56.934840425Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T16:23:56.934844946Z [inf]  │ Max Position: 10%                   │
+2026-01-17T16:23:56.934848681Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T16:23:58.947853212Z [inf]  │ Mode: Paper Trading                 │
+2026-01-17T16:23:58.947864845Z [inf]  │ Initial Capital: $25.00             │
+2026-01-17T16:23:58.947880474Z [inf]  ╭─────────── Configuration ───────────╮
+2026-01-17T16:23:58.947887791Z [inf]  │ 🎮 Polymarket Esports Arbitrage Bot │
+2026-01-17T16:23:58.947895110Z [inf]  │                                     │
+2026-01-17T16:23:58.947921866Z [inf]  │ Min Edge: 2.0%                      │
+2026-01-17T16:23:58.947928818Z [inf]  │ Max Position: 10%                   │
+2026-01-17T16:23:58.947935827Z [inf]  ╰─────────────────────────────────────╯
+2026-01-17T16:23:58.947943739Z [inf]  2026-01-17 16:23:58 [info     ] 🚀 Starting Esports Arbitrage Bot... component=engine
+2026-01-17T16:23:58.947951798Z [inf]  2026-01-17 16:23:58 [info     ] ✅ GRID Open Access provider enabled with API key component=grid
+2026-01-17T16:23:58.947958227Z [inf]  Error: Can't instantiate abstract class StratzProvider with abstract method 
+2026-01-17T16:23:58.947964380Z [inf]  get_upcoming_matches
