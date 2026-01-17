@@ -133,16 +133,34 @@ class PolymarketClient:
     
     def _create_l2_headers(self, method: str, path: str, body: str = "") -> dict:
         """Create Level 2 authentication headers (trading)."""
+        # In paper trading mode or if API credentials are missing, return dummy headers
+        if self._paper_trading or not self._api_secret:
+            return {
+                "Content-Type": "application/json",
+            }
+        
         timestamp = str(int(time.time() * 1000))
         
         # Create signature
         message = timestamp + method.upper() + path + body
-        signature = hmac.new(
-            base64.b64decode(self._api_secret),
-            message.encode(),
-            hashlib.sha256
-        ).digest()
-        signature_b64 = base64.b64encode(signature).decode()
+        try:
+            # Use urlsafe_b64decode to handle URL-safe base64 (with - and _ instead of + and /)
+            # Also handle secrets that may or may not have padding
+            secret = self._api_secret
+            # Add padding if needed
+            padding_needed = len(secret) % 4
+            if padding_needed:
+                secret += '=' * (4 - padding_needed)
+            
+            signature = hmac.new(
+                base64.urlsafe_b64decode(secret),
+                message.encode(),
+                hashlib.sha256
+            ).digest()
+            signature_b64 = base64.b64encode(signature).decode()
+        except Exception as e:
+            logger.error(f"Failed to create API signature: {e}")
+            raise ValueError(f"Invalid POLYMARKET_API_SECRET format. Must be base64 encoded. Error: {e}")
         
         return {
             "POLY_API_KEY": self._api_key,
