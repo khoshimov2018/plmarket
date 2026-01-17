@@ -143,11 +143,11 @@ class MarketInfo:
     token_id_yes: str
     token_id_no: str
     
-    # Associated match info
-    match_id: str
-    game: Game
-    team1_name: str
-    team2_name: str
+    # Associated match info (optional for crypto markets)
+    match_id: str = ""
+    game: Optional[Game] = None
+    team1_name: str = ""
+    team2_name: str = ""
     
     # Market state
     is_active: bool = True
@@ -157,6 +157,10 @@ class MarketInfo:
     yes_price: float = 0.5
     no_price: float = 0.5
     last_price_update: datetime = field(default_factory=datetime.utcnow)
+    
+    # Additional market metadata
+    volume: float = 0.0
+    liquidity: float = 0.0
 
 
 @dataclass  

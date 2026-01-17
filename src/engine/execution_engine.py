@@ -16,6 +16,8 @@ from src.esports.opendota import OpenDotaProvider
 from src.esports.lolesports import LoLEsportsProvider
 from src.esports.grid_provider import GridProvider
 from src.esports.stratz_provider import StratzProvider
+from src.crypto.binance_provider import BinanceProvider
+from src.crypto.crypto_arbitrage import CryptoArbitrageDetector, CryptoMarket
 from src.trading.polymarket_client import PolymarketClient
 from src.trading.order_manager import OrderManager
 from src.trading.position_tracker import PositionTracker
@@ -53,6 +55,11 @@ class ExecutionEngine:
         # Fallback providers (PandaScore - paid/slower)
         self.lol_provider: Optional[LoLDataProvider] = None
         self.dota_provider: Optional[DotaDataProvider] = None
+        
+        # Crypto providers (Binance - FREE real-time data!)
+        self.binance: Optional[BinanceProvider] = None
+        self.crypto_arbitrage: Optional[CryptoArbitrageDetector] = None
+        
         self.polymarket: Optional[PolymarketClient] = None
         self.order_manager: Optional[OrderManager] = None
         self.position_tracker: Optional[PositionTracker] = None
@@ -87,17 +94,35 @@ class ExecutionEngine:
         self.lol_provider = LoLDataProvider(self.config.esports.pandascore_api_key)
         self.dota_provider = DotaDataProvider(self.config.esports.pandascore_api_key)
         
+        # Initialize CRYPTO providers (Binance - FREE real-time data!)
+        if self.config.crypto.is_configured():
+            crypto_pairs = self.config.crypto.crypto_pairs.split(",")
+            self.binance = BinanceProvider(
+                api_key=self.config.crypto.binance_api_key,
+                api_secret=self.config.crypto.binance_api_secret,
+                symbols=crypto_pairs
+            )
+            logger.info(f"💰 Binance provider initialized for: {crypto_pairs}")
+        else:
+            logger.warning("⚠️ Binance not configured - crypto arbitrage disabled")
+        
         # Initialize trading components
         self.polymarket = PolymarketClient()
         
         # Connect to services - GRID first (fastest), then others
-        await asyncio.gather(
+        connect_tasks = [
             self.grid.connect(),
             self.lol_esports.connect(),
             self.opendota.connect(),
             self.stratz.connect(),  # FREE Dota 2 provider with win probability!
             self.polymarket.connect(),
-        )
+        ]
+        
+        # Add Binance if configured
+        if self.binance:
+            connect_tasks.append(self.binance.connect())
+        
+        await asyncio.gather(*connect_tasks)
         
         if self.grid.enabled:
             logger.info("✅ GRID.gg provider enabled - FASTEST data source active!")
@@ -118,6 +143,16 @@ class ExecutionEngine:
         self.position_tracker = PositionTracker(self.polymarket)
         self.arbitrage_detector = ArbitrageDetector()
         self.market_matcher = MarketMatcher()
+        
+        # Initialize crypto arbitrage detector
+        if self.binance:
+            self.crypto_arbitrage = CryptoArbitrageDetector(
+                binance=self.binance,
+                min_edge=self.config.trading.min_edge_threshold
+            )
+            # Register threshold crossing callback
+            self.binance.on_threshold_crossing(self._on_crypto_threshold_crossing)
+            logger.info("💰 Crypto arbitrage detector initialized")
         
         # Set up order fill callback
         self.order_manager.set_on_fill_callback(self._on_order_filled)
@@ -178,6 +213,12 @@ class ExecutionEngine:
             asyncio.create_task(self._position_management_loop()),
             asyncio.create_task(self._metrics_logging_loop()),
         ]
+        
+        # Add crypto tasks if enabled
+        if self.binance and self.crypto_arbitrage:
+            tasks.append(asyncio.create_task(self._crypto_monitoring_loop()))
+            tasks.append(asyncio.create_task(self.binance.start_websocket_stream()))
+            logger.info("💰 Crypto monitoring tasks started")
         
         try:
             await asyncio.gather(*tasks)
@@ -860,6 +901,238 @@ class ExecutionEngine:
             opportunities_found=self._total_opportunities,
             executed_trades=self._executed_trades,
         )
+    
+    # ==========================================
+    # CRYPTO ARBITRAGE METHODS
+    # ==========================================
+    
+    async def _crypto_monitoring_loop(self) -> None:
+        """
+        Monitor crypto markets for arbitrage opportunities.
+        
+        This runs alongside esports monitoring and checks:
+        1. Polymarket crypto price prediction markets
+        2. Real-time Binance prices
+        3. Detects when prices approach thresholds
+        """
+        logger.info("💰 Starting crypto monitoring loop...")
+        
+        # First, discover crypto markets on Polymarket
+        await self._discover_crypto_markets()
+        
+        while self._is_running:
+            try:
+                # Check for opportunities
+                if self.crypto_arbitrage:
+                    opportunities = await self.crypto_arbitrage.check_opportunities()
+                    
+                    for opp in opportunities:
+                        await self._execute_crypto_opportunity(opp)
+                
+                # Log crypto status periodically
+                if self.binance:
+                    prices = self.binance.get_all_prices()
+                    if prices:
+                        price_str = " | ".join([
+                            f"{s}: ${p.price:,.2f}" 
+                            for s, p in prices.items()
+                        ])
+                        logger.debug(f"💰 Crypto prices: {price_str}")
+                
+            except Exception as e:
+                logger.error(f"Crypto monitoring error: {e}")
+            
+            # Check every 500ms for crypto (faster than esports)
+            await asyncio.sleep(0.5)
+    
+    async def _discover_crypto_markets(self) -> None:
+        """
+        Discover crypto price prediction markets on Polymarket.
+        
+        Looks for markets like:
+        - "Will BTC hit $100K by March 2025?"
+        - "Will ETH reach $5000 by end of year?"
+        """
+        logger.info("🔍 Discovering crypto markets on Polymarket...")
+        
+        try:
+            # Search for crypto-related markets
+            crypto_keywords = ["bitcoin", "btc", "ethereum", "eth", "solana", "sol", "crypto"]
+            
+            for keyword in crypto_keywords:
+                markets = await self.polymarket.search_markets(keyword)
+                
+                for market in markets:
+                    # Parse market to extract threshold info
+                    crypto_market = self._parse_crypto_market(market)
+                    if crypto_market and self.crypto_arbitrage:
+                        self.crypto_arbitrage.add_market(crypto_market)
+            
+            if self.crypto_arbitrage:
+                summary = self.crypto_arbitrage.get_market_summary()
+                logger.info(f"💰 Found {len(summary)} crypto markets to monitor")
+                
+        except Exception as e:
+            logger.error(f"Error discovering crypto markets: {e}")
+    
+    def _parse_crypto_market(self, market: MarketInfo) -> Optional[CryptoMarket]:
+        """
+        Parse a Polymarket market to extract crypto threshold info.
+        
+        Examples:
+        - "Will Bitcoin hit $100,000 by March 2025?" -> BTC, 100000, above
+        - "Will ETH fall below $2000?" -> ETH, 2000, below
+        """
+        import re
+        
+        question = market.question.lower()
+        
+        # Detect crypto symbol
+        symbol = None
+        if "bitcoin" in question or "btc" in question:
+            symbol = "BTCUSDT"
+        elif "ethereum" in question or "eth" in question:
+            symbol = "ETHUSDT"
+        elif "solana" in question or "sol" in question:
+            symbol = "SOLUSDT"
+        
+        if not symbol:
+            return None
+        
+        # Extract price threshold
+        # Match patterns like $100,000 or $100000 or 100k or 100K
+        price_patterns = [
+            r'\$([0-9,]+)',  # $100,000
+            r'([0-9]+)k',    # 100k
+            r'([0-9]+)K',    # 100K
+        ]
+        
+        threshold = None
+        for pattern in price_patterns:
+            match = re.search(pattern, market.question)
+            if match:
+                price_str = match.group(1).replace(",", "")
+                if "k" in pattern.lower():
+                    threshold = float(price_str) * 1000
+                else:
+                    threshold = float(price_str)
+                break
+        
+        if not threshold:
+            return None
+        
+        # Detect direction
+        direction = "above"  # Default
+        if "below" in question or "fall" in question or "drop" in question:
+            direction = "below"
+        elif "above" in question or "hit" in question or "reach" in question:
+            direction = "above"
+        
+        # Parse deadline (simplified - use market end date)
+        deadline = market.end_date if hasattr(market, 'end_date') and market.end_date else datetime.utcnow() + timedelta(days=30)
+        
+        return CryptoMarket(
+            market_id=market.condition_id,
+            condition_id=market.condition_id,
+            token_id_yes=market.token_id_yes,
+            token_id_no=market.token_id_no,
+            question=market.question,
+            symbol=symbol,
+            threshold=threshold,
+            direction=direction,
+            deadline=deadline,
+            current_yes_price=market.yes_price,
+            current_no_price=market.no_price
+        )
+    
+    async def _on_crypto_threshold_crossing(
+        self,
+        symbol: str,
+        threshold: float,
+        direction: str
+    ) -> None:
+        """
+        Handle crypto price threshold crossing event.
+        
+        This is called IMMEDIATELY when price crosses a threshold,
+        allowing for ultra-fast response before market catches up.
+        """
+        logger.info(
+            f"⚡ CRYPTO THRESHOLD CROSSED: {symbol} crossed ${threshold:,.0f} {direction}!"
+        )
+        
+        if self.crypto_arbitrage:
+            opportunity = await self.crypto_arbitrage.on_threshold_crossing(
+                symbol, threshold, direction
+            )
+            
+            if opportunity:
+                await self._execute_crypto_opportunity(opportunity)
+    
+    async def _execute_crypto_opportunity(self, opportunity) -> None:
+        """Execute a crypto arbitrage opportunity."""
+        from src.crypto.crypto_arbitrage import CryptoOpportunity
+        
+        if not isinstance(opportunity, CryptoOpportunity):
+            return
+        
+        # Check risk limits
+        if not await self._check_risk_limits():
+            return
+        
+        market = opportunity.market
+        
+        logger.info(
+            f"💰 EXECUTING CRYPTO TRADE:\n"
+            f"   Market: {market.question}\n"
+            f"   Direction: {opportunity.direction}\n"
+            f"   Edge: {opportunity.edge*100:.1f}%\n"
+            f"   Confidence: {opportunity.confidence*100:.0f}%"
+        )
+        
+        # Determine which token to buy
+        if opportunity.direction == "buy_yes":
+            token_id = market.token_id_yes
+            price = market.current_yes_price
+        else:
+            token_id = market.token_id_no
+            price = market.current_no_price
+        
+        # Calculate position size
+        position_size = (
+            self.config.trading.initial_capital *
+            self.config.trading.max_position_size_pct *
+            opportunity.confidence  # Scale by confidence
+        )
+        
+        # Paper trading check
+        if self.config.development.paper_trading:
+            logger.info(
+                f"📝 PAPER TRADE: Would buy ${position_size:.2f} of "
+                f"{'YES' if opportunity.direction == 'buy_yes' else 'NO'} "
+                f"at {price*100:.1f}%"
+            )
+            return
+        
+        # Execute real trade
+        try:
+            from src.models import Side
+            
+            order = await self.polymarket.place_order(
+                token_id=token_id,
+                side=Side.BUY,
+                size=position_size,
+                price=price
+            )
+            
+            if order:
+                self._executed_trades += 1
+                logger.info(f"✅ Crypto trade executed: {order.order_id}")
+            else:
+                logger.warning("❌ Crypto trade failed to execute")
+                
+        except Exception as e:
+            logger.error(f"Error executing crypto trade: {e}")
 
 
 # Need to import these for the position management

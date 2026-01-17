@@ -314,6 +314,137 @@ class PolymarketClient:
             logger.error("Error fetching esports markets", error=str(e))
             return []
     
+    async def search_markets(self, keyword: str) -> List[MarketInfo]:
+        """
+        Search for markets by keyword.
+        
+        Used for finding crypto price prediction markets like:
+        - "Will Bitcoin hit $100K?"
+        - "Will ETH reach $5000?"
+        
+        Args:
+            keyword: Search term (e.g., "bitcoin", "ethereum", "crypto")
+            
+        Returns:
+            List of matching markets
+        """
+        try:
+            markets = []
+            seen_ids = set()
+            
+            # Search by text query
+            response = await self._gamma_client.get(
+                "/events/pagination",
+                params={
+                    "limit": 100,
+                    "active": "true",
+                    "archived": "false",
+                    "closed": "false",
+                    "order": "volume",
+                    "ascending": "false",
+                }
+            )
+            
+            if response.status_code == 200:
+                data = response.json()
+                events = data if isinstance(data, list) else data.get("data", [])
+                
+                for event in events:
+                    event_markets = event.get("markets", [])
+                    if not event_markets:
+                        event_markets = [event]
+                    
+                    for market_data in event_markets:
+                        market_id = market_data.get("id", market_data.get("condition_id", ""))
+                        if market_id in seen_ids:
+                            continue
+                        
+                        question = market_data.get("question", "").lower()
+                        title = event.get("title", "").lower()
+                        combined = f"{title} {question}"
+                        
+                        # Check if keyword matches
+                        if keyword.lower() not in combined:
+                            continue
+                        
+                        # Parse market (pass None for game since it's crypto)
+                        market = self._parse_crypto_market(market_data, event)
+                        if market:
+                            seen_ids.add(market_id)
+                            markets.append(market)
+                            self._market_cache[market.market_id] = market
+            
+            logger.debug(f"Found {len(markets)} markets matching '{keyword}'")
+            return markets
+            
+        except Exception as e:
+            logger.error(f"Error searching markets for '{keyword}': {e}")
+            return []
+    
+    def _parse_crypto_market(
+        self,
+        data: dict,
+        event: Optional[dict] = None
+    ) -> Optional[MarketInfo]:
+        """Parse crypto market data into MarketInfo model."""
+        try:
+            question = data.get("question", "")
+            title = (event or data).get("title", "") if event else question
+            
+            # Extract token IDs
+            tokens = data.get("tokens", [])
+            
+            yes_token = next((t for t in tokens if t.get("outcome") == "Yes"), None)
+            no_token = next((t for t in tokens if t.get("outcome") == "No"), None)
+            
+            # Validate token IDs
+            token_id_yes = ""
+            token_id_no = ""
+            
+            if yes_token:
+                raw_yes = str(yes_token.get("token_id", ""))
+                if len(raw_yes) >= 10 and raw_yes.isdigit():
+                    token_id_yes = raw_yes
+            
+            if no_token:
+                raw_no = str(no_token.get("token_id", ""))
+                if len(raw_no) >= 10 and raw_no.isdigit():
+                    token_id_no = raw_no
+            
+            # Get prices
+            yes_price = float(data.get("outcomePrices", [0.5, 0.5])[0]) if data.get("outcomePrices") else 0.5
+            no_price = float(data.get("outcomePrices", [0.5, 0.5])[1]) if data.get("outcomePrices") else 0.5
+            
+            # Parse end date
+            end_date_str = data.get("endDate") or data.get("end_date_iso")
+            end_date = None
+            if end_date_str:
+                try:
+                    from datetime import datetime
+                    end_date = datetime.fromisoformat(end_date_str.replace("Z", "+00:00"))
+                except:
+                    pass
+            
+            return MarketInfo(
+                market_id=data.get("id", data.get("condition_id", "")),
+                condition_id=data.get("condition_id", data.get("id", "")),
+                question=question,
+                game=None,  # Not an esports market
+                team1_name="Yes",
+                team2_name="No",
+                token_id_yes=token_id_yes,
+                token_id_no=token_id_no,
+                yes_price=yes_price,
+                no_price=no_price,
+                volume=float(data.get("volume", 0) or 0),
+                liquidity=float(data.get("liquidity", 0) or 0),
+                end_date=end_date
+            )
+            
+        except Exception as e:
+            logger.debug(f"Error parsing crypto market: {e}")
+            return None
+    
     def _parse_market(
         self, 
         data: dict, 

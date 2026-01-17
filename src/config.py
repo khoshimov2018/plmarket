@@ -38,6 +38,26 @@ class EsportsDataConfig(BaseSettings):
     model_config = SettingsConfigDict(env_file=".env", extra="ignore")
 
 
+class CryptoDataConfig(BaseSettings):
+    """Crypto data source configuration (Binance)."""
+    
+    binance_api_key: str = Field("", alias="BINANCE_API_KEY")
+    binance_api_secret: str = Field("", alias="BINANCE_API_SECRET")
+    
+    # Trading pairs to monitor for Polymarket crypto markets
+    # These are pairs where Polymarket has price prediction markets
+    crypto_pairs: str = Field("BTCUSDT,ETHUSDT,SOLUSDT", alias="CRYPTO_PAIRS")
+    
+    # Enable crypto arbitrage module
+    enable_crypto: bool = Field(True, alias="ENABLE_CRYPTO")
+    
+    model_config = SettingsConfigDict(env_file=".env", extra="ignore")
+    
+    def is_configured(self) -> bool:
+        """Check if Binance credentials are configured."""
+        return bool(self.binance_api_key and self.binance_api_secret)
+
+
 class TradingConfig(BaseSettings):
     """Trading parameters configuration."""
     
@@ -115,6 +135,7 @@ class BotConfig:
     def __init__(self):
         self.polymarket = PolymarketConfig()
         self.esports = EsportsDataConfig()
+        self.crypto = CryptoDataConfig()
         self.trading = TradingConfig()
         self.risk = RiskConfig()
         self.execution = ExecutionConfig()
